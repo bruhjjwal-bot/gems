@@ -1,0 +1,6 @@
+yt-dlp>=2025.10.14
+supabase==2.10.0
+python-dotenv==1.0.1
+firecrawl-py>=2.0
+pytest>=8.0
+pytest-mock>=3.12

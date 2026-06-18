@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Don't commit ad-hoc scraped JSON dumps, but keep the recorded test fixture.
+*.json
+!.env.example
+!tests/fixtures/**/*.json

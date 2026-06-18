@@ -1,0 +1,288 @@
+{
+  "search_metadata": {
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/jiQF_MykGmHHmJmEopknQA/6a3420eb7dcfbe98fc8f9fed.json",
+    "created_at": "2026-06-18 16:46:35 UTC",
+    "processed_at": "2026-06-18 16:46:35 UTC",
+    "google_maps_reviews_url": "https://www.google.com/maps/place/data=!4m7!3m6!1s0x132f6053278340d5:0xf676f1e1cc02bbb6!5m2!4m1!1i2!9m1!1b1?hl=en",
+    "raw_html_file": "https://serpapi.com/searches/jiQF_MykGmHHmJmEopknQA/6a3420eb7dcfbe98fc8f9fed.html",
+    "prettify_html_file": "https://serpapi.com/searches/jiQF_MykGmHHmJmEopknQA/6a3420eb7dcfbe98fc8f9fed.prettify",
+    "total_time_taken": 0.87
+  },
+  "search_parameters": {
+    "engine": "google_maps_reviews",
+    "place_id": "ChIJ1UCDJ1NgLxMRtrsCzOHxdvY",
+    "hl": "en"
+  },
+  "place_info": {
+    "title": "Trevi Fountain",
+    "address": "Piazza di Trevi, 00187 Roma RM, Italy",
+    "rating": 4.7,
+    "reviews": 510359,
+    "type": "Fountain"
+  },
+  "reviews": [
+    {
+      "position": 1,
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pBM1dUQmtPRGcyYW0xdFltNDRhMWt3WDJRelRYYxAB!2m1!1s0x0:0xf676f1e1cc02bbb6!3m1!1s2@1:CAIQACodChtycF9oOjA3WTBkODg2am1tYm44a1kwX2QzTXc%7C%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "2 weeks ago",
+      "iso_date": "2026-06-03T16:40:18Z",
+      "iso_date_of_last_edit": "2026-06-03T16:40:18Z",
+      "images": [
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1BGQHsZPTSFrScl1JdkdCVGKmEkHW_iMP3ENkFuAzMDzRqeY3cB0d6h0KHmrz2FICmOSoRF37TVZMP16_IomnujZe81U-8fUNQ4BWHEdGT2SqLVd8WG30EUJEyabi3dpde78l_kW2l9KU=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1A49rnfJhSiI_PrTsFJFvjTQgYl8AttDNRzYd9wN5tqPdm_IDWMNOn1jP5YEQVAftHHfKVgXN2scRg0j-V3rWAK2dXIzaKQdLRS7x0pTfjHDlfSYcefDan2dxCLIFR_dx_B0J8UTkSSkMa=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn03p2M4C5DkFG530mu7vV89vILbr3yLKOJzkQrxIcFPRPBCHTFBmPcdovxVP0zA7Drf_gkG9Ir4B8tCx6lwsV0clGRYsFtuwejkpdt97d6wid-STOgdfmtmCsIgam-2cyag3OCi4J9z8szY=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn14bFNUlLlzh2JwSJ_MPyt7gqycelvinvE6c0CiLP4gEcVUQz4hnezu0orQKUCtgWSmJ2so9mt13mfLLROMplamHZQRgeKl9L_zUXzE45dBEug-za-T9yhvd99o0w9UTNyOApI799Ywwjth=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3LHxj0Tsquv5ZTSE-2iiIznUKYsfAQIpZC4pyEGn3GnwKV62K8JYd5Nzprg17jCZL-sUSKwdd2HoyCy2e-5_i4KDIuM16-KqFfceBZLwmR4mFTriE4fnxlu9Xqx_dDVn1MS2vv3lwUDaY=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn33til35Xvovlo-YuZdIPLMnlLeZIpd83q9cJ6b812xTAFFV0R8z2CV9UXAMwT53daQMKuWc_CtmWTaTf2IaV2B_zkkkCH3kySU5oHtSgtUHFBV7l8pWq1zAxpx7befUxHrvlc5hv1sJvA=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0w_qRHHh7Q9HiTRhBSJnj31YMaUMGzDAwZF_CDkTRFa86ONU3xIYp1j61wz1u200SEoOhxMrAMDUYg4LWrYKBK1pppGEM-SJxo7LZa6KdJV_ERkcRcTcaIugdkkhbbxZIAh6PDmwoHWDQ=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3p1SFqodz2nUjkbSMcstCDWyp2zTERhB10-dgIfEqTrR0gNY-3F1fbXzRehztKTeth1M5qVj_fCE_tuqekRBmnociD-LrMW3yOuijyklPJYEheohPrzbdDo-IPcTptc4CpanYMAH6tjocS=k-no"
+      ],
+      "source": "Google",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2pBM1dUQmtPRGcyYW0xdFltNDRhMWt3WDJRelRYYxAB",
+      "user": {
+        "name": "Nathan",
+        "link": "https://www.google.com/maps/contrib/116786028484785437436?hl=en-US",
+        "contributor_id": "116786028484785437436",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjUDVDNzw3qSkONTStjFySx6eD8X2Xhd3gvcgHedXlM0fu2DrnQ=s120-c-rp-mo-ba12-br100",
+        "local_guide": true,
+        "reviews": 14,
+        "photos": 87
+      },
+      "snippet": "I would argue that just as much of a staple the Vatican and the Coliseum are in Rome, Trevi Fountain is right there with them. Just insanely beautiful and mesmerizing to look at, especially at night. During the day the fountain is bustling with visitors and may be hard to take a picture or good look at, so I would suggest going later in the evening or early in the morning to get a real good look at every piece of art that makes up the fountain.",
+      "extracted_snippet": {
+        "original": "I would argue that just as much of a staple the Vatican and the Coliseum are in Rome, Trevi Fountain is right there with them. Just insanely beautiful and mesmerizing to look at, especially at night. During the day the fountain is bustling with visitors and may be hard to take a picture or good look at, so I would suggest going later in the evening or early in the morning to get a real good look at every piece of art that makes up the fountain."
+      },
+      "likes": 0
+    },
+    {
+      "position": 2,
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tVNU15MHRPV2hDWjNSbldGbDNUV1E1VUcxTU1sRRAB!2m1!1s0x0:0xf676f1e1cc02bbb6!3m1!1s2@1:CAIQACodChtycF9oOkU5My0tOWhCZ3RnWFl3TWQ5UG1MMlE%7C%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "3 months ago",
+      "iso_date": "2026-03-03T13:47:59Z",
+      "iso_date_of_last_edit": "2026-03-03T13:48:02Z",
+      "images": [
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn2pop84zMHAG9pMBMNdbtpLy3keKW7ZaSqsXYRaD7PHvt3jCp7lw6gNXY8rb1JDFaBUvDz-rd93gl-rBdW9O2QzpG-KR8ERMH8f_tJbzyC4mB60dhm7eksZ3mOGLCJYorxL915N5qAfWov8=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3x8q05bHreZ51jWvcibBt9kRjRbCqzVetzqcQ9RWTATRJgWZ9H-jGtxeaqefcG0iCR4dNY1KT9svleIXs9lc2172STqmkeEKpiqOpdeYOCBn5ypQQIWjWaWd99EuRYQihnevAhoED2W5V2=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3vtZyzPOKvbAYV7-9qsXIA1xh8pGiBmE1tedOMWCG_R4ndVmg2n_LKAqxBCXceCGqMPlscBvnYVEItZU3dijsQAy1_8NpUAactIw8ksit_iLf1ztgvbs-ClBR7uXfxW3G9n9wgIyxbgDsR=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn2A2As7Gb2OpxmeI7T4cqZaRDmux7fjmqkoaB2PRGRZz5roojVjyy6c7LIUYfn9XcuYpMJGETbqhBUccnqhPy01d7RT6DHhjVEFGRhqT3xSFIDfRYnJa1GsyleMXLWJ1B0q771m4wbZhyEb=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0kZXl7OFZuE5xO-X9YtecGa4LiBhLNmzsx1DdboqG8WooxzRPeX_KFd2bBNZOcSbN4t0x4VlOWO46XcxTk1hbU_14KaNkJ6js1GNJaz_NANKCjsbHzhpZfYluRw2sJnzqLUV38wZIC7lYB=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0m6npj6dXzXIThLJN7jnzyacTz0SoLqAYXRc9SRgCl3C7kKKiuD0hkzS78uPu0FZh_Nv4tngjJ57d-GF75vmCBHoIru_KL-KC8zGzNOfkC8qkm3VlUjnhwW3kOoQB1g-F5V_gUl5L5Fg6g=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3qkk413EU8sX_3Pep9XLlb2MwOvwf9uYrk5wKJxkaWo21Y2DWqWD_TmNqlEnRcN6kffujfdndui7QOmPziBZyFr3RdUomL0FR3gefJ0xyiL_vgXjBGzV79pYPruWUODOrVyZxAVCI3lI0J=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0Br0gBiZeq-1l9FN-gZwgrdZ89wCUHXffClzNS8BTydNDGbkGe8Z7vHWDY0lIMwx0D0zyjtusffsw2ksBmC0586D1-yTjNfnjB_5Hl-DOETSHTWewBUoNWhFLQv9z0Dr5MsF7nk7_Qw2k=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1A8W1gnvD6bJGSh6akvlTHTNW4gdehPKciuBMZEVVZGyC94jomvZSE-gspzBeqFctbTC127BefhvVq3gwI9bnDhEmFnEQu_ssMyYo3urImD4KlI-TXd9D8KP0Y-3hGf9u-sibVW0YBy5E=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1BZS4rN7lvxgO98Y7JZC6kgfvwBjGXW9YJ6TBjZkiD9oypTngYVaPFdr0tGKdY1WaN9MUZR0gMXhdQfW0NjWKAxGDghFaxq5Q8mn8cWqZnoiGTjYPmEl6IP7FGb9u--oYTJPNEMYZAZxE=k-no"
+      ],
+      "source": "Google",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2tVNU15MHRPV2hDWjNSbldGbDNUV1E1VUcxTU1sRRAB",
+      "user": {
+        "name": "Kiri Hawkins",
+        "link": "https://www.google.com/maps/contrib/116409368344703222907?hl=en-US",
+        "contributor_id": "116409368344703222907",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjWKtiXOjIHZBO2mdonxSRqKAPBmNkbE61pY65iWmcHBF-LgSmLfbg=s120-c-rp-mo-ba12-br100",
+        "local_guide": true,
+        "reviews": 140,
+        "photos": 340
+      },
+      "snippet": "One of the absolute highlights of my trip!\n\nIt was very busy when I visited in the afternoon, but I was expecting that. Even so, I decided to pay the \u20ac2 to access the lower section of the fountain \u2014 and I\u2019m so glad I did. The queue moved quickly, and once I saw the fountain up close, I was completely in awe. At that point, the \u20ac2 felt like nothing at all.\n\nI also went back another morning at 6 am, and it was a completely different experience. There were only a handful of people around, the sunrise was beautiful, and the atmosphere felt calm and magical. With no staff present, people were simply moving the fences to walk down closer to the fountain.\n\nI would highly recommend visiting \u2014 it\u2019s easily one of the most beautiful things I have ever seen.",
+      "extracted_snippet": {
+        "original": "One of the absolute highlights of my trip!\n\nIt was very busy when I visited in the afternoon, but I was expecting that. Even so, I decided to pay the \u20ac2 to access the lower section of the fountain \u2014 and I\u2019m so glad I did. The queue moved quickly, and once I saw the fountain up close, I was completely in awe. At that point, the \u20ac2 felt like nothing at all.\n\nI also went back another morning at 6 am, and it was a completely different experience. There were only a handful of people around, the sunrise was beautiful, and the atmosphere felt calm and magical. With no staff present, people were simply moving the fences to walk down closer to the fountain.\n\nI would highly recommend visiting \u2014 it\u2019s easily one of the most beautiful things I have ever seen."
+      },
+      "likes": 1
+    },
+    {
+      "position": 3,
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aNFpYa3pjR1EwTWtSVUxWUkVSbGRRUVVGc1RVRRAB!2m1!1s0x0:0xf676f1e1cc02bbb6!3m1!1s2@1:CAIQACodChtycF9oOnZ4ZXkzcGQ0MkRULVRERldQQUFsTUE%7C%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "3 months ago",
+      "iso_date": "2026-02-24T22:41:34Z",
+      "iso_date_of_last_edit": "2026-02-24T22:41:34Z",
+      "images": [
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0V4pxg1pgHH3gNL3ACJ6wWSuZxlqQbRmLGWQr1in1qW1EndwcnotF7xXgbVhdWUD-5JWj_JACU09S5Ou6qqJlATKiWoTHgpHgk7lQuKnPX6JnvbQbfI4wInvvjYiLHeaLrHEKPSc6c6dk3=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1NNcX3qukYN-2BDiyF-gzuuX_uDSMZcigsT34PXqLcpbVexxbZv5OeTz5RpZUGq4G3H9WUyRTduTdiYbMrvD9E_S3u6GmgywGVfTOuiwxdYdR30kPXTweHX98uR2NmHLw1CHTj6y6yk4M=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0yvJQEzyBiZt4ynhQaSmwGxLdyMi0klN2P4GWZYVgIX96_jbpk0V7gayt_5XIkkyzRRneH7bz2bmtegJGnccP8-SkTDbgmP698zEKGY_HJCAf6DylxH3j2IN9fDCvw7rLdV52bsMAlSLSz=k-no"
+      ],
+      "source": "Google",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT25aNFpYa3pjR1EwTWtSVUxWUkVSbGRRUVVGc1RVRRAB",
+      "user": {
+        "name": "P M",
+        "link": "https://www.google.com/maps/contrib/106010561144399224925?hl=en-US",
+        "contributor_id": "106010561144399224925",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjUWbymvIfoXvLJtC5e0zy1XgdIeM1kFHKONi85a5LnXp9bAZrAg=s120-c-rp-mo-ba12-br100",
+        "local_guide": true,
+        "reviews": 173,
+        "photos": 1299
+      },
+      "snippet": "The Trevi Fountain was absolutely magical. The fountain is stunning with the intricate sculptures and flowing water are even more impressive in person than in photos. Its picture perfect sans the crowd.\n\nThe area around the fountain is lively, with plenty of caf\u00e9s and gelaterias nearby, which makes for a great spot to soak in the atmosphere, but it can get very crowded.\n\nOverall, a must-see in Rome. Its iconic, beautiful, and full of charm!",
+      "extracted_snippet": {
+        "original": "The Trevi Fountain was absolutely magical. The fountain is stunning with the intricate sculptures and flowing water are even more impressive in person than in photos. Its picture perfect sans the crowd.\n\nThe area around the fountain is lively, with plenty of caf\u00e9s and gelaterias nearby, which makes for a great spot to soak in the atmosphere, but it can get very crowded.\n\nOverall, a must-see in Rome. Its iconic, beautiful, and full of charm!"
+      },
+      "likes": 0
+    },
+    {
+      "position": 4,
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0bGNIcHZVa2N5TVZobGJ6bFhNVUZ4UW5CUlVWRRAB!2m1!1s0x0:0xf676f1e1cc02bbb6!3m1!1s2@1:CAIQACodChtycF9oOktlcHpvUkcyMVhlbzlXMUFxQnBRUVE%7C%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "6 days ago",
+      "iso_date": "2026-06-12T07:49:35Z",
+      "iso_date_of_last_edit": "2026-06-12T07:49:35Z",
+      "images": [
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0JdetekEMc0fy7qkw4ycJdX9sJMNKOAWfT28qE6s1dg6wvUZy-tqX1jvdshM7eFn8Cohdon6t_zeyUfVihXSZJzJHOSgFaeAisXG6AkaLq7wL3rv0LaAx4GZSO1Df0W4wHTkSVVDNYsk81=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0d6FW0dioysPNsX4GkEEMdFp2J42GflFiKkxf6b-XleSvXfytgvIH6E8ypwqRWqlRET9qr89twmD7gwyIERf8_24oPFVHqzR5-1RiFctGerZOrjUH0FPV6c-7WDqn1lkt_aS_6xi5diJBC=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1zSFNrAwa2ELv1G9Lvw8C7uzGSy3bLykoO2TOTYkZkCavQcz61Gxv7i8zctIIq7TQTeJi8fJgpu78SKAvcdZh7QFFZxAfXqpN85u4QS1lufyH-HCUOCjVInzU7RE_9YpDR47ULhUawLh6V=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0L1RJ8MKSdmsptE-kOCKizs1cv38ZD_PMraLblq-dBUdcepRJu8XSuEpt9ESBkFvW2woz9IXacsQkBbnzQRm5xL4t7nmgLy3Ifo2k_BehQ7iSlkGYgl3ho8uhNU2nEfQUZU2S6RMr8QVMa=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1FPHof46-CICRuDrDaqIlOivov3siN00svyMx__RJFfMwk-5cWIkc9n79YU3fk9Z2ng29CIKgI-BWXvEyeDofTfu3-U_WqXBlyb3CdFIm9RzRDdnyAY6-e490mItrpJ8ELkjDFjwfjC0Y=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1WHokHdcgArTxYInPrEoG_WlQlxvxGkKWvIVMUcVtjoICZDW5yEBLFyKgxnviM57VR5kHJS92V7oIIIG1TKRm7F9uZCz030drzhBB0Fh4312ZklpPuaw4A5qPx0PjLETI1_QRpzKDKRTTM=k-no"
+      ],
+      "source": "Google",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2t0bGNIcHZVa2N5TVZobGJ6bFhNVUZ4UW5CUlVWRRAB",
+      "user": {
+        "name": "Dennis Cardoso",
+        "link": "https://www.google.com/maps/contrib/118111603513827271040?hl=en-US",
+        "contributor_id": "118111603513827271040",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjW5VESG_LZT84mDVISijEBzBZdUWHUXLrb4MQhOtlH_zJFNHbqzsA=s120-c-rp-mo-ba12-br100",
+        "local_guide": true,
+        "reviews": 254,
+        "photos": 509
+      },
+      "snippet": "Beautiful fountain and building.  Tourist trap area surrounding but the beauty of the attraction more than makes up for it. I recommend doing the water city tour to get underground and see the ancient water system that feeds the fountain.",
+      "extracted_snippet": {
+        "original": "Beautiful fountain and building.  Tourist trap area surrounding but the beauty of the attraction more than makes up for it. I recommend doing the water city tour to get underground and see the ancient water system that feeds the fountain."
+      },
+      "likes": 0
+    },
+    {
+      "position": 5,
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kUVlUTmhOVmhWTW1kVVdtSklXbk40ZUVkRE0zYxAB!2m1!1s0x0:0xf676f1e1cc02bbb6!3m1!1s2@1:CAIQACodChtycF9oOmdQYTNhNVhVMmdUWmJIWnN4eEdDM3c%7C%7C?hl=en-US",
+      "rating": 4.0,
+      "date": "3 weeks ago",
+      "iso_date": "2026-05-26T16:49:01Z",
+      "iso_date_of_last_edit": "2026-05-26T16:49:04Z",
+      "images": [
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1v8TcKicO-TIe62XrB0XECIpvtQskz_0MmxYio466wpdeawlkvLyLtkgwmjBj2YrDLHekW8Uya8NLAoJ8tYlDO2dLMXGYWntU2V3SKLfWYnNsVfsrqXDIPmPbUZiLRwboo0_DL2JWov8bu=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn21fLZgzBeEtn7YIhpIIzvE6awcekGKSG5pRTadyBb1ZUCzYtauRQ4wvCbtSdWNPFjiDmskrVt4xrrnIisGOsOGeO9Z30dbw96gP8n5JvVRqT4JATPst0M6bZ4dAVaDsGd4kj6cHhVnQ8Jf=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn2bKiAEu_OiL3Tmxgh6_th0QLDmQbKycjRlDH1y8RAjUg94Soq8do-EDmNJMXsazjPbX-JAS3CAGctRMVPbGOMn3jHDIy8tjP8bFv9gAjq7YH-ZJYyz9jqADgIJw40_uM96LpA8GY-Rq0Bk=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1l4mf4GWkHIISBtjW6U0hWU9pSLL3u5WqWJX4e447F1aT-Fz2WWajNiHfjnybm_mWme0fSjxF-PfALKckc4mj3Q25vXKu9rjzm8qvyJUl0xXgPR6b8RzxjeZv5Ys6Y-d0VrH49QRZ3BNMi=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0CSP60txrnScssF6mk8T_pTm6Mi2AB61Q8W-zAmF-sPz4A419-8Lzz64HLEVXR8EDHfXVY_HJmP8w1qEBqIidwcUOAsa6mbbT9pDBHnQroUMS0IY9cOvnIif5s-8-k-aXsXPL-8HlcA932=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn2uWBUCy7YKVDMLTNmG5Fb4xmP6hoQa0WJihB6TFq-o2ibhS8Wd1wKHBShnZCJKWMm8YrCAqZVXYY7Od7-SDEcZ625vAMYkZNgxeMy8L5JSbGpRf240yMxYXs2S-IBRK4hmTeMqaCsZlb2D=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3HBoFnsi9fwvMatxj1Gy3qByPXq1b3WvkROqhhwTi3Qtff0MVFzey6SnhU-QM0HK2VB9Y8vygQ6XWquRFjd5X4pf6cmwZjQdae0KmTbav8JelXV0_ggcNdlqbZ4WTfmZOMmDiIiwtc3rs=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3_03KHkT2tLArWtTWDsOBOJuWJvPfL62s0o93GSrHn1RPSG3sIR9o2ZfneQ8Fr3ndA6Cp6w34b8vRLr5IOjexEG8C_EEyt8jZm5BszYYdTbHarsGbEsZEPOgXdKY0PCQva-pSZ7f35Ek4=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1LO__sFDUKkS31hGALk-9Q75McQlOHYqVRbQyqBYRCHVlyRc87Q8BQxnwe-DRhHPqkpLYU4gz6NwYT3HC4pI5PTx52g0vW5raYSnq5byAV-iozHOB73veAbJbpI7eNwkb4CgRcUlkF1KM=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn34B5MFNZdRw64KC3ZZNaZT833NH_zRIkQT-888WKI0_oxSDybRmDXmy7k37FDCdvGccC4q1s0HrHFv90m5syBWvhdoH4lsN-E2WaE84kh6pO_lQCL5fs81cb2TqKyz0CGZ5IQ57uL994Ww=k-no"
+      ],
+      "source": "Google",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT21kUVlUTmhOVmhWTW1kVVdtSklXbk40ZUVkRE0zYxAB",
+      "user": {
+        "name": "Gonzalo Gonzalez",
+        "link": "https://www.google.com/maps/contrib/109218850519378351320?hl=en-US",
+        "contributor_id": "109218850519378351320",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjXWjSIOXhC9dTiYjUFCqwK845xQ2N2NLIcoC1_SkYCBZIq3y1s=s120-c-rp-mo-ba12-br100",
+        "local_guide": true,
+        "reviews": 87,
+        "photos": 9365
+      },
+      "snippet": "Get ready to fight for a spot to take your photo.... you could not even enter in the plaza. It was like going to the Superbowl game!..... I felt overwhelmed by the amazing amount of tourists invading the plaza hungry to take a shot at the fountain. If you could life with all that... then the place is magical fool of history and well advertised in all those American movies.",
+      "extracted_snippet": {
+        "original": "Get ready to fight for a spot to take your photo.... you could not even enter in the plaza. It was like going to the Superbowl game!..... I felt overwhelmed by the amazing amount of tourists invading the plaza hungry to take a shot at the fountain. If you could life with all that... then the place is magical fool of history and well advertised in all those American movies."
+      },
+      "likes": 0
+    },
+    {
+      "position": 6,
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCV2IxTktaMnRNT0ZsVFV6TjVNbkpuYjBwaGFGRRAB!2m1!1s0x0:0xf676f1e1cc02bbb6!3m1!1s2@1:CAIQACodChtycF9oOlBWb1NKZ2tMOFlTUzN5MnJnb0phaFE%7C%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "3 months ago",
+      "iso_date": "2026-03-06T00:35:29Z",
+      "iso_date_of_last_edit": "2026-03-06T00:35:29Z",
+      "images": [
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3-PhmerV_8DvTxP8tb8GJ2LgYPZ4abp1atn3pMjzUJkZUwFfZPX24SUzZcNy6KEDidU7077LjSQgoUkXXuatcmNTHDkLnGHINZJpiKhW_HRevoGG93_-bHiErXyOhTtJzwmud5NeF8Tmim=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn1LDjWt1RTnzkpggbk0VVDXRZXrjJylo1su0D3Jme-hQGDPgm49-t1by7qMh6SFUNAZEDmavvY3FSCZDL_Qe1ECq24-lnfqXwT7d7m6jMUBu7LX50vbLoBCC_nis21ps5cSr8-W3nr8ViY=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn37gbuvHrlYHOHhzgMPJsVpnqTVi0az8GUFixlANmMqtWv5XugUzAzKJJNePZDibQYmHIdZ7h0N9fztGyoGJGWdY4Th1qkBxf5YWSQUNOQNOKOxn0z_ORxCq86wxVzuuT6Vl47muKpthcYq=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn33n_EiNDykTt3K8O-FO2C1PQUj6oJIdxSkyBf1tp8ppMt1_Q-rPUrnb-X8naUNlz1F4ot8TF3A8a0ySpPTkN2e8wcwHOz9nM5WGuxg42LdvUSrqymqb1a0of2vfb9SlVJjw5Cle8yo5chQ=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn22o84Dyz54WEKmP5Tks5Gok2yWVamONB2TFvX6YRMlWz3yAk4AI2cpv2tz1WagBpQ14ifwaeHztMc4P9dIvMwfW3BIu5bnU_wTdkSvisvBvxLEw3uRVU4LnHBFVzRBIAhyfC166Gm41Vc=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0GJEu37nLs0iEogHRRUWd9Qbc7FsmBvZiVnzXd2EgkCYATn86Qfuqmx9_ji3vtVI_0aAazb2Efyz3eK-YIFqKAoeuzgdOE84H33KPoGepZa7aCo0twd5TAYj9-mx0WXT0eLsIZeKbPyUlP=k-no"
+      ],
+      "source": "Google",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xCV2IxTktaMnRNT0ZsVFV6TjVNbkpuYjBwaGFGRRAB",
+      "user": {
+        "name": "ali kurshat altinsoy",
+        "link": "https://www.google.com/maps/contrib/101407479138104053144?hl=en-US",
+        "contributor_id": "101407479138104053144",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjX86SDZBBimbg6ZqkVnrazCC7qXa24C1tTrYmk4BAckYQV5Bzo=s120-c-rp-mo-ba12-br100",
+        "local_guide": true,
+        "reviews": 84,
+        "photos": 1392
+      },
+      "snippet": "the Trevi Fountain is one of the most famous historical landmarks in Rome and worldwide. obviously a must-visit for any traveller passing through this incredible city.\nthe crowds are an ever-present, but do not allow that to deter you in anyway - it is a breathtaking thing to behold.",
+      "extracted_snippet": {
+        "original": "the Trevi Fountain is one of the most famous historical landmarks in Rome and worldwide. obviously a must-visit for any traveller passing through this incredible city.\nthe crowds are an ever-present, but do not allow that to deter you in anyway - it is a breathtaking thing to behold."
+      },
+      "likes": 1
+    },
+    {
+      "position": 7,
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xVMFIwWkxMV281VjFCd05HOUlXVlpmU1RoTU5XYxAB!2m1!1s0x0:0xf676f1e1cc02bbb6!3m1!1s2@1:CAIQACodChtycF9oOlU0R0ZLLWo5V1BwNG9IWVZfSThMNWc%7C%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "3 months ago",
+      "iso_date": "2026-02-22T09:24:13Z",
+      "iso_date_of_last_edit": "2026-02-22T09:24:13Z",
+      "images": [
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0Qu7RuZad78v5sqry7raU2CzYgwNviA2vUFnHj0F6qSjgbHVlvyE5KSP4ADwKQCtOK5WDZHmBPxICZV_7J8DkAxcug3JD5T-bOy0Rs1w3kdVFPV235605kD2xbOxVKa3qYdxWc1i358n4=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3BVxyXTkX_gdVqD3dVVzDXq51cBU2QKvZ0pZLllhIoml-owFvavG1yiYb5FpPUtO4o7qOpshcWuyDr0-Of9ilwqGw9xobD9v7mMgTK8oS5J9XPAXGMgBR89Hux1rnp67VX3gIB6GYEOtY=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn12uUEFdNbaOoNOJE92nVGWx5JMbnrzuRJ_71vSNkVJjmCEn9kvDmcamM5a7A3qzX-_2RsfjKfRtzRtV_MIBo4XDMW-VqVy5oBVi1b3fkcJiCNwUHjUixmGfMKRSK6LzuSdbguFIaynPesa=k-no"
+      ],
+      "source": "Google",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT2xVMFIwWkxMV281VjFCd05HOUlXVlpmU1RoTU5XYxAB",
+      "user": {
+        "name": "Soledad Ribnie",
+        "link": "https://www.google.com/maps/contrib/102510756722177206803?hl=en-US",
+        "contributor_id": "102510756722177206803",
+        "thumbnail": "https://lh3.googleusercontent.com/a/ACg8ocIrX55gSgGhWDs_5cOjKPOJT4hjoxqHvIqF3jm8sWrUpXA5te68=s120-c-rp-mo-ba12-br100",
+        "local_guide": true,
+        "reviews": 106,
+        "photos": 457
+      },
+      "snippet": "An iconic stop in Rome. The scale and detail impress you the moment you arrive.\nThe sculptures feel dynamic and dramatic. Water flows with strength and clarity, creating a striking scene.\nIt gets crowded, but the atmosphere feels lively and memorable. Tossing a coin into the fountain adds a fun tradition to the visit.",
+      "extracted_snippet": {
+        "original": "An iconic stop in Rome. The scale and detail impress you the moment you arrive.\nThe sculptures feel dynamic and dramatic. Water flows with strength and clarity, creating a striking scene.\nIt gets crowded, but the atmosphere feels lively and memorable. Tossing a coin into the fountain adds a fun tradition to the visit."
+      },
+      "likes": 0
+    },
+    {
+      "position": 8,
+      "link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201S01IbEVTMDFmUlcxTVprMWhURzEyVXpsdExWRRAB!2m1!1s0x0:0xf676f1e1cc02bbb6!3m1!1s2@1:CAIQACodChtycF9oOm5KMHlES01fRW1MZk1hTG12UzltLVE%7C%7C?hl=en-US",
+      "rating": 5.0,
+      "date": "4 months ago",
+      "iso_date": "2026-01-30T07:30:17Z",
+      "iso_date_of_last_edit": "2026-01-30T07:30:17Z",
+      "images": [
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3wmy3PkPC80BcseJ6WvcjoJ5OuwTN9hapKny-3cbR1VFZLZz-Rx7Nv8lI_ZMJkVqvhVPVSjgxbYUIvTa-x04PnuBV2L39rTtdaytgDQfpO18Ia6TO3B7TXCz-z8R_OFnHd_Pfa0S7o--Y=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn0GTQE8nPz3OrcO0KtKLXE9D5-Sp7Lq0nmPMi0JA6RC4u9jfLefw_AqDFLiktZ5h_VjeMpIRDfaXgfXmmQBDVqMfLos2h99BF6yr1GfLamIMHdactcs8OGbh9VjHOGxh08Pdnv1kNu2Bi8=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn05Q-OBNZacJ3XrYZk-4f9-lG-nVPsYxQFTcLpss_aebN8L8x5rI9rs-0fJ9vwvo7gY3BReTCy5op3Xfod7hOYHeOmNKc7HqAwWFzZ3R4f06fxGeNfUSp3W2fW2TpdaO2e7jtviy1z9Kl8=k-no",
+        "https://lh3.googleusercontent.com/grass-cs/ANxoTn3LmRTqBoes40WviIwye2mYThYngiJtm8MXJAo7gQ6xD4-6Jzq65JavKOgO8dVd30RBtyu4PYiH896_YJn9dolI5x2bH-dm9vdtH5AMrd642MyTjoX3O9oHcwxmulZYgwcg2HJ3ikdNwDz5=k-no"
+      ],
+      "source": "Google",
+      "review_id": "Ci9DQUlRQUNvZENodHljRjlvT201S01IbEVTMDFmUlcxTVprMWhURzEyVXpsdExWRRAB",
+      "user": {
+        "name": "H S",
+        "link": "https://www.google.com/maps/contrib/101459425988028921517?hl=en-US",
+        "contributor_id": "101459425988028921517",
+        "thumbnail": "https://lh3.googleusercontent.com/a-/ALV-UjURCFKEUCJcsMO0ITEHEithIzO9bLboqCMv26Aus6-Vxu6WBow=s120-c-rp-mo-ba12-br100",
+        "local_guide": true,
+        "reviews": 57,
+        "photos": 113
+      },
+      "snippet": "Lucky to stay nearby and it didn\u2019t take us more than 5 mins walk to the Fountain. We tried to see it mid afternoon but even from afar, we could see how crowded it was. We went back around 7.30 am the next day, probably 30 people already there but good enough to enjoy admiring the fountain and taking photos. A magnificent piece of craftsmanship!",
+      "extracted_snippet": {
+        "original": "Lucky to stay nearby and it didn\u2019t take us more than 5 mins walk to the Fountain. We tried to see it mid afternoon but even from afar, we could see how crowded it was. We went back around 7.30 am the next day, probably 30 people already there but good enough to enjoy admiring the fountain and taking photos. A magnificent piece of craftsmanship!"
+      },
+      "likes": 1
+    }
+  ],
+  "serpapi_pagination": {
+    "next": "https://serpapi.com/search.json?engine=google_maps_reviews&hl=en&next_page_token=CjEIARIpCgoAP7_LAAvc____EhB1bu6GdqW63vb7UscAAAAAGgn92PECY_Iwq3sYACIA%3A8&place_id=ChIJ1UCDJ1NgLxMRtrsCzOHxdvY",
+    "next_page_token": "CjEIARIpCgoAP7_LAAvc____EhB1bu6GdqW63vb7UscAAAAAGgn92PECY_Iwq3sYACIA:8"
+  }
+}
