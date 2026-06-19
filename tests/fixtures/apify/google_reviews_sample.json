@@ -1,0 +1,53 @@
+[
+  {
+    "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmMTZxd1JBEAE",
+    "name": "Maria Rossi",
+    "stars": 5,
+    "text": "Absolutely breathtaking experience. We booked the underground arena tour and it was worth every penny. Arrive early to beat the crowds — by 10am it is packed shoulder to shoulder.",
+    "publishedAtDate": "2026-05-15T08:22:00.000Z",
+    "likesCount": 12,
+    "isLocalGuide": true,
+    "reviewerNumberOfReviews": 47,
+    "responseFromOwnerText": "Thank you for your kind words, Maria!",
+    "reviewUrl": "https://www.google.com/maps/reviews/data=abc123",
+    "originalLanguage": "en",
+    "reviewerId": "108234567890",
+    "reviewerUrl": "https://www.google.com/maps/contrib/108234567890",
+    "placeId": "ChIJrTLr-GyuEmsRBfy61i59si0",
+    "title": "Colosseum"
+  },
+  {
+    "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmMTZxd1JBEA2",
+    "name": "James O'Brien",
+    "stars": 4,
+    "text": "Great historical site but the queues are brutal without skip-the-line tickets. The app audio guide is far better than the paid one at the entrance.",
+    "publishedAtDate": "2026-04-10T14:05:00.000Z",
+    "likesCount": 3,
+    "isLocalGuide": false,
+    "reviewerNumberOfReviews": 8,
+    "responseFromOwnerText": null,
+    "reviewUrl": "https://www.google.com/maps/reviews/data=def456",
+    "originalLanguage": "en",
+    "reviewerId": "109876543210",
+    "reviewerUrl": "https://www.google.com/maps/contrib/109876543210",
+    "placeId": "ChIJrTLr-GyuEmsRBfy61i59si0",
+    "title": "Colosseum"
+  },
+  {
+    "reviewId": "ChZDSUhNMG9nS0VJQ0FnSURmMTZxd1JBEA3",
+    "name": "Yuki T",
+    "stars": 3,
+    "text": "Ok",
+    "publishedAtDate": "2026-03-01T09:00:00.000Z",
+    "likesCount": 0,
+    "isLocalGuide": false,
+    "reviewerNumberOfReviews": 2,
+    "responseFromOwnerText": null,
+    "reviewUrl": "https://www.google.com/maps/reviews/data=ghi789",
+    "originalLanguage": "en",
+    "reviewerId": "111222333444",
+    "reviewerUrl": "https://www.google.com/maps/contrib/111222333444",
+    "placeId": "ChIJrTLr-GyuEmsRBfy61i59si0",
+    "title": "Colosseum"
+  }
+]

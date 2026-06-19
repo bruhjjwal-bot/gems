@@ -1,0 +1,2664 @@
+[
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "0046fe8a-6b6f-47da-a24a-dbfa60b1cfe8",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Marvel the architecture and engineering of this colossal and surrounding buildings. It is amazing to see what Roman Empire was able to build thousands of years ago with what they had back then.<br>It "
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "visitor_tips",
+      "l3": "weather_preparation",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "heat_preparation",
+        "hydration_advice"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "architecture",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "crowds",
+          "sentiment": "negative",
+          "strength": 0.6
+        },
+        {
+          "topic": "weather",
+          "sentiment": "negative",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "mixed",
+      "is_relevant": true,
+      "key_insight": "Prepare for heat and crowds by bringing water and a sun umbrella when visiting the Colosseum.",
+      "reasoning": "The content provides practical advice for dealing with the heat and crowds, which falls under logistics and visitor tips. The mention of architecture is positive but secondary to the logistical advice.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.77,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "02947e9a-0988-46a7-9ba5-a16f787644a6",
+      "poi_id": "9967697c-2b4b-4863-a04e-73dc8963f882",
+      "poi_name": "Eiffel Tower",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Visiting the Eiffel Tower is an unforgettable experience and one of the highlights of any trip to Paris. The iconic structure is even more impressive in person, with its incredible iron architecture a"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "views",
+      "l3": "panorama",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "best_time_to_visit",
+        "landmark_views"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "views",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "architecture",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "landmarks",
+          "sentiment": "positive",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Visit the Eiffel Tower at sunset for breathtaking views of Paris as the city lights up.",
+      "reasoning": "The content focuses on the experience of visiting the Eiffel Tower, particularly the views from the top, which fits well under 'experience' and 'views'. The mention of specific landmarks seen from the tower supports the 'panorama' aspect. Alternatives like 'logistics' or 'context' were considered but did not fit as well.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 3.88,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "00f1e4bb-7df4-4092-807d-73f3a2d179d3",
+      "poi_id": "1c8f5dde-16ce-48e1-b23d-e5e295c65df4",
+      "poi_name": "Vatican Museums",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "The museum was very interesting and filled with lots of history. Our tour guide was very friendly and knowledgeable. The painting, sculptures, and architecture were so breathtaking. I don\u2019t have time "
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "crowds",
+      "l3": "entry_queue",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "best_time_to_visit",
+        "ticket_booking_advice"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "museum_experience",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "crowds",
+          "sentiment": "negative",
+          "strength": 0.7
+        },
+        {
+          "topic": "ticket_booking",
+          "sentiment": "positive",
+          "strength": 0.9
+        }
+      ],
+      "overall_sentiment": "mixed",
+      "is_relevant": true,
+      "key_insight": "Book tickets in advance and arrive early, especially on free admission days, to avoid long wait times.",
+      "reasoning": "The review primarily discusses the logistics of visiting the Vatican Museums, focusing on crowd management and ticket booking. The L1/L2/L3 path reflects the emphasis on managing entry queues and planning visits. Alternatives like 'experience' or 'context' were considered but logistics is the most fitting due to the focus on practical advice.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 4.31,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "00502128-35e6-4f06-b313-29a4cbef2a0f",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "What an amazing museum filled with incredible art and rich history. This place is a a must see for anyone visiting. With such an intensive collection, it would take over 3 months to truly see every si"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "museum_visit",
+      "l3": "guided_tour_recommendation",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "guided_tour_recommended",
+        "extensive_collection"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "art_collection",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "guided_tour",
+          "sentiment": "positive",
+          "strength": 0.8
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Consider taking a guided tour to fully appreciate the extensive art collection at the Louvre Museum.",
+      "reasoning": "The review emphasizes the vastness of the art collection and recommends a guided tour, which fits under 'experience' and 'museum_visit'. The focus is on enhancing the visit experience through a guided tour, which is a specific aspect of visiting the museum.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 4.31,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "02d2cf87-6f17-4ad4-ab80-0727775fd7b3",
+      "poi_id": "7bef6b17-c0fb-4768-a89c-ce3357452936",
+      "poi_name": "Palace of Versailles",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Wonderful Castel to visit."
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "general_impression",
+      "l3": null,
+      "major_bulk": "things-to-do",
+      "minor_bulk": [],
+      "topic_sentiments": [
+        {
+          "topic": "general_impression",
+          "sentiment": "positive",
+          "strength": 0.8
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "The Palace of Versailles is a wonderful place to visit.",
+      "reasoning": "The review provides a general positive impression of the Palace of Versailles, which fits under 'experience' and 'general_impression'. There are no specific aspects mentioned, so L3 is null. The sentiment is clearly positive based on the word 'wonderful'.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 4.65,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "004fb8f3-2cf4-4512-8e15-e4b79a0a612b",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Make sure to get tickets in advance, bring water and wea comfortable shoes."
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "preparation",
+      "l3": "tickets_and_gear",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "advance_tickets",
+        "bring_water",
+        "wear_comfortable_shoes"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "advance_tickets",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "bring_water",
+          "sentiment": "neutral",
+          "strength": 0.5
+        },
+        {
+          "topic": "wear_comfortable_shoes",
+          "sentiment": "positive",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Purchase tickets in advance and prepare for the visit by bringing water and wearing comfortable shoes.",
+      "reasoning": "The content provides practical advice for preparing to visit the Colosseum, focusing on logistics like ticket purchase and personal comfort. 'Logistics' as L1 captures the essence, while 'preparation' and 'tickets_and_gear' specify the advice. Considered 'experience' but the focus is on preparation rather than the visit itself.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 4.76,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "030491b4-7ea8-4e5e-9b46-b5b5389e202e",
+      "poi_id": "e51e73a2-475e-4752-a722-4e0bff5dbc0e",
+      "poi_name": "Trevi Fountain",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "I have been in Rome few times and always love going to Trevi Fountain. It is a charming place, that's why it is crowdy."
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "crowds",
+      "l3": null,
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "popularity",
+        "atmosphere"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "crowds",
+          "sentiment": "neutral",
+          "strength": 0.6
+        },
+        {
+          "topic": "atmosphere",
+          "sentiment": "positive",
+          "strength": 0.8
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Expect a charming but crowded experience at Trevi Fountain.",
+      "reasoning": "The review highlights the charm and crowdiness of Trevi Fountain, fitting well under 'experience' and 'crowds'. The sentiment is positive about the atmosphere but neutral about the crowds. No specific aspect like 'entry_queue' is mentioned, so L3 is null.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 5.0,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "0269b1e5-86a7-4594-8a0a-488b1dc24f73",
+      "poi_id": "7bef6b17-c0fb-4768-a89c-ce3357452936",
+      "poi_name": "Palace of Versailles",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "I would recommend going with an organized tour. It will help skip a very long line. Use a guide service like get your guide or another local tour outfit and you can see all the major things as well as"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "tickets",
+      "l3": "skip_the_line",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "organized_tour_recommended",
+        "guide_service_suggestion"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "organized_tour",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "guide_service",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "line_skipping",
+          "sentiment": "positive",
+          "strength": 0.9
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Consider using an organized tour to skip long lines and enhance your visit with guided explanations.",
+      "reasoning": "The content focuses on logistical advice for visiting the Palace of Versailles, specifically recommending organized tours to avoid long lines and enhance the experience with a guide. The L1/L2/L3 path of logistics/tickets/skip_the_line captures this advice well. Alternatives like 'experience' or 'context' were considered but did not fit as precisely.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 5.17,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "008bc1fe-f1e8-469d-83ff-e626638eadd0",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Highly recommend City Wonders tour as we bypassed long lines and went directly to key displays with great historic narrative and education along the way!  Also highly recommend the giant macaroon at t"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "guided_tours",
+      "l3": "skip_the_line",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "guided_tour_recommended",
+        "skip_the_line"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "guided_tours",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "food",
+          "sentiment": "positive",
+          "strength": 0.8
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Consider booking a City Wonders tour to skip lines and enjoy a guided experience at the Louvre.",
+      "reasoning": "The review highlights the benefits of a guided tour, specifically mentioning the advantage of bypassing lines and receiving educational narratives, which fits well under 'experience' and 'guided_tours'. The mention of the macaroon suggests a positive food experience, but the main focus is on the tour.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 5.69,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "003d7190-8321-4305-8e3d-bdd975a60df8",
+      "poi_id": "1c8f5dde-16ce-48e1-b23d-e5e295c65df4",
+      "poi_name": "Vatican Museums",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Sistine chapel was absolutely worth it. Same as Rafael section. For first timers I recommend using a guide, but mine moved way too fast. Luckily we had freedom to move about after but it was nice hear"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "guided_tours",
+      "l3": "pace_of_tour",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "guide_recommended",
+        "no_photos_allowed"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "sistine_chapel",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "rafael_section",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "guided_tour",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "mixed",
+      "is_relevant": true,
+      "key_insight": "Consider using a guide for the Vatican Museums, but be aware that the pace might be fast.",
+      "reasoning": "The review discusses the experience of visiting the Vatican Museums with a focus on the guided tour and specific sections like the Sistine Chapel and Rafael section. The sentiment is mixed due to the fast pace of the tour, which is a common aspect of guided tours.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 6.47,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "02a78e70-21d0-42ae-b30d-7ae8929e804d",
+      "poi_id": "9967697c-2b4b-4863-a04e-73dc8963f882",
+      "poi_name": "Eiffel Tower",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Obviously, a must visit.  If you want to go to very top, must buy tickets in advance.  But we got tickets to 2nd floor just by walking up (February), which was still a great view.\n\nYou can enter the g"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "tickets",
+      "l3": "advance_purchase",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "advance_ticket_purchase",
+        "free_entry_grounds"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "ticket_purchase",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "view_from_second_floor",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "free_entry_grounds",
+          "sentiment": "positive",
+          "strength": 0.6
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Purchase tickets in advance to reach the top of the Eiffel Tower, but you can enjoy the grounds for free and get tickets to the second floor on-site in February.",
+      "reasoning": "The review primarily discusses logistics related to ticket purchasing and entry options, which fits under logistics > tickets > advance_purchase. The mention of free entry to the grounds and the availability of tickets on-site for the second floor are logistical tips for visitors.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.72,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "0005f350-0bfa-43eb-a1af-6d4792b6dcba",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "\"THE\" Museum \u2014 The first time I saw the louvre (it was late 90s) I could and wanted to see it all and it took me three different visits: and I was younger and more athletic!\n\nBut despite the immensity"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "art_appreciation",
+      "l3": "must_see_artworks",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "art_selection_strategy",
+        "avoid_crowds"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "art_selection_strategy",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "avoid_crowds",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "must_see_artworks",
+          "sentiment": "positive",
+          "strength": 0.9
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Focus on lesser-known masterpieces at the Louvre to enhance your visit and avoid crowds.",
+      "reasoning": "The review emphasizes the importance of appreciating a wide range of artworks at the Louvre, beyond the popular Mona Lisa, and suggests a strategy for selecting artworks to avoid crowds. This fits well under 'experience' with a focus on 'art_appreciation' and 'must_see_artworks'.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 2.56,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "0365cbc9-2477-4d2a-abfb-28821bc0e47e",
+      "poi_id": "e51e73a2-475e-4752-a722-4e0bff5dbc0e",
+      "poi_name": "Trevi Fountain",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "No visit to Rome is complete without visiting this iconic spot.\nIt's simply amazing.\nWe went in off peak time, and it was still packed.\nI went on my own early morning, and got some wonderful photos, a"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "crowds",
+      "l3": "best_time_to_visit",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "best_time_to_visit",
+        "crowd_management"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "crowds",
+          "sentiment": "negative",
+          "strength": 0.7
+        },
+        {
+          "topic": "photo_opportunity",
+          "sentiment": "positive",
+          "strength": 0.8
+        }
+      ],
+      "overall_sentiment": "mixed",
+      "is_relevant": true,
+      "key_insight": "Visit the Trevi Fountain early in the morning to avoid large crowds and get great photos.",
+      "reasoning": "The review discusses the experience of visiting the Trevi Fountain, focusing on crowd levels and the best times to visit for photos. L1 'experience' captures the overall visit, L2 'crowds' addresses the main issue discussed, and L3 'best_time_to_visit' highlights the specific advice given. Alternatives like 'logistics' or 'warnings' were considered but didn't fully capture the experiential focus.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.82,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "018bb77d-a7a5-43ca-9764-98e7993cbee5",
+      "poi_id": "1c8f5dde-16ce-48e1-b23d-e5e295c65df4",
+      "poi_name": "Vatican Museums",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "The Most magnificent collection of historical figures I have ever seen in life. Every collection room, every corner is rich in history. Extremely well preserved, organised and systematic. Though heavi"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "collection",
+      "l3": "historical_figures",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "time_required",
+        "crowd_management",
+        "facilities"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "collection",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "crowds",
+          "sentiment": "neutral",
+          "strength": 0.6
+        },
+        {
+          "topic": "facilities",
+          "sentiment": "positive",
+          "strength": 0.8
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Allocate at least 5-6 hours to fully appreciate the Vatican Museums' extensive historical collections.",
+      "reasoning": "The review focuses on the experience of viewing the historical collections, the time required, and the facilities available, which fits well under 'experience' and 'collection'. The mention of crowds and facilities like washrooms are secondary aspects but relevant to the visit experience.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 3.39,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "000a3356-340d-45f1-b248-9f8580859505",
+      "poi_id": "e51e73a2-475e-4752-a722-4e0bff5dbc0e",
+      "poi_name": "Trevi Fountain",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Had to make a wish at Trevi Fountain! \u2014 We threw our coins in and made a wish for our UK League 2 team Stevenage to stay up! The coins are collected every evening and help the poor so it's a good thin"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "activities",
+      "l3": "coin_throwing",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "charitable_contribution",
+        "nearby_attractions"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "coin_throwing",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "charitable_contribution",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "nearby_attractions",
+          "sentiment": "positive",
+          "strength": 0.6
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Throwing coins in Trevi Fountain is a fun activity that also contributes to charity.",
+      "reasoning": "The content focuses on the experience of throwing coins at Trevi Fountain and its charitable aspect, as well as mentioning nearby attractions like The Spanish Steps. This fits well under 'experience' and 'activities'.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.71,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "002aefca-7894-4c5b-bf76-bf8a972e331e",
+      "poi_id": "1c8f5dde-16ce-48e1-b23d-e5e295c65df4",
+      "poi_name": "Vatican Museums",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Great experience \u2014 Very well organized, gave clear instructions on where to go etc. Great experience on our first trip to the Vatican."
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "organization",
+      "l3": "instructions",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "clear_instructions",
+        "well_organized"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "organization",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "instructions",
+          "sentiment": "positive",
+          "strength": 0.8
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "The Vatican Museums provide a well-organized experience with clear instructions for first-time visitors.",
+      "reasoning": "The review highlights the organization and clarity of instructions, which are crucial for a smooth visitor experience. Alternatives like 'logistics' or 'visitor_experience' were considered, but 'experience' with subcategories 'organization' and 'instructions' captures the essence best.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 2.21,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "00a76c09-c3d7-4676-bd18-9c811e576b08",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "We have been wanting to take the boys to the Louvre to show them the great creations & works of art. We made it. The obligatory Mona Lisa by da Vinci.<br>Ac word of advice - if your want to avoid the "
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "art_exhibits",
+      "l3": "specific_collections",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "best_time_to_visit",
+        "specific_collections"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "art_exhibits",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "crowds",
+          "sentiment": "negative",
+          "strength": 0.6
+        },
+        {
+          "topic": "food",
+          "sentiment": "positive",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Visit the Islamic Art and Hellenistic pottery sections to avoid crowds and enjoy great food.",
+      "reasoning": "The review discusses the experience of visiting specific art sections to avoid crowds and mentions the quality of food, fitting well under 'experience' and 'art_exhibits'. The mention of crowds and food also influences the sentiment analysis. Alternatives like 'logistics' were considered but the focus is more on the experience of the visit.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.43,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "000e2fcd-2762-40fe-a1de-682adab57dc6",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "A Roman Holiday: Where Faith Meets History \u2014 The long-awaited trip to the Vatican was more than just a vacation; for our Filipino family, it was a profound spiritual pilgrimage that brought tears to o"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "historical_significance",
+      "l3": "emotional_impact",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "emotional_experience",
+        "family_experience"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "colosseum",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "roman_forum",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "palatine_hill",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "vatican",
+          "sentiment": "positive",
+          "strength": 0.9
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "The Colosseum offers a profound historical experience that deeply connects visitors to the past, making it a must-visit highlight of any Roman holiday.",
+      "reasoning": "The content focuses on the emotional and historical impact of visiting the Colosseum, making 'experience' and 'historical_significance' the most fitting categories. Alternatives like 'logistics' or 'photo_spots' were considered but do not capture the essence of the review.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 3.43,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "google_review",
+      "source_id": "00b5ce42-ded5-4e32-a1b3-b9c109865cb2",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "If the kids are a bit older , they will probably know about Romans and Gladiators. My son in particular enjoyed the Colosseum and overall it was a great family time. Be mindful about the weather, as i"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "family_visit",
+      "l3": "children_engagement",
+      "major_bulk": "family-tips",
+      "minor_bulk": [
+        "weather_preparation",
+        "ticket_requirements"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "children_engagement",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "weather_preparation",
+          "sentiment": "neutral",
+          "strength": 0.5
+        },
+        {
+          "topic": "ticket_requirements",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Ensure to bring photo ID and prepare for hot weather when visiting the Colosseum with family.",
+      "reasoning": "The review highlights the positive experience of visiting with children, emphasizing the educational aspect and enjoyment. It also provides logistical tips about weather and ticket requirements, which are crucial for planning a family visit.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 5.05,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "00607260-eccf-4417-88db-efcb27cbc67e",
+      "poi_id": "7bef6b17-c0fb-4768-a89c-ce3357452936",
+      "poi_name": "Palace of Versailles",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "To see before one dies! 4. \u2014 Undoubtedly one of the most spectacular examples of French 18th century architecture, art and ingenuity, Versailles is legendary in its proportions, grandeur, geometric pe"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "visitor_tips",
+      "l3": "best_days_to_visit",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "best_time_to_visit",
+        "historical_significance",
+        "transportation_tips"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "architecture",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "transportation",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "crowds",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "historical_significance",
+          "sentiment": "positive",
+          "strength": 0.9
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Visit the Palace of Versailles on Wednesdays or Thursdays for a less crowded experience and enjoy its rich history and architecture.",
+      "reasoning": "The content provides practical advice on the best days to visit, transportation options, and highlights the historical and architectural significance of the Palace of Versailles. The L1/L2/L3 path chosen reflects the focus on visitor experience and tips. Alternatives like 'logistics' could fit, but the emphasis is more on the experience aspect.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 3.1,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "00344cd6-e419-4c8f-9d29-5e2ce9d8dd2e",
+      "poi_id": "9967697c-2b4b-4863-a04e-73dc8963f882",
+      "poi_name": "Eiffel Tower",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Magnificent \u2014 It is sight that must be seen in person if you ever get a chance. When you are there, it is such a magnificent sight. The structure is amazing. Must see at day and night!"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "sightseeing",
+      "l3": "day_and_night_views",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "best_time_to_visit"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "structure",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "views",
+          "sentiment": "positive",
+          "strength": 0.8
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Visit the Eiffel Tower both during the day and at night for a magnificent experience.",
+      "reasoning": "The review focuses on the visual and experiential aspects of visiting the Eiffel Tower, emphasizing the importance of seeing it both during the day and at night. This fits well under 'experience' and 'sightseeing'. The mention of the structure being amazing supports the positive sentiment.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 3.15,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "000dd3e8-397f-41c4-9590-6172768c4994",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "A Must-See, but Plan Wisely! \u2014 The Louvre is absolutely worth visiting \u2014 no question about it. But if you go in summer, be ready for crowds.\n\n\u261d\ufe0fTips from my visit:\n\n\u2022 Buy tickets online in advance (id"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "planning",
+      "l3": "visit_tips",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "best_time_to_visit",
+        "ticket_purchase",
+        "crowd_management",
+        "must_see_artworks"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "crowds",
+          "sentiment": "negative",
+          "strength": 0.7
+        },
+        {
+          "topic": "ticket_purchase",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "artworks",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "facilities",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Plan your visit to the Louvre by buying tickets in advance, arriving early, and prioritizing key artworks to avoid crowds.",
+      "reasoning": "The content primarily provides logistical advice for visiting the Louvre, focusing on planning aspects like ticket purchase, timing, and managing crowds. Alternatives like 'experience' or 'warnings' were considered but didn't capture the primary focus on planning and logistics.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 2.39,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "00427365-ddcc-4066-a569-ac6c11e438f3",
+      "poi_id": "e51e73a2-475e-4752-a722-4e0bff5dbc0e",
+      "poi_name": "Trevi Fountain",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Second most impressive building in Rome \u2014 Right after the Colosseum, the most impressive building in Rome.\n\nIt unfortunately has one major downside, the amount of tourists that are there. It is diffic"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "crowds",
+      "l3": "photo_opportunities",
+      "major_bulk": "photo-spots",
+      "minor_bulk": [
+        "crowded",
+        "difficult_to_get_close"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "impressive_building",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "crowds",
+          "sentiment": "negative",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "mixed",
+      "is_relevant": true,
+      "key_insight": "Expect large crowds at the Trevi Fountain, making it hard to take close-up photos.",
+      "reasoning": "The review highlights the impressive nature of the Trevi Fountain but focuses on the difficulty posed by crowds, particularly for photography. 'Experience' and 'crowds' are appropriate as the review discusses the visitor experience and the impact of crowds. 'Photo_opportunities' is relevant due to the mention of difficulty in taking photos.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.28,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "00254f39-aafe-4485-b311-aeae5b09674c",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "What an iconic structure! \u2014 Amazing! When we started our Europe tour we had kept this sight top of our wish list as its historic!wonderful !which genius was behind this structure that signifies the br"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "history",
+      "l3": "architecture",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "amphitheatre_size",
+        "gladiator_shows",
+        "roman_empire_brutality"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "architecture",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "history",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "roman_empire_brutality",
+          "sentiment": "negative",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "The Colosseum is a must-see for its impressive architecture and rich history, including its capacity to hold 80,000 people and its role in gladiator shows.",
+      "reasoning": "The content focuses on the historical and architectural significance of the Colosseum, highlighting its size, design, and historical context. The L1/L2/L3 path of context/history/architecture captures the essence of the review, as it discusses the structure's historical importance and architectural features. Alternatives like 'experience' or 'logistics' were considered but did not fit as well.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 2.84,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "00308de6-5d0b-43ef-932b-75dc35f49347",
+      "poi_id": "1c8f5dde-16ce-48e1-b23d-e5e295c65df4",
+      "poi_name": "Vatican Museums",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Simply stunning \u2014 Stunning. So much to see and do much to do. I think you could spend a month and not get anywhere near all the detail. Definitely get a skip the line ticket in advance, ques are ridic"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "tickets",
+      "l3": "skip_the_line",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "skip_the_line",
+        "entry_queue"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "overall_experience",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "ticketing",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "crowds",
+          "sentiment": "negative",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Purchase a skip-the-line ticket in advance to avoid long queues.",
+      "reasoning": "The review emphasizes the importance of logistics, specifically ticketing, to enhance the visitor experience by avoiding long queues. The mention of 'stunning' relates to the overall experience, but the actionable insight is about ticket logistics.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 2.91,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "00ffde32-662c-414a-b238-67284631d772",
+      "poi_id": "7bef6b17-c0fb-4768-a89c-ce3357452936",
+      "poi_name": "Palace of Versailles",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "The Royal Palace - never miss it \u2014 We had been to Versailles Palace twice before, but this time too when we went to Paris, planned another visit to the Palace, which is a UNESCO World Heritage site. W"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "visit_planning",
+      "l3": "entry_and_tickets",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "museum_pass_advantage",
+        "security_queue",
+        "garden_ticket"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "museum_pass_advantage",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "security_queue",
+          "sentiment": "neutral",
+          "strength": 0.5
+        },
+        {
+          "topic": "garden_ticket",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Purchase a Museum Pass in advance to save time and be aware of separate tickets for the garden during events.",
+      "reasoning": "The content primarily discusses the logistics of visiting the Palace of Versailles, focusing on entry and ticketing, which fits under 'experience' and 'visit_planning'. The mention of the Museum Pass and separate garden tickets are specific logistical tips. The sentiment is generally positive about the Museum Pass, while neutral about the queues and garden ticketing.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.86,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "003dbcb4-d856-4081-b1fc-7f3e009f47b4",
+      "poi_id": "9967697c-2b4b-4863-a04e-73dc8963f882",
+      "poi_name": "Eiffel Tower",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Paris\u2019 19th Century Eyesore! \u2014 Hard to believe Parisian\u2019s hated the Eiffel Tower when it was built in 1889, but any visit to Paris would not be complete without a trip to see it. Visit the official Ei"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "visit_tips",
+      "l3": "ticket_prices_and_options",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "ticket_prices",
+        "elevator_experience",
+        "stairs_experience",
+        "booking_advice"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "ticket_prices",
+          "sentiment": "neutral",
+          "strength": 0.7
+        },
+        {
+          "topic": "elevator_experience",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "stairs_experience",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "booking_advice",
+          "sentiment": "positive",
+          "strength": 0.6
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Book your Eiffel Tower tickets in advance to avoid long queues and enjoy a breathtaking view from the top.",
+      "reasoning": "The content primarily provides tips on visiting the Eiffel Tower, focusing on ticket prices, the experience of using the elevator and stairs, and booking advice. These aspects fit well under 'experience' and 'visit_tips'. Considered 'logistics' but the emphasis is more on the visitor experience rather than logistical details.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.44,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "004ba2bd-5b8d-4900-8fa4-414cb2b4613a",
+      "poi_id": "e51e73a2-475e-4752-a722-4e0bff5dbc0e",
+      "poi_name": "Trevi Fountain",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Crowded Early in the day \u2014 Very crowded unless you go early in the day. Suggest early morning. At noon or thereafter it is very crowded."
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "crowds",
+      "l3": "best_time_to_visit",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "best_time_to_visit"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "crowds",
+          "sentiment": "negative",
+          "strength": 0.8
+        },
+        {
+          "topic": "timing",
+          "sentiment": "positive",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "mixed",
+      "is_relevant": true,
+      "key_insight": "Visit the Trevi Fountain early in the morning to avoid crowds.",
+      "reasoning": "The content primarily discusses the timing of visits in relation to crowd levels, which fits well under logistics and crowds. The specific advice about visiting early in the morning aligns with 'best_time_to_visit'. Considered 'experience' but the focus is more on planning logistics.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.65,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_transcript_chunk",
+      "source_id": "c055291d-b755-4b9d-b2d5-4cd29c749832",
+      "poi_id": "9967697c-2b4b-4863-a04e-73dc8963f882",
+      "poi_name": "Eiffel Tower",
+      "city": "Paris",
+      "meta": {
+        "chunk_start_ms": 1368,
+        "chunk_end_ms": 76976,
+        "video_title": "Highlights of Paris: Eiffel and Monet to Cr\u00e8me Br\u00fbl\u00e9e"
+      },
+      "text_preview": "Hi, I'm Rick Steves, back with more of the best of Europe. This time we're exploring the wonders of Paris, magnificent and, thanks to Monsieur Eiffel, riveting. \u266a To me, Paris is the capital of Europe"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "cultural_highlights",
+      "l3": "iconic_landmarks",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "explore_landmarks",
+        "cultural_experiences"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "eiffel_tower",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "notre_dame",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "orsay_gallery",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "french_cuisine",
+          "sentiment": "positive",
+          "strength": 0.6
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Explore iconic landmarks like the Eiffel Tower and Notre-Dame, and enjoy cultural experiences in Paris.",
+      "reasoning": "The content focuses on experiencing Paris through its iconic landmarks and cultural highlights, which fits well under 'experience' and 'cultural_highlights'. Alternatives like 'logistics' or 'food' were considered but are not the primary focus.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 2.54,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "0013b44d-c27c-403e-acb4-cf061abc30fb",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "Five stars, obviously! \u2014 What can I write that hasn't been written hundreds of times before. You should book early, and still be prepared to queue. It's sooo worth it. You will see a fair percentage o"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "artworks",
+      "l3": "must_see_pieces",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "planning_your_visit",
+        "must_see_artworks",
+        "time_management"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "artworks",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "planning",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "time_management",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Plan your visit by listing must-see artworks and allocate time wisely to avoid fatigue.",
+      "reasoning": "The review focuses on the experience of visiting the Louvre, specifically highlighting the importance of planning to see key artworks and managing time effectively. The sentiment is positive about the artworks and the planning advice. Alternatives like 'logistics' were considered but the emphasis on the experience of seeing art makes 'experience' more fitting.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 3.92,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_transcript_chunk",
+      "source_id": "6b96d153-0116-43f0-8b17-08cfee680466",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "chunk_start_ms": 850,
+        "chunk_end_ms": 77280,
+        "video_title": "How To Visit the Louvre Quickly and Efficiently"
+      },
+      "text_preview": "[Music] it is an overwhelming place I give you a good idea of what all you can get done in the Louvre in a few hours so that if you're not sure I have a strategy going in otherwise you're not gonna se"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "entry",
+      "l3": "alternative_entrances",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "avoid_long_lines",
+        "alternative_entrances"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "entry_strategy",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "historical_context",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Use the Carousel de Louvre entrance to avoid long lines at the main pyramid entrance.",
+      "reasoning": "The content primarily provides logistical advice on how to enter the Louvre efficiently, focusing on avoiding long lines by using an alternative entrance. The historical context about the Arc and pyramids is secondary and not the main focus.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.05,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "tripadvisor_review",
+      "source_id": "00392443-c672-4106-aac9-a2bc23a35985",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "rating": 5
+      },
+      "text_preview": "The world in amphitheatre \u2014 As we approach this architectural colossus we feel that our time is not as evolved as we sometimes think. To enter it is to go back almost two thousand years, with a mix of"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "historical_significance",
+      "l3": "architecture_and_events",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "guided_tour_recommended",
+        "architectural_appreciation",
+        "historical_events"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "architecture",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "historical_events",
+          "sentiment": "negative",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "mixed",
+      "is_relevant": true,
+      "key_insight": "A guided tour is essential to fully appreciate the Colosseum's architecture and historical significance.",
+      "reasoning": "The review focuses on the architectural marvel and historical events associated with the Colosseum, making 'context' the appropriate L1. 'Historical_significance' fits as L2 due to the emphasis on the Colosseum's role in history, and 'architecture_and_events' captures the dual focus on its structure and the events that took place there. Considered 'experience' but the focus is more on historical context than personal experience.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.19,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_transcript_chunk",
+      "source_id": "c055291d-b755-4b9d-b2d5-4cd29c749832",
+      "poi_id": "9967697c-2b4b-4863-a04e-73dc8963f882",
+      "poi_name": "Eiffel Tower",
+      "city": "Paris",
+      "meta": {
+        "chunk_start_ms": 762294,
+        "chunk_end_ms": 838437,
+        "video_title": "Highlights of Paris: Eiffel and Monet to Cr\u00e8me Br\u00fbl\u00e9e"
+      },
+      "text_preview": "pushing the creative envelope. It's time for the revolution of Impressionism to begin. Impressionism initiated the greatest change in art since the Renaissance. Now, artists were free to delve into th"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "art_history",
+      "l3": "impressionism",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "artistic_movements",
+        "impressionism_in_paris"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "impressionism",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "artists",
+          "sentiment": "positive",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "The Impressionist movement revolutionized art by focusing on light and color, with Paris as a central hub for this change.",
+      "reasoning": "The content discusses the Impressionist movement, which is a significant part of art history and relevant to understanding cultural context in Paris. Alternatives like 'experience' or 'things-to-do' were considered but did not fit as the content is not about visiting the Eiffel Tower directly.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.24,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_transcript_chunk",
+      "source_id": "0a6420f9-6dd0-4d33-b012-06f1f073c815",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "chunk_start_ms": 40,
+        "chunk_end_ms": 77360,
+        "video_title": "The Unfair Matches of the Roman Colosseum"
+      },
+      "text_preview": "let's start with the unfair and slowly work our way towards the most brutal matchups on the list number 10 blind Fighters and aadia were criminals who would be forced to fight completely blind they wo"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "history",
+      "l3": "gladiator_fights",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "gladiator_fights",
+        "entertainment_practices"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "gladiator_fights",
+          "sentiment": "negative",
+          "strength": 0.8
+        },
+        {
+          "topic": "entertainment_practices",
+          "sentiment": "negative",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "negative",
+      "is_relevant": true,
+      "key_insight": "The Colosseum hosted brutal and often unfair gladiator fights, which were considered entertainment in ancient Rome.",
+      "reasoning": "The content discusses historical events related to the Colosseum, specifically focusing on gladiator fights, which fits under 'context' and 'history'. The specific aspect of 'gladiator_fights' is relevant due to the detailed description of the events. Alternatives like 'experience' or 'warnings' were considered but did not fit as the content is not about visiting logistics or safety tips.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.09,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_transcript_chunk",
+      "source_id": "0a6420f9-6dd0-4d33-b012-06f1f073c815",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "chunk_start_ms": 381039,
+        "chunk_end_ms": 460639,
+        "video_title": "The Unfair Matches of the Roman Colosseum"
+      },
+      "text_preview": "well-trained Gladiators were placed inside of the Coliseum one Gladiator would be given heavy armor and a good weapon while his two opponents would receive minimal armor and worse weapons the duo woul"
+    },
+    "output": {
+      "l1": "historical_context",
+      "l2": "gladiator_battles",
+      "l3": "matchup_dynamics",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "gladiator_combat",
+        "battle_strategies"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "gladiator_battles",
+          "sentiment": "neutral",
+          "strength": 0.5
+        },
+        {
+          "topic": "matchup_dynamics",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "neutral",
+      "is_relevant": true,
+      "key_insight": "The Colosseum hosted complex gladiator battles with varied matchups, including unevenly equipped opponents and unique pairings like Woman versus dwarf.",
+      "reasoning": "The content focuses on the dynamics and strategies of gladiator battles in the Colosseum, which fits under historical context. Alternatives like 'experience' or 'warnings' were considered but did not fit as the content is not about visiting logistics or safety tips.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.46,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_transcript_chunk",
+      "source_id": "6b96d153-0116-43f0-8b17-08cfee680466",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "chunk_start_ms": 537130,
+        "chunk_end_ms": 614660,
+        "video_title": "How To Visit the Louvre Quickly and Efficiently"
+      },
+      "text_preview": "trying to if you didn't catch this when he said we're doing this chronologically removing chronologically through history we started with code of hammurabi because it's as old as it gets and moving ou"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "museum_navigation",
+      "l3": "chronological_exhibit_flow",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "architecture_appreciation",
+        "artifact_volume"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "chronological_exhibit_flow",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "architecture_appreciation",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "artifact_volume",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Visitors should be prepared for the vast number of artifacts and appreciate the historical architecture of the Louvre.",
+      "reasoning": "The content discusses the chronological flow of exhibits and the historical architecture, which fits under 'experience' and 'museum_navigation'. Alternatives like 'historical-context' were considered but the focus is more on visitor experience.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.02,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_transcript_chunk",
+      "source_id": "6b96d153-0116-43f0-8b17-08cfee680466",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "chunk_start_ms": 1067960,
+        "chunk_end_ms": 1101020,
+        "video_title": "How To Visit the Louvre Quickly and Efficiently"
+      },
+      "text_preview": "sure but that was great Eddie and I just went through for a couple of hours we just wanted to show you that you can get in you can see a lot in the Louvre really quickly if you don't feel like you hav"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "visit_duration",
+      "l3": "quick_visit",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "quick_visit",
+        "jogging_space"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "quick_visit",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "jogging_space",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "You can enjoy a quick visit to the Louvre or even go jogging due to its spaciousness.",
+      "reasoning": "The content focuses on the experience of visiting the Louvre quickly and mentions jogging, which fits under 'experience' and 'visit_duration'. 'Quick_visit' is a specific aspect discussed. Alternatives like 'logistics' were considered but the emphasis is on the experience rather than planning details.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.74,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_transcript_chunk",
+      "source_id": "0a6420f9-6dd0-4d33-b012-06f1f073c815",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "chunk_start_ms": 761519,
+        "chunk_end_ms": 810219,
+        "video_title": "The Unfair Matches of the Roman Colosseum"
+      },
+      "text_preview": "giraffes and on one occasion even killed three elephants that were just laying on the floor now as horrible as this all sounds this was all just a warm-up and in November of 192 ad he held the Pan Gam"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "history",
+      "l3": "events",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "ancient_events",
+        "commodus_reign"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "commodus_reign",
+          "sentiment": "negative",
+          "strength": 0.8
+        },
+        {
+          "topic": "ancient_events",
+          "sentiment": "negative",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "negative",
+      "is_relevant": true,
+      "key_insight": "The Colosseum hosted brutal events, including the Pan Games under Emperor Commodus, highlighting its historical significance.",
+      "reasoning": "The content discusses historical events related to the Colosseum, specifically focusing on Emperor Commodus and the Pan Games, which fits under historical context. Alternatives like 'experience' or 'warnings' were considered but didn't fit as well.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.05,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_transcript_chunk",
+      "source_id": "c055291d-b755-4b9d-b2d5-4cd29c749832",
+      "poi_id": "9967697c-2b4b-4863-a04e-73dc8963f882",
+      "poi_name": "Eiffel Tower",
+      "city": "Paris",
+      "meta": {
+        "chunk_start_ms": 1524656,
+        "chunk_end_ms": 1581178,
+        "video_title": "Highlights of Paris: Eiffel and Monet to Cr\u00e8me Br\u00fbl\u00e9e"
+      },
+      "text_preview": "Until next time, keep on travelin'. \"Au revoir.\" Wow! How do you like the onion soup? I love it! With layers of cheese on the top, it's wonderful! Oh, come on. Tell me the honest truth. I just don't l"
+    },
+    "output": {
+      "l1": "food",
+      "l2": "nearby_food",
+      "l3": "specific_dish_experience",
+      "major_bulk": "places-to-eat",
+      "minor_bulk": [
+        "onion_soup_experience"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "onion_soup",
+          "sentiment": "mixed",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "mixed",
+      "is_relevant": true,
+      "key_insight": "Onion soup near the Eiffel Tower can be a hit or miss, so try it if you're adventurous.",
+      "reasoning": "The content focuses on the experience of eating onion soup, which is relevant to food options near the Eiffel Tower. The mixed sentiment reflects differing opinions on the dish. Alternatives like 'experience' or 'context' were considered but 'food' and 'nearby_food' are more precise.",
+      "suggested_taxonomy": "",
+      "confidence": 0.85,
+      "__elapsed_s": 2.6,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_comment",
+      "source_id": "d62944f6-1422-4a46-a1ee-c94676c48f15",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "likes": 16000
+      },
+      "text_preview": "'Video games are too violent, they make people crazy.'\nPeople when there wasn't even electricity, let alone video games:"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "historical_context",
+      "l3": "violence_in_history",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "violence_in_history"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "violence_in_history",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "neutral",
+      "is_relevant": true,
+      "key_insight": "Historical violence predates modern influences like video games.",
+      "reasoning": "The comment draws a parallel between historical violence and modern perceptions of video game violence, which fits under historical context. Alternatives like 'experience' or 'warnings' were considered but did not fit as well.",
+      "suggested_taxonomy": "",
+      "confidence": 0.8,
+      "__elapsed_s": 1.97,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_comment",
+      "source_id": "4710733d-dcfe-4e8e-ad33-4bb9b64d93cc",
+      "poi_id": "9967697c-2b4b-4863-a04e-73dc8963f882",
+      "poi_name": "Eiffel Tower",
+      "city": "Paris",
+      "meta": {
+        "likes": 3500
+      },
+      "text_preview": "This isn't an exaggeration, she really was like this.."
+    },
+    "output": {
+      "l1": "context",
+      "l2": "personal_experience",
+      "l3": "null",
+      "major_bulk": "personal-experiences",
+      "minor_bulk": [],
+      "topic_sentiments": [
+        {
+          "topic": "personal_experience",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "neutral",
+      "is_relevant": false,
+      "key_insight": "This comment does not provide actionable information for visitors.",
+      "reasoning": "The comment is vague and lacks context or specific information about the Eiffel Tower. It seems to refer to a personal anecdote without clear relevance to visiting the POI.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.28,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_comment",
+      "source_id": "7fbf028b-4117-4ef7-8a71-96c715a7a41b",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "likes": 26000
+      },
+      "text_preview": "This video is longer than the heist itself"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "humor",
+      "l3": "video_length_comparison",
+      "major_bulk": "visitor-experience-commentary",
+      "minor_bulk": [],
+      "topic_sentiments": [
+        {
+          "topic": "video_length",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "neutral",
+      "is_relevant": false,
+      "key_insight": "This comment humorously compares the video length to a heist, implying it is long.",
+      "reasoning": "The comment is a humorous remark about the length of the video, not directly related to visiting the Louvre Museum. It doesn't provide actionable insights for visitors, hence classified under context with a focus on humor.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.47,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_comment",
+      "source_id": "0ce34d68-dc58-4aad-850e-2d2dbc20b03c",
+      "poi_id": "7bef6b17-c0fb-4768-a89c-ce3357452936",
+      "poi_name": "Palace of Versailles",
+      "city": "Paris",
+      "meta": {
+        "likes": 3000
+      },
+      "text_preview": "I'm glad nobody burned it."
+    },
+    "output": {
+      "l1": "context",
+      "l2": "history",
+      "l3": "preservation",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "preservation_importance"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "preservation",
+          "sentiment": "positive",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "The Palace of Versailles has been preserved without being destroyed by fire.",
+      "reasoning": "The comment reflects on the preservation of the Palace of Versailles, which fits under historical context and preservation. Alternatives like 'experience' or 'warnings' were considered but did not fit as well.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.08,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_comment",
+      "source_id": "5f8411f1-71a5-415d-a71b-7a8750796642",
+      "poi_id": "e51e73a2-475e-4752-a722-4e0bff5dbc0e",
+      "poi_name": "Trevi Fountain",
+      "city": "Rome",
+      "meta": {
+        "likes": 189
+      },
+      "text_preview": "Every Lego set should come with a video like this from the designer. It\u2019s amazing to hear their thoughts and what they are proud of"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "off_topic",
+      "l3": null,
+      "major_bulk": "off-topic-content",
+      "minor_bulk": [],
+      "topic_sentiments": [
+        {
+          "topic": "lego_video",
+          "sentiment": "positive",
+          "strength": 0.8
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": false,
+      "key_insight": "This comment is not relevant to Trevi Fountain.",
+      "reasoning": "The comment discusses a Lego set video and does not relate to Trevi Fountain or any travel-related aspect. It is classified under 'context' with 'off_topic' as it does not provide any useful information for visitors to the POI.",
+      "suggested_taxonomy": "",
+      "confidence": 1.0,
+      "__elapsed_s": 2.42,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_comment",
+      "source_id": "f80445a1-858b-49b0-8b68-bc36d69e9a2b",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "likes": 12000
+      },
+      "text_preview": "With all of the cyber crimes of today, a good ol heist was a sight to behold and a breath of fresh air"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "cultural_references",
+      "l3": "heist_mention",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "heist_mention"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "heist_mention",
+          "sentiment": "positive",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": false,
+      "key_insight": "This comment reflects a cultural fascination with heists, not directly related to visiting the Louvre.",
+      "reasoning": "The comment discusses a heist in a positive light, which is a cultural reference rather than a direct experience or logistical aspect of visiting the Louvre. It doesn't provide actionable information for a visitor.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 1.95,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_comment",
+      "source_id": "2ffad86a-d436-40b4-b3df-240b00b28688",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "likes": 8300
+      },
+      "text_preview": "I'll never complain about skill based matchmaking again"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "off_topic",
+      "l3": null,
+      "major_bulk": "off-topic-comments",
+      "minor_bulk": [],
+      "topic_sentiments": [],
+      "overall_sentiment": "neutral",
+      "is_relevant": false,
+      "key_insight": "This comment is unrelated to visiting the Colosseum.",
+      "reasoning": "The comment makes a reference to 'skill based matchmaking,' which is unrelated to the Colosseum or any travel-related aspect. It appears to be a gaming reference or a metaphorical expression, thus it is off-topic for someone planning to visit the Colosseum.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 1.76,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_transcript_chunk",
+      "source_id": "c77f2571-1923-4ce8-9cbf-66d3fad87cb0",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "chunk_start_ms": 800,
+        "chunk_end_ms": 73900,
+        "video_title": "The Louvre | The Wildest Robbery of the 21st\u00a0Century"
+      },
+      "text_preview": "For the French, the Louvre is more than just a museum. What was once a royal palace became a public treasure house that France prides itself for. It represents the country's history and sits at the ce"
+    },
+    "output": {
+      "l1": "context",
+      "l2": "security",
+      "l3": "heist_incident",
+      "major_bulk": "historical-context",
+      "minor_bulk": [
+        "security_measures",
+        "impact_on_national_pride"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "security_measures",
+          "sentiment": "negative",
+          "strength": 0.8
+        },
+        {
+          "topic": "national_pride",
+          "sentiment": "negative",
+          "strength": 0.7
+        },
+        {
+          "topic": "historical_value",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "negative",
+      "is_relevant": true,
+      "key_insight": "The Louvre Museum experienced a significant security breach that impacted national pride and highlighted vulnerabilities in its security measures.",
+      "reasoning": "The content primarily discusses a security breach at the Louvre, impacting France's national pride and historical context. L1 'context' and L2 'security' are appropriate as the focus is on the implications of the heist. L3 'heist_incident' captures the specific event. Alternatives like 'warnings' or 'logistics' were considered but didn't fit as well since the focus is not on visitor logistics or general warnings.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.66,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_comment",
+      "source_id": "f050f446-ca83-4b40-bfe0-093d4ba39011",
+      "poi_id": "1c8f5dde-16ce-48e1-b23d-e5e295c65df4",
+      "poi_name": "Vatican Museums",
+      "city": "Rome",
+      "meta": {
+        "likes": 28
+      },
+      "text_preview": "My dream from childhood has always been to travel the world at the age of 25 due to a retina problem I lost most of my eye sight but still I wanna pursue my dreams\nWatching these videos really motivat"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "personal_inspiration",
+      "l3": "motivation",
+      "major_bulk": "personal-stories",
+      "minor_bulk": [
+        "motivation",
+        "inspiration"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "motivation",
+          "sentiment": "positive",
+          "strength": 0.9
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": false,
+      "key_insight": "Personal stories can inspire others to pursue their travel dreams despite challenges.",
+      "reasoning": "The content is primarily about personal motivation and inspiration rather than specific information about the Vatican Museums. It doesn't provide direct insights or tips for visitors, but rather shares a personal story of overcoming challenges to pursue travel dreams.",
+      "suggested_taxonomy": "experience/personal_stories/motivation",
+      "confidence": 0.8,
+      "__elapsed_s": 2.93,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "reddit_post",
+      "source_id": "05531ecb-ea58-4fa6-8fac-8b3ed7725d5b",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {},
+      "text_preview": "Can someone please help me understand the Colosseum tickets? \u2014 Hiya,\n\nI\u2019m looking to buy tickets from the official website but it\u2019s quite confusing. \n\nThese are the options and I want access to the Co"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "tickets",
+      "l3": "access_options",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "ticket_options",
+        "site_access"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "ticket_options",
+          "sentiment": "neutral",
+          "strength": 0.7
+        },
+        {
+          "topic": "site_access",
+          "sentiment": "neutral",
+          "strength": 0.6
+        }
+      ],
+      "overall_sentiment": "neutral",
+      "is_relevant": true,
+      "key_insight": "Ensure you understand the ticket options to access all desired areas of the Colosseum and surrounding sites.",
+      "reasoning": "The content is focused on understanding ticket options for accessing the Colosseum and related sites, which fits under logistics and tickets. The specific aspect is about access options, as the user is trying to determine what the ticket includes.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 1.87,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_comment",
+      "source_id": "42a8c826-c1e5-478a-b94e-d34bd19f2430",
+      "poi_id": "7bef6b17-c0fb-4768-a89c-ce3357452936",
+      "poi_name": "Palace of Versailles",
+      "city": "Paris",
+      "meta": {
+        "likes": 3000
+      },
+      "text_preview": "I plan to do the same addition to my house one day."
+    },
+    "output": {
+      "l1": "context",
+      "l2": "personal_plans",
+      "l3": "home_addition",
+      "major_bulk": "personal-reflections",
+      "minor_bulk": [],
+      "topic_sentiments": [
+        {
+          "topic": "home_addition",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "neutral",
+      "is_relevant": false,
+      "key_insight": "This comment reflects a personal aspiration rather than providing useful information for visitors.",
+      "reasoning": "The comment is a personal reflection about adding a similar feature to one's home, which does not provide any actionable information or insights relevant to visiting the Palace of Versailles. It doesn't fit into typical travel-related categories like logistics or experiences.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.27,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "reddit_post",
+      "source_id": "05531ecb-ea58-4fa6-8fac-8b3ed7725d5b",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {},
+      "text_preview": "Can someone please help me understand the Colosseum tickets? \u2014 Hiya,\n\nI\u2019m looking to buy tickets from the official website but it\u2019s quite confusing. \n\nThese are the options and I want access to the Co"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "tickets",
+      "l3": "access_options",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "ticket_options",
+        "site_access"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "ticket_options",
+          "sentiment": "neutral",
+          "strength": 0.7
+        },
+        {
+          "topic": "site_access",
+          "sentiment": "neutral",
+          "strength": 0.6
+        }
+      ],
+      "overall_sentiment": "neutral",
+      "is_relevant": true,
+      "key_insight": "Ensure you understand the ticket options to access all desired areas of the Colosseum and surrounding sites.",
+      "reasoning": "The content is focused on understanding ticket options for accessing the Colosseum and related sites, which falls under logistics and specifically tickets. The user is seeking clarity on access options, which is a common logistical concern for visitors.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 1.91,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "reddit_post",
+      "source_id": "05531ecb-ea58-4fa6-8fac-8b3ed7725d5b",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {},
+      "text_preview": "Can someone please help me understand the Colosseum tickets? \u2014 Hiya,\n\nI\u2019m looking to buy tickets from the official website but it\u2019s quite confusing. \n\nThese are the options and I want access to the Co"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "tickets",
+      "l3": "access_options",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "ticket_options",
+        "site_access"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "ticket_options",
+          "sentiment": "neutral",
+          "strength": 0.7
+        },
+        {
+          "topic": "site_access",
+          "sentiment": "neutral",
+          "strength": 0.6
+        }
+      ],
+      "overall_sentiment": "neutral",
+      "is_relevant": true,
+      "key_insight": "Ensure you understand the ticket options to access all desired areas of the Colosseum and surrounding sites.",
+      "reasoning": "The content is focused on understanding ticket options for accessing the Colosseum and related sites, which fits under logistics and specifically tickets. The user's confusion about access options is a common logistical concern for visitors.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 1.93,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "youtube_comment",
+      "source_id": "dc718e71-1137-406b-ba59-edb1dfa20f81",
+      "poi_id": "9967697c-2b4b-4863-a04e-73dc8963f882",
+      "poi_name": "Eiffel Tower",
+      "city": "Paris",
+      "meta": {
+        "likes": 3300
+      },
+      "text_preview": "The Comic Sans used for the restaurant check \ud83d\udc80"
+    },
+    "output": {
+      "l1": "food",
+      "l2": "restaurant_experience",
+      "l3": "menu_design",
+      "major_bulk": "places-to-eat",
+      "minor_bulk": [
+        "restaurant_ambiance"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "menu_design",
+          "sentiment": "negative",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "negative",
+      "is_relevant": true,
+      "key_insight": "Be prepared for an unusual menu design at the Eiffel Tower restaurant.",
+      "reasoning": "The comment specifically mentions the use of Comic Sans for the restaurant check, which relates to the design aspect of the restaurant experience. Alternatives like 'logistics' or 'context' don't fit as well because the focus is on the dining experience.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.27,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "reddit_post",
+      "source_id": "034975fb-3b7c-419a-bbe1-2eff2e6bcfc8",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {},
+      "text_preview": "Is 5pm tour a good idea? \u2014 I booked 5 pm tickets to the colosseum on the 2nd week of august. Is this a good idea? What time is it ideal to visit the palatine hill and roman forum if we should enter th"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "timing",
+      "l3": "visit_schedule",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "best_time_to_visit",
+        "visit_order"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "5pm_tour",
+          "sentiment": "neutral",
+          "strength": 0.5
+        },
+        {
+          "topic": "visit_schedule",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "neutral",
+      "is_relevant": true,
+      "key_insight": "Consider the timing of your visit to optimize your experience at the Colosseum, Palatine Hill, and Roman Forum.",
+      "reasoning": "The content is focused on the logistics of visiting the Colosseum and surrounding areas, specifically the timing of the visit. Alternatives like 'experience' or 'context' were considered but did not fit as well because the post is not about the experience itself or historical context.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.96,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "reddit_comment",
+      "source_id": "84acce8c-1831-4839-951a-9b44eec8ba30",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "score": 2
+      },
+      "text_preview": "You\u2019ll be assigned a time on your ticket for your \u201cskip the line\u201d entrance. But there was a pretty long line for us skip the line ticket holders. I\u2019m not sure why. Just be aware and don\u2019t lose 30-45 m"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "tickets",
+      "l3": "skip_the_line",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "entry_queue",
+        "ticket_purchase"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "skip_the_line",
+          "sentiment": "negative",
+          "strength": 0.7
+        },
+        {
+          "topic": "ticket_purchase",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "mixed",
+      "is_relevant": true,
+      "key_insight": "Arrive early for your 'skip the line' entrance at the Louvre to avoid unexpected delays.",
+      "reasoning": "The content primarily discusses the logistics of entering the Louvre with a 'skip the line' ticket, highlighting unexpected delays. The focus is on ticket logistics rather than the museum experience itself.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.46,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "reddit_post",
+      "source_id": "05f44504-124d-4500-8e06-326d6817b437",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {},
+      "text_preview": "Best way to get Colosseum Tickets? \u2014 I'm going in May with my family (we are trying to do a guided tour of the underground & arena) and we're hearing a lot of scary stuff about acquiring tickets. Comp"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "tickets",
+      "l3": "acquisition_difficulties",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "ticket_purchase_timing",
+        "avoid_scalpers"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "ticket_availability",
+          "sentiment": "negative",
+          "strength": 0.8
+        },
+        {
+          "topic": "ticket_purchase_process",
+          "sentiment": "negative",
+          "strength": 0.7
+        }
+      ],
+      "overall_sentiment": "negative",
+      "is_relevant": true,
+      "key_insight": "Plan to purchase Colosseum tickets early and be wary of scalpers and unreliable resellers.",
+      "reasoning": "The content focuses on the challenges of acquiring tickets for the Colosseum, specifically mentioning issues with scalpers and resellers, which fits under logistics and tickets. Acquisition difficulties are a specific aspect of this process.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.79,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "reddit_comment",
+      "source_id": "4fc1d5c9-e569-45dc-ba59-54b54f3dd487",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "score": 7
+      },
+      "text_preview": "Not going to search and make specific tour guide recommendations, but I do recommend being sure to do the \u201cunderground\u201d version of the tour, where you go underneath the colosseum floor and see where t"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "tours",
+      "l3": "underground_tour",
+      "major_bulk": "things-to-do",
+      "minor_bulk": [
+        "unique_experience",
+        "recently_opened"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "underground_tour",
+          "sentiment": "positive",
+          "strength": 0.9
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Consider taking the underground tour at the Colosseum to explore areas recently opened after restoration.",
+      "reasoning": "The content focuses on recommending a specific type of tour at the Colosseum, highlighting its uniqueness and recent availability, which fits well under 'experience' and 'tours'.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 3.51,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "reddit_comment",
+      "source_id": "2b828e7c-140b-496c-8f98-d6f2a23cd707",
+      "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+      "poi_name": "Louvre Museum",
+      "city": "Paris",
+      "meta": {
+        "score": 1
+      },
+      "text_preview": "Sorry tpiggy back off such an old comment, but I was looking at these 90min tours from the Louvre website, and wondering if it was worth it. We are not huge art buffs, and I\u2019ve been to a few museums w"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "tours",
+      "l3": "timing_and_access",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "tour_timing",
+        "entry_before_tour"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "tour_timing",
+          "sentiment": "neutral",
+          "strength": 0.6
+        },
+        {
+          "topic": "entry_before_tour",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "neutral",
+      "is_relevant": true,
+      "key_insight": "Consider arriving early to explore the Louvre at your own pace before joining a scheduled tour.",
+      "reasoning": "The content discusses logistics related to tour timing and entry, which fits under logistics > tours > timing_and_access. Alternatives like 'experience' were considered but the focus is on planning logistics rather than the experience itself.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 2.56,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "reddit_comment",
+      "source_id": "d3207f88-140c-4a10-8027-80b849add68b",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "score": 3
+      },
+      "text_preview": "Just a quick question \u2014 will you be traveling with kids?If yes, I\u2019d definitely recommend choosing a guide who can make the experience more engaging for them \u2014 the Colosseum can be fascinating, but onl"
+    },
+    "output": {
+      "l1": "logistics",
+      "l2": "planning",
+      "l3": "booking_guide",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "guide_recommendation",
+        "advance_booking",
+        "jubilee_year"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "guide_recommendation",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "advance_booking",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "jubilee_year",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Book a guide in advance for the Colosseum, especially during the Jubilee year, to ensure a more engaging experience for kids.",
+      "reasoning": "The content focuses on planning aspects, specifically the importance of booking a guide in advance due to the Jubilee year and the need for engaging experiences for kids. Alternatives like 'experience' or 'family_tips' were considered but 'logistics' with 'planning' and 'booking_guide' is more precise.",
+      "suggested_taxonomy": "",
+      "confidence": 0.9,
+      "__elapsed_s": 3.44,
+      "__error": null
+    }
+  },
+  {
+    "input": {
+      "source": "reddit_comment",
+      "source_id": "379ce77d-7b9c-4616-996b-0135dc238db3",
+      "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+      "poi_name": "Colosseum",
+      "city": "Rome",
+      "meta": {
+        "score": 3
+      },
+      "text_preview": "I booked through the official site, they assign you a tour guide when you get there at the booked time. And you kinda need to take a guided tour to see most of the colosseum anyway, you can\u2019t really r"
+    },
+    "output": {
+      "l1": "experience",
+      "l2": "guided_tours",
+      "l3": "necessity",
+      "major_bulk": "logistics-tips",
+      "minor_bulk": [
+        "guided_tour_recommended",
+        "self_exploration",
+        "advance_booking"
+      ],
+      "topic_sentiments": [
+        {
+          "topic": "guided_tours",
+          "sentiment": "positive",
+          "strength": 0.8
+        },
+        {
+          "topic": "self_exploration",
+          "sentiment": "positive",
+          "strength": 0.7
+        },
+        {
+          "topic": "advance_booking",
+          "sentiment": "positive",
+          "strength": 0.9
+        },
+        {
+          "topic": "circus_maximus",
+          "sentiment": "neutral",
+          "strength": 0.5
+        }
+      ],
+      "overall_sentiment": "positive",
+      "is_relevant": true,
+      "key_insight": "Book a guided tour in advance to fully experience the Colosseum and enjoy self-exploration at nearby sites like the Roman Forum and Caracalla Baths.",
+      "reasoning": "The content primarily discusses the necessity of guided tours for the Colosseum and the enjoyment of self-exploration at nearby sites, fitting well under 'experience' and 'guided_tours'. The mention of booking in advance and the evaluation of nearby sites also supports the logistics-tips major bulk. Considered 'logistics' for L1 but the focus on the experience of the tour and exploration was more prominent.",
+      "suggested_taxonomy": "",
+      "confidence": 0.95,
+      "__elapsed_s": 3.66,
+      "__error": null
+    }
+  }
+]

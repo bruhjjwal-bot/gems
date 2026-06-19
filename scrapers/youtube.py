@@ -1,12 +1,30 @@
 from typing import Optional
 from datetime import datetime, timezone
+import time
+import requests
 import yt_dlp
 from dotenv import load_dotenv
 from db.client import get_client
 
+CAPTION_THROTTLE_SECONDS = 4.0
+CAPTION_MAX_RETRIES = 3
+_LAST_CAPTION_FETCH_AT = 0.0
+
 load_dotenv()
 
 QUERY_TEMPLATES = ["{} tips", "{} visit guide", "{} review", "{} itinerary"]
+EXTRA_QUERY_TEMPLATES = [
+    "{} walkthrough",
+    "{} hidden gems",
+    "{} things to know",
+    "best of {}",
+    "things to do at {}",
+    "{} guided tour",
+    "{} history",
+    "{} vlog",
+    "{} secrets",
+    "first time visiting {}",
+]
 MAX_RESULTS_PER_QUERY = 10
 MAX_VIDEOS_PER_POI = 40
 MIN_VIEWS_LONG = 10_000
@@ -78,11 +96,168 @@ def _fetch_full_info(video_id: str) -> Optional[dict]:
         return None
 
 
+def _fetch_caption_json(url: str) -> Optional[dict]:
+    """Throttled fetch with exponential backoff on 429."""
+    global _LAST_CAPTION_FETCH_AT
+    backoff = CAPTION_THROTTLE_SECONDS
+    for attempt in range(CAPTION_MAX_RETRIES):
+        elapsed = time.time() - _LAST_CAPTION_FETCH_AT
+        if elapsed < CAPTION_THROTTLE_SECONDS:
+            time.sleep(CAPTION_THROTTLE_SECONDS - elapsed)
+        try:
+            resp = requests.get(url, timeout=30)
+            _LAST_CAPTION_FETCH_AT = time.time()
+            if resp.status_code == 429:
+                print(f"    429 rate limited; backing off {backoff:.0f}s (attempt {attempt + 1}/{CAPTION_MAX_RETRIES})")
+                time.sleep(backoff)
+                backoff *= 2
+                continue
+            resp.raise_for_status()
+            return resp.json()
+        except Exception as e:
+            print(f"    Caption fetch failed: {e}")
+            return None
+    return None
+
+
 def _extract_transcript(info: dict) -> Optional[dict]:
     subs = info.get("subtitles", {}).get("en") or info.get("automatic_captions", {}).get("en")
     if not subs:
         return None
-    return {"language": "en", "segments_json": subs, "full_text": None}
+    json3 = next((s for s in subs if s.get("ext") == "json3"), None)
+    if not json3 or not json3.get("url"):
+        return None
+    data = _fetch_caption_json(json3["url"])
+    if not data:
+        return None
+    segments = []
+    text_parts = []
+    for event in data.get("events", []) or []:
+        segs = event.get("segs")
+        if not segs:
+            continue
+        line = "".join(s.get("utf8", "") for s in segs).replace("\n", " ").strip()
+        if not line:
+            continue
+        segments.append({
+            "start_ms": event.get("tStartMs", 0),
+            "duration_ms": event.get("dDurationMs", 0),
+            "text": line,
+        })
+        text_parts.append(line)
+    if not text_parts:
+        return None
+    return {
+        "language": "en",
+        "segments_json": segments,
+        "full_text": " ".join(text_parts),
+    }
+
+
+def scrape_additional_videos_for_poi(
+    poi_id: str,
+    poi_name: str,
+    target_new: int = 20,
+    templates: Optional[list[str]] = None,
+):
+    """Find target_new MORE videos for an existing POI using broader search templates.
+    Dedupes against videos already in the DB, applies the same engagement filter
+    (views >= MIN_VIEWS_*, duration >= MIN_DURATION_SECONDS), then takes the top N
+    new ones by score. Saves video metadata, transcripts, and comments."""
+    db = get_client()
+    existing = (
+        db.table("youtube_videos")
+        .select("video_id")
+        .eq("poi_id", poi_id)
+        .execute()
+        .data
+        or []
+    )
+    existing_ids = {r["video_id"] for r in existing}
+    print(f"\nExpanding YouTube videos for {poi_name} (have {len(existing_ids)}, want +{target_new})")
+
+    used_templates = templates or (QUERY_TEMPLATES + EXTRA_QUERY_TEMPLATES)
+    seen: set[str] = set(existing_ids)
+    candidates: list[dict] = []
+    for template in used_templates:
+        for entry in _search_videos(template.format(poi_name)):
+            vid_id = entry.get("id")
+            if vid_id and vid_id not in seen:
+                seen.add(vid_id)
+                candidates.append(_parse_flat_entry(entry))
+    print(f"  Found {len(candidates)} new candidate videos after dedup")
+
+    survivors = []
+    for v in candidates:
+        min_views = MIN_VIEWS_SHORT if v["format"] == "short" else MIN_VIEWS_LONG
+        if v["views"] >= min_views and v["duration_seconds"] >= MIN_DURATION_SECONDS:
+            v["score"] = _score(v)
+            survivors.append(v)
+    survivors.sort(key=lambda v: v["score"], reverse=True)
+    shortlisted = survivors[:target_new]
+    print(f"  Shortlisted {len(shortlisted)} new videos (of {len(survivors)} passing engagement)")
+
+    saved_videos = 0
+    saved_transcripts = 0
+    saved_comments_total = 0
+    for video in shortlisted:
+        print(f"  Processing: {video['title'][:70]}")
+        info = _fetch_full_info(video["video_id"])
+        video_uuid = _save_video(poi_id, video)
+        if not video_uuid:
+            print("    save video failed; skipping")
+            continue
+        saved_videos += 1
+        if info:
+            transcript = _extract_transcript(info)
+            if transcript:
+                _save_transcript(video_uuid, transcript)
+                saved_transcripts += 1
+                print(f"    transcript: {len(transcript['full_text'])} chars")
+            else:
+                print("    transcript: none")
+            comments = info.get("comments") or []
+            _save_comments(video_uuid, comments)
+            saved_comments_total += len(comments)
+            print(f"    comments: {len(comments)}")
+        else:
+            print("    full info fetch failed")
+
+    print(
+        f"\nDone. {poi_name}: +{saved_videos} videos, "
+        f"+{saved_transcripts} transcripts, +{saved_comments_total} comments."
+    )
+
+
+def refresh_transcripts_for_poi(poi_id: str, poi_name: str):
+    """Re-run transcript extraction for every existing video tied to this POI.
+    Videos and comments are left untouched; only the transcripts row is rewritten."""
+    db = get_client()
+    videos = (
+        db.table("youtube_videos")
+        .select("id, video_id, title")
+        .eq("poi_id", poi_id)
+        .execute()
+        .data
+        or []
+    )
+    print(f"\nRefreshing transcripts for {poi_name}: {len(videos)} videos")
+    saved = 0
+    for v in videos:
+        print(f"  {v['title'][:70]}")
+        info = _fetch_full_info(v["video_id"])
+        if not info:
+            print("    fetch failed")
+            continue
+        transcript = _extract_transcript(info)
+        if not transcript:
+            print("    no transcript available")
+            continue
+        _save_transcript(v["id"], transcript)
+        chars = len(transcript["full_text"])
+        print(f"    saved ({chars} chars, {len(transcript['segments_json'])} segments)")
+        saved += 1
+    print(f"\nDone. Refreshed {saved}/{len(videos)} transcripts for {poi_name}.")
 
 
 def _save_video(poi_id: str, video: dict) -> Optional[str]:

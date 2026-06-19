@@ -161,7 +161,10 @@ def fetch_reviews(
         try:
             resp = requests.get(_SERPAPI_URL, params=params, timeout=180)
             resp.raise_for_status()
-        except (requests.exceptions.ReadTimeout, requests.exceptions.ConnectionError) as e:
+        except requests.exceptions.RequestException as e:
+            # Catches ReadTimeout, ConnectionError, HTTPError (e.g. 5xx from SerpApi),
+            # and any other transport-level failure. Preserve the cursor and let the
+            # next invocation retry the same token.
             print(f"      transient error on call {calls_made + 1}: {type(e).__name__}; stopping this stream, cursor preserved")
             break
         calls_made += 1

@@ -4,7 +4,11 @@ __pycache__/
 *.pyc
 .pytest_cache/
 
-# Don't commit ad-hoc scraped JSON dumps, but keep the recorded test fixture.
-*.json
+# Log files
+*.log
+
+# Don't commit ad-hoc scraped JSON dumps, but keep test fixtures
+# and l2/data/ runtime files (embeddings + clusters needed by the API).
+scripts/data/*.json
 !.env.example
 !tests/fixtures/**/*.json

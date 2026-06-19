@@ -1,0 +1,7 @@
+flask>=3.0
+flask-cors>=4.0
+gunicorn>=22.0
+python-dotenv>=1.0
+openai>=1.50
+numpy>=1.26
+mcp>=1.0

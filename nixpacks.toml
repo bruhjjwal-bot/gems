@@ -1,0 +1,27 @@
+# Railway / Nixpacks build config.
+#
+# Pins Python 3.11 (Railway's default buildpack handles it cleanly).
+# Installs only the API-runtime deps from requirements_api.txt — NOT the
+# pipeline-time deps (scikit-learn, apify-client, firecrawl-py, openpyxl,
+# yt-dlp, supabase) which would bloat the image with nothing the API uses.
+
+[phases.setup]
+nixPkgs = ["python311", "gcc"]
+
+[phases.install]
+cmds = [
+  "python -m venv /opt/venv",
+  ". /opt/venv/bin/activate && pip install --upgrade pip",
+  ". /opt/venv/bin/activate && pip install -r requirements_api.txt",
+]
+
+[phases.build]
+# nothing to build — pure Python service that loads data at boot
+cmds = ["echo 'no build step'"]
+
+[start]
+cmd = "/opt/venv/bin/gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 120 --preload l2.api_server:app"
+
+[variables]
+PYTHONUNBUFFERED = "1"
+PORT = "8000"

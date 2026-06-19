@@ -1,0 +1,806 @@
+{
+  "poi": "Colosseum",
+  "phase1_search": {
+    "planning": {
+      "query": "\"Colosseum\" tips",
+      "elapsed_s": 2.3711800575256348,
+      "result_count": 10,
+      "reddit_urls": [
+        "https://www.reddit.com/r/travel/comments/1lc4om0/whats_the_best_way_to_see_the_colosseum/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1etn35e/how_hard_is_it_to_visit_the_colosseum/",
+        "https://www.reddit.com/r/ironscape/comments/1jfkjj9/colosseum_guide/",
+        "https://www.reddit.com/r/2007scape/comments/1hsemap/looking_for_colosseum_advice_first_time/",
+        "https://www.reddit.com/r/2007scape/comments/1c2a4l2/colosseum_tips/",
+        "https://www.reddit.com/r/pokemonribbons/comments/h9qxdx/pokemon_colosseum_tips_and_tricks/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1curjbg/colosseum_tickets_info_tips_and_a_question/",
+        "https://www.reddit.com/r/2007scape/comments/1pjxoc9/recommended_colosseum_video_guide_for_1st_quiver/",
+        "https://www.reddit.com/r/FFXV/comments/5icc9k/colosseum_tips/",
+        "https://www.reddit.com/r/OSRSMobile/comments/1nhisj3/any_tips_for_colosseum/"
+      ],
+      "raw": {
+        "web": [
+          {
+            "url": "https://www.reddit.com/r/travel/comments/1lc4om0/whats_the_best_way_to_see_the_colosseum/",
+            "title": "What's the best way to see the colosseum : r/travel - Reddit",
+            "description": "And you kinda need to take a guided tour to see most of the colosseum anyway, you can't really roam around on your own. I did enjoy walking ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1etn35e/how_hard_is_it_to_visit_the_colosseum/",
+            "title": "How hard is it to visit the Colosseum? : r/ItalyTravel - Reddit",
+            "description": "I'm planning a trip to Rome from 3 to 10 September and really want to visit the Colosseum. We've been looking into getting tickets for the Full Experience.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ironscape/comments/1jfkjj9/colosseum_guide/",
+            "title": "Colosseum guide : r/ironscape - Reddit",
+            "description": "Colosseum beginner starting guide and gear recommendations. r/ironscape. \u2022 11d ago ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/2007scape/comments/1hsemap/looking_for_colosseum_advice_first_time/",
+            "title": "Looking for Colosseum advice [First time] : r/2007scape - Reddit",
+            "description": "Basically I am practically unaware of what the colosseum has to offer and I am honestly looking forward to this journey, the diversity in gear ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/2007scape/comments/1c2a4l2/colosseum_tips/",
+            "title": "Colosseum tips : r/2007scape - Reddit",
+            "description": "This video was what made me beat colosseum. Also wizzy videos where he shows you how to handle the stacks easily.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/pokemonribbons/comments/h9qxdx/pokemon_colosseum_tips_and_tricks/",
+            "title": "Pokemon Colosseum Tips and Tricks? : r/pokemonribbons - Reddit",
+            "description": "Battle you get the ribbon, no matter what game it's from. Though you cant actually trade into Colosseum until the postgame so you're better ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1curjbg/colosseum_tickets_info_tips_and_a_question/",
+            "title": "r/ItalyTravel on Reddit: Colosseum Tickets: Info, Tips ...and a Question",
+            "description": "You are recommended to arriveat the Colosseum entrance 10 minutes before the scheduled admission time. The entrance to the Colosseum is not far ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/2007scape/comments/1pjxoc9/recommended_colosseum_video_guide_for_1st_quiver/",
+            "title": "Recommended Colosseum video guide for 1st Quiver? : r/2007scape",
+            "description": "Recommended Colosseum video guide for 1st Quiver? \u00b7 Faceguard \u00b7 Blood fury \u00b7 Infernal cape \u00b7 Berserker Ring \u00b7 Anguish \u00b7 Bone Claws \u00b7 SGS \u00b7 Full Crystal.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/FFXV/comments/5icc9k/colosseum_tips/",
+            "title": "Colosseum tips? : r/FFXV - Reddit",
+            "description": "Colosseum tips? Pure luck or is there skill to it? Also, should I only bet on 1v1s? Archived post. New comments cannot be posted and votes ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/OSRSMobile/comments/1nhisj3/any_tips_for_colosseum/",
+            "title": "Any tips for Colosseum? : r/OSRSMobile - Reddit",
+            "description": "Any tips for Colosseum? \ud83d\udde8\ufe0f Discussion. I have recently started my quiver journey and currently have a wave 7 pb. Watching guides and ...",
+            "category": null
+          }
+        ],
+        "news": null,
+        "images": null
+      }
+    },
+    "worth_it": {
+      "query": "is \"Colosseum\" worth it",
+      "elapsed_s": 2.403743028640747,
+      "result_count": 10,
+      "reddit_urls": [
+        "https://www.reddit.com/r/rome/comments/ulhrl7/touring_the_colosseum_worth_it/",
+        "https://www.reddit.com/r/RomeTravel/comments/1no3tmn/colosseum_guided_tour_worth_paying_for/",
+        "https://www.reddit.com/r/rome/comments/1crwj6k/unpopular_opinion_i_thought_the_inside_of_the/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1kehl0j/i_did_the_colosseum_underground_tour_it_was_not/",
+        "https://www.reddit.com/r/rome/comments/evrn8r/colosseum_tour_guide_worth_it/",
+        "https://www.reddit.com/r/rome/comments/1548ivb/is_it_worth_buying_colosseum_tickets_without_a/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1nb7e3h/should_i_do_a_guided_tour_of_the_colosseum/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1kgsvdu/at_the_colosseum_now_you_definitely_dont_need_to/",
+        "https://www.reddit.com/r/ItalyTravel/comments/11adq0i/colosseum_underground_worth_it/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1s4ji94/are_the_standard_24h_colosseum_tickets_worth_it/"
+      ],
+      "raw": {
+        "web": [
+          {
+            "url": "https://www.reddit.com/r/rome/comments/ulhrl7/touring_the_colosseum_worth_it/",
+            "title": "Touring the Colosseum worth it? : r/rome - Reddit",
+            "description": "I think for a first time visit, it's 100% worth going to the Colosseum! I was just in Italy for the first time, and touring the colosseum and ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/RomeTravel/comments/1no3tmn/colosseum_guided_tour_worth_paying_for/",
+            "title": "Colosseum Guided Tour- Worth Paying For? : r/RomeTravel - Reddit",
+            "description": "Honestly, yes, if you have the budget! We loved our tour with LivTours and Colosseum ended up one of my favorite experiences in Rome. She really ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1crwj6k/unpopular_opinion_i_thought_the_inside_of_the/",
+            "title": "I thought the inside of the Colosseum was underwhelming - Reddit",
+            "description": "I just got back to my hotel from the Colosseum. The outside is a lot prettier. Also, the crowds of tourist didn't make the experience inside any better.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1kehl0j/i_did_the_colosseum_underground_tour_it_was_not/",
+            "title": "I did the Colosseum underground tour. It was NOT worth it. Jmho",
+            "description": "Is Colosseum underground tour worth the cost. Clear search. Ask. Is Colosseum underground tour worth the cost.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/evrn8r/colosseum_tour_guide_worth_it/",
+            "title": "Colosseum tour - guide worth it? : r/rome - Reddit",
+            "description": "Yes indeed, adding a guide is really worthwhile, especially in the Colosseum/Forum. It helps to bring the entire experience alive and allows you to understand ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1548ivb/is_it_worth_buying_colosseum_tickets_without_a/",
+            "title": "Is it worth buying Colosseum tickets without a tour guide? - Reddit",
+            "description": "Colosseum tickets (inc Roman Forum and Palatine Hill) without a tour guide is so expensive. It's 300 euros for 4 people (compared to 78 euros for 4 people with ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1nb7e3h/should_i_do_a_guided_tour_of_the_colosseum/",
+            "title": "Should I do a guided tour of the Colosseum, palatine, and Roman ...",
+            "description": "As someone who always thought they didn't need a guide I just did a colosseum and Roman forum tour. It's 100% worth the money. The guides are ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1kgsvdu/at_the_colosseum_now_you_definitely_dont_need_to/",
+            "title": "At the colosseum now, you definitely don't need to stress ... - Reddit",
+            "description": "At the colosseum now, you definitely don't need to stress over getting the \"good tickets\" ... Sightseeing & Activities !!MUST PROVIDE TRAVEL DATES ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/11adq0i/colosseum_underground_worth_it/",
+            "title": "Colosseum Underground - worth it? : r/ItalyTravel - Reddit",
+            "description": "It's worth splurging for the Colosseum and the Vatican (early entry). Your guide can take pics, you can ask questions, go more your own pace, ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1s4ji94/are_the_standard_24h_colosseum_tickets_worth_it/",
+            "title": "Are the standard 24H Colosseum tickets worth it, or should I ... - Reddit",
+            "description": "Totally worth it. First of all, tickets are cheap. Second, you're still getting to go into the colosseum. You see the stands and the floor. You ...",
+            "category": null
+          }
+        ],
+        "news": null,
+        "images": null
+      }
+    },
+    "logistics": {
+      "query": "\"Colosseum\" skip the line",
+      "elapsed_s": 2.116590976715088,
+      "result_count": 10,
+      "reddit_urls": [
+        "https://www.reddit.com/r/ItalyTravel/comments/1j5835e/skip_the_line_tickets_for_the_colosseum_in_rome/",
+        "https://www.reddit.com/r/rome/comments/14hommo/are_the_official_site_tickets_skip_the_line/",
+        "https://www.reddit.com/r/rome/comments/1ody6qz/are_skip_the_line_tickets_worth_it/",
+        "https://www.reddit.com/r/RomeTravel/comments/1sp2b2u/booking_tickets_for_the_colosseum/",
+        "https://www.reddit.com/r/rome/comments/118z9em/skip_the_line_tickets_colosseum/",
+        "https://www.reddit.com/r/RomeTravel/comments/1oo13w2/colosseum_entry/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1d84l3g/should_i_just_wait_on_line_and_get_the_tickets_in/",
+        "https://www.reddit.com/r/rome/comments/1548ivb/is_it_worth_buying_colosseum_tickets_without_a/",
+        "https://www.reddit.com/r/rome/comments/18yjjrc/skiptheline_tickets_scam/",
+        "https://www.reddit.com/r/rome/comments/a5jmmf/trying_to_book_skiptheline_tickets_for_the/"
+      ],
+      "raw": {
+        "web": [
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1j5835e/skip_the_line_tickets_for_the_colosseum_in_rome/",
+            "title": "\"Skip the Line\" Tickets for the Colosseum in Rome - Reddit",
+            "description": "I'm visiting Rome at the end of March and need help finding \"Skip the Line\" tickets for the Colosseum. The link in the ticket megathread takes",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/14hommo/are_the_official_site_tickets_skip_the_line/",
+            "title": "Are the official site tickets \"skip the line\" tickets? : r/rome - Reddit",
+            "description": "I mean if i buy tickets for the colosseum from the official site (https://www.coopculture.it/en/) do i need to queue on line when i get there or i get in ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1ody6qz/are_skip_the_line_tickets_worth_it/",
+            "title": "Are Skip the Line tickets worth it ? : r/rome - Reddit",
+            "description": "Yes, they are worth it. We walked by huge crowds waiting in the queue and right into the Colosseum with our guide.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/RomeTravel/comments/1sp2b2u/booking_tickets_for_the_colosseum/",
+            "title": "Booking tickets for the Colosseum. : r/RomeTravel - Reddit",
+            "description": "I have 2 skip the line tickets available for June 2, at 6pm Rome time - the 24H COLOSSEUM and ROMAN FORUM / PALATINE HILL / IMPERIAL for sale at ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/118z9em/skip_the_line_tickets_colosseum/",
+            "title": "Skip the line tickets Colosseum : r/rome - Reddit",
+            "description": "Skip the line tickets Colosseum ... If I buy a full experience ticket from Parco Colosseo or Coop Culture, will I automatically be able to \"skip ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/RomeTravel/comments/1oo13w2/colosseum_entry/",
+            "title": "Colosseum entry : r/RomeTravel - Reddit",
+            "description": "For example, if your Colosseum entry is booked for 10:30 on a given day, you can visit the Forum and Palatine Hill any time within 24 hours ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1d84l3g/should_i_just_wait_on_line_and_get_the_tickets_in/",
+            "title": "Should I just wait on line and get the tickets in person. - Reddit",
+            "description": "And I bought all my colosseum/ forum tickets as \u201cskip the line\u201d etc from GetYourGuide. The 3h tour guided tour ($80pp) ended up being 35 minutes ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1548ivb/is_it_worth_buying_colosseum_tickets_without_a/",
+            "title": "Is it worth buying Colosseum tickets without a tour guide? - Reddit",
+            "description": "Get the Vox city app. On it you can listen to a guided tour of the Colosseum for \u20ac 5 And buy skip the line tickets for \u20ac33 kids 16 and under are ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/18yjjrc/skiptheline_tickets_scam/",
+            "title": "Skip-The-Line Tickets scam? : r/rome - Reddit",
+            "description": "Any ticket bought in advance for the Colosseum allows you to skip the line to buy tickets for the Colosseum. That's what's meant by skip the lines.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/a5jmmf/trying_to_book_skiptheline_tickets_for_the/",
+            "title": "Trying to book skip-the-line tickets for the Colosseum but the official ...",
+            "description": "There are usually a lot of guides around the Colosseum where you can book directly a tour that will let you skip the line, usually there's no ...",
+            "category": null
+          }
+        ],
+        "news": null,
+        "images": null
+      }
+    },
+    "regret": {
+      "query": "\"Colosseum\" mistake",
+      "elapsed_s": 1.8100841045379639,
+      "result_count": 10,
+      "reddit_urls": [
+        "https://www.reddit.com/r/rome/comments/1cfbv0t/ah_i_bought_colosseum_tickets_like_an_idiot_how/",
+        "https://www.reddit.com/r/rome/comments/1bpstuk/accidentally_booked_the_wrong_daytime_for/",
+        "https://www.reddit.com/r/RomeTravel/comments/1s56e17/struggle_with_purchasing_colosseum_tickets/",
+        "https://www.reddit.com/r/rome/comments/x1t212/booked_wrong_date_for_colosseum_with_coopculture/",
+        "https://www.reddit.com/r/rome/comments/1jd55rk/colosseo_booking_mistake/",
+        "https://www.reddit.com/r/InfinityNikkiofficial/comments/1papslg/anyone_else_slightly_bothered_that_it_says/",
+        "https://www.reddit.com/r/rome/comments/1crwj6k/unpopular_opinion_i_thought_the_inside_of_the/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1c5grx5/issue_with_colosseum_website/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1e4tlrj/colosseum_ticketserror_code/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1g2oaja/booked_colosseum_tour_in_wrong_language_can_we/"
+      ],
+      "raw": {
+        "web": [
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1cfbv0t/ah_i_bought_colosseum_tickets_like_an_idiot_how/",
+            "title": "Ah! I bought colosseum tickets like an idiot. How do I fix my mistakes?",
+            "description": "Accidentally booked the wrong day/time for Colosseum tickets, anything I can do? 10. 24. The Colosseum: tickets sold out? r/ItalyTravel. \u2022 10mo ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1bpstuk/accidentally_booked_the_wrong_daytime_for/",
+            "title": "Accidentally booked the wrong day/time for Colosseum tickets ...",
+            "description": "I'm an idiot and accidently booked 2 Colosseum entrance tickets for the same day/time we've booked a Vatican tour.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/RomeTravel/comments/1s56e17/struggle_with_purchasing_colosseum_tickets/",
+            "title": "Struggle with Purchasing Colosseum Tickets : r/RomeTravel - Reddit",
+            "description": "I attempted to purchase Colosseum tickets today (from the US) and was struggling. I read several of the advice posts on r/ItalyTravel ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/x1t212/booked_wrong_date_for_colosseum_with_coopculture/",
+            "title": "Booked wrong date for Colosseum with coopculture : r/rome - Reddit",
+            "description": "Booked wrong date for Colosseum with coopculture. Tourism. I booked it for 2 days past the day I will be in Rome (don't ask how this happened ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1jd55rk/colosseo_booking_mistake/",
+            "title": "Colosseo Booking Mistake : r/rome - Reddit",
+            "description": "Colosseo Booking Mistake ... Foolish to skip Colosseum, Roman Forum, Palatine Hill in Rome? r/ItalyTravel. \u2022. Foolish to skip Colosseum, Roman ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/InfinityNikkiofficial/comments/1papslg/anyone_else_slightly_bothered_that_it_says/",
+            "title": "Anyone else slightly bothered that it says \u201cColiseum\u201d and not ...",
+            "description": "Apparently Coliseum is an alternate spelling of Colosseum. Before knowing this, I thought Coliseum was a fanciful spelling of Colosseum, like a ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1crwj6k/unpopular_opinion_i_thought_the_inside_of_the/",
+            "title": "I thought the inside of the Colosseum was underwhelming - Reddit",
+            "description": "Maybe that was my mistake. I tried to download the Colosseum app when I got there in order to have an audio guide, but the wifi wasn't working ( ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1c5grx5/issue_with_colosseum_website/",
+            "title": "Issue with colosseum website : r/ItalyTravel - Reddit",
+            "description": "I know they are doing some site updates (as they are switching from CoopCulture to colosseum.it) and many links aren't correct.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1e4tlrj/colosseum_ticketserror_code/",
+            "title": "Colosseum Tickets-Error Code : r/ItalyTravel - Reddit",
+            "description": "Hello. I have read all the threads, posts, directions from everyone about getting Colosseum tickets. Today, I did a trial run just to see ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1g2oaja/booked_colosseum_tour_in_wrong_language_can_we/",
+            "title": "Booked Colosseum tour in wrong language - Can we access arena ...",
+            "description": "We got the full experience tickets (colosseum + arena + super sites) but I accidentally booked in Italian instead of English for the tour.",
+            "category": null
+          }
+        ],
+        "news": null,
+        "images": null
+      }
+    },
+    "hidden": {
+      "query": "hidden gems \"Colosseum\"",
+      "elapsed_s": 2.4824790954589844,
+      "result_count": 10,
+      "reddit_urls": [
+        "https://www.reddit.com/r/rome/comments/1fnqkg8/hidden_gems_to_visit_in_rome/",
+        "https://www.reddit.com/r/rome/comments/up9x8b/what_are_your_favourite_hidden_gems_in_rome/",
+        "https://www.reddit.com/r/ItalyTravel/comments/153k9tn/rome_hidden_gems/",
+        "https://www.reddit.com/r/RomeTravel/comments/1sp2b2u/booking_tickets_for_the_colosseum/",
+        "https://www.reddit.com/r/rome/comments/16l8h5z/rome_hidden_gems/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1dstdcf/colosseum_and_forum_without_tickets/",
+        "https://www.reddit.com/r/RomeTravel/comments/1nfs1zw/how_to_plan_vatican_colosseum_other_attractions/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1bd40hl/well_played_colosseumwell_played/",
+        "https://www.reddit.com/r/rome/comments/16egap8/places_to_visit_before_visiting_the_colosseum/",
+        "https://www.reddit.com/r/RomeTravel/comments/1s0eqeg/skipping_the_inside_of_the_colosseum/"
+      ],
+      "raw": {
+        "web": [
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1fnqkg8/hidden_gems_to_visit_in_rome/",
+            "title": "Hidden gems to visit in Rome - Reddit",
+            "description": "The Golden House of Nero is kiddy-corner to the Colosseum, and mostly unknown. The ruins are mostly underground and largely hidden, but very ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/up9x8b/what_are_your_favourite_hidden_gems_in_rome/",
+            "title": "What are your favourite hidden gems in Rome? - Reddit",
+            "description": "the Domus Aurea is right across the Colosseum and many visitors don't even know it's there at all. \u00b7 the Baths of Diocletian branch of the Museo ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/153k9tn/rome_hidden_gems/",
+            "title": "Rome - hidden gems? : r/ItalyTravel - Reddit",
+            "description": "We did a small group tour with the company City Wonders. It included the Colosseum underground and the Roman Forum. Most tours are bookable more ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/RomeTravel/comments/1sp2b2u/booking_tickets_for_the_colosseum/",
+            "title": "Booking tickets for the Colosseum. : r/RomeTravel - Reddit",
+            "description": "We're heading to Rome in May. And I've got it in my head that it will be exceedingly hard to actually get our hands on tickets for the colosseum",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/16l8h5z/rome_hidden_gems/",
+            "title": "Rome Hidden Gems : r/rome - Reddit",
+            "description": "It is just a couple blocks from the Colosseum. Its cheap and there are never any lines. https://basilicasanclemente.com/.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1dstdcf/colosseum_and_forum_without_tickets/",
+            "title": "Colosseum and Forum without tickets : r/ItalyTravel - Reddit",
+            "description": "If we just walk on public streets around the Colosseum and Forum area will we be able to see anything? Obviously it won't compare to actually getting inside.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/RomeTravel/comments/1nfs1zw/how_to_plan_vatican_colosseum_other_attractions/",
+            "title": "How to plan: Vatican, Colosseum & other attractions : r/RomeTravel",
+            "description": "If I want to visit the colosseum to catch it before and during the sunset - is going 3 hours before closing time, enough time? What are some ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1bd40hl/well_played_colosseumwell_played/",
+            "title": "Well played Colosseum...well played :/ : r/ItalyTravel - Reddit",
+            "description": "Once you have it, there's a place on coopculture where you can go in and reserve times to enter the Colosseum. Picking up the Parco pass was ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/16egap8/places_to_visit_before_visiting_the_colosseum/",
+            "title": "Places to visit before visiting the Colosseum? : r/rome - Reddit",
+            "description": "Your tickets likely include Roman Forum and Palantine Hill. You can used the tickets to see these places anytime within 24hrs of your Colosseum ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/RomeTravel/comments/1s0eqeg/skipping_the_inside_of_the_colosseum/",
+            "title": "Skipping the inside of the colosseum : r/RomeTravel - Reddit",
+            "description": "You can skip it as the tours are underwhelming! You are seeing the historical colosseum. You can read about its functions.",
+            "category": null
+          }
+        ],
+        "news": null,
+        "images": null
+      }
+    },
+    "nearby": {
+      "query": "things to do near \"Colosseum\"",
+      "elapsed_s": 2.213679790496826,
+      "result_count": 10,
+      "reddit_urls": [
+        "https://www.reddit.com/r/rome/comments/16egap8/places_to_visit_before_visiting_the_colosseum/",
+        "https://www.reddit.com/r/rome/comments/1cafpc8/must_see_things_in_rome_that_arent_touristy/",
+        "https://www.reddit.com/r/rome/comments/9yz060/what_places_should_i_visit_in_4_days/",
+        "https://www.reddit.com/r/rome/comments/1fnqkg8/hidden_gems_to_visit_in_rome/",
+        "https://www.reddit.com/r/rome/comments/1f6d9ns/chill_peaceful_natural_places_in_rome/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1eczcix/what_are_some_good_restaurants_and_caf%C3%A9s_near_the/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1i4ew3m/interesting_places_to_visit_around_or_just/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1d7xbn5/what_are_some_good_nontouristy_things_to_do_in/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1dstdcf/colosseum_and_forum_without_tickets/",
+        "https://www.reddit.com/r/RomeTravel/comments/1nfs1zw/how_to_plan_vatican_colosseum_other_attractions/"
+      ],
+      "raw": {
+        "web": [
+          {
+            "url": "https://www.reddit.com/r/rome/comments/16egap8/places_to_visit_before_visiting_the_colosseum/",
+            "title": "Places to visit before visiting the Colosseum? : r/rome - Reddit",
+            "description": "You could visit San Clemente Basilica just down from the Colosseum, opens at 10, 12 on Sunday, have to book on-line. What about the Forum though ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1cafpc8/must_see_things_in_rome_that_arent_touristy/",
+            "title": "Must see things in Rome that aren't touristy - Reddit",
+            "description": "Remember you can walk around the whole Colosseum and peer in without a ticket. You can also walk entirely around the outside of the Forum ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/9yz060/what_places_should_i_visit_in_4_days/",
+            "title": "What places should I visit in 4 days? : r/rome - Reddit",
+            "description": "One solid plan is a day for the Colosseum, Roman Forum, and Palatine Hill, another for the Vatican Museums and St Peter's, plus an evening ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1fnqkg8/hidden_gems_to_visit_in_rome/",
+            "title": "Hidden gems to visit in Rome - Reddit",
+            "description": "Just down the road from the Colosseum is the Basilica Saint Clement that is absolutely gorgeous. Below the pretty 11th C church are two more ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1f6d9ns/chill_peaceful_natural_places_in_rome/",
+            "title": "Chill, peaceful, natural places in Rome - Reddit",
+            "description": "Near the Colosseum there's the Monti neighborhood that's full of cute cafes. A cute cafe you can go to is \"Forno Conti\" also near Colle Oppio.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1eczcix/what_are_some_good_restaurants_and_caf%C3%A9s_near_the/",
+            "title": "What are some good restaurants and caf\u00e9s near the colosseum?",
+            "description": "There is a seafood restaurant named Crab that is maybe 100m from the Colosseum that is very good, although it is nicer and more expensive ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1i4ew3m/interesting_places_to_visit_around_or_just/",
+            "title": "Interesting places to visit around or just outside Rome? - Reddit",
+            "description": "It's a short trek to get to the Appian Way from Colosseum. But the Appian Way has car traffic too (not that much, and after a bit there's hardly ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1d7xbn5/what_are_some_good_nontouristy_things_to_do_in/",
+            "title": "What are some good non-touristy things to do in Rome? - Reddit",
+            "description": "My most interesting visit (after the first) was when an Aussie friend was over and we set out from the Colosseum to some other famous landmark.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1dstdcf/colosseum_and_forum_without_tickets/",
+            "title": "Colosseum and Forum without tickets : r/ItalyTravel - Reddit",
+            "description": "If you really want to see the Colosseum you'll probably only get in using a guided tour which at this late stage will be expensive but worth it.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/RomeTravel/comments/1nfs1zw/how_to_plan_vatican_colosseum_other_attractions/",
+            "title": "How to plan: Vatican, Colosseum & other attractions : r/RomeTravel",
+            "description": "If I want to visit the colosseum to catch it before and during the sunset - is going 3 hours before closing time, enough time? What are some ...",
+            "category": null
+          }
+        ],
+        "news": null,
+        "images": null
+      }
+    },
+    "food": {
+      "query": "where to eat near \"Colosseum\"",
+      "elapsed_s": 2.6831390857696533,
+      "result_count": 10,
+      "reddit_urls": [
+        "https://www.reddit.com/r/ItalyTravel/comments/1eczcix/what_are_some_good_restaurants_and_caf%C3%A9s_near_the/",
+        "https://www.reddit.com/r/rome/comments/16og3qw/good_place_to_eat_and_not_expensive_next_to/",
+        "https://www.reddit.com/r/rome/comments/1midvuj/best_restaurants_around_the_colliseum/",
+        "https://www.reddit.com/r/ItalyTravel/comments/unac53/dining_near_colosseum/",
+        "https://www.reddit.com/r/rome/comments/95a1gb/lunch_place_near_colosseum/",
+        "https://www.reddit.com/r/rome/comments/13qq2vl/good_pizza_places_near_the_colosseum_or_your/",
+        "https://www.reddit.com/r/rome/comments/4lmqh4/good_places_to_eat_near_vatican_and_colosseum/",
+        "https://www.reddit.com/r/rome/comments/1s6xpzt/best_restaurants_near_colosseo/",
+        "https://www.reddit.com/r/rome/comments/c8wjgb/good_affordable_restaurants_near_the_vatican_and/",
+        "https://www.reddit.com/r/rome/comments/1ezo12r/would_some_locals_be_so_kind_to_suggest_some_nice/"
+      ],
+      "raw": {
+        "web": [
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1eczcix/what_are_some_good_restaurants_and_caf%C3%A9s_near_the/",
+            "title": "What are some good restaurants and caf\u00e9s near the colosseum?",
+            "description": "Ristorante Aroma is great and has a terrace with a view of the Colosseum. Thank me later. Enjoy!",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/16og3qw/good_place_to_eat_and_not_expensive_next_to/",
+            "title": "Good place to eat and not expensive next to collusuem : r/rome",
+            "description": "Just found this post today while exploring the Colosseum and Roman Forum and this was GREAT advice. Fuorinorma is definitely worth a stop for a ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1midvuj/best_restaurants_around_the_colliseum/",
+            "title": "Best restaurants around the colliseum? : r/rome - Reddit",
+            "description": "Top trattorias near the Colosseum. Clear search. Ask. Top trattorias near the Colosseum. Best places to eat near the Colosseum.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/unac53/dining_near_colosseum/",
+            "title": "Dining near Colosseum : r/ItalyTravel - Reddit",
+            "description": "Aroma if you want a wonderful (and expensive) dining experience that has a perfect view of the Colosseum!",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/95a1gb/lunch_place_near_colosseum/",
+            "title": "Lunch place near Colosseum? : r/rome - Reddit",
+            "description": "Try La Naumachia Ristorante, about 5-10 minutes' walk up Via di San Giovanni from the Colosseum. Food is pretty good, they have enough space for ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/13qq2vl/good_pizza_places_near_the_colosseum_or_your/",
+            "title": "Good pizza places near the Colosseum? (or your personal favorites)",
+            "description": "Forno da Milvio is great, less than a 10 minute walk from the Colosseum.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/4lmqh4/good_places_to_eat_near_vatican_and_colosseum/",
+            "title": "Good places to eat near Vatican and Colosseum? : r/rome - Reddit",
+            "description": "Stumbled across an amazing taverna near the colosseum. Taverna Romana on the Via della Madonna dei Monti, #79.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1s6xpzt/best_restaurants_near_colosseo/",
+            "title": "Best restaurants near Colosseo? : r/rome - Reddit",
+            "description": "If you want a \"nice\" meal that is actually high quality without being a trap, walk 10-15 mins away from the Colosseum crowds: - L'Angolo di ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/c8wjgb/good_affordable_restaurants_near_the_vatican_and/",
+            "title": "Good affordable restaurants near the Vatican and Colosseum?",
+            "description": "If I remember right Il Bocconchino near the Colosseum was reasonably priced. I do remember that the food was superb.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1ezo12r/would_some_locals_be_so_kind_to_suggest_some_nice/",
+            "title": "Would some locals be so kind to suggest some nice restaurants?",
+            "description": "The second please. Doesnt need to particularly fancy. Our neighbourhood is around the colosseum but a bit further isnt a problem!",
+            "category": null
+          }
+        ],
+        "news": null,
+        "images": null
+      }
+    },
+    "trip_report": {
+      "query": "\"Colosseum\" trip report",
+      "elapsed_s": 2.2194809913635254,
+      "result_count": 10,
+      "reddit_urls": [
+        "https://www.reddit.com/r/ItalyTravel/comments/1etn35e/how_hard_is_it_to_visit_the_colosseum/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1cv3q14/review_tip_my_colosseum_full_experience_was_a_mess/",
+        "https://www.reddit.com/r/rome/comments/1548ivb/is_it_worth_buying_colosseum_tickets_without_a/",
+        "https://www.reddit.com/r/ItalyTravel/comments/1nb7e3h/should_i_do_a_guided_tour_of_the_colosseum/",
+        "https://www.reddit.com/r/RomeTravel/comments/1no3tmn/colosseum_guided_tour_worth_paying_for/",
+        "https://www.reddit.com/r/rome/comments/evrn8r/colosseum_tour_guide_worth_it/",
+        "https://www.reddit.com/r/RomeTravel/best/",
+        "https://www.reddit.com/r/rome/comments/ul1uy8/how_much_time_does_colosseum_and_roman_forum_take/",
+        "https://www.reddit.com/r/rome/comments/ulhrl7/touring_the_colosseum_worth_it/",
+        "https://www.reddit.com/r/rome/comments/w3cew3/colosseum_guided_tours/"
+      ],
+      "raw": {
+        "web": [
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1etn35e/how_hard_is_it_to_visit_the_colosseum/",
+            "title": "How hard is it to visit the Colosseum? : r/ItalyTravel - Reddit",
+            "description": "I'm planning a trip to Rome from 3 to 10 September and really want to visit the Colosseum. We've been looking into getting tickets for the Full Experience.",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1cv3q14/review_tip_my_colosseum_full_experience_was_a_mess/",
+            "title": "[Review & tip] My Colosseum Full Experience was a mess - Reddit",
+            "description": "Queue to get inside the colosseum: There were 3 lines which were not well managed as people eventually crowd around it, making the lines ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/1548ivb/is_it_worth_buying_colosseum_tickets_without_a/",
+            "title": "Is it worth buying Colosseum tickets without a tour guide? - Reddit",
+            "description": "Colosseum tickets (inc Roman Forum and Palatine Hill) without a tour guide is so expensive. It's 300 euros for 4 people (compared to 78 euros for 4 people with ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/ItalyTravel/comments/1nb7e3h/should_i_do_a_guided_tour_of_the_colosseum/",
+            "title": "Should I do a guided tour of the Colosseum, palatine, and Roman ...",
+            "description": "Colosseum night tour is awesome. We had the entire place to ourselves, except the ghosts down in the depths that kept an eye on us ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/RomeTravel/comments/1no3tmn/colosseum_guided_tour_worth_paying_for/",
+            "title": "Colosseum Guided Tour- Worth Paying For? : r/RomeTravel - Reddit",
+            "description": "We loved our tour with LivTours and Colosseum ended up one of my favorite experiences in Rome. She really helped it come alive!",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/evrn8r/colosseum_tour_guide_worth_it/",
+            "title": "Colosseum tour - guide worth it? : r/rome - Reddit",
+            "description": "Yes indeed, adding a guide is really worthwhile, especially in the Colosseum/Forum. It helps to bring the entire experience alive and allows you to understand ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/RomeTravel/best/",
+            "title": "r/RomeTravel - Reddit",
+            "description": "We're doing the essential stuff: Colosseum, Vatican, a \"golf cart tour\" that takes us to/around a lot of the other beautiful locales. I am quite excited to see ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/ul1uy8/how_much_time_does_colosseum_and_roman_forum_take/",
+            "title": "how much time does colosseum and Roman forum take? - Reddit",
+            "description": "At least 1 big hour at the colosseum; and a big 2,3 hours at the Forum/Palatine . Remember that you can do both on 2 consecutive days ( if I ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/ulhrl7/touring_the_colosseum_worth_it/",
+            "title": "Touring the Colosseum worth it? : r/rome - Reddit",
+            "description": "I think for a first time visit, it's 100% worth going to the Colosseum! I was just in Italy for the first time, and touring the colosseum and ...",
+            "category": null
+          },
+          {
+            "url": "https://www.reddit.com/r/rome/comments/w3cew3/colosseum_guided_tours/",
+            "title": "Colosseum Guided Tours : r/rome - Reddit",
+            "description": "Need Advice on Colosseum tickets \u00b7 First Timer Trip Report - 6/19/22 \u00b7 Colosseum Guided Tour- Worth Paying For? \u00b7 Colosseum tickets \u00b7 Colosseum Full ...",
+            "category": null
+          }
+        ],
+        "news": null,
+        "images": null
+      }
+    }
+  },
+  "phase1_unique_urls": [
+    "https://www.reddit.com/r/travel/comments/1lc4om0/whats_the_best_way_to_see_the_colosseum/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1etn35e/how_hard_is_it_to_visit_the_colosseum/",
+    "https://www.reddit.com/r/ironscape/comments/1jfkjj9/colosseum_guide/",
+    "https://www.reddit.com/r/2007scape/comments/1hsemap/looking_for_colosseum_advice_first_time/",
+    "https://www.reddit.com/r/2007scape/comments/1c2a4l2/colosseum_tips/",
+    "https://www.reddit.com/r/pokemonribbons/comments/h9qxdx/pokemon_colosseum_tips_and_tricks/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1curjbg/colosseum_tickets_info_tips_and_a_question/",
+    "https://www.reddit.com/r/2007scape/comments/1pjxoc9/recommended_colosseum_video_guide_for_1st_quiver/",
+    "https://www.reddit.com/r/FFXV/comments/5icc9k/colosseum_tips/",
+    "https://www.reddit.com/r/OSRSMobile/comments/1nhisj3/any_tips_for_colosseum/",
+    "https://www.reddit.com/r/rome/comments/ulhrl7/touring_the_colosseum_worth_it/",
+    "https://www.reddit.com/r/RomeTravel/comments/1no3tmn/colosseum_guided_tour_worth_paying_for/",
+    "https://www.reddit.com/r/rome/comments/1crwj6k/unpopular_opinion_i_thought_the_inside_of_the/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1kehl0j/i_did_the_colosseum_underground_tour_it_was_not/",
+    "https://www.reddit.com/r/rome/comments/evrn8r/colosseum_tour_guide_worth_it/",
+    "https://www.reddit.com/r/rome/comments/1548ivb/is_it_worth_buying_colosseum_tickets_without_a/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1nb7e3h/should_i_do_a_guided_tour_of_the_colosseum/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1kgsvdu/at_the_colosseum_now_you_definitely_dont_need_to/",
+    "https://www.reddit.com/r/ItalyTravel/comments/11adq0i/colosseum_underground_worth_it/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1s4ji94/are_the_standard_24h_colosseum_tickets_worth_it/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1j5835e/skip_the_line_tickets_for_the_colosseum_in_rome/",
+    "https://www.reddit.com/r/rome/comments/14hommo/are_the_official_site_tickets_skip_the_line/",
+    "https://www.reddit.com/r/rome/comments/1ody6qz/are_skip_the_line_tickets_worth_it/",
+    "https://www.reddit.com/r/RomeTravel/comments/1sp2b2u/booking_tickets_for_the_colosseum/",
+    "https://www.reddit.com/r/rome/comments/118z9em/skip_the_line_tickets_colosseum/",
+    "https://www.reddit.com/r/RomeTravel/comments/1oo13w2/colosseum_entry/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1d84l3g/should_i_just_wait_on_line_and_get_the_tickets_in/",
+    "https://www.reddit.com/r/rome/comments/18yjjrc/skiptheline_tickets_scam/",
+    "https://www.reddit.com/r/rome/comments/a5jmmf/trying_to_book_skiptheline_tickets_for_the/",
+    "https://www.reddit.com/r/rome/comments/1cfbv0t/ah_i_bought_colosseum_tickets_like_an_idiot_how/",
+    "https://www.reddit.com/r/rome/comments/1bpstuk/accidentally_booked_the_wrong_daytime_for/",
+    "https://www.reddit.com/r/RomeTravel/comments/1s56e17/struggle_with_purchasing_colosseum_tickets/",
+    "https://www.reddit.com/r/rome/comments/x1t212/booked_wrong_date_for_colosseum_with_coopculture/",
+    "https://www.reddit.com/r/rome/comments/1jd55rk/colosseo_booking_mistake/",
+    "https://www.reddit.com/r/InfinityNikkiofficial/comments/1papslg/anyone_else_slightly_bothered_that_it_says/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1c5grx5/issue_with_colosseum_website/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1e4tlrj/colosseum_ticketserror_code/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1g2oaja/booked_colosseum_tour_in_wrong_language_can_we/",
+    "https://www.reddit.com/r/rome/comments/1fnqkg8/hidden_gems_to_visit_in_rome/",
+    "https://www.reddit.com/r/rome/comments/up9x8b/what_are_your_favourite_hidden_gems_in_rome/",
+    "https://www.reddit.com/r/ItalyTravel/comments/153k9tn/rome_hidden_gems/",
+    "https://www.reddit.com/r/rome/comments/16l8h5z/rome_hidden_gems/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1dstdcf/colosseum_and_forum_without_tickets/",
+    "https://www.reddit.com/r/RomeTravel/comments/1nfs1zw/how_to_plan_vatican_colosseum_other_attractions/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1bd40hl/well_played_colosseumwell_played/",
+    "https://www.reddit.com/r/rome/comments/16egap8/places_to_visit_before_visiting_the_colosseum/",
+    "https://www.reddit.com/r/RomeTravel/comments/1s0eqeg/skipping_the_inside_of_the_colosseum/",
+    "https://www.reddit.com/r/rome/comments/1cafpc8/must_see_things_in_rome_that_arent_touristy/",
+    "https://www.reddit.com/r/rome/comments/9yz060/what_places_should_i_visit_in_4_days/",
+    "https://www.reddit.com/r/rome/comments/1f6d9ns/chill_peaceful_natural_places_in_rome/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1eczcix/what_are_some_good_restaurants_and_caf%C3%A9s_near_the/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1i4ew3m/interesting_places_to_visit_around_or_just/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1d7xbn5/what_are_some_good_nontouristy_things_to_do_in/",
+    "https://www.reddit.com/r/rome/comments/16og3qw/good_place_to_eat_and_not_expensive_next_to/",
+    "https://www.reddit.com/r/rome/comments/1midvuj/best_restaurants_around_the_colliseum/",
+    "https://www.reddit.com/r/ItalyTravel/comments/unac53/dining_near_colosseum/",
+    "https://www.reddit.com/r/rome/comments/95a1gb/lunch_place_near_colosseum/",
+    "https://www.reddit.com/r/rome/comments/13qq2vl/good_pizza_places_near_the_colosseum_or_your/",
+    "https://www.reddit.com/r/rome/comments/4lmqh4/good_places_to_eat_near_vatican_and_colosseum/",
+    "https://www.reddit.com/r/rome/comments/1s6xpzt/best_restaurants_near_colosseo/",
+    "https://www.reddit.com/r/rome/comments/c8wjgb/good_affordable_restaurants_near_the_vatican_and/",
+    "https://www.reddit.com/r/rome/comments/1ezo12r/would_some_locals_be_so_kind_to_suggest_some_nice/",
+    "https://www.reddit.com/r/ItalyTravel/comments/1cv3q14/review_tip_my_colosseum_full_experience_was_a_mess/",
+    "https://www.reddit.com/r/RomeTravel/best/",
+    "https://www.reddit.com/r/rome/comments/ul1uy8/how_much_time_does_colosseum_and_roman_forum_take/",
+    "https://www.reddit.com/r/rome/comments/w3cew3/colosseum_guided_tours/"
+  ],
+  "phase1_cross_intent": {
+    "https://www.reddit.com/r/ItalyTravel/comments/1etn35e/how_hard_is_it_to_visit_the_colosseum/": [
+      "planning",
+      "trip_report"
+    ],
+    "https://www.reddit.com/r/rome/comments/ulhrl7/touring_the_colosseum_worth_it/": [
+      "worth_it",
+      "trip_report"
+    ],
+    "https://www.reddit.com/r/RomeTravel/comments/1no3tmn/colosseum_guided_tour_worth_paying_for/": [
+      "worth_it",
+      "trip_report"
+    ],
+    "https://www.reddit.com/r/rome/comments/1crwj6k/unpopular_opinion_i_thought_the_inside_of_the/": [
+      "worth_it",
+      "regret"
+    ],
+    "https://www.reddit.com/r/rome/comments/evrn8r/colosseum_tour_guide_worth_it/": [
+      "worth_it",
+      "trip_report"
+    ],
+    "https://www.reddit.com/r/rome/comments/1548ivb/is_it_worth_buying_colosseum_tickets_without_a/": [
+      "worth_it",
+      "logistics",
+      "trip_report"
+    ],
+    "https://www.reddit.com/r/ItalyTravel/comments/1nb7e3h/should_i_do_a_guided_tour_of_the_colosseum/": [
+      "worth_it",
+      "trip_report"
+    ],
+    "https://www.reddit.com/r/RomeTravel/comments/1sp2b2u/booking_tickets_for_the_colosseum/": [
+      "logistics",
+      "hidden"
+    ],
+    "https://www.reddit.com/r/rome/comments/1fnqkg8/hidden_gems_to_visit_in_rome/": [
+      "hidden",
+      "nearby"
+    ],
+    "https://www.reddit.com/r/ItalyTravel/comments/1dstdcf/colosseum_and_forum_without_tickets/": [
+      "hidden",
+      "nearby"
+    ],
+    "https://www.reddit.com/r/RomeTravel/comments/1nfs1zw/how_to_plan_vatican_colosseum_other_attractions/": [
+      "hidden",
+      "nearby"
+    ],
+    "https://www.reddit.com/r/rome/comments/16egap8/places_to_visit_before_visiting_the_colosseum/": [
+      "hidden",
+      "nearby"
+    ],
+    "https://www.reddit.com/r/ItalyTravel/comments/1eczcix/what_are_some_good_restaurants_and_caf%C3%A9s_near_the/": [
+      "nearby",
+      "food"
+    ]
+  },
+  "phase2_scrapes": [
+    {
+      "url": "https://www.reddit.com/r/rome/comments/1548ivb/is_it_worth_buying_colosseum_tickets_without_a/",
+      "error": "Website Not Supported: Failed to scrape. We apologize for the inconvenience but we do not support this site. If you are part of an enterprise and want to have a further conversation about this, please fill out our intake form here: https://fk4bvu0n5qp.typeform.com/to/Ej6oydlg - No additional error details provided."
+    },
+    {
+      "url": "https://www.reddit.com/r/ItalyTravel/comments/1etn35e/how_hard_is_it_to_visit_the_colosseum/",
+      "error": "Website Not Supported: Failed to scrape. We apologize for the inconvenience but we do not support this site. If you are part of an enterprise and want to have a further conversation about this, please fill out our intake form here: https://fk4bvu0n5qp.typeform.com/to/Ej6oydlg - No additional error details provided."
+    },
+    {
+      "url": "https://www.reddit.com/r/rome/comments/ulhrl7/touring_the_colosseum_worth_it/",
+      "error": "Website Not Supported: Failed to scrape. We apologize for the inconvenience but we do not support this site. If you are part of an enterprise and want to have a further conversation about this, please fill out our intake form here: https://fk4bvu0n5qp.typeform.com/to/Ej6oydlg - No additional error details provided."
+    }
+  ]
+}

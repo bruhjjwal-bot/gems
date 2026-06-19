@@ -1,0 +1,7658 @@
+[
+  {
+    "cluster_id": 2,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 54,
+    "member_indices": [
+      75,
+      103,
+      110,
+      190,
+      196,
+      206,
+      268,
+      269,
+      291,
+      342,
+      382,
+      399,
+      408,
+      423,
+      428,
+      436,
+      442,
+      462,
+      466,
+      477,
+      494,
+      509,
+      517,
+      527,
+      555,
+      568,
+      574,
+      593,
+      601,
+      605,
+      614,
+      615,
+      620,
+      629,
+      635,
+      639,
+      643,
+      647,
+      657,
+      676,
+      679,
+      695,
+      704,
+      708,
+      718,
+      723,
+      725,
+      738,
+      741,
+      825,
+      834,
+      841,
+      868,
+      875
+    ],
+    "centroid_text_indices": [
+      643,
+      676,
+      620,
+      615,
+      708
+    ],
+    "name": "The Colosseum is frequently reported as overcrowded, negatively impacting the visitor experience.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.38
+  },
+  {
+    "cluster_id": 6,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 23,
+    "member_indices": [
+      8,
+      69,
+      88,
+      107,
+      122,
+      177,
+      200,
+      214,
+      228,
+      277,
+      310,
+      322,
+      364,
+      396,
+      441,
+      448,
+      467,
+      483,
+      556,
+      557,
+      588,
+      607,
+      818
+    ],
+    "centroid_text_indices": [
+      322,
+      396,
+      214,
+      228,
+      441
+    ],
+    "name": "Colosseum tickets frequently include access to the Roman Forum and Palatine Hill.",
+    "anchor_entities": [
+      "Colosseum",
+      "Roman Forum",
+      "Palatine Hill"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.38
+  },
+  {
+    "cluster_id": 4,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 31,
+    "member_indices": [
+      63,
+      66,
+      89,
+      91,
+      121,
+      149,
+      169,
+      180,
+      182,
+      207,
+      222,
+      253,
+      257,
+      339,
+      389,
+      395,
+      397,
+      405,
+      422,
+      443,
+      486,
+      488,
+      498,
+      535,
+      559,
+      583,
+      617,
+      645,
+      655,
+      826,
+      836
+    ],
+    "centroid_text_indices": [
+      498,
+      339,
+      645,
+      655,
+      395
+    ],
+    "name": "The Colosseum is frequently recommended for early morning visits to avoid crowds and heat.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.48
+  },
+  {
+    "cluster_id": 5,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 27,
+    "member_indices": [
+      192,
+      403,
+      417,
+      490,
+      540,
+      584,
+      632,
+      669,
+      700,
+      705,
+      715,
+      729,
+      733,
+      763,
+      771,
+      785,
+      792,
+      809,
+      817,
+      827,
+      828,
+      845,
+      846,
+      863,
+      864,
+      870,
+      873
+    ],
+    "centroid_text_indices": [
+      828,
+      669,
+      700,
+      846,
+      490
+    ],
+    "name": "Colosseum staff are frequently reported as unhelpful and rude, particularly during ticketing issues.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.48
+  },
+  {
+    "cluster_id": 7,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 18,
+    "member_indices": [
+      92,
+      234,
+      250,
+      464,
+      547,
+      579,
+      582,
+      710,
+      761,
+      772,
+      795,
+      801,
+      804,
+      814,
+      816,
+      822,
+      837,
+      848
+    ],
+    "centroid_text_indices": [
+      761,
+      579,
+      816,
+      848,
+      795
+    ],
+    "name": "Visitors frequently face entry issues at the Colosseum due to strict adherence to scheduled entry times.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.49
+  },
+  {
+    "cluster_id": 8,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 16,
+    "member_indices": [
+      50,
+      77,
+      128,
+      162,
+      178,
+      183,
+      288,
+      445,
+      487,
+      603,
+      616,
+      735,
+      760,
+      777,
+      790,
+      803
+    ],
+    "centroid_text_indices": [
+      803,
+      735,
+      77,
+      603,
+      760
+    ],
+    "name": "Visitors frequently recommend purchasing Colosseum tickets through the official website to avoid scams and overpriced tickets.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.67
+  },
+  {
+    "cluster_id": 9,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 16,
+    "member_indices": [
+      86,
+      135,
+      145,
+      154,
+      155,
+      201,
+      203,
+      220,
+      229,
+      266,
+      281,
+      312,
+      327,
+      338,
+      341,
+      538
+    ],
+    "centroid_text_indices": [
+      281,
+      145,
+      338,
+      155,
+      229
+    ],
+    "name": "The Colosseum is frequently recommended for its stunning evening illumination and excellent photo opportunities.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.76
+  },
+  {
+    "cluster_id": 3,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 48,
+    "member_indices": [
+      7,
+      13,
+      16,
+      31,
+      44,
+      49,
+      79,
+      90,
+      99,
+      101,
+      112,
+      130,
+      140,
+      141,
+      164,
+      170,
+      174,
+      193,
+      197,
+      205,
+      219,
+      225,
+      240,
+      245,
+      247,
+      254,
+      256,
+      258,
+      264,
+      301,
+      303,
+      306,
+      329,
+      337,
+      349,
+      353,
+      354,
+      360,
+      361,
+      375,
+      377,
+      404,
+      411,
+      418,
+      500,
+      510,
+      767,
+      805
+    ],
+    "centroid_text_indices": [
+      375,
+      264,
+      170,
+      805,
+      500
+    ],
+    "name": "Guided tours are frequently recommended for a more informative and enriching experience at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.77
+  },
+  {
+    "cluster_id": 1,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 63,
+    "member_indices": [
+      5,
+      21,
+      32,
+      33,
+      48,
+      53,
+      59,
+      72,
+      76,
+      80,
+      81,
+      106,
+      118,
+      120,
+      139,
+      142,
+      146,
+      151,
+      153,
+      157,
+      186,
+      230,
+      237,
+      287,
+      289,
+      293,
+      305,
+      315,
+      320,
+      324,
+      347,
+      355,
+      358,
+      359,
+      373,
+      376,
+      384,
+      438,
+      459,
+      469,
+      482,
+      484,
+      497,
+      518,
+      521,
+      541,
+      545,
+      560,
+      569,
+      587,
+      596,
+      680,
+      743,
+      746,
+      752,
+      765,
+      775,
+      784,
+      833,
+      835,
+      857,
+      865,
+      869
+    ],
+    "centroid_text_indices": [
+      484,
+      459,
+      118,
+      315,
+      5
+    ],
+    "name": "Visitors frequently recommend booking tickets in advance to avoid long queues at the Colosseum entrance.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.79
+  },
+  {
+    "cluster_id": 14,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 15,
+    "member_indices": [
+      388,
+      501,
+      503,
+      523,
+      580,
+      590,
+      630,
+      649,
+      667,
+      691,
+      727,
+      769,
+      786,
+      798,
+      872
+    ],
+    "centroid_text_indices": [
+      769,
+      503,
+      727,
+      388,
+      691
+    ],
+    "name": "Visitors frequently report inadequate signage and poor organisation at the Colosseum, affecting their overall experience.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.99
+  },
+  {
+    "cluster_id": 12,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 15,
+    "member_indices": [
+      43,
+      45,
+      54,
+      134,
+      208,
+      274,
+      298,
+      406,
+      426,
+      585,
+      608,
+      623,
+      682,
+      688,
+      779
+    ],
+    "centroid_text_indices": [
+      623,
+      585,
+      134,
+      608,
+      426
+    ],
+    "name": "The Colosseum's entrance fee is frequently considered overpriced by visitors.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.01
+  },
+  {
+    "cluster_id": 15,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 14,
+    "member_indices": [
+      47,
+      115,
+      138,
+      198,
+      213,
+      227,
+      321,
+      330,
+      362,
+      449,
+      458,
+      496,
+      516,
+      681
+    ],
+    "centroid_text_indices": [
+      115,
+      496,
+      47,
+      138,
+      458
+    ],
+    "name": "Visitors frequently praise the Colosseum for its stunning views from various levels, enhancing the overall experience.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.86
+  },
+  {
+    "cluster_id": 0,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 137,
+    "member_indices": [
+      1,
+      2,
+      3,
+      4,
+      9,
+      11,
+      12,
+      20,
+      22,
+      23,
+      25,
+      29,
+      30,
+      37,
+      42,
+      56,
+      57,
+      58,
+      60,
+      61,
+      62,
+      64,
+      65,
+      71,
+      82,
+      84,
+      94,
+      97,
+      98,
+      104,
+      109,
+      111,
+      117,
+      124,
+      129,
+      133,
+      136,
+      137,
+      143,
+      144,
+      147,
+      156,
+      158,
+      159,
+      160,
+      161,
+      163,
+      167,
+      171,
+      179,
+      184,
+      199,
+      202,
+      204,
+      209,
+      210,
+      211,
+      212,
+      215,
+      217,
+      218,
+      236,
+      241,
+      243,
+      244,
+      246,
+      248,
+      255,
+      259,
+      265,
+      270,
+      271,
+      273,
+      276,
+      280,
+      285,
+      292,
+      297,
+      299,
+      302,
+      308,
+      309,
+      311,
+      314,
+      317,
+      319,
+      323,
+      332,
+      335,
+      343,
+      344,
+      348,
+      351,
+      365,
+      370,
+      371,
+      372,
+      380,
+      386,
+      398,
+      401,
+      410,
+      419,
+      425,
+      432,
+      434,
+      437,
+      450,
+      452,
+      455,
+      457,
+      460,
+      465,
+      473,
+      475,
+      481,
+      491,
+      492,
+      499,
+      502,
+      505,
+      507,
+      508,
+      511,
+      519,
+      524,
+      530,
+      546,
+      554,
+      558,
+      562,
+      644,
+      663,
+      671,
+      675,
+      714,
+      744
+    ],
+    "centroid_text_indices": [
+      159,
+      30,
+      144,
+      137,
+      20
+    ],
+    "name": "The Colosseum is frequently recommended for its historical significance and impressive architecture as a must-see site in Rome.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 2.59
+  },
+  {
+    "cluster_id": 11,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 15,
+    "member_indices": [
+      0,
+      38,
+      85,
+      272,
+      313,
+      407,
+      430,
+      440,
+      512,
+      534,
+      543,
+      567,
+      594,
+      653,
+      751
+    ],
+    "centroid_text_indices": [
+      653,
+      543,
+      440,
+      751,
+      0
+    ],
+    "name": "The Colosseum is frequently praised for its impressive exterior and historical significance, often more so than its interior.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.32
+  },
+  {
+    "cluster_id": 16,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 12,
+    "member_indices": [
+      93,
+      446,
+      536,
+      550,
+      591,
+      595,
+      611,
+      673,
+      690,
+      696,
+      716,
+      737
+    ],
+    "centroid_text_indices": [
+      716,
+      595,
+      673,
+      611,
+      696
+    ],
+    "name": "Visitors frequently report issues with the Colosseum's audio guides, citing language limitations and poor quality.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.01
+  },
+  {
+    "cluster_id": 13,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 15,
+    "member_indices": [
+      367,
+      598,
+      612,
+      634,
+      693,
+      698,
+      699,
+      701,
+      732,
+      739,
+      780,
+      789,
+      810,
+      820,
+      839
+    ],
+    "centroid_text_indices": [
+      732,
+      780,
+      810,
+      789,
+      820
+    ],
+    "name": "The Colosseum's ticketing and entry process is frequently criticized for being confusing and inefficient.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.31
+  },
+  {
+    "cluster_id": 17,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 9,
+    "member_indices": [
+      17,
+      39,
+      51,
+      223,
+      235,
+      336,
+      433,
+      478,
+      867
+    ],
+    "centroid_text_indices": [
+      17,
+      433,
+      867,
+      336,
+      39
+    ],
+    "name": "Visitors frequently recommend bringing water and wearing light clothing due to limited shade and high temperatures at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.04
+  },
+  {
+    "cluster_id": 10,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 16,
+    "member_indices": [
+      105,
+      275,
+      334,
+      453,
+      513,
+      520,
+      563,
+      565,
+      609,
+      640,
+      762,
+      781,
+      794,
+      796,
+      815,
+      871
+    ],
+    "centroid_text_indices": [
+      815,
+      781,
+      334,
+      609,
+      453
+    ],
+    "name": "Visitors frequently report long queues at the Colosseum, even with timed entry tickets.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.64
+  },
+  {
+    "cluster_id": 18,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 9,
+    "member_indices": [
+      78,
+      150,
+      152,
+      176,
+      224,
+      263,
+      413,
+      659,
+      686
+    ],
+    "centroid_text_indices": [
+      176,
+      78,
+      224,
+      413,
+      263
+    ],
+    "name": "Tickets for the Colosseum, Roman Forum, and Palatine Hill are frequently available for 18\u20ac on official sites.",
+    "anchor_entities": [
+      "Colosseum",
+      "Roman Forum",
+      "Palatine Hill"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.43
+  },
+  {
+    "cluster_id": 19,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 9,
+    "member_indices": [
+      127,
+      378,
+      493,
+      529,
+      656,
+      661,
+      689,
+      707,
+      782
+    ],
+    "centroid_text_indices": [
+      378,
+      529,
+      707,
+      689,
+      493
+    ],
+    "name": "Visitors to the Colosseum frequently need to present photo ID for ticket verification and entry.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.87
+  },
+  {
+    "cluster_id": 21,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 8,
+    "member_indices": [
+      191,
+      476,
+      504,
+      526,
+      539,
+      572,
+      730,
+      854
+    ],
+    "centroid_text_indices": [
+      854,
+      572,
+      191,
+      539,
+      730
+    ],
+    "name": "Visitors frequently report that large and frequent tour groups at the Colosseum cause delays and impact the experience.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.23
+  },
+  {
+    "cluster_id": 23,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 7,
+    "member_indices": [
+      40,
+      131,
+      239,
+      392,
+      463,
+      471,
+      641
+    ],
+    "centroid_text_indices": [
+      463,
+      239,
+      131,
+      40,
+      471
+    ],
+    "name": "Visitors frequently encounter strict security checks at the Colosseum, enhancing safety but sometimes needing improvement.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.07
+  },
+  {
+    "cluster_id": 26,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 7,
+    "member_indices": [
+      102,
+      108,
+      113,
+      357,
+      435,
+      533,
+      561
+    ],
+    "centroid_text_indices": [
+      102,
+      561,
+      533,
+      435,
+      113
+    ],
+    "name": "Visitors frequently report the need for comfortable shoes due to the Colosseum's steep stairs and uneven walking surfaces.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.96
+  },
+  {
+    "cluster_id": 25,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 7,
+    "member_indices": [
+      87,
+      383,
+      480,
+      586,
+      619,
+      664,
+      722
+    ],
+    "centroid_text_indices": [
+      87,
+      383,
+      619,
+      722,
+      664
+    ],
+    "name": "Visitors frequently report limited access and visibility at the Colosseum's arena and upper levels.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.0
+  },
+  {
+    "cluster_id": 24,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 7,
+    "member_indices": [
+      70,
+      188,
+      260,
+      627,
+      652,
+      719,
+      806
+    ],
+    "centroid_text_indices": [
+      652,
+      806,
+      719,
+      627,
+      70
+    ],
+    "name": "The Roman Forum and Palatine Hill are frequently recommended as more interesting and quieter alternatives to the Colosseum.",
+    "anchor_entities": [
+      "Roman Forum",
+      "Palatine Hill",
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.04
+  },
+  {
+    "cluster_id": 20,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 9,
+    "member_indices": [
+      548,
+      602,
+      618,
+      674,
+      720,
+      758,
+      831,
+      849,
+      851
+    ],
+    "centroid_text_indices": [
+      849,
+      831,
+      851,
+      618,
+      602
+    ],
+    "name": "The Colosseum is frequently reported as needing maintenance and cleaning due to its deteriorating condition.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.43
+  },
+  {
+    "cluster_id": 22,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 7,
+    "member_indices": [
+      34,
+      278,
+      390,
+      414,
+      470,
+      631,
+      740
+    ],
+    "centroid_text_indices": [
+      414,
+      34,
+      278,
+      390,
+      631
+    ],
+    "name": "Visitors frequently explore the Colosseum's underground areas and limited arena floor access for unique historical insights.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.5
+  },
+  {
+    "cluster_id": 28,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 7,
+    "member_indices": [
+      267,
+      290,
+      409,
+      495,
+      514,
+      624,
+      766
+    ],
+    "centroid_text_indices": [
+      624,
+      267,
+      409,
+      495,
+      766
+    ],
+    "name": "Visitors to the Colosseum are frequently advised to be cautious of pickpockets in the area.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 27,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 7,
+    "member_indices": [
+      168,
+      307,
+      566,
+      638,
+      687,
+      726,
+      757
+    ],
+    "centroid_text_indices": [
+      168,
+      307,
+      757,
+      638,
+      566
+    ],
+    "name": "Visitors frequently report aggressive and disruptive street vendors as a negative aspect of the Colosseum experience.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.27
+  },
+  {
+    "cluster_id": 29,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 7,
+    "member_indices": [
+      474,
+      592,
+      728,
+      745,
+      756,
+      842,
+      847
+    ],
+    "centroid_text_indices": [
+      474,
+      728,
+      842,
+      745,
+      592
+    ],
+    "name": "Visitor organization and crowd management at the Colosseum is frequently reported as needing improvement.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.04
+  },
+  {
+    "cluster_id": 31,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 6,
+    "member_indices": [
+      14,
+      36,
+      73,
+      340,
+      522,
+      549
+    ],
+    "centroid_text_indices": [
+      522,
+      340,
+      73,
+      549,
+      14
+    ],
+    "name": "The Colosseum frequently provides a lift for improved accessibility, though access may be challenging for some visitors.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.03
+  },
+  {
+    "cluster_id": 33,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 6,
+    "member_indices": [
+      26,
+      175,
+      326,
+      350,
+      394,
+      542
+    ],
+    "centroid_text_indices": [
+      26,
+      326,
+      175,
+      350,
+      542
+    ],
+    "name": "Visitors frequently appreciate the leisurely exploration opportunities at the Colosseum, though some tours may feel rushed.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.07
+  },
+  {
+    "cluster_id": 35,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 6,
+    "member_indices": [
+      195,
+      262,
+      393,
+      461,
+      604,
+      742
+    ],
+    "centroid_text_indices": [
+      742,
+      393,
+      195,
+      461,
+      604
+    ],
+    "name": "The Colosseum is frequently perceived as overrated and smaller than expected by visitors.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.08
+  },
+  {
+    "cluster_id": 32,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 6,
+    "member_indices": [
+      24,
+      189,
+      221,
+      325,
+      416,
+      421
+    ],
+    "centroid_text_indices": [
+      325,
+      421,
+      221,
+      189,
+      24
+    ],
+    "name": "The Colosseum is frequently praised for its efficient and well-organized entry process despite high visitor numbers.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.31
+  },
+  {
+    "cluster_id": 34,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 6,
+    "member_indices": [
+      148,
+      328,
+      402,
+      532,
+      628,
+      658
+    ],
+    "centroid_text_indices": [
+      148,
+      402,
+      328,
+      532,
+      658
+    ],
+    "name": "Visitors frequently recommend allocating ample time for a Colosseum visit due to crowds and ongoing restoration work.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.51
+  },
+  {
+    "cluster_id": 37,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 6,
+    "member_indices": [
+      764,
+      778,
+      802,
+      807,
+      811,
+      819
+    ],
+    "centroid_text_indices": [
+      778,
+      811,
+      819,
+      802,
+      764
+    ],
+    "name": "Colosseum ticketing services frequently criticized for unreliability and poor handling of booking errors.",
+    "anchor_entities": [
+      "Colosseum",
+      "Headout"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.25
+  },
+  {
+    "cluster_id": 30,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 6,
+    "member_indices": [
+      10,
+      697,
+      754,
+      755,
+      787,
+      821
+    ],
+    "centroid_text_indices": [
+      755,
+      697,
+      821,
+      787,
+      10
+    ],
+    "name": "The Colosseum frequently faces criticism for inadequate accessibility and staff sensitivity towards visitors with disabilities.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.82
+  },
+  {
+    "cluster_id": 38,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 5,
+    "member_indices": [
+      181,
+      283,
+      316,
+      381,
+      391
+    ],
+    "centroid_text_indices": [
+      181,
+      391,
+      283,
+      381,
+      316
+    ],
+    "name": "The Colosseum is frequently praised for its convenient accessibility via public transportation in Rome.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.4
+  },
+  {
+    "cluster_id": 39,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      15,
+      231,
+      665,
+      824
+    ],
+    "centroid_text_indices": [
+      665,
+      824,
+      15,
+      231
+    ],
+    "name": "Visitors frequently need to plan for restroom access and may encounter paid facilities at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.31
+  },
+  {
+    "cluster_id": 40,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      19,
+      116,
+      333,
+      379
+    ],
+    "centroid_text_indices": [
+      333,
+      379,
+      19,
+      116
+    ],
+    "name": "The Colosseum is frequently noted for its historical capacity to accommodate between 50,000 and 80,000 spectators.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.12
+  },
+  {
+    "cluster_id": 42,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      119,
+      279,
+      304,
+      489
+    ],
+    "centroid_text_indices": [
+      489,
+      119,
+      304,
+      279
+    ],
+    "name": "The Colosseum's museum section is frequently praised for its informative exhibits on the site's historical significance.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.92
+  },
+  {
+    "cluster_id": 36,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 6,
+    "member_indices": [
+      573,
+      600,
+      610,
+      621,
+      636,
+      709
+    ],
+    "centroid_text_indices": [
+      600,
+      573,
+      621,
+      709,
+      610
+    ],
+    "name": "Visitors frequently report inadequate and limited toilet facilities at the Colosseum, leading to long queues.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.93
+  },
+  {
+    "cluster_id": 41,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      68,
+      525,
+      537,
+      753
+    ],
+    "centroid_text_indices": [
+      753,
+      525,
+      68,
+      537
+    ],
+    "name": "Visitors frequently recommend exploring the Roman Forum and Palatine Hill despite the extensive walking and challenging steps.",
+    "anchor_entities": [
+      "Roman Forum",
+      "Palatine Hill"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.28
+  },
+  {
+    "cluster_id": 43,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      126,
+      187,
+      249,
+      606
+    ],
+    "centroid_text_indices": [
+      249,
+      187,
+      126,
+      606
+    ],
+    "name": "The Attico at the Colosseum is frequently praised for offering a less crowded and peaceful experience with limited tickets.",
+    "anchor_entities": [
+      "The Attico",
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.14
+  },
+  {
+    "cluster_id": 44,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      216,
+      318,
+      374,
+      544
+    ],
+    "centroid_text_indices": [
+      318,
+      544,
+      216,
+      374
+    ],
+    "name": "Visitors frequently find a single standard ticket sufficient for a Colosseum visit unless seeking specific experiences like arena or underground tours.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.09
+  },
+  {
+    "cluster_id": 47,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      599,
+      626,
+      706,
+      793
+    ],
+    "centroid_text_indices": [
+      599,
+      626,
+      793,
+      706
+    ],
+    "name": "Security at the Colosseum is frequently criticized for being rude and overly strict.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.93
+  },
+  {
+    "cluster_id": 48,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      650,
+      783,
+      791,
+      850
+    ],
+    "centroid_text_indices": [
+      850,
+      791,
+      783,
+      650
+    ],
+    "name": "Tiqets is frequently criticized for unreliable and overpriced ticketing services for the Colosseum.",
+    "anchor_entities": [
+      "Tiqets",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.19
+  },
+  {
+    "cluster_id": 49,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      660,
+      662,
+      694,
+      800
+    ],
+    "centroid_text_indices": [
+      800,
+      694,
+      662,
+      660
+    ],
+    "name": "Colosseum ticketing frequently involves overcharging and scams by secondary operators and online scalpers.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.01
+  },
+  {
+    "cluster_id": 45,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      412,
+      576,
+      577,
+      578
+    ],
+    "centroid_text_indices": [
+      576,
+      578,
+      412,
+      577
+    ],
+    "name": "Rainy weather frequently causes discomfort and logistical challenges for visitors at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.5
+  },
+  {
+    "cluster_id": 46,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      468,
+      597,
+      666,
+      724
+    ],
+    "centroid_text_indices": [
+      468,
+      597,
+      666,
+      724
+    ],
+    "name": "Visitors frequently require specific tickets for different access levels at the Colosseum, including the top, underground, and premium areas.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.5
+  },
+  {
+    "cluster_id": 51,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      685,
+      736,
+      759,
+      768
+    ],
+    "centroid_text_indices": [
+      759,
+      768,
+      685,
+      736
+    ],
+    "name": "GetYourGuide frequently criticized for Colosseum tour cancellations, overpricing, and misleading information.",
+    "anchor_entities": [
+      "GetYourGuide",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.09
+  },
+  {
+    "cluster_id": 50,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      684,
+      712,
+      829,
+      853
+    ],
+    "centroid_text_indices": [
+      712,
+      684,
+      829,
+      853
+    ],
+    "name": "Guided tours at the Colosseum are frequently criticized for being unengaging and lacking depth.",
+    "anchor_entities": [
+      "Colosseum",
+      "Carrani Tours",
+      "Get Your Guide"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.27
+  },
+  {
+    "cluster_id": 53,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 3,
+    "member_indices": [
+      35,
+      100,
+      721
+    ],
+    "centroid_text_indices": [
+      35,
+      721,
+      100
+    ],
+    "name": "The Colosseum is frequently recommended for a quieter visit during evenings or near closing time.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.25
+  },
+  {
+    "cluster_id": 55,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 3,
+    "member_indices": [
+      166,
+      363,
+      571
+    ],
+    "centroid_text_indices": [
+      571,
+      166,
+      363
+    ],
+    "name": "Access to the Colosseum's underground area is frequently difficult due to limited ticket availability.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.88
+  },
+  {
+    "cluster_id": 54,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 3,
+    "member_indices": [
+      46,
+      52,
+      55
+    ],
+    "centroid_text_indices": [
+      55,
+      52,
+      46
+    ],
+    "name": "Tour guides like David Battaglino, Andrea Morganti, and Dennis frequently enhance the Colosseum experience.",
+    "anchor_entities": [
+      "David Battaglino",
+      "Andrea Morganti",
+      "Dennis",
+      "Colosseum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.21
+  },
+  {
+    "cluster_id": 57,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 3,
+    "member_indices": [
+      420,
+      444,
+      633
+    ],
+    "centroid_text_indices": [
+      444,
+      420,
+      633
+    ],
+    "name": "The Colosseum frequently presents challenges for families with young children and babies due to extensive walking and limited facilities.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.89
+  },
+  {
+    "cluster_id": 56,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 3,
+    "member_indices": [
+      172,
+      185,
+      233
+    ],
+    "centroid_text_indices": [
+      185,
+      233,
+      172
+    ],
+    "name": "Rome is frequently praised for its romantic ambiance, historic monuments like the Colosseum, and vibrant cultural offerings.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 59,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 3,
+    "member_indices": [
+      734,
+      813,
+      866
+    ],
+    "centroid_text_indices": [
+      734,
+      813,
+      866
+    ],
+    "name": "Tourists frequently report scams involving expensive skip-the-line tours at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.89
+  },
+  {
+    "cluster_id": 58,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 3,
+    "member_indices": [
+      570,
+      651,
+      668
+    ],
+    "centroid_text_indices": [
+      570,
+      651,
+      668
+    ],
+    "name": "Visitors frequently encounter seating and access issues at the Colosseum due to overcrowding and overbooking.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.1
+  },
+  {
+    "cluster_id": 60,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      6,
+      528
+    ],
+    "centroid_text_indices": [
+      528,
+      6
+    ],
+    "name": "Booking tickets through Parco Archeologico del Colosseo is recommended for better value and includes Forum site access.",
+    "anchor_entities": [
+      "Parco Archeologico del Colosseo",
+      "Forum site"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.11
+  },
+  {
+    "cluster_id": 61,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      28,
+      345
+    ],
+    "centroid_text_indices": [
+      28,
+      345
+    ],
+    "name": "The Colosseum is a UNESCO World Heritage site renowned for its historical significance and gladiator fights.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.31
+  },
+  {
+    "cluster_id": 63,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      67,
+      346
+    ],
+    "centroid_text_indices": [
+      67,
+      346
+    ],
+    "name": "The Colosseum is celebrated as one of the New Seven Wonders of the World.",
+    "anchor_entities": [
+      "Colosseum",
+      "New Seven Wonders of the World"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.14
+  },
+  {
+    "cluster_id": 64,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      83,
+      242
+    ],
+    "centroid_text_indices": [
+      83,
+      242
+    ],
+    "name": "Visitors experience a profound historical connection when exploring the ancient ruins of the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 62,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      41,
+      589
+    ],
+    "centroid_text_indices": [
+      41,
+      589
+    ],
+    "name": "Palatine Hill is recommended as a beautiful and worthwhile exploration after visiting the Colosseum.",
+    "anchor_entities": [
+      "Palatine Hill",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.24
+  },
+  {
+    "cluster_id": 65,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      95,
+      96
+    ],
+    "centroid_text_indices": [
+      95,
+      96
+    ],
+    "name": "The area around the Colosseum has mixed reports regarding the presence of scammers.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 0.93
+  },
+  {
+    "cluster_id": 67,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      356,
+      427
+    ],
+    "centroid_text_indices": [
+      427,
+      356
+    ],
+    "name": "Visitors recommend using taxis or hop-on, hop-off buses due to limited parking near the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.82
+  },
+  {
+    "cluster_id": 66,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      286,
+      454
+    ],
+    "centroid_text_indices": [
+      286,
+      454
+    ],
+    "name": "The area around the Colosseum is praised for its pleasant atmosphere with stoned pathways and greenery.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.85,
+    "name_elapsed_s": 1.12
+  },
+  {
+    "cluster_id": 69,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      400,
+      447
+    ],
+    "centroid_text_indices": [
+      447,
+      400
+    ],
+    "name": "The full experience arena ticket for the Colosseum is recommended for better organization and should be purchased from the official site.",
+    "anchor_entities": [
+      "Colosseum",
+      "Ministry of Culture"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.29
+  },
+  {
+    "cluster_id": 71,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      472,
+      637
+    ],
+    "centroid_text_indices": [
+      472,
+      637
+    ],
+    "name": "The Colosseum's historical integrity is perceived to be compromised by modern graffiti and private events.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.01
+  },
+  {
+    "cluster_id": 72,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      479,
+      713
+    ],
+    "centroid_text_indices": [
+      479,
+      713
+    ],
+    "name": "The Colosseum is reported as overrated unless interested in its architecture and interior.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.85,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 73,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      506,
+      832
+    ],
+    "centroid_text_indices": [
+      506,
+      832
+    ],
+    "name": "The atmosphere at the Colosseum is praised, but the air conditioning is reported as poor.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.85,
+    "name_elapsed_s": 1.21
+  },
+  {
+    "cluster_id": 68,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      368,
+      485
+    ],
+    "centroid_text_indices": [
+      485,
+      368
+    ],
+    "name": "Domus Aurea, linked to Emperor Nero, is accessible with a Colosseum ticket and open only on weekends.",
+    "anchor_entities": [
+      "Domus Aurea",
+      "Emperor Nero",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.93
+  },
+  {
+    "cluster_id": 75,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      564,
+      770
+    ],
+    "centroid_text_indices": [
+      564,
+      770
+    ],
+    "name": "Visitors often find the Colosseum's attic and bottom tier access poorly communicated.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.25
+  },
+  {
+    "cluster_id": 52,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 4,
+    "member_indices": [
+      799,
+      808,
+      858,
+      859
+    ],
+    "centroid_text_indices": [
+      859,
+      858,
+      799,
+      808
+    ],
+    "name": "Viator tours at the Colosseum frequently face criticism for inflexibility and inefficiencies in scheduling and ticketing.",
+    "anchor_entities": [
+      "Viator",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 3.98
+  },
+  {
+    "cluster_id": 76,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      702,
+      731
+    ],
+    "centroid_text_indices": [
+      702,
+      731
+    ],
+    "name": "The Colosseum experience is criticized for lacking immersive and educational elements, with tickets not delivering as promised.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.85,
+    "name_elapsed_s": 1.17
+  },
+  {
+    "cluster_id": 74,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      552,
+      692
+    ],
+    "centroid_text_indices": [
+      552,
+      692
+    ],
+    "name": "Visitors praise the stunning views and peaceful atmosphere from hotel balconies and the Attico access at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum",
+      "Attico"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.66
+  },
+  {
+    "cluster_id": 77,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      703,
+      750
+    ],
+    "centroid_text_indices": [
+      703,
+      750
+    ],
+    "name": "The area around the Colosseum is reported as crowded and dirty, with poorly maintained nearby Metro station.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.12
+  },
+  {
+    "cluster_id": 80,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      18
+    ],
+    "centroid_text_indices": [
+      18
+    ],
+    "name": "The tour from the Forum to the Colosseum is praised for its well-paced itinerary.",
+    "anchor_entities": [
+      "Forum",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.83
+  },
+  {
+    "cluster_id": 79,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      860,
+      862
+    ],
+    "centroid_text_indices": [
+      860,
+      862
+    ],
+    "name": "CoopCulture's ticketing process for the Colosseum is reported as unreliable with inadequate customer support.",
+    "anchor_entities": [
+      "CoopCulture",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.16
+  },
+  {
+    "cluster_id": 78,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      776,
+      797
+    ],
+    "centroid_text_indices": [
+      776,
+      797
+    ],
+    "name": "Visitors report issues with ticket validity and re-entry policies at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.28
+  },
+  {
+    "cluster_id": 84,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      123
+    ],
+    "centroid_text_indices": [
+      123
+    ],
+    "name": "A nearby coffee shop is recommended for good value near the Colosseum exit.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.85
+  },
+  {
+    "cluster_id": 82,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      74
+    ],
+    "centroid_text_indices": [
+      74
+    ],
+    "name": "The Colosseum is noted for its uneven flooring, a testament to its historical age and architectural legacy.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 85,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      125
+    ],
+    "centroid_text_indices": [
+      125
+    ],
+    "name": "The gift shop at the Colosseum is criticized for having overpriced items.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.93
+  },
+  {
+    "cluster_id": 81,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      27
+    ],
+    "centroid_text_indices": [
+      27
+    ],
+    "name": "Booking a ticket that includes the arena floor is necessary for access to that area at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.39
+  },
+  {
+    "cluster_id": 83,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      114
+    ],
+    "centroid_text_indices": [
+      114
+    ],
+    "name": "The Colosseum's architectural design features four overlapping orders with eighty arches and half-columns.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.5
+  },
+  {
+    "cluster_id": 86,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      132
+    ],
+    "centroid_text_indices": [
+      132
+    ],
+    "name": "Visitors should check bag size restrictions before visiting the Colosseum to avoid inconvenience.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.01
+  },
+  {
+    "cluster_id": 87,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      165
+    ],
+    "centroid_text_indices": [
+      165
+    ],
+    "name": "The Roman Guy Tours is recommended for its knowledgeable guides and efficient navigation of the Colosseum.",
+    "anchor_entities": [
+      "The Roman Guy Tours",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.06
+  },
+  {
+    "cluster_id": 88,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      173
+    ],
+    "centroid_text_indices": [
+      173
+    ],
+    "name": "Rome is praised for maintaining calm, cleanliness, and order despite high tourist volumes.",
+    "anchor_entities": [
+      "Rome"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.14
+  },
+  {
+    "cluster_id": 89,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      194
+    ],
+    "centroid_text_indices": [
+      194
+    ],
+    "name": "The Colosseum's basement tour is recommended for understanding the gladiators' experience.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.11
+  },
+  {
+    "cluster_id": 90,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      226
+    ],
+    "centroid_text_indices": [
+      226
+    ],
+    "name": "Walking around the Colosseum is recommended as an unforgettable experience even without entering.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 92,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      238
+    ],
+    "centroid_text_indices": [
+      238
+    ],
+    "name": "Ordinary entry tickets provide adequate access to explore the Colosseum's interior.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.13
+  },
+  {
+    "cluster_id": 91,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      232
+    ],
+    "centroid_text_indices": [
+      232
+    ],
+    "name": "April is recommended as an ideal month to visit Rome for pleasant weather.",
+    "anchor_entities": [
+      "Rome"
+    ],
+    "name_confidence": 0.7,
+    "name_elapsed_s": 1.46
+  },
+  {
+    "cluster_id": 96,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      282
+    ],
+    "centroid_text_indices": [
+      282
+    ],
+    "name": "Dining near the Colosseum is praised for offering stunning sunset views.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.85
+  },
+  {
+    "cluster_id": 93,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      251
+    ],
+    "centroid_text_indices": [
+      251
+    ],
+    "name": "Visitors often find the Colosseum ticketing page complex and may need multiple attempts to secure tickets.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.22
+  },
+  {
+    "cluster_id": 95,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      261
+    ],
+    "centroid_text_indices": [
+      261
+    ],
+    "name": "Exploring Rome on foot is recommended for better access to attractions like the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.15
+  },
+  {
+    "cluster_id": 97,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      284
+    ],
+    "centroid_text_indices": [
+      284
+    ],
+    "name": "Visitors appreciate the availability of free phone and tablet charging sockets near the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.85
+  },
+  {
+    "cluster_id": 98,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      294
+    ],
+    "centroid_text_indices": [
+      294
+    ],
+    "name": "The Colosseum is linked to the extinction of the Atlas bear due to historical gladiatorial events.",
+    "anchor_entities": [
+      "Colosseum",
+      "Atlas bear"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.87
+  },
+  {
+    "cluster_id": 94,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      252
+    ],
+    "centroid_text_indices": [
+      252
+    ],
+    "name": "The Colosseum offers free entry on the first Sunday of each month, attracting many visitors.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.58
+  },
+  {
+    "cluster_id": 101,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      300
+    ],
+    "centroid_text_indices": [
+      300
+    ],
+    "name": "The Colosseum is noted for its historical significance to the Christian religion.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.01
+  },
+  {
+    "cluster_id": 102,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      331
+    ],
+    "centroid_text_indices": [
+      331
+    ],
+    "name": "Access to the Colosseum's maze requires an additional payment.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.06
+  },
+  {
+    "cluster_id": 100,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      296
+    ],
+    "centroid_text_indices": [
+      296
+    ],
+    "name": "Julius Caesar is credited with popularizing gladiator games at the Colosseum to gain public favor.",
+    "anchor_entities": [
+      "Julius Caesar",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.25
+  },
+  {
+    "cluster_id": 104,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      366
+    ],
+    "centroid_text_indices": [
+      366
+    ],
+    "name": "Ticket prices for the Colosseum have increased recently, impacting visitor budgets.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.92
+  },
+  {
+    "cluster_id": 103,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      352
+    ],
+    "centroid_text_indices": [
+      352
+    ],
+    "name": "The imperial forums are praised for their beauty and historical significance.",
+    "anchor_entities": [
+      "imperial forums"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.35
+  },
+  {
+    "cluster_id": 99,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      295
+    ],
+    "centroid_text_indices": [
+      295
+    ],
+    "name": "Flamma, a Syrian gladiator, is renowned for repeatedly refusing freedom despite earning the rudius multiple times.",
+    "anchor_entities": [
+      "Flamma",
+      "Syrian",
+      "rudius"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.87
+  },
+  {
+    "cluster_id": 106,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      385
+    ],
+    "centroid_text_indices": [
+      385
+    ],
+    "name": "Visitors often regret visiting the Colosseum during Easter due to overwhelming crowds and traffic congestion.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.17
+  },
+  {
+    "cluster_id": 107,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      387
+    ],
+    "centroid_text_indices": [
+      387
+    ],
+    "name": "Walking from the Colosseum to the Rome city center takes approximately 20 minutes.",
+    "anchor_entities": [
+      "Colosseum",
+      "Rome city center"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 0.93
+  },
+  {
+    "cluster_id": 111,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      431
+    ],
+    "centroid_text_indices": [
+      431
+    ],
+    "name": "The presence of policemen with sports cars enhances the Colosseum's atmosphere.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 0.92
+  },
+  {
+    "cluster_id": 109,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      424
+    ],
+    "centroid_text_indices": [
+      424
+    ],
+    "name": "Visitors often note a lack of dining options near the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.08
+  },
+  {
+    "cluster_id": 105,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      369
+    ],
+    "centroid_text_indices": [
+      369
+    ],
+    "name": "Access to Palatine Hill and the Forum is restricted due to the delicate nature of these historical sites.",
+    "anchor_entities": [
+      "Palatine Hill",
+      "Forum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.99
+  },
+  {
+    "cluster_id": 108,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      415
+    ],
+    "centroid_text_indices": [
+      415
+    ],
+    "name": "A free app enhances the Colosseum visit by providing information through a QR code upon arrival.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.33
+  },
+  {
+    "cluster_id": 110,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      429
+    ],
+    "centroid_text_indices": [
+      429
+    ],
+    "name": "The highest terrace at the Victor Emmanuel monument is praised for offering great photo opportunities of the Colosseum.",
+    "anchor_entities": [
+      "Victor Emmanuel monument",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.22
+  },
+  {
+    "cluster_id": 114,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      515
+    ],
+    "centroid_text_indices": [
+      515
+    ],
+    "name": "A small hill near the Colosseum is recommended for less crowded photo opportunities.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.91
+  },
+  {
+    "cluster_id": 115,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      531
+    ],
+    "centroid_text_indices": [
+      531
+    ],
+    "name": "Technical issues with apps can negatively impact the visitor experience at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.17
+  },
+  {
+    "cluster_id": 112,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      439
+    ],
+    "centroid_text_indices": [
+      439
+    ],
+    "name": "Visitors can spot rose-ringed parakeets and monk parakeets around the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.29
+  },
+  {
+    "cluster_id": 113,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      456
+    ],
+    "centroid_text_indices": [
+      456
+    ],
+    "name": "Visitors often note the absence of original bleachers as a minor drawback at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.29
+  },
+  {
+    "cluster_id": 117,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      553
+    ],
+    "centroid_text_indices": [
+      553
+    ],
+    "name": "The bar top balcony at the Colosseum hotel is often closed despite favorable weather conditions.",
+    "anchor_entities": [
+      "Colosseum hotel",
+      "bar top balcony"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.85
+  },
+  {
+    "cluster_id": 116,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      551
+    ],
+    "centroid_text_indices": [
+      551
+    ],
+    "name": "The Colosseum could enhance visitor experience with reenactment photos to stimulate imagination.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.17
+  },
+  {
+    "cluster_id": 120,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      613
+    ],
+    "centroid_text_indices": [
+      613
+    ],
+    "name": "Colosseum visitors may experience entry issues due to tickets being mistakenly sent to spam folders.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 119,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      581
+    ],
+    "centroid_text_indices": [
+      581
+    ],
+    "name": "Nighttime lighting around the Colosseum is poorly positioned, impacting visibility and safety for visitors.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.11
+  },
+  {
+    "cluster_id": 121,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      622
+    ],
+    "centroid_text_indices": [
+      622
+    ],
+    "name": "Visitors should note that refreshments are unavailable inside the Colosseum, with only a water fountain located outside.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.25
+  },
+  {
+    "cluster_id": 122,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      625
+    ],
+    "centroid_text_indices": [
+      625
+    ],
+    "name": "French language explanations at the Colosseum are noted as limited, potentially affecting non-English speaking visitors.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.18
+  },
+  {
+    "cluster_id": 118,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      575
+    ],
+    "centroid_text_indices": [
+      575
+    ],
+    "name": "Visitors often regret additional charges for extra features at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.8
+  },
+  {
+    "cluster_id": 124,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      648
+    ],
+    "centroid_text_indices": [
+      648
+    ],
+    "name": "Exhibitions at the Colosseum, such as Gobekli Tepe, are considered unrelated to its main historical attraction.",
+    "anchor_entities": [
+      "Colosseum",
+      "Gobekli Tepe"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.37
+  },
+  {
+    "cluster_id": 125,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      654
+    ],
+    "centroid_text_indices": [
+      654
+    ],
+    "name": "The Gladiators Entrance provides a unique and immersive perspective from the Colosseum's arena floor.",
+    "anchor_entities": [
+      "Gladiators Entrance",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.2
+  },
+  {
+    "cluster_id": 70,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 2,
+    "member_indices": [
+      451,
+      642
+    ],
+    "centroid_text_indices": [
+      451,
+      642
+    ],
+    "name": "The Colosseum is praised for offering views of ancient Rome and opportunities to observe ancient artifacts.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.85,
+    "name_elapsed_s": 8.35
+  },
+  {
+    "cluster_id": 126,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      670
+    ],
+    "centroid_text_indices": [
+      670
+    ],
+    "name": "Colosseum ticket name changes are not permitted within 24 hours of the scheduled visit.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.09
+  },
+  {
+    "cluster_id": 128,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      677
+    ],
+    "centroid_text_indices": [
+      677
+    ],
+    "name": "There is a suggestion to implement ticket quotas at the Colosseum to manage tourism effectively.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 0.91
+  },
+  {
+    "cluster_id": 127,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      672
+    ],
+    "centroid_text_indices": [
+      672
+    ],
+    "name": "Visitors report additional charges for access to specific areas like the third level and Palatine exhibitions at the Colosseum.",
+    "anchor_entities": [
+      "third level",
+      "Palatine exhibitions"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.12
+  },
+  {
+    "cluster_id": 123,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      646
+    ],
+    "centroid_text_indices": [
+      646
+    ],
+    "name": "Visitors often find parts of the Colosseum closed off, leading to disappointment during their visit.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.83
+  },
+  {
+    "cluster_id": 129,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      678
+    ],
+    "centroid_text_indices": [
+      678
+    ],
+    "name": "Rome is noted for high coach fees, with increases expected during the Jubilee.",
+    "anchor_entities": [
+      "Rome",
+      "Jubilee"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.15
+  },
+  {
+    "cluster_id": 131,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      711
+    ],
+    "centroid_text_indices": [
+      711
+    ],
+    "name": "Visitors should allocate 2-3 hours to fully explore the Roman Forum.",
+    "anchor_entities": [
+      "Roman Forum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 0.94
+  },
+  {
+    "cluster_id": 132,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      717
+    ],
+    "centroid_text_indices": [
+      717
+    ],
+    "name": "Arena-only tickets at the Colosseum are reported as misdescribed and not worth the cost.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 0.98
+  },
+  {
+    "cluster_id": 130,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      683
+    ],
+    "centroid_text_indices": [
+      683
+    ],
+    "name": "Visitors require additional options to access all areas of the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.19
+  },
+  {
+    "cluster_id": 136,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      773
+    ],
+    "centroid_text_indices": [
+      773
+    ],
+    "name": "Colosseum tour company is reported for poor customer service and unfulfilled refund promises.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.9
+  },
+  {
+    "cluster_id": 135,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      749
+    ],
+    "centroid_text_indices": [
+      749
+    ],
+    "name": "The Colosseum no longer accepts skip-the-line passes, impacting pre-booked tour experiences.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.92
+  },
+  {
+    "cluster_id": 133,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      747
+    ],
+    "centroid_text_indices": [
+      747
+    ],
+    "name": "Student tickets at the Colosseum are only valid for EU students, excluding UK students.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.08
+  },
+  {
+    "cluster_id": 134,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      748
+    ],
+    "centroid_text_indices": [
+      748
+    ],
+    "name": "Visitors to Palatine Hill are advised to bring their own toilet paper due to insufficient supply.",
+    "anchor_entities": [
+      "Palatine Hill"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.08
+  },
+  {
+    "cluster_id": 137,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      774
+    ],
+    "centroid_text_indices": [
+      774
+    ],
+    "name": "RoamMad is reported to cancel Colosseum tickets close to the entry date.",
+    "anchor_entities": [
+      "RoamMad",
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.95
+  },
+  {
+    "cluster_id": 138,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      788
+    ],
+    "centroid_text_indices": [
+      788
+    ],
+    "name": "Information about the Colosseum's historical events and architecture is often described as minimal and fragmented.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.16
+  },
+  {
+    "cluster_id": 139,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      812
+    ],
+    "centroid_text_indices": [
+      812
+    ],
+    "name": "Parco archeologico del Colosseo's ticketing system is reported to have issues with incorrect date and time selections.",
+    "anchor_entities": [
+      "Parco archeologico del Colosseo"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.19
+  },
+  {
+    "cluster_id": 140,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      823
+    ],
+    "centroid_text_indices": [
+      823
+    ],
+    "name": "The tour check-in process at the Colosseum's tour station office is reported to be lengthy.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.02
+  },
+  {
+    "cluster_id": 141,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      830
+    ],
+    "centroid_text_indices": [
+      830
+    ],
+    "name": "Get Your Guide charges for 17-year-olds at the Colosseum despite free entry policy for this age group.",
+    "anchor_entities": [
+      "Colosseum",
+      "Get Your Guide"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 0.98
+  },
+  {
+    "cluster_id": 142,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      838
+    ],
+    "centroid_text_indices": [
+      838
+    ],
+    "name": "Audio guides are available for purchase at the Colosseum, Roman Forum, and Palatine Hill.",
+    "anchor_entities": [
+      "Colosseum",
+      "Roman Forum",
+      "Palatine Hill"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 0.98
+  },
+  {
+    "cluster_id": 144,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      843
+    ],
+    "centroid_text_indices": [
+      843
+    ],
+    "name": "City of Wonders is reported to cancel tours at the last minute, affecting travel plans.",
+    "anchor_entities": [
+      "City of Wonders"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.14
+  },
+  {
+    "cluster_id": 145,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      844
+    ],
+    "centroid_text_indices": [
+      844
+    ],
+    "name": "Booking with smaller tour companies for the Colosseum is recommended for reliable direct guide contact.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.02
+  },
+  {
+    "cluster_id": 143,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      840
+    ],
+    "centroid_text_indices": [
+      840
+    ],
+    "name": "Queue management at the Roman Forum is criticized for inefficiency by Coop employees.",
+    "anchor_entities": [
+      "Roman Forum",
+      "Coop"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.16
+  },
+  {
+    "cluster_id": 146,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      852
+    ],
+    "centroid_text_indices": [
+      852
+    ],
+    "name": "Get Your Guide's customer service is criticized for poor communication and rescheduling issues.",
+    "anchor_entities": [
+      "Get Your Guide"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.1
+  },
+  {
+    "cluster_id": 148,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      856
+    ],
+    "centroid_text_indices": [
+      856
+    ],
+    "name": "Providing a list of hotel pick-up points could enhance the tour experience at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.1
+  },
+  {
+    "cluster_id": 147,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      855
+    ],
+    "centroid_text_indices": [
+      855
+    ],
+    "name": "Lack of communication from tour operators can lead to missed tours at the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.42
+  },
+  {
+    "cluster_id": 151,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 73,
+    "member_indices": [
+      874,
+      889,
+      891,
+      905,
+      910,
+      936,
+      947,
+      956,
+      958,
+      961,
+      965,
+      976,
+      980,
+      987,
+      992,
+      1019,
+      1028,
+      1052,
+      1066,
+      1076,
+      1083,
+      1089,
+      1101,
+      1104,
+      1115,
+      1135,
+      1156,
+      1159,
+      1161,
+      1165,
+      1178,
+      1180,
+      1186,
+      1199,
+      1207,
+      1216,
+      1221,
+      1251,
+      1258,
+      1264,
+      1283,
+      1291,
+      1302,
+      1317,
+      1321,
+      1331,
+      1344,
+      1353,
+      1379,
+      1408,
+      1413,
+      1420,
+      1438,
+      1443,
+      1450,
+      1455,
+      1472,
+      1477,
+      1493,
+      1505,
+      1506,
+      1525,
+      1554,
+      1558,
+      1581,
+      1606,
+      1611,
+      1693,
+      1735,
+      1799,
+      1823,
+      1919,
+      1929
+    ],
+    "centroid_text_indices": [
+      1455,
+      1076,
+      1450,
+      965,
+      1472
+    ],
+    "name": "Booking tickets in advance is frequently recommended to avoid long queues at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.93
+  },
+  {
+    "cluster_id": 152,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 73,
+    "member_indices": [
+      911,
+      1058,
+      1094,
+      1097,
+      1273,
+      1276,
+      1315,
+      1356,
+      1358,
+      1375,
+      1376,
+      1394,
+      1403,
+      1411,
+      1442,
+      1481,
+      1482,
+      1530,
+      1541,
+      1550,
+      1566,
+      1567,
+      1570,
+      1578,
+      1582,
+      1603,
+      1615,
+      1617,
+      1620,
+      1625,
+      1632,
+      1637,
+      1640,
+      1643,
+      1646,
+      1653,
+      1668,
+      1678,
+      1681,
+      1689,
+      1694,
+      1695,
+      1715,
+      1717,
+      1728,
+      1739,
+      1746,
+      1748,
+      1756,
+      1762,
+      1773,
+      1776,
+      1783,
+      1797,
+      1816,
+      1826,
+      1829,
+      1833,
+      1862,
+      1865,
+      1873,
+      1880,
+      1883,
+      1889,
+      1894,
+      1897,
+      1911,
+      1916,
+      1923,
+      1939,
+      1945,
+      1956,
+      1960
+    ],
+    "centroid_text_indices": [
+      1862,
+      1637,
+      1358,
+      1773,
+      1681
+    ],
+    "name": "The Louvre Museum is frequently criticized for inadequate and confusing signage, leading to navigation challenges for visitors.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.11
+  },
+  {
+    "cluster_id": 150,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 77,
+    "member_indices": [
+      913,
+      938,
+      960,
+      977,
+      1007,
+      1093,
+      1137,
+      1182,
+      1198,
+      1214,
+      1228,
+      1236,
+      1260,
+      1262,
+      1274,
+      1278,
+      1281,
+      1304,
+      1325,
+      1329,
+      1343,
+      1368,
+      1378,
+      1383,
+      1400,
+      1441,
+      1468,
+      1480,
+      1487,
+      1501,
+      1503,
+      1508,
+      1518,
+      1526,
+      1531,
+      1538,
+      1546,
+      1549,
+      1552,
+      1557,
+      1569,
+      1574,
+      1575,
+      1604,
+      1608,
+      1616,
+      1618,
+      1624,
+      1629,
+      1633,
+      1657,
+      1659,
+      1663,
+      1684,
+      1690,
+      1692,
+      1696,
+      1716,
+      1741,
+      1745,
+      1757,
+      1763,
+      1771,
+      1774,
+      1777,
+      1792,
+      1815,
+      1832,
+      1845,
+      1857,
+      1866,
+      1882,
+      1896,
+      1898,
+      1914,
+      1928,
+      1931
+    ],
+    "centroid_text_indices": [
+      1692,
+      1618,
+      1468,
+      1236,
+      1400
+    ],
+    "name": "The Mona Lisa room at the Louvre Museum is frequently reported as overcrowded and rushed.",
+    "anchor_entities": [
+      "Mona Lisa",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.24
+  },
+  {
+    "cluster_id": 155,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 54,
+    "member_indices": [
+      876,
+      895,
+      896,
+      916,
+      918,
+      925,
+      931,
+      942,
+      950,
+      964,
+      983,
+      1009,
+      1031,
+      1044,
+      1057,
+      1084,
+      1107,
+      1114,
+      1123,
+      1131,
+      1134,
+      1138,
+      1144,
+      1145,
+      1173,
+      1176,
+      1181,
+      1190,
+      1211,
+      1224,
+      1232,
+      1238,
+      1252,
+      1257,
+      1272,
+      1295,
+      1300,
+      1332,
+      1340,
+      1355,
+      1391,
+      1416,
+      1429,
+      1436,
+      1447,
+      1452,
+      1510,
+      1520,
+      1527,
+      1532,
+      1535,
+      1560,
+      1634,
+      1675
+    ],
+    "centroid_text_indices": [
+      1138,
+      1144,
+      1355,
+      1232,
+      1238
+    ],
+    "name": "The Louvre Museum is frequently praised for its impressive architecture and extensive collection of art and history.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.92
+  },
+  {
+    "cluster_id": 153,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 66,
+    "member_indices": [
+      883,
+      884,
+      887,
+      890,
+      893,
+      897,
+      908,
+      909,
+      917,
+      929,
+      933,
+      944,
+      967,
+      985,
+      1004,
+      1013,
+      1014,
+      1020,
+      1041,
+      1069,
+      1085,
+      1088,
+      1105,
+      1111,
+      1112,
+      1122,
+      1132,
+      1153,
+      1169,
+      1175,
+      1185,
+      1191,
+      1194,
+      1205,
+      1206,
+      1212,
+      1218,
+      1234,
+      1246,
+      1259,
+      1261,
+      1282,
+      1299,
+      1307,
+      1312,
+      1338,
+      1345,
+      1357,
+      1381,
+      1384,
+      1396,
+      1402,
+      1404,
+      1405,
+      1427,
+      1432,
+      1439,
+      1464,
+      1489,
+      1523,
+      1537,
+      1583,
+      1597,
+      1626,
+      1627,
+      1631
+    ],
+    "centroid_text_indices": [
+      1396,
+      1338,
+      1185,
+      1088,
+      1194
+    ],
+    "name": "Visitors frequently recommend allocating at least a full day to explore the extensive exhibits at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.04
+  },
+  {
+    "cluster_id": 154,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 56,
+    "member_indices": [
+      1050,
+      1253,
+      1266,
+      1285,
+      1346,
+      1397,
+      1418,
+      1430,
+      1448,
+      1451,
+      1507,
+      1514,
+      1543,
+      1555,
+      1564,
+      1565,
+      1571,
+      1573,
+      1588,
+      1591,
+      1610,
+      1622,
+      1666,
+      1669,
+      1672,
+      1673,
+      1705,
+      1709,
+      1713,
+      1724,
+      1729,
+      1740,
+      1743,
+      1751,
+      1755,
+      1758,
+      1761,
+      1765,
+      1770,
+      1789,
+      1790,
+      1794,
+      1796,
+      1801,
+      1811,
+      1878,
+      1900,
+      1905,
+      1913,
+      1921,
+      1941,
+      1948,
+      1953,
+      1961,
+      1963,
+      1965
+    ],
+    "centroid_text_indices": [
+      1397,
+      1729,
+      1591,
+      1948,
+      1565
+    ],
+    "name": "The Louvre Museum is frequently reported as overcrowded, negatively impacting the visitor experience.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.04
+  },
+  {
+    "cluster_id": 156,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 53,
+    "member_indices": [
+      1092,
+      1113,
+      1149,
+      1152,
+      1196,
+      1219,
+      1308,
+      1351,
+      1352,
+      1437,
+      1521,
+      1598,
+      1600,
+      1607,
+      1614,
+      1641,
+      1645,
+      1654,
+      1656,
+      1671,
+      1701,
+      1707,
+      1720,
+      1734,
+      1754,
+      1759,
+      1772,
+      1779,
+      1781,
+      1809,
+      1817,
+      1831,
+      1834,
+      1836,
+      1839,
+      1841,
+      1843,
+      1849,
+      1859,
+      1885,
+      1886,
+      1895,
+      1899,
+      1920,
+      1925,
+      1927,
+      1944,
+      1949,
+      1952,
+      1954,
+      1957,
+      1962,
+      1964
+    ],
+    "centroid_text_indices": [
+      1600,
+      1952,
+      1779,
+      1944,
+      1954
+    ],
+    "name": "The Louvre Museum frequently experiences long queues despite visitors having pre-booked tickets.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.15
+  },
+  {
+    "cluster_id": 149,
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "size": 1,
+    "member_indices": [
+      861
+    ],
+    "centroid_text_indices": [
+      861
+    ],
+    "name": "Visitors report better experiences with non-official vendors for ticket purchases at major attractions like the Colosseum.",
+    "anchor_entities": [
+      "Colosseum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.67
+  },
+  {
+    "cluster_id": 157,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 50,
+    "member_indices": [
+      886,
+      888,
+      892,
+      901,
+      915,
+      920,
+      928,
+      932,
+      940,
+      990,
+      1005,
+      1010,
+      1017,
+      1021,
+      1025,
+      1032,
+      1033,
+      1037,
+      1060,
+      1064,
+      1065,
+      1086,
+      1103,
+      1108,
+      1109,
+      1119,
+      1121,
+      1125,
+      1129,
+      1140,
+      1155,
+      1184,
+      1193,
+      1210,
+      1220,
+      1242,
+      1250,
+      1263,
+      1305,
+      1320,
+      1324,
+      1385,
+      1440,
+      1471,
+      1473,
+      1485,
+      1495,
+      1496,
+      1511,
+      1547
+    ],
+    "centroid_text_indices": [
+      1021,
+      1017,
+      901,
+      1242,
+      1324
+    ],
+    "name": "The Louvre Museum is frequently recommended as a must-visit attraction for its historical art experience in Paris.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.95
+  },
+  {
+    "cluster_id": 158,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 39,
+    "member_indices": [
+      898,
+      907,
+      952,
+      969,
+      972,
+      984,
+      1015,
+      1056,
+      1073,
+      1077,
+      1079,
+      1087,
+      1127,
+      1130,
+      1133,
+      1141,
+      1157,
+      1164,
+      1168,
+      1171,
+      1174,
+      1188,
+      1201,
+      1233,
+      1239,
+      1265,
+      1293,
+      1296,
+      1298,
+      1310,
+      1328,
+      1366,
+      1415,
+      1417,
+      1461,
+      1476,
+      1516,
+      1542,
+      1621
+    ],
+    "centroid_text_indices": [
+      1133,
+      1127,
+      1542,
+      1239,
+      1077
+    ],
+    "name": "The Mona Lisa and Venus de Milo are frequently highlighted as must-see artworks at the Louvre Museum.",
+    "anchor_entities": [
+      "Mona Lisa",
+      "Venus de Milo",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.11
+  },
+  {
+    "cluster_id": 161,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 26,
+    "member_indices": [
+      878,
+      885,
+      922,
+      930,
+      948,
+      957,
+      975,
+      1022,
+      1034,
+      1043,
+      1063,
+      1143,
+      1167,
+      1243,
+      1247,
+      1290,
+      1333,
+      1335,
+      1349,
+      1372,
+      1465,
+      1545,
+      1556,
+      1752,
+      1753,
+      1877
+    ],
+    "centroid_text_indices": [
+      1243,
+      1752,
+      1043,
+      957,
+      1333
+    ],
+    "name": "Guided tours are frequently recommended for enhancing the visitor experience and navigating the extensive collections at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.19
+  },
+  {
+    "cluster_id": 162,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 19,
+    "member_indices": [
+      880,
+      912,
+      921,
+      941,
+      949,
+      991,
+      999,
+      1002,
+      1059,
+      1075,
+      1095,
+      1202,
+      1230,
+      1254,
+      1269,
+      1289,
+      1327,
+      1478,
+      1662
+    ],
+    "centroid_text_indices": [
+      912,
+      1478,
+      1059,
+      1289,
+      1230
+    ],
+    "name": "The Louvre Museum is frequently recommended for early-morning visits to avoid tour group crowds.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.18
+  },
+  {
+    "cluster_id": 160,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 33,
+    "member_indices": [
+      989,
+      993,
+      1240,
+      1319,
+      1323,
+      1336,
+      1348,
+      1386,
+      1494,
+      1539,
+      1540,
+      1594,
+      1605,
+      1609,
+      1674,
+      1712,
+      1721,
+      1725,
+      1726,
+      1737,
+      1750,
+      1800,
+      1825,
+      1827,
+      1828,
+      1846,
+      1848,
+      1864,
+      1872,
+      1875,
+      1902,
+      1922,
+      1959
+    ],
+    "centroid_text_indices": [
+      1828,
+      1959,
+      1827,
+      1737,
+      1386
+    ],
+    "name": "Visitors frequently report unhelpful and unpleasant staff at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.31
+  },
+  {
+    "cluster_id": 165,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 17,
+    "member_indices": [
+      923,
+      973,
+      1039,
+      1042,
+      1045,
+      1055,
+      1126,
+      1172,
+      1275,
+      1279,
+      1294,
+      1311,
+      1475,
+      1515,
+      1522,
+      1553,
+      1599
+    ],
+    "centroid_text_indices": [
+      1055,
+      1475,
+      1275,
+      1515,
+      1045
+    ],
+    "name": "The Louvre Museum is renowned for its extensive collection of artifacts from ancient Egypt to the Renaissance.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.9
+  },
+  {
+    "cluster_id": 164,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 17,
+    "member_indices": [
+      877,
+      899,
+      951,
+      1078,
+      1124,
+      1154,
+      1195,
+      1213,
+      1217,
+      1235,
+      1292,
+      1309,
+      1363,
+      1414,
+      1453,
+      1463,
+      1483
+    ],
+    "centroid_text_indices": [
+      1195,
+      1213,
+      1483,
+      1217,
+      1078
+    ],
+    "name": "The Louvre Museum's glass pyramid is frequently praised for its striking and contemporary architectural design.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.12
+  },
+  {
+    "cluster_id": 163,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 18,
+    "member_indices": [
+      1691,
+      1711,
+      1747,
+      1807,
+      1814,
+      1822,
+      1824,
+      1853,
+      1854,
+      1855,
+      1887,
+      1901,
+      1908,
+      1930,
+      1934,
+      1951,
+      1958,
+      1967
+    ],
+    "centroid_text_indices": [
+      1855,
+      1822,
+      1691,
+      1930,
+      1854
+    ],
+    "name": "The Louvre Museum's ticketing system is frequently criticized for being frustrating and error-prone.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.13
+  },
+  {
+    "cluster_id": 159,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 36,
+    "member_indices": [
+      1316,
+      1337,
+      1354,
+      1359,
+      1492,
+      1513,
+      1568,
+      1592,
+      1593,
+      1595,
+      1619,
+      1644,
+      1649,
+      1650,
+      1664,
+      1682,
+      1683,
+      1688,
+      1699,
+      1749,
+      1764,
+      1767,
+      1775,
+      1780,
+      1784,
+      1793,
+      1802,
+      1804,
+      1810,
+      1879,
+      1881,
+      1884,
+      1890,
+      1892,
+      1950,
+      1955
+    ],
+    "centroid_text_indices": [
+      1513,
+      1950,
+      1881,
+      1802,
+      1784
+    ],
+    "name": "The Louvre Museum is frequently reported to have inadequate and unhygienic toilet facilities for the number of visitors.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.63
+  },
+  {
+    "cluster_id": 166,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 15,
+    "member_indices": [
+      1387,
+      1392,
+      1491,
+      1533,
+      1661,
+      1686,
+      1703,
+      1727,
+      1736,
+      1785,
+      1820,
+      1863,
+      1871,
+      1893,
+      1946
+    ],
+    "centroid_text_indices": [
+      1820,
+      1703,
+      1727,
+      1491,
+      1893
+    ],
+    "name": "Visitors frequently report unexpected and unannounced closures of rooms and areas at the Louvre Museum, impacting access to main attractions.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.23
+  },
+  {
+    "cluster_id": 167,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 14,
+    "member_indices": [
+      971,
+      1049,
+      1139,
+      1148,
+      1183,
+      1241,
+      1342,
+      1388,
+      1457,
+      1490,
+      1498,
+      1500,
+      1512,
+      1551
+    ],
+    "centroid_text_indices": [
+      1139,
+      1388,
+      1049,
+      1490,
+      971
+    ],
+    "name": "Visiting the Louvre Museum during evening hours is frequently recommended for a less crowded experience.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.23
+  },
+  {
+    "cluster_id": 171,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 10,
+    "member_indices": [
+      1365,
+      1456,
+      1562,
+      1585,
+      1685,
+      1733,
+      1782,
+      1795,
+      1830,
+      1868
+    ],
+    "centroid_text_indices": [
+      1868,
+      1365,
+      1782,
+      1795,
+      1562
+    ],
+    "name": "The Louvre Museum frequently experiences delayed and inconsistent opening times, causing inconvenience for ticket holders.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.79
+  },
+  {
+    "cluster_id": 168,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 13,
+    "member_indices": [
+      943,
+      1071,
+      1170,
+      1187,
+      1237,
+      1422,
+      1434,
+      1460,
+      1519,
+      1536,
+      1638,
+      1639,
+      1860
+    ],
+    "centroid_text_indices": [
+      1460,
+      1422,
+      1071,
+      1187,
+      943
+    ],
+    "name": "The Louvre Museum frequently offers limited and expensive dining options, with most cafes located outside in the Carousel area.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Carousel area"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.34
+  },
+  {
+    "cluster_id": 172,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 9,
+    "member_indices": [
+      902,
+      924,
+      1026,
+      1081,
+      1248,
+      1374,
+      1446,
+      1484,
+      1667
+    ],
+    "centroid_text_indices": [
+      902,
+      1374,
+      1081,
+      1248,
+      1446
+    ],
+    "name": "The Mona Lisa at the Louvre Museum is frequently noted for being smaller than expected.",
+    "anchor_entities": [
+      "Mona Lisa",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.9
+  },
+  {
+    "cluster_id": 170,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 11,
+    "member_indices": [
+      1377,
+      1466,
+      1704,
+      1719,
+      1730,
+      1808,
+      1812,
+      1813,
+      1835,
+      1935,
+      1936
+    ],
+    "centroid_text_indices": [
+      1835,
+      1812,
+      1719,
+      1730,
+      1377
+    ],
+    "name": "The Louvre Museum frequently experiences closures and visitor disruptions due to employee strikes.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.95
+  },
+  {
+    "cluster_id": 169,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 11,
+    "member_indices": [
+      939,
+      1090,
+      1227,
+      1334,
+      1389,
+      1406,
+      1470,
+      1488,
+      1517,
+      1635,
+      1655
+    ],
+    "centroid_text_indices": [
+      939,
+      1655,
+      1334,
+      1227,
+      1635
+    ],
+    "name": "The Louvre Museum is frequently described as vast and potentially overwhelming due to its extensive collection.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.95
+  },
+  {
+    "cluster_id": 174,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 8,
+    "member_indices": [
+      881,
+      1003,
+      1040,
+      1166,
+      1426,
+      1474,
+      1509,
+      1579
+    ],
+    "centroid_text_indices": [
+      1509,
+      1474,
+      1003,
+      1579,
+      1040
+    ],
+    "name": "Napoleon III Apartments at the Louvre Museum are frequently praised for their impressive and preserved grandeur.",
+    "anchor_entities": [
+      "Napoleon III Apartments",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 177,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 8,
+    "member_indices": [
+      1423,
+      1680,
+      1708,
+      1718,
+      1738,
+      1806,
+      1847,
+      1924
+    ],
+    "centroid_text_indices": [
+      1680,
+      1738,
+      1924,
+      1718,
+      1423
+    ],
+    "name": "The Louvre Museum is frequently criticized for inadequate accessibility and insufficient facilities for visitors with reduced mobility.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.13
+  },
+  {
+    "cluster_id": 173,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 9,
+    "member_indices": [
+      1035,
+      1200,
+      1284,
+      1306,
+      1723,
+      1778,
+      1851,
+      1907,
+      1917
+    ],
+    "centroid_text_indices": [
+      1306,
+      1778,
+      1723,
+      1284,
+      1907
+    ],
+    "name": "The Louvre Museum's audio guide is frequently described as both helpful and cumbersome, with mixed reviews on its practicality.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.58
+  },
+  {
+    "cluster_id": 175,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 8,
+    "member_indices": [
+      894,
+      963,
+      997,
+      1001,
+      1151,
+      1163,
+      1204,
+      1528
+    ],
+    "centroid_text_indices": [
+      997,
+      1204,
+      1163,
+      1001,
+      963
+    ],
+    "name": "Visitors frequently recommend prioritizing key artworks like The Caryatids and Venus de Milo for an enhanced Louvre Museum experience.",
+    "anchor_entities": [
+      "The Caryatids",
+      "Venus de Milo",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.51
+  },
+  {
+    "cluster_id": 176,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 8,
+    "member_indices": [
+      1208,
+      1215,
+      1222,
+      1255,
+      1373,
+      1431,
+      1572,
+      1628
+    ],
+    "centroid_text_indices": [
+      1572,
+      1255,
+      1208,
+      1373,
+      1628
+    ],
+    "name": "Comfortable shoes are frequently recommended for extensive walking at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.23
+  },
+  {
+    "cluster_id": 179,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 7,
+    "member_indices": [
+      959,
+      968,
+      1070,
+      1270,
+      1287,
+      1479,
+      1587
+    ],
+    "centroid_text_indices": [
+      968,
+      1479,
+      959,
+      1587,
+      1270
+    ],
+    "name": "Visitors frequently recommend alternative entrances at the Louvre Museum, such as the Carousel and Porte de Lion, for shorter queues.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Carousel",
+      "Porte de Lion"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.06
+  },
+  {
+    "cluster_id": 178,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 7,
+    "member_indices": [
+      906,
+      1046,
+      1098,
+      1203,
+      1314,
+      1339,
+      1467
+    ],
+    "centroid_text_indices": [
+      1098,
+      906,
+      1314,
+      1339,
+      1046
+    ],
+    "name": "Guided tours at the Louvre Museum frequently offer priority access to reduce wait times and avoid queues.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.15
+  },
+  {
+    "cluster_id": 181,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 7,
+    "member_indices": [
+      1277,
+      1502,
+      1596,
+      1867,
+      1906,
+      1915,
+      1966
+    ],
+    "centroid_text_indices": [
+      1915,
+      1966,
+      1906,
+      1867,
+      1596
+    ],
+    "name": "Visitor flow management at the Louvre Museum is frequently criticized for inefficiency and discomfort.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.01
+  },
+  {
+    "cluster_id": 182,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 7,
+    "member_indices": [
+      1786,
+      1787,
+      1852,
+      1856,
+      1870,
+      1874,
+      1933
+    ],
+    "centroid_text_indices": [
+      1856,
+      1874,
+      1852,
+      1870,
+      1786
+    ],
+    "name": "The Louvre Museum's ticket refund policies are frequently criticized for inflexibility and slow response times.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.28
+  },
+  {
+    "cluster_id": 183,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 6,
+    "member_indices": [
+      914,
+      978,
+      1390,
+      1449,
+      1706,
+      1819
+    ],
+    "centroid_text_indices": [
+      1449,
+      914,
+      1390,
+      1819,
+      1706
+    ],
+    "name": "Visitors frequently criticize the Louvre Museum for high food and ticket prices, especially for non-EU visitors.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.28
+  },
+  {
+    "cluster_id": 187,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 6,
+    "member_indices": [
+      995,
+      1061,
+      1229,
+      1249,
+      1371,
+      1433
+    ],
+    "centroid_text_indices": [
+      1229,
+      1433,
+      1249,
+      995,
+      1061
+    ],
+    "name": "The Louvre Museum frequently offers discounted or free entry options for young visitors and EU citizens.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.97
+  },
+  {
+    "cluster_id": 180,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 7,
+    "member_indices": [
+      1267,
+      1313,
+      1658,
+      1679,
+      1710,
+      1788,
+      1858
+    ],
+    "centroid_text_indices": [
+      1858,
+      1658,
+      1267,
+      1313,
+      1710
+    ],
+    "name": "The Louvre Museum is frequently criticized for inadequate security measures and insufficient personnel to protect its artworks.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.68
+  },
+  {
+    "cluster_id": 186,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 6,
+    "member_indices": [
+      946,
+      1380,
+      1409,
+      1410,
+      1486,
+      1524
+    ],
+    "centroid_text_indices": [
+      1486,
+      946,
+      1380,
+      1409,
+      1410
+    ],
+    "name": "Visitors frequently recommend obtaining a map at the Louvre Museum to navigate its vast space efficiently.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.99
+  },
+  {
+    "cluster_id": 185,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 6,
+    "member_indices": [
+      937,
+      1000,
+      1162,
+      1231,
+      1350,
+      1947
+    ],
+    "centroid_text_indices": [
+      1000,
+      1231,
+      937,
+      1350,
+      1162
+    ],
+    "name": "Visitors frequently recommend viewing the Mona Lisa early in the morning at the Louvre Museum to avoid crowds.",
+    "anchor_entities": [
+      "Mona Lisa",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.1
+  },
+  {
+    "cluster_id": 188,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 6,
+    "member_indices": [
+      1023,
+      1038,
+      1106,
+      1177,
+      1301,
+      1544
+    ],
+    "centroid_text_indices": [
+      1023,
+      1544,
+      1177,
+      1038,
+      1106
+    ],
+    "name": "The Louvre Museum is frequently praised for its well-organized layout and easy-to-navigate exhibitions.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.03
+  },
+  {
+    "cluster_id": 191,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 5,
+    "member_indices": [
+      945,
+      962,
+      1586,
+      1904,
+      1909
+    ],
+    "centroid_text_indices": [
+      1904,
+      945,
+      962,
+      1909,
+      1586
+    ],
+    "name": "Visitors frequently advised to check for section closures at the Louvre Museum before purchasing tickets.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.91
+  },
+  {
+    "cluster_id": 184,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 6,
+    "member_indices": [
+      927,
+      996,
+      1100,
+      1158,
+      1160,
+      1280
+    ],
+    "centroid_text_indices": [
+      1158,
+      1160,
+      1280,
+      996,
+      927
+    ],
+    "name": "The Egyptian section at the Louvre Museum is frequently praised for its beauty and extensive collection.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Egyptian section"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.5
+  },
+  {
+    "cluster_id": 192,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 5,
+    "member_indices": [
+      1027,
+      1068,
+      1136,
+      1369,
+      1428
+    ],
+    "centroid_text_indices": [
+      1428,
+      1027,
+      1369,
+      1136,
+      1068
+    ],
+    "name": "The Louvre Museum's free lockers and cloakroom are frequently praised for their convenience and ease of use.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.93
+  },
+  {
+    "cluster_id": 190,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 6,
+    "member_indices": [
+      1623,
+      1697,
+      1702,
+      1842,
+      1861,
+      1903
+    ],
+    "centroid_text_indices": [
+      1861,
+      1903,
+      1702,
+      1697,
+      1623
+    ],
+    "name": "Visitors frequently report unexpected closures of the Egyptian Antiquities rooms at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Egyptian Antiquities"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.42
+  },
+  {
+    "cluster_id": 189,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 6,
+    "member_indices": [
+      1367,
+      1636,
+      1798,
+      1818,
+      1869,
+      1910
+    ],
+    "centroid_text_indices": [
+      1798,
+      1910,
+      1818,
+      1869,
+      1636
+    ],
+    "name": "Mus\u00e9e d\u2019Orsay is frequently recommended over the Louvre Museum for its organization and visitor-friendly experience.",
+    "anchor_entities": [
+      "Mus\u00e9e d\u2019Orsay",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.44
+  },
+  {
+    "cluster_id": 196,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 4,
+    "member_indices": [
+      882,
+      954,
+      1147,
+      1197
+    ],
+    "centroid_text_indices": [
+      882,
+      1147,
+      1197,
+      954
+    ],
+    "name": "Visitors frequently recommend exploring the Louvre Museum's diverse collections beyond the famous Mona Lisa.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Mona Lisa"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 0.93
+  },
+  {
+    "cluster_id": 194,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 5,
+    "member_indices": [
+      1192,
+      1303,
+      1330,
+      1444,
+      1714
+    ],
+    "centroid_text_indices": [
+      1444,
+      1714,
+      1330,
+      1303,
+      1192
+    ],
+    "name": "The Louvre Museum is frequently recommended for photography, especially at night or sunset for stunning exterior views.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.12
+  },
+  {
+    "cluster_id": 193,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 5,
+    "member_indices": [
+      1051,
+      1499,
+      1630,
+      1670,
+      1742
+    ],
+    "centroid_text_indices": [
+      1499,
+      1670,
+      1630,
+      1051,
+      1742
+    ],
+    "name": "Visitors frequently experience delays and restricted access to exhibits at the Louvre Museum due to demonstrations and unforeseen circumstances.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.19
+  },
+  {
+    "cluster_id": 197,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 4,
+    "member_indices": [
+      955,
+      994,
+      1082,
+      1768
+    ],
+    "centroid_text_indices": [
+      1082,
+      955,
+      994,
+      1768
+    ],
+    "name": "The Louvre Museum frequently offers free entry opportunities, including specific days and access to its exterior and grounds.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.08
+  },
+  {
+    "cluster_id": 195,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 4,
+    "member_indices": [
+      879,
+      1024,
+      1120,
+      1146
+    ],
+    "centroid_text_indices": [
+      1024,
+      1120,
+      879,
+      1146
+    ],
+    "name": "Visitors frequently enjoy the Louvre Museum's art and atmosphere despite noticeable crowds.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.92,
+    "name_elapsed_s": 1.55
+  },
+  {
+    "cluster_id": 198,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 4,
+    "member_indices": [
+      988,
+      1006,
+      1072,
+      1347
+    ],
+    "centroid_text_indices": [
+      988,
+      1072,
+      1006,
+      1347
+    ],
+    "name": "The Louvre Museum frequently offers free entry and excellent accessibility for disabled visitors and their companions.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.07
+  },
+  {
+    "cluster_id": 201,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 3,
+    "member_indices": [
+      900,
+      1102,
+      1548
+    ],
+    "centroid_text_indices": [
+      1548,
+      1102,
+      900
+    ],
+    "name": "Visitors frequently recommend using navigation apps to enhance the experience at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.95
+  },
+  {
+    "cluster_id": 202,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 3,
+    "member_indices": [
+      1074,
+      1268,
+      1769
+    ],
+    "centroid_text_indices": [
+      1769,
+      1074,
+      1268
+    ],
+    "name": "The Louvre Museum's commercial areas frequently feature high-end shops and expensive souvenirs, impacting accessibility and cultural sharing.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.08
+  },
+  {
+    "cluster_id": 200,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 4,
+    "member_indices": [
+      1382,
+      1445,
+      1642,
+      1766
+    ],
+    "centroid_text_indices": [
+      1382,
+      1445,
+      1642,
+      1766
+    ],
+    "name": "The Louvre Museum frequently involves extensive walking and numerous staircases, which can be challenging for visitors.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.14
+  },
+  {
+    "cluster_id": 199,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 4,
+    "member_indices": [
+      1048,
+      1419,
+      1462,
+      1687
+    ],
+    "centroid_text_indices": [
+      1419,
+      1687,
+      1048,
+      1462
+    ],
+    "name": "Several sections of the Louvre Museum are frequently closed due to thefts and security issues.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.36
+  },
+  {
+    "cluster_id": 204,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 3,
+    "member_indices": [
+      1412,
+      1760,
+      1940
+    ],
+    "centroid_text_indices": [
+      1760,
+      1940,
+      1412
+    ],
+    "name": "Visitors frequently find the lack of English translations at the Louvre Museum's exhibits challenging.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.97
+  },
+  {
+    "cluster_id": 206,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      919,
+      1286
+    ],
+    "centroid_text_indices": [
+      1286,
+      919
+    ],
+    "name": "The Louvre Museum's fashion exhibitions are praised for their creative integration of couture within the historic palace setting.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.91
+  },
+  {
+    "cluster_id": 203,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 3,
+    "member_indices": [
+      1288,
+      1458,
+      1459
+    ],
+    "centroid_text_indices": [
+      1459,
+      1458,
+      1288
+    ],
+    "name": "Visitors frequently recommend the Richelieu and Sully wings at the Louvre Museum for a less crowded experience compared to the Denon wing.",
+    "anchor_entities": [
+      "Richelieu wing",
+      "Sully wing",
+      "Denon wing",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.95,
+    "name_elapsed_s": 1.43
+  },
+  {
+    "cluster_id": 207,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      935,
+      1067
+    ],
+    "centroid_text_indices": [
+      1067,
+      935
+    ],
+    "name": "Visitors to the Louvre Museum are recommended to bring essentials like water, snacks, and a portable charger for a comfortable visit.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 205,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      904,
+      982
+    ],
+    "centroid_text_indices": [
+      904,
+      982
+    ],
+    "name": "Caravaggio's Death of the Virgin is recommended as a significant artwork in the Louvre, particularly in room 712.",
+    "anchor_entities": [
+      "Caravaggio's Death of the Virgin",
+      "room 712"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.49
+  },
+  {
+    "cluster_id": 212,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      986,
+      1225
+    ],
+    "centroid_text_indices": [
+      986,
+      1225
+    ],
+    "name": "The exterior architecture and statues of the Louvre Museum are recommended for viewing without entering.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.0
+  },
+  {
+    "cluster_id": 209,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      970,
+      1080
+    ],
+    "centroid_text_indices": [
+      970,
+      1080
+    ],
+    "name": "'The Wedding of Cana' is highlighted as one of the most beautiful artworks at the Louvre Museum.",
+    "anchor_entities": [
+      "The Wedding of Cana",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.27
+  },
+  {
+    "cluster_id": 210,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      974,
+      1091
+    ],
+    "centroid_text_indices": [
+      1091,
+      974
+    ],
+    "name": "The Louvre Museum is recommended for families with children aged 8 to 14.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.2
+  },
+  {
+    "cluster_id": 213,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      998,
+      1011
+    ],
+    "centroid_text_indices": [
+      1011,
+      998
+    ],
+    "name": "The Louvre Museum's Greek galleries and art displays are praised for their spectacular and dramatic presentation.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Greek galleries"
+    ],
+    "name_confidence": 0.85,
+    "name_elapsed_s": 1.06
+  },
+  {
+    "cluster_id": 211,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      981,
+      1576
+    ],
+    "centroid_text_indices": [
+      981,
+      1576
+    ],
+    "name": "The Wedding at Cana by Paolo Veronese is often praised as more impressive than the Mona Lisa.",
+    "anchor_entities": [
+      "The Wedding at Cana",
+      "Paolo Veronese",
+      "Mona Lisa"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.41
+  },
+  {
+    "cluster_id": 208,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      966,
+      1421
+    ],
+    "centroid_text_indices": [
+      1421,
+      966
+    ],
+    "name": "The Denon Wing at the Louvre Museum is renowned for showcasing the Mona Lisa and other Da Vinci masterpieces.",
+    "anchor_entities": [
+      "Denon Wing",
+      "Louvre Museum",
+      "Mona Lisa",
+      "Da Vinci"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.87
+  },
+  {
+    "cluster_id": 214,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1012,
+      1128
+    ],
+    "centroid_text_indices": [
+      1012,
+      1128
+    ],
+    "name": "The Louvre Museum is praised as a historic treasure chest filled with massive and rare global artifacts.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.16
+  },
+  {
+    "cluster_id": 215,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1036,
+      1053
+    ],
+    "centroid_text_indices": [
+      1053,
+      1036
+    ],
+    "name": "The Louvre Museum's virtual tour is praised for featuring famous artworks like the Mona Lisa and diverse historical pieces.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Mona Lisa"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.02
+  },
+  {
+    "cluster_id": 216,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1054,
+      1341
+    ],
+    "centroid_text_indices": [
+      1341,
+      1054
+    ],
+    "name": "The Louvre Museum was originally constructed as a medieval fortress by King Philip II of France.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "King Philip II of France"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.1
+  },
+  {
+    "cluster_id": 217,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1062,
+      1244
+    ],
+    "centroid_text_indices": [
+      1062,
+      1244
+    ],
+    "name": "Julien is praised for his exceptional knowledge of art during tours at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.1
+  },
+  {
+    "cluster_id": 219,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1179,
+      1938
+    ],
+    "centroid_text_indices": [
+      1179,
+      1938
+    ],
+    "name": "Louvre Museum tickets and audio guides often sell out quickly, requiring early booking or arrival.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.92
+  },
+  {
+    "cluster_id": 218,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1116,
+      1118
+    ],
+    "centroid_text_indices": [
+      1116,
+      1118
+    ],
+    "name": "The Aphrodite of Thespiae is a notable artwork with historical ties to the Galerie des Glaces at Versailles.",
+    "anchor_entities": [
+      "Aphrodite of Thespiae",
+      "Galerie des Glaces",
+      "Versailles"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.13
+  },
+  {
+    "cluster_id": 222,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1271,
+      1942
+    ],
+    "centroid_text_indices": [
+      1942,
+      1271
+    ],
+    "name": "Angelina at the Louvre is noted for quieter dining but criticized for long waits despite available seating.",
+    "anchor_entities": [
+      "Angelina",
+      "Louvre"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.95
+  },
+  {
+    "cluster_id": 225,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1577,
+      1665
+    ],
+    "centroid_text_indices": [
+      1577,
+      1665
+    ],
+    "name": "The Sully wing at the Louvre Museum is praised for its interesting history and quieter atmosphere.",
+    "anchor_entities": [
+      "Sully wing",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.93
+  },
+  {
+    "cluster_id": 221,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1256,
+      1326
+    ],
+    "centroid_text_indices": [
+      1326,
+      1256
+    ],
+    "name": "The Richelin cafe at the Louvre Museum is recommended for enhancing relaxation during visits.",
+    "anchor_entities": [
+      "Richelin cafe",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.36
+  },
+  {
+    "cluster_id": 220,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1209,
+      1504
+    ],
+    "centroid_text_indices": [
+      1504,
+      1209
+    ],
+    "name": "The Metro and bus are recommended as cost-effective transport options to the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.53
+  },
+  {
+    "cluster_id": 226,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1580,
+      1838
+    ],
+    "centroid_text_indices": [
+      1580,
+      1838
+    ],
+    "name": "The Louvre Museum's curation and educational approach are criticized for lacking depth and creativity.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.85,
+    "name_elapsed_s": 1.01
+  },
+  {
+    "cluster_id": 227,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1601,
+      1647
+    ],
+    "centroid_text_indices": [
+      1601,
+      1647
+    ],
+    "name": "Visitor assistance and guidance by museum staff at the Louvre Museum is reported as limited.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.1
+  },
+  {
+    "cluster_id": 223,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1395,
+      1648
+    ],
+    "centroid_text_indices": [
+      1648,
+      1395
+    ],
+    "name": "Visitors often find the Louvre Museum's exit through the pyramid and closed areas inefficient.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "pyramid"
+    ],
+    "name_confidence": 0.85,
+    "name_elapsed_s": 1.62
+  },
+  {
+    "cluster_id": 229,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1731,
+      1732
+    ],
+    "centroid_text_indices": [
+      1731,
+      1732
+    ],
+    "name": "Louvre Museum's ticketing process causes confusion and penalties for non-EEA citizens.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.22
+  },
+  {
+    "cluster_id": 230,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1744,
+      1888
+    ],
+    "centroid_text_indices": [
+      1888,
+      1744
+    ],
+    "name": "Visitors often find communication about ticket and ID requirements at the Louvre Museum unclear.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.08
+  },
+  {
+    "cluster_id": 232,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1821,
+      1837
+    ],
+    "centroid_text_indices": [
+      1837,
+      1821
+    ],
+    "name": "The 5 Continents Gallery at the Louvre Museum is criticized for disorganization and sudden access restrictions.",
+    "anchor_entities": [
+      "5 Continents Gallery",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.85,
+    "name_elapsed_s": 0.92
+  },
+  {
+    "cluster_id": 231,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1805,
+      1840
+    ],
+    "centroid_text_indices": [
+      1840,
+      1805
+    ],
+    "name": "The Mona Lisa is displayed at a height accessible for all visitors, including those in wheelchairs.",
+    "anchor_entities": [
+      "Mona Lisa"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.09
+  },
+  {
+    "cluster_id": 235,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      926
+    ],
+    "centroid_text_indices": [
+      926
+    ],
+    "name": "The Italian area in the Louvre Museum is praised for its exciting and rich masterpieces.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Italian area"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.03
+  },
+  {
+    "cluster_id": 236,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      934
+    ],
+    "centroid_text_indices": [
+      934
+    ],
+    "name": "The Louvre Museum is conveniently located near the Palais Royal - Mus\u00e9e du Louvre station.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Palais Royal - Mus\u00e9e du Louvre station"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.94
+  },
+  {
+    "cluster_id": 224,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1563,
+      1926
+    ],
+    "centroid_text_indices": [
+      1926,
+      1563
+    ],
+    "name": "Visitors often find ticket policies at the Louvre Museum inconvenient, especially regarding rewinding and non-transferability.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 2.7
+  },
+  {
+    "cluster_id": 237,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      953
+    ],
+    "centroid_text_indices": [
+      953
+    ],
+    "name": "The Louvre Museum is praised for its diverse and impressive art collection that exceeds visitor expectations.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 238,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      979
+    ],
+    "centroid_text_indices": [
+      979
+    ],
+    "name": "The Louvre Museum is praised as an iconic and energizing cultural landmark in Paris.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.99
+  },
+  {
+    "cluster_id": 239,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1008
+    ],
+    "centroid_text_indices": [
+      1008
+    ],
+    "name": "Louvre Museum staff assist mobility scooter users with queue access and charging facilities.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 0.98
+  },
+  {
+    "cluster_id": 233,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1932,
+      1968
+    ],
+    "centroid_text_indices": [
+      1968,
+      1932
+    ],
+    "name": "Carnavalet Museum is recommended as a more welcoming and free alternative to the Louvre Museum in Paris.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Carnavalet Museum"
+    ],
+    "name_confidence": 0.85,
+    "name_elapsed_s": 2.05
+  },
+  {
+    "cluster_id": 241,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1018
+    ],
+    "centroid_text_indices": [
+      1018
+    ],
+    "name": "Guides like Stella are praised for their professionalism and knowledge at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Stella"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.8
+  },
+  {
+    "cluster_id": 234,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      903
+    ],
+    "centroid_text_indices": [
+      903
+    ],
+    "name": "The Italian paintings gallery is located on the first floor towards the Denon Wing in the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Italian paintings gallery",
+      "Denon Wing"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 2.09
+  },
+  {
+    "cluster_id": 240,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1016
+    ],
+    "centroid_text_indices": [
+      1016
+    ],
+    "name": "The Gallery of Apollo in the Louvre Museum is anticipated for its reopening.",
+    "anchor_entities": [
+      "Gallery of Apollo",
+      "Louvre Museum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.3
+  },
+  {
+    "cluster_id": 228,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 2,
+    "member_indices": [
+      1652,
+      1722
+    ],
+    "centroid_text_indices": [
+      1652,
+      1722
+    ],
+    "name": "Visitors often find the informational panels at the Louvre Museum to be insufficiently detailed.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 3.0
+  },
+  {
+    "cluster_id": 243,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1030
+    ],
+    "centroid_text_indices": [
+      1030
+    ],
+    "name": "The Louvre Museum features notable artifacts such as the Codex of Hammurabi and an ancient Egyptian dagger.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Codex of Hammurabi"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.93
+  },
+  {
+    "cluster_id": 245,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1096
+    ],
+    "centroid_text_indices": [
+      1096
+    ],
+    "name": "Rick Steves' free audio tour is recommended for an informative introduction to the Louvre Museum's highlights.",
+    "anchor_entities": [
+      "Rick Steves",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.08
+  },
+  {
+    "cluster_id": 242,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1029
+    ],
+    "centroid_text_indices": [
+      1029
+    ],
+    "name": "The Iran room and Middle Eastern cultures are praised for their beauty at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Iran room",
+      "Middle Eastern cultures"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.38
+  },
+  {
+    "cluster_id": 244,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1047
+    ],
+    "centroid_text_indices": [
+      1047
+    ],
+    "name": "The Mona Lisa at the Louvre Museum is praised for having shorter queues, enhancing the photography experience.",
+    "anchor_entities": [
+      "Mona Lisa",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.16
+  },
+  {
+    "cluster_id": 246,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1099
+    ],
+    "centroid_text_indices": [
+      1099
+    ],
+    "name": "Viewing the four other Da Vinci paintings is recommended alongside the Mona Lisa at the Louvre Museum.",
+    "anchor_entities": [
+      "Da Vinci paintings",
+      "Mona Lisa",
+      "Louvre Museum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.23
+  },
+  {
+    "cluster_id": 251,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1189
+    ],
+    "centroid_text_indices": [
+      1189
+    ],
+    "name": "The Louvre Museum is praised as a gateway to the eternity of the human soul.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.85
+  },
+  {
+    "cluster_id": 249,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1142
+    ],
+    "centroid_text_indices": [
+      1142
+    ],
+    "name": "The Louvre Museum is praised for its extensive collection of Greek and Roman artworks.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 248,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1117
+    ],
+    "centroid_text_indices": [
+      1117
+    ],
+    "name": "The Venus de Milo is associated with the classical style of Praxiteles' Aphrodite of Thespiae.",
+    "anchor_entities": [
+      "Venus de Milo",
+      "Praxiteles' Aphrodite of Thespiae"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.16
+  },
+  {
+    "cluster_id": 247,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1110
+    ],
+    "centroid_text_indices": [
+      1110
+    ],
+    "name": "The Louvre Museum is renowned for its essential artworks like Nicaea, Vinus, and Monarica.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Nicaea",
+      "Vinus",
+      "Monarica"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.27
+  },
+  {
+    "cluster_id": 250,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1150
+    ],
+    "centroid_text_indices": [
+      1150
+    ],
+    "name": "Museum Fatigue is a common experience after extended visits to the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.3
+  },
+  {
+    "cluster_id": 253,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1226
+    ],
+    "centroid_text_indices": [
+      1226
+    ],
+    "name": "The Louvre Museum's exhibition on Jacques-Louis David highlights his significant impact on art history.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Jacques-Louis David"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.11
+  },
+  {
+    "cluster_id": 255,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1297
+    ],
+    "centroid_text_indices": [
+      1297
+    ],
+    "name": "The Royal Palace ambiance enhances the enchanting experience of visiting the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Royal Palace"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.08
+  },
+  {
+    "cluster_id": 252,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1223
+    ],
+    "centroid_text_indices": [
+      1223
+    ],
+    "name": "The Crown Jewels were displayed at the Louvre Museum before being stolen, highlighting a significant security breach.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Crown Jewels"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.6
+  },
+  {
+    "cluster_id": 254,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1245
+    ],
+    "centroid_text_indices": [
+      1245
+    ],
+    "name": "Julien is praised for creating a welcoming and engaging atmosphere during tours at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.42
+  },
+  {
+    "cluster_id": 261,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1364
+    ],
+    "centroid_text_indices": [
+      1364
+    ],
+    "name": "The Louvre Museum is reported as overrated compared to other European museums.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 0.89
+  },
+  {
+    "cluster_id": 259,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1361
+    ],
+    "centroid_text_indices": [
+      1361
+    ],
+    "name": "The Louvre Museum exhibition showcases diverse materials such as marble, bronze, and terracotta.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.19
+  },
+  {
+    "cluster_id": 258,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1360
+    ],
+    "centroid_text_indices": [
+      1360
+    ],
+    "name": "The Michelangelo/Rodin exhibition at the Louvre Museum is praised for showcasing artistic innovations in sculpture.",
+    "anchor_entities": [
+      "Michelangelo/Rodin exhibition",
+      "Louvre Museum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.23
+  },
+  {
+    "cluster_id": 260,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1362
+    ],
+    "centroid_text_indices": [
+      1362
+    ],
+    "name": "Visitors often note the limited number of Michelangelo sculptures at the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Michelangelo"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.21
+  },
+  {
+    "cluster_id": 263,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1393
+    ],
+    "centroid_text_indices": [
+      1393
+    ],
+    "name": "The Louvre Museum is reported to lack dedicated children's routes or interactive exhibits.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.06
+  },
+  {
+    "cluster_id": 262,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1370
+    ],
+    "centroid_text_indices": [
+      1370
+    ],
+    "name": "The Louvre Museum's Spot It/Dobble game featuring its artworks is popular with children.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.13
+  },
+  {
+    "cluster_id": 256,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1318
+    ],
+    "centroid_text_indices": [
+      1318
+    ],
+    "name": "The Mona Lisa's display affects the visibility of nearby artworks at the Louvre Museum.",
+    "anchor_entities": [
+      "Mona Lisa",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 2.1
+  },
+  {
+    "cluster_id": 265,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1399
+    ],
+    "centroid_text_indices": [
+      1399
+    ],
+    "name": "The Louvre Museum is praised for its enchanting beauty under the snow, especially during nighttime.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.96
+  },
+  {
+    "cluster_id": 267,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1407
+    ],
+    "centroid_text_indices": [
+      1407
+    ],
+    "name": "The Louvre Museum's collection raises questions about the ethical ownership and repatriation of historical artefacts.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.96
+  },
+  {
+    "cluster_id": 264,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1398
+    ],
+    "centroid_text_indices": [
+      1398
+    ],
+    "name": "Visitors often rush past other masterpieces in the Louvre Museum to see the Mona Lisa.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Mona Lisa"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.34
+  },
+  {
+    "cluster_id": 269,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1425
+    ],
+    "centroid_text_indices": [
+      1425
+    ],
+    "name": "The Mona Lisa could benefit from a dedicated viewing area to enhance visitor experience.",
+    "anchor_entities": [
+      "Mona Lisa"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.13
+  },
+  {
+    "cluster_id": 268,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1424
+    ],
+    "centroid_text_indices": [
+      1424
+    ],
+    "name": "Families with babies would benefit from a recommended walking route in the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.15
+  },
+  {
+    "cluster_id": 271,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1454
+    ],
+    "centroid_text_indices": [
+      1454
+    ],
+    "name": "The statue of Louis XIV near the Louvre Museum was erected in 1988.",
+    "anchor_entities": [
+      "Louis XIV",
+      "Louvre Museum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 0.87
+  },
+  {
+    "cluster_id": 270,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1435
+    ],
+    "centroid_text_indices": [
+      1435
+    ],
+    "name": "Navigating to the Mona Lisa is facilitated by escalators and elevators at the Louvre Museum.",
+    "anchor_entities": [
+      "Mona Lisa",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.01
+  },
+  {
+    "cluster_id": 272,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1469
+    ],
+    "centroid_text_indices": [
+      1469
+    ],
+    "name": "Recent archaeological discoveries at the Louvre Museum uncover historical structures dating back several centuries.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.92
+  },
+  {
+    "cluster_id": 274,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1529
+    ],
+    "centroid_text_indices": [
+      1529
+    ],
+    "name": "The Louvre Museum is closed on Tuesdays, offering a prime opportunity for unobstructed exterior photography.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.99
+  },
+  {
+    "cluster_id": 275,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1534
+    ],
+    "centroid_text_indices": [
+      1534
+    ],
+    "name": "The Louvre Museum offers WiFi access to enhance visitor experience.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.07
+  },
+  {
+    "cluster_id": 257,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1322
+    ],
+    "centroid_text_indices": [
+      1322
+    ],
+    "name": "Consider purchasing a museum pass for visiting multiple museums in Paris, including the Louvre Museum.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 3.39
+  },
+  {
+    "cluster_id": 277,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1561
+    ],
+    "centroid_text_indices": [
+      1561
+    ],
+    "name": "The Louvre Museum could enhance visitor experience by increasing the number of water fountains for better accessibility.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.94
+  },
+  {
+    "cluster_id": 273,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1497
+    ],
+    "centroid_text_indices": [
+      1497
+    ],
+    "name": "The Louvre Museum is renowned for its iconic artworks, including the Mona Lisa, Venus de Milo, and Victory of Samothrace.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Mona Lisa",
+      "Venus de Milo",
+      "Victory of Samothrace"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.41
+  },
+  {
+    "cluster_id": 276,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1559
+    ],
+    "centroid_text_indices": [
+      1559
+    ],
+    "name": "Visitors should verify room numbers at the Louvre Museum as they may have changed since guidebook publication.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.04
+  },
+  {
+    "cluster_id": 278,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1584
+    ],
+    "centroid_text_indices": [
+      1584
+    ],
+    "name": "The Richelieu wing at the Louvre Museum is praised for its clear room number indications.",
+    "anchor_entities": [
+      "Richelieu wing",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 279,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1589
+    ],
+    "centroid_text_indices": [
+      1589
+    ],
+    "name": "The Martin Schongauer exhibition at the Louvre Museum is recommended for those interested in Medieval art.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Martin Schongauer"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.95
+  },
+  {
+    "cluster_id": 280,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1590
+    ],
+    "centroid_text_indices": [
+      1590
+    ],
+    "name": "The Martin Schongauer exhibition at the Louvre Museum features an impressive painting of the Virgin.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "Martin Schongauer"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.93
+  },
+  {
+    "cluster_id": 286,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1676
+    ],
+    "centroid_text_indices": [
+      1676
+    ],
+    "name": "The Louvre Museum ticket includes lesser-known extras that enhance the visitor experience.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.92
+  },
+  {
+    "cluster_id": 284,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1651
+    ],
+    "centroid_text_indices": [
+      1651
+    ],
+    "name": "The Louvre Museum's audio guide is reported to describe only a limited number of artworks per room.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.08
+  },
+  {
+    "cluster_id": 283,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1613
+    ],
+    "centroid_text_indices": [
+      1613
+    ],
+    "name": "The Louvre Museum is reported to lose some charm due to its proximity to a mall.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.15
+  },
+  {
+    "cluster_id": 288,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1698
+    ],
+    "centroid_text_indices": [
+      1698
+    ],
+    "name": "The Louvre Museum's luggage service is limited and difficult for visitors to locate.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.03
+  },
+  {
+    "cluster_id": 282,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1612
+    ],
+    "centroid_text_indices": [
+      1612
+    ],
+    "name": "The Louvre Museum offers online tours, but some exhibits may not be available for viewing.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.47
+  },
+  {
+    "cluster_id": 266,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1401
+    ],
+    "centroid_text_indices": [
+      1401
+    ],
+    "name": "Visitors are advised to plan their visit to the Louvre Museum as some rooms may be closed for renovations.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 3.59
+  },
+  {
+    "cluster_id": 287,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1677
+    ],
+    "centroid_text_indices": [
+      1677
+    ],
+    "name": "Some windows at the Louvre Museum may not be properly closed, causing drafts.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.07
+  },
+  {
+    "cluster_id": 285,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1660
+    ],
+    "centroid_text_indices": [
+      1660
+    ],
+    "name": "The TripAdvisor voucher system for the Louvre Museum is reported as difficult to use and requires support.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "TripAdvisor"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.53
+  },
+  {
+    "cluster_id": 289,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1700
+    ],
+    "centroid_text_indices": [
+      1700
+    ],
+    "name": "Visitors experienced room closures affecting access to The Raft of the Medusa and Liberty Leading the People at the Louvre Museum.",
+    "anchor_entities": [
+      "The Raft of the Medusa",
+      "Liberty Leading the People",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.34
+  },
+  {
+    "cluster_id": 292,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1844
+    ],
+    "centroid_text_indices": [
+      1844
+    ],
+    "name": "The Hammurabi's Code exhibit at the Louvre Museum is reported as inaccessible due to a locked room.",
+    "anchor_entities": [
+      "Hammurabi's Code",
+      "Louvre Museum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 0.89
+  },
+  {
+    "cluster_id": 290,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1791
+    ],
+    "centroid_text_indices": [
+      1791
+    ],
+    "name": "The Cluny Museum is praised for offering a less crowded and more leisurely experience compared to other popular attractions.",
+    "anchor_entities": [
+      "Cluny Museum"
+    ],
+    "name_confidence": 0.8,
+    "name_elapsed_s": 1.12
+  },
+  {
+    "cluster_id": 291,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1803
+    ],
+    "centroid_text_indices": [
+      1803
+    ],
+    "name": "The reflecting pools at the Louvre Museum are reported as poorly maintained with weeds and trash.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.09
+  },
+  {
+    "cluster_id": 296,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1912
+    ],
+    "centroid_text_indices": [
+      1912
+    ],
+    "name": "Visitors to the Louvre Museum report connectivity issues with the app near the pyramid entrance.",
+    "anchor_entities": [
+      "Louvre Museum",
+      "pyramid entrance"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 0.88
+  },
+  {
+    "cluster_id": 294,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1876
+    ],
+    "centroid_text_indices": [
+      1876
+    ],
+    "name": "Louvre Museum staff are criticized for being distracted by cell phones.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.05
+  },
+  {
+    "cluster_id": 297,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1918
+    ],
+    "centroid_text_indices": [
+      1918
+    ],
+    "name": "Access to the Napoleon Apartments at the Louvre Museum may be inconsistent due to environmental conditions.",
+    "anchor_entities": [
+      "Napoleon Apartments",
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.16
+  },
+  {
+    "cluster_id": 298,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1937
+    ],
+    "centroid_text_indices": [
+      1937
+    ],
+    "name": "The Louvre Museum offers QR codes for ticket refunds during unexpected closures.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.06
+  },
+  {
+    "cluster_id": 293,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1850
+    ],
+    "centroid_text_indices": [
+      1850
+    ],
+    "name": "Lockers at the Louvre Museum are often reported as non-functional or full, causing inconvenience for visitors.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.57
+  },
+  {
+    "cluster_id": 299,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1943
+    ],
+    "centroid_text_indices": [
+      1943
+    ],
+    "name": "Angelina at the Louvre is reported to enforce paid water orders and demand tips from visitors.",
+    "anchor_entities": [
+      "Angelina",
+      "Louvre"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 1.04
+  },
+  {
+    "cluster_id": 295,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1891
+    ],
+    "centroid_text_indices": [
+      1891
+    ],
+    "name": "Viator is reported to sell overpriced tickets for the Louvre Museum with access issues.",
+    "anchor_entities": [
+      "Viator",
+      "Louvre Museum"
+    ],
+    "name_confidence": 1.0,
+    "name_elapsed_s": 1.82
+  },
+  {
+    "cluster_id": 281,
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "size": 1,
+    "member_indices": [
+      1602
+    ],
+    "centroid_text_indices": [
+      1602
+    ],
+    "name": "Uneven lighting in the Louvre Museum can cause distracting reflections on paintings, affecting the viewing experience.",
+    "anchor_entities": [
+      "Louvre Museum"
+    ],
+    "name_confidence": 0.9,
+    "name_elapsed_s": 5.25
+  }
+]

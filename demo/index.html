@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gems POI Intelligence — Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif; }
+    .fade-in { animation: fade .25s ease-in; }
+    @keyframes fade { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+    .scroll-y { scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
+    .scroll-y::-webkit-scrollbar { width: 6px; }
+    .scroll-y::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+    pre.json { white-space: pre-wrap; word-break: break-word; }
+    .pulse-dot { animation: pulse 1.4s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { opacity:.3 } 50% { opacity:1 } }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen">
+
+  <!-- ============= HEADER ============= -->
+  <header class="bg-gradient-to-r from-indigo-600 to-violet-600 text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-3">
+      <div>
+        <h1 class="text-2xl font-bold flex items-center gap-2">
+          <span>💎</span> Gems POI Intelligence
+        </h1>
+        <p class="text-indigo-100 text-sm mt-0.5">Bulletproof traveler advice from 4,600+ corroborated insights across 5 platforms</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <label class="text-sm text-indigo-100">POI:</label>
+        <select id="poi-select" class="bg-white text-slate-900 rounded-lg px-3 py-1.5 text-sm font-medium shadow">
+          <option value="Colosseum">Colosseum (Rome)</option>
+          <option value="Louvre Museum">Louvre Museum (Paris)</option>
+        </select>
+        <span id="health-pill" class="text-xs font-medium px-2 py-1 rounded bg-white/20">checking…</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+    <!-- ============= COLUMN 1+2: CHAT/RAG ============= -->
+    <section class="lg:col-span-2 bg-white rounded-xl shadow-sm border border-slate-200">
+      <div class="border-b px-5 py-3 flex items-center justify-between">
+        <div>
+          <h2 class="font-semibold text-slate-900">💬 Ask Gems</h2>
+          <p class="text-xs text-slate-500">Free-text query → LLM-synthesised answer with cited evidence quotes</p>
+        </div>
+        <button id="clear-chat" class="text-xs text-slate-400 hover:text-slate-600">clear</button>
+      </div>
+
+      <div id="chat-log" class="px-5 py-4 space-y-4 max-h-[480px] overflow-y-auto scroll-y">
+        <div class="text-sm text-slate-500 italic text-center py-6">
+          Ask anything. Try the sample chips below or type your own.
+        </div>
+      </div>
+
+      <!-- Sample queries -->
+      <div class="px-5 py-2 border-t bg-slate-50 flex flex-wrap gap-1.5">
+        <span class="text-xs text-slate-500 self-center mr-1">Try:</span>
+        <button class="sample-q text-xs px-2 py-1 rounded bg-white border border-slate-200 hover:border-indigo-400 hover:text-indigo-700" data-poi="Colosseum">Should I get the Roma Pass?</button>
+        <button class="sample-q text-xs px-2 py-1 rounded bg-white border border-slate-200 hover:border-indigo-400 hover:text-indigo-700" data-poi="Louvre Museum">What do 1-star reviewers say about the Mona Lisa?</button>
+        <button class="sample-q text-xs px-2 py-1 rounded bg-white border border-slate-200 hover:border-indigo-400 hover:text-indigo-700" data-poi="Colosseum">Any scams I should avoid?</button>
+        <button class="sample-q text-xs px-2 py-1 rounded bg-white border border-slate-200 hover:border-indigo-400 hover:text-indigo-700" data-poi="Louvre Museum">What hidden artworks should I see?</button>
+        <button class="sample-q text-xs px-2 py-1 rounded bg-white border border-slate-200 hover:border-indigo-400 hover:text-indigo-700" data-poi="Colosseum">What are the actual entry ticket prices?</button>
+        <button class="sample-q text-xs px-2 py-1 rounded bg-white border border-slate-200 hover:border-indigo-400 hover:text-indigo-700" data-poi="Louvre Museum">How long should I plan to spend?</button>
+      </div>
+
+      <!-- Input -->
+      <div class="px-5 py-3 border-t flex gap-2">
+        <input id="chat-input" class="flex-1 border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Ask about Colosseum or Louvre…" />
+        <button id="chat-send" class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg text-sm font-medium shadow-sm disabled:opacity-50 disabled:cursor-not-allowed">Ask</button>
+      </div>
+    </section>
+
+    <!-- ============= COLUMN 3: BEHIND THE SCENES ============= -->
+    <aside class="bg-white rounded-xl shadow-sm border border-slate-200 flex flex-col">
+      <div class="border-b px-5 py-3">
+        <h2 class="font-semibold text-slate-900">🔬 Behind the scenes</h2>
+        <p class="text-xs text-slate-500">The tool calls the agent makes to answer</p>
+      </div>
+      <div id="tools-log" class="px-5 py-4 flex-1 space-y-3 max-h-[560px] overflow-y-auto scroll-y">
+        <div class="text-sm text-slate-400 italic text-center py-6">Tool calls will appear here after each /api/ask</div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- ============= TIER-1 SEARCH ============= -->
+  <section class="max-w-7xl mx-auto px-6 mb-6">
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200">
+      <div class="border-b px-5 py-3 flex items-center justify-between">
+        <div>
+          <h2 class="font-semibold text-slate-900">🔍 Tier 1 · Cluster search</h2>
+          <p class="text-xs text-slate-500">Canonical observations (deduplicated, frequency-corroborated)</p>
+        </div>
+        <button class="toggle-btn text-xs text-slate-500 hover:text-slate-800" data-target="tier1-body">collapse</button>
+      </div>
+      <div id="tier1-body" class="px-5 py-4">
+        <div class="flex flex-wrap gap-2 items-center mb-3">
+          <input id="t1-query" class="flex-1 min-w-[200px] border border-slate-300 rounded-lg px-3 py-1.5 text-sm" placeholder="e.g. how to avoid the queue" />
+          <select id="t1-l1" class="border border-slate-300 rounded-lg px-2 py-1.5 text-sm">
+            <option value="">All L1</option>
+            <option value="Visit Intelligence">Visit</option>
+            <option value="Attention Intelligence">Attention</option>
+            <option value="Discovery Intelligence">Discovery</option>
+            <option value="Culinary Intelligence">Culinary</option>
+            <option value="Operational Intelligence">Operational</option>
+          </select>
+          <select id="t1-tier" class="border border-slate-300 rounded-lg px-2 py-1.5 text-sm">
+            <option value="B">B+ tier (default)</option>
+            <option value="A">A only</option>
+            <option value="C">All tiers</option>
+          </select>
+          <button id="t1-search" class="bg-slate-800 hover:bg-slate-900 text-white px-4 py-1.5 rounded-lg text-sm">Search</button>
+        </div>
+        <div id="t1-results" class="space-y-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= TIER-2 SEARCH ============= -->
+  <section class="max-w-7xl mx-auto px-6 mb-10">
+    <div class="bg-white rounded-xl shadow-sm border border-slate-200">
+      <div class="border-b px-5 py-3 flex items-center justify-between">
+        <div>
+          <h2 class="font-semibold text-slate-900">🎯 Tier 2 · Insight search (granular)</h2>
+          <p class="text-xs text-slate-500">Per-row insights with rich filters (rating, sentiment, source, numeric anchors)</p>
+        </div>
+        <button class="toggle-btn text-xs text-slate-500 hover:text-slate-800" data-target="tier2-body">collapse</button>
+      </div>
+      <div id="tier2-body" class="px-5 py-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mb-3">
+          <input id="t2-query" class="border border-slate-300 rounded-lg px-3 py-1.5 text-sm" placeholder="e.g. negative reviews about Mona Lisa" />
+          <div class="flex gap-2">
+            <select id="t2-sentiment" class="border border-slate-300 rounded-lg px-2 py-1.5 text-sm flex-1">
+              <option value="">Any sentiment</option>
+              <option value="negative">Negative</option>
+              <option value="positive">Positive</option>
+              <option value="mixed">Mixed</option>
+              <option value="neutral">Neutral</option>
+            </select>
+            <select id="t2-source" class="border border-slate-300 rounded-lg px-2 py-1.5 text-sm flex-1">
+              <option value="">Any source</option>
+              <option value="tripadvisor_review">TripAdvisor</option>
+              <option value="google_review">Google</option>
+              <option value="reddit_post">Reddit (posts)</option>
+              <option value="reddit_comment">Reddit (comments)</option>
+              <option value="youtube_transcript_chunk">YouTube transcripts</option>
+            </select>
+          </div>
+          <div class="flex gap-2 items-center">
+            <label class="text-xs text-slate-500">Rating ≤</label>
+            <select id="t2-ratingmax" class="border border-slate-300 rounded-lg px-2 py-1.5 text-sm">
+              <option value="">Any</option>
+              <option value="2">2 stars or below</option>
+              <option value="3">3 stars or below</option>
+            </select>
+            <label class="flex items-center gap-1 text-xs text-slate-500 ml-2">
+              <input type="checkbox" id="t2-numeric" /> Only with numeric anchors (prices, durations…)
+            </label>
+          </div>
+          <button id="t2-search" class="bg-slate-800 hover:bg-slate-900 text-white px-4 py-1.5 rounded-lg text-sm">Search</button>
+        </div>
+        <div id="t2-results" class="space-y-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============= MODAL: cluster evidence ============= -->
+  <div id="modal" class="hidden fixed inset-0 bg-black/40 flex items-center justify-center z-50 p-4">
+    <div class="bg-white rounded-xl max-w-3xl w-full max-h-[85vh] overflow-y-auto scroll-y shadow-2xl">
+      <div class="sticky top-0 bg-white border-b px-5 py-3 flex items-center justify-between">
+        <h3 class="font-semibold text-slate-900">📎 Citation trail</h3>
+        <button id="modal-close" class="text-slate-400 hover:text-slate-700 text-2xl leading-none">×</button>
+      </div>
+      <div id="modal-body" class="p-5"></div>
+    </div>
+  </div>
+
+  <footer class="text-center text-xs text-slate-400 pb-6">
+    <span id="footer-base"></span> · 1,450 clusters · 4,622 insights · 5 sources · 2 POIs
+  </footer>
+
+<script>
+// ============================================================
+// CONFIG
+// ============================================================
+const API_BASE = "https://gems-poi-production.up.railway.app";
+
+document.getElementById('footer-base').textContent = API_BASE;
+
+// ============================================================
+// HEALTH CHECK
+// ============================================================
+fetch(`${API_BASE}/api/health`).then(r => r.json()).then(d => {
+  const pill = document.getElementById('health-pill');
+  if (d.status === 'ok') {
+    pill.textContent = `🟢 ${d.clusters} clusters · ${d.insights} insights`;
+    pill.classList.add('bg-green-500/30');
+  } else {
+    pill.textContent = '🔴 down';
+    pill.classList.add('bg-red-500/30');
+  }
+}).catch(() => {
+  const pill = document.getElementById('health-pill');
+  pill.textContent = '🔴 unreachable';
+  pill.classList.add('bg-red-500/30');
+});
+
+// ============================================================
+// HELPERS
+// ============================================================
+const SOURCE_LABEL = {
+  tripadvisor_review: 'TripAdvisor',
+  google_review: 'Google',
+  reddit_post: 'Reddit (post)',
+  reddit_comment: 'Reddit (comment)',
+  youtube_transcript_chunk: 'YouTube',
+};
+const SOURCE_COLOR = {
+  tripadvisor_review: 'bg-green-100 text-green-800',
+  google_review: 'bg-blue-100 text-blue-800',
+  reddit_post: 'bg-orange-100 text-orange-800',
+  reddit_comment: 'bg-orange-100 text-orange-800',
+  youtube_transcript_chunk: 'bg-red-100 text-red-800',
+};
+const L1_COLOR = {
+  'Visit Intelligence': 'bg-blue-100 text-blue-800',
+  'Attention Intelligence': 'bg-purple-100 text-purple-800',
+  'Discovery Intelligence': 'bg-teal-100 text-teal-800',
+  'Culinary Intelligence': 'bg-amber-100 text-amber-800',
+  'Operational Intelligence': 'bg-rose-100 text-rose-800',
+};
+const SENTIMENT_EMOJI = { positive: '😊', negative: '😞', mixed: '😐', neutral: '⚪' };
+const CONFIDENCE_COLOR = { high: 'bg-green-500', medium: 'bg-yellow-500', low: 'bg-rose-500' };
+
+function escapeHtml(s) {
+  if (s == null) return '';
+  return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
+function pill(text, klass) {
+  return `<span class="inline-block text-xs px-2 py-0.5 rounded ${klass}">${escapeHtml(text)}</span>`;
+}
+
+function sourceMixStr(mix) {
+  if (!mix) return '';
+  const sorted = Object.entries(mix).sort((a,b) => b[1] - a[1]);
+  return sorted.map(([k, v]) => `${SOURCE_LABEL[k] || k}=${v}`).join(' · ');
+}
+
+function clusterCard(c, opts = {}) {
+  const { showRel = false, onClick = 'open' } = opts;
+  const l1 = c.l1 || '';
+  const stars = c.quality_tier === 'A' ? '⭐⭐⭐' : c.quality_tier === 'B' ? '⭐⭐' : '⭐';
+  return `
+    <div class="border border-slate-200 hover:border-indigo-400 rounded-lg p-3 cursor-pointer bg-white" data-cluster-id="${c.cluster_id}" data-action="${onClick}">
+      <div class="flex items-start gap-2 mb-1.5">
+        ${pill(l1.replace(' Intelligence', ''), L1_COLOR[l1] || 'bg-slate-100 text-slate-700')}
+        ${pill(c.l2 || '', 'bg-slate-100 text-slate-700')}
+        <span class="ml-auto text-xs text-slate-500">${stars} · ${c.size}× · ${c.n_sources}/5 sources</span>
+      </div>
+      <div class="text-sm font-medium text-slate-900 mb-1">${SENTIMENT_EMOJI[c.sentiment] || ''} ${escapeHtml(c.name || '')}</div>
+      <div class="text-xs text-slate-500">${sourceMixStr(c.source_mix)}${showRel && c.relevance_score ? ' · relevance ' + c.relevance_score.toFixed(2) : ''}</div>
+    </div>
+  `;
+}
+
+function insightCard(i) {
+  const stars = i.rating ? '★'.repeat(i.rating) : '';
+  const tags = [];
+  if (i.insight_sentiment) tags.push(pill(SENTIMENT_EMOJI[i.insight_sentiment] + ' ' + i.insight_sentiment, 'bg-slate-100 text-slate-700'));
+  if (i.intent_tag) tags.push(pill(i.intent_tag, 'bg-slate-100 text-slate-700'));
+  if (i.numeric_anchors && i.numeric_anchors.length) tags.push(pill('🔢 ' + i.numeric_anchors.join(', '), 'bg-amber-100 text-amber-800'));
+  if (i.sub_attraction) tags.push(pill('📍 ' + i.sub_attraction, 'bg-purple-100 text-purple-800'));
+  return `
+    <div class="border border-slate-200 hover:border-indigo-400 rounded-lg p-3 bg-white cursor-pointer" data-cluster-id="${i.cluster_id || ''}" data-action="open">
+      <div class="flex items-start gap-2 mb-1.5 flex-wrap">
+        ${pill((SOURCE_LABEL[i.source] || i.source) + (stars ? ' ' + stars : ''), SOURCE_COLOR[i.source] || 'bg-slate-100 text-slate-700')}
+        ${tags.join(' ')}
+      </div>
+      <div class="text-sm text-slate-800 mb-1">"${escapeHtml(i.text || '')}"</div>
+      ${i.cluster_name ? `<div class="text-xs text-slate-500">↳ in cluster: ${escapeHtml(i.cluster_name)}</div>` : ''}
+    </div>
+  `;
+}
+
+// ============================================================
+// CHAT / RAG
+// ============================================================
+const chatLog = document.getElementById('chat-log');
+const toolsLog = document.getElementById('tools-log');
+const chatInput = document.getElementById('chat-input');
+const chatSend = document.getElementById('chat-send');
+
+function addBubble(role, content, opts = {}) {
+  const wrap = document.createElement('div');
+  wrap.className = 'fade-in';
+  if (role === 'user') {
+    wrap.innerHTML = `
+      <div class="flex justify-end">
+        <div class="max-w-[75%] bg-indigo-600 text-white px-4 py-2 rounded-2xl rounded-tr-md text-sm">
+          ${escapeHtml(content)}
+        </div>
+      </div>`;
+  } else if (role === 'thinking') {
+    wrap.id = 'thinking-bubble';
+    wrap.innerHTML = `
+      <div class="flex">
+        <div class="bg-slate-100 text-slate-700 px-4 py-2 rounded-2xl rounded-tl-md text-sm flex items-center gap-1">
+          <span class="pulse-dot">●</span><span class="pulse-dot" style="animation-delay:.2s">●</span><span class="pulse-dot" style="animation-delay:.4s">●</span>
+          <span class="ml-2 text-xs text-slate-500">${escapeHtml(content)}</span>
+        </div>
+      </div>`;
+  } else {
+    const conf = opts.confidence || 'medium';
+    const citationsHtml = (opts.citations || []).map(c => `
+      <div class="border-l-2 border-indigo-300 pl-3 py-1.5 my-1.5 bg-slate-50 rounded-r text-xs cursor-pointer hover:bg-slate-100" data-cluster-id="${c.cluster_id || ''}" data-action="open">
+        <div class="flex items-center gap-2 mb-1">
+          ${pill((SOURCE_LABEL[c.source] || c.source) + (c.rating ? ' ★' + c.rating : ''), SOURCE_COLOR[c.source] || 'bg-slate-200 text-slate-700')}
+          ${c.cluster_name ? `<span class="text-slate-500">${escapeHtml(c.cluster_name.slice(0, 60))}${c.cluster_name.length > 60 ? '…' : ''}</span>` : ''}
+        </div>
+        <div class="text-slate-700 italic">"${escapeHtml((c.quote || '').slice(0, 240))}${(c.quote||'').length > 240 ? '…' : ''}"</div>
+      </div>
+    `).join('');
+
+    const caveats = opts.caveats ? `<div class="mt-2 text-xs text-amber-700 bg-amber-50 border border-amber-200 rounded p-2">⚠ ${escapeHtml(opts.caveats)}</div>` : '';
+
+    wrap.innerHTML = `
+      <div class="flex">
+        <div class="max-w-[85%] bg-slate-100 text-slate-900 px-4 py-3 rounded-2xl rounded-tl-md text-sm w-full">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-xs font-medium text-slate-500">Gems</span>
+            <span class="text-xs px-2 py-0.5 rounded-full text-white ${CONFIDENCE_COLOR[conf] || 'bg-slate-400'}">confidence: ${conf}</span>
+            <span class="text-xs text-slate-400 ml-auto">${(opts.citations || []).length} citation${(opts.citations || []).length === 1 ? '' : 's'}</span>
+          </div>
+          <div class="prose prose-sm max-w-none whitespace-pre-line mb-2">${escapeHtml(content)}</div>
+          ${citationsHtml ? `<details class="mt-2"><summary class="text-xs text-indigo-600 cursor-pointer hover:text-indigo-800 font-medium">Show evidence (${(opts.citations||[]).length})</summary><div class="mt-1">${citationsHtml}</div></details>` : ''}
+          ${caveats}
+        </div>
+      </div>`;
+  }
+  chatLog.appendChild(wrap);
+  chatLog.scrollTop = chatLog.scrollHeight;
+  return wrap;
+}
+
+function renderToolCalls(log) {
+  toolsLog.innerHTML = '';
+  if (!log || !log.length) {
+    toolsLog.innerHTML = '<div class="text-sm text-slate-400 italic">No tool calls recorded.</div>';
+    return;
+  }
+  log.forEach((tc, i) => {
+    const card = document.createElement('div');
+    card.className = 'border border-slate-200 rounded-lg p-2.5 bg-slate-50 fade-in';
+    const argsStr = tc.args ? JSON.stringify(tc.args, null, 2) : '';
+    card.innerHTML = `
+      <div class="flex items-center gap-2 mb-1">
+        <span class="text-xs font-mono font-semibold text-indigo-700">${i+1}. ${escapeHtml(tc.tool || '')}</span>
+        ${tc.result_size ? `<span class="text-xs text-slate-400 ml-auto">${tc.result_size}b</span>` : ''}
+      </div>
+      ${argsStr ? `<pre class="json text-xs text-slate-600 bg-white border border-slate-200 rounded p-1.5 mt-1 overflow-x-auto">${escapeHtml(argsStr)}</pre>` : ''}
+      ${tc.result_preview ? `<details class="mt-1"><summary class="text-xs text-slate-500 cursor-pointer">result preview</summary><pre class="json text-xs text-slate-500 mt-1">${escapeHtml(tc.result_preview)}</pre></details>` : ''}
+    `;
+    toolsLog.appendChild(card);
+  });
+}
+
+async function askGems(query, poi) {
+  document.querySelector('.text-center.py-6.italic')?.remove();
+  addBubble('user', query);
+  const thinking = addBubble('thinking', 'Retrieving + synthesising…');
+  chatSend.disabled = true;
+  try {
+    const r = await fetch(`${API_BASE}/api/ask`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ query, poi }),
+    });
+    const d = await r.json();
+    thinking.remove();
+    if (d.error) {
+      addBubble('agent', '⚠ Error: ' + d.error, { confidence: 'low' });
+    } else {
+      addBubble('agent', d.answer || '(no answer)', {
+        confidence: d.confidence,
+        citations: d.citations || [],
+        caveats: d.caveats,
+      });
+    }
+    renderToolCalls(d.tool_calls_log);
+  } catch (e) {
+    thinking.remove();
+    addBubble('agent', '⚠ Network error: ' + e.message, { confidence: 'low' });
+  } finally {
+    chatSend.disabled = false;
+    chatInput.focus();
+  }
+}
+
+// ============================================================
+// TIER 1 / TIER 2 SEARCH
+// ============================================================
+async function searchClusters() {
+  const poi = document.getElementById('poi-select').value;
+  const query = document.getElementById('t1-query').value.trim();
+  if (!query) return;
+  const body = {
+    poi,
+    query,
+    limit: 5,
+    min_tier: document.getElementById('t1-tier').value,
+  };
+  const l1 = document.getElementById('t1-l1').value;
+  if (l1) body.intent_l1 = l1;
+
+  const out = document.getElementById('t1-results');
+  out.innerHTML = '<div class="text-sm text-slate-400 italic">Searching…</div>';
+  const r = await fetch(`${API_BASE}/api/search_clusters`, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body)
+  });
+  const rows = await r.json();
+  if (!rows.length) { out.innerHTML = '<div class="text-sm text-slate-400 italic">No results.</div>'; return; }
+  out.innerHTML = rows.map(c => clusterCard(c, { showRel: true })).join('');
+}
+
+async function searchInsights() {
+  const poi = document.getElementById('poi-select').value;
+  const query = document.getElementById('t2-query').value.trim();
+  if (!query) return;
+  const filters = {};
+  const sent = document.getElementById('t2-sentiment').value;
+  if (sent) filters.insight_sentiment = [sent];
+  const src = document.getElementById('t2-source').value;
+  if (src) filters.source = [src];
+  const rmax = document.getElementById('t2-ratingmax').value;
+  if (rmax) filters.rating_max = parseInt(rmax, 10);
+  if (document.getElementById('t2-numeric').checked) filters.has_numeric = true;
+
+  const out = document.getElementById('t2-results');
+  out.innerHTML = '<div class="text-sm text-slate-400 italic">Searching…</div>';
+  const r = await fetch(`${API_BASE}/api/search_insights`, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ poi, query, filters, limit: 8 })
+  });
+  const rows = await r.json();
+  if (!rows.length) { out.innerHTML = '<div class="text-sm text-slate-400 italic">No results.</div>'; return; }
+  out.innerHTML = rows.map(insightCard).join('');
+}
+
+// ============================================================
+// MODAL: cluster explain
+// ============================================================
+async function openClusterModal(clusterId) {
+  if (!clusterId) return;
+  const modal = document.getElementById('modal');
+  const body = document.getElementById('modal-body');
+  body.innerHTML = '<div class="text-sm text-slate-400 italic">Loading evidence…</div>';
+  modal.classList.remove('hidden');
+  const r = await fetch(`${API_BASE}/api/explain_cluster`, {
+    method: 'POST', headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ cluster_id: parseInt(clusterId, 10), max_quotes: 5 })
+  });
+  const d = await r.json();
+  if (d.error) { body.innerHTML = `<div class="text-rose-700">${escapeHtml(d.error)}</div>`; return; }
+  const cluster = d.cluster || {};
+  const quotes = d.quotes || [];
+  body.innerHTML = `
+    <div class="mb-4 pb-4 border-b">
+      ${clusterCard(cluster, { onClick: 'noop' })}
+    </div>
+    <h4 class="font-semibold text-slate-900 mb-3">📚 ${quotes.length} reviewer quote${quotes.length === 1 ? '' : 's'}</h4>
+    <div class="space-y-3">
+      ${quotes.map(q => `
+        <div class="border border-slate-200 rounded-lg p-3 bg-slate-50">
+          <div class="flex items-center gap-2 mb-1.5">
+            ${pill(SOURCE_LABEL[q.source] || q.source, SOURCE_COLOR[q.source] || 'bg-slate-100 text-slate-700')}
+            ${q.rating ? pill('★ ' + q.rating, 'bg-yellow-100 text-yellow-800') : ''}
+            <span class="text-xs text-slate-400 ml-auto font-mono">${escapeHtml(q.source_id || '')}</span>
+          </div>
+          <div class="text-sm text-slate-800 italic">"${escapeHtml(q.raw_text || '')}"</div>
+          ${q.anchor_entity ? `<div class="mt-1 text-xs text-slate-500">anchor: ${escapeHtml(q.anchor_entity)}</div>` : ''}
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+// ============================================================
+// WIRING
+// ============================================================
+chatSend.addEventListener('click', () => {
+  const q = chatInput.value.trim();
+  if (!q) return;
+  chatInput.value = '';
+  askGems(q, document.getElementById('poi-select').value);
+});
+chatInput.addEventListener('keydown', e => {
+  if (e.key === 'Enter') chatSend.click();
+});
+
+document.querySelectorAll('.sample-q').forEach(b => {
+  b.addEventListener('click', () => {
+    const q = b.textContent.trim();
+    const poi = b.dataset.poi;
+    document.getElementById('poi-select').value = poi;
+    askGems(q, poi);
+  });
+});
+
+document.getElementById('clear-chat').addEventListener('click', () => {
+  chatLog.innerHTML = '<div class="text-sm text-slate-500 italic text-center py-6">Ask anything. Try the sample chips below or type your own.</div>';
+  toolsLog.innerHTML = '<div class="text-sm text-slate-400 italic text-center py-6">Tool calls will appear here after each /api/ask</div>';
+});
+
+document.getElementById('t1-search').addEventListener('click', searchClusters);
+document.getElementById('t1-query').addEventListener('keydown', e => { if (e.key === 'Enter') searchClusters(); });
+document.getElementById('t2-search').addEventListener('click', searchInsights);
+document.getElementById('t2-query').addEventListener('keydown', e => { if (e.key === 'Enter') searchInsights(); });
+
+document.querySelectorAll('.toggle-btn').forEach(b => {
+  b.addEventListener('click', () => {
+    const target = document.getElementById(b.dataset.target);
+    target.classList.toggle('hidden');
+    b.textContent = target.classList.contains('hidden') ? 'expand' : 'collapse';
+  });
+});
+
+document.getElementById('modal-close').addEventListener('click', () => {
+  document.getElementById('modal').classList.add('hidden');
+});
+document.getElementById('modal').addEventListener('click', e => {
+  if (e.target.id === 'modal') document.getElementById('modal').classList.add('hidden');
+});
+
+// Click-to-explain: any element with data-action="open" + data-cluster-id triggers the modal
+document.addEventListener('click', e => {
+  const target = e.target.closest('[data-action="open"][data-cluster-id]');
+  if (target) {
+    const cid = target.dataset.clusterId;
+    if (cid) openClusterModal(cid);
+  }
+});
+
+// Pre-fill sample tier-1 query
+document.getElementById('t1-query').value = 'how to avoid the queue';
+document.getElementById('t2-query').value = 'specific prices for entry tickets';
+</script>
+</body>
+</html>

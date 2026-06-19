@@ -29,18 +29,29 @@ def pytest_collection_modifyitems(config, items):
 def test_poi():
     """Create a disposable POI row for tests that need a real foreign key.
 
-    Cleans up the POI and all its google_reviews on teardown.
+    Cleans up the POI and all its source-keyed rows on teardown.
     """
     from db.client import get_client
 
     db = get_client()
     name = "__TEST_POI__"
-    # Ensure clean slate
+
+    def _purge(poi_id):
+        # Reddit cascade: links → comments → posts (FK order matters; no cascading rules).
+        db.table("poi_reddit_links").delete().eq("poi_id", poi_id).execute()
+        post_rows = db.table("reddit_posts").select("id").eq("poi_id", poi_id).execute().data or []
+        for p in post_rows:
+            db.table("reddit_comments").delete().eq("post_id", p["id"]).execute()
+        db.table("reddit_posts").delete().eq("poi_id", poi_id).execute()
+        db.table("tripadvisor_review_cursors").delete().eq("poi_id", poi_id).execute()
+        db.table("tripadvisor_reviews").delete().eq("poi_id", poi_id).execute()
+        db.table("google_reviews_cursors").delete().eq("poi_id", poi_id).execute()
+        db.table("google_reviews").delete().eq("poi_id", poi_id).execute()
+        db.table("pois").delete().eq("id", poi_id).execute()
+
     existing = db.table("pois").select("id").eq("name", name).execute()
     for row in existing.data or []:
-        db.table("google_reviews_cursors").delete().eq("poi_id", row["id"]).execute()
-        db.table("google_reviews").delete().eq("poi_id", row["id"]).execute()
-        db.table("pois").delete().eq("id", row["id"]).execute()
+        _purge(row["id"])
 
     inserted = (
         db.table("pois")
@@ -50,6 +61,4 @@ def test_poi():
     poi_id = inserted.data[0]["id"]
     yield poi_id
 
-    db.table("google_reviews_cursors").delete().eq("poi_id", poi_id).execute()
-    db.table("google_reviews").delete().eq("poi_id", poi_id).execute()
-    db.table("pois").delete().eq("id", poi_id).execute()
+    _purge(poi_id)

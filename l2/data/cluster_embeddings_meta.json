@@ -1,0 +1,5802 @@
+[
+  {
+    "cluster_id": 119,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 121,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 124,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 123,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 125,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 122,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 127,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 126,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 131,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 134,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 132,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 128,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 129,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 135,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 136,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 130,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 137,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 133,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 139,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 138,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 34,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 42,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 37,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 44,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 43,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 47,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 46,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 45,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 54,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 49,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 48,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 52,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 51,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 57,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 55,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 53,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 50,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 56,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 59,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 62,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 141,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 140,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 143,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 142,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 146,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 148,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 150,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 151,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 149,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 145,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 147,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 152,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 154,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 155,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 153,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 156,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 157,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 159,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 158,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 161,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 180,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 181,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 183,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 185,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 184,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 182,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 187,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 188,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 186,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 190,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 191,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 189,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 194,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 193,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 196,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 195,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 198,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 199,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 192,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 203,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 6,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 5,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 3,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 9,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 0,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 4,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 8,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 2,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 14,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 13,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 7,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 1,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 11,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 10,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 16,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 15,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 18,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 12,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 17,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 23,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 22,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 24,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 20,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 28,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 29,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 25,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 26,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 21,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 31,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 27,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 32,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 30,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 19,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 33,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 35,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 36,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 38,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 41,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 39,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 40,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 61,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 58,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 63,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 64,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 66,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 67,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 65,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 69,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 71,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 70,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 68,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 73,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 76,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 75,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 72,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 80,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 79,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 77,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 81,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 82,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 97,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 101,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 102,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 104,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 106,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 107,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 110,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 108,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 78,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 109,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 112,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 111,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 105,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 114,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 113,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 116,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 115,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 118,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 117,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 120,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 162,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 160,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 163,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 144,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 166,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 164,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 165,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 167,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 169,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 171,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 172,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 173,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 168,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 177,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 174,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 178,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 176,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 170,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 175,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 179,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 60,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 84,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 83,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 85,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 86,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 74,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 87,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 88,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 92,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 90,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 89,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 94,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 91,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 95,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 93,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 96,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 98,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 99,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 100,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 103,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 319,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 323,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 322,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 321,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 325,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 324,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 326,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 327,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 328,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 329,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 330,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 332,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 331,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 333,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 336,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 338,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 335,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 339,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 337,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 342,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 381,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 382,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 383,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 380,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 386,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 384,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 387,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 390,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 391,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 389,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 393,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 395,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 392,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 397,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 396,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 394,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 399,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 398,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 401,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 400,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 301,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 300,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 303,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 305,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 307,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 299,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 304,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 309,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 306,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 308,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 310,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 312,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 311,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 313,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 314,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 318,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 317,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 316,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 315,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 320,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 343,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 341,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 334,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 340,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 344,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 345,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 346,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 352,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 348,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 350,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 349,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 351,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 347,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 355,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 353,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 356,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 357,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 354,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 360,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 362,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 281,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 284,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 285,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 286,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 280,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 282,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 287,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 288,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 283,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 290,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 291,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 292,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 293,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 294,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 295,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 298,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 296,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 297,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 289,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 302,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 200,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 204,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 202,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 205,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 206,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 201,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 208,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 197,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 207,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 213,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 214,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 210,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 212,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 216,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 211,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 217,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 218,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 219,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 221,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 222,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 358,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 364,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 361,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 365,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 359,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 366,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 367,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 363,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 368,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 370,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 372,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 371,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 369,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 373,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 374,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 377,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 375,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 379,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 376,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 378,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 220,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 209,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 224,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 225,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 223,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 227,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 226,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 215,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 232,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 228,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 230,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 229,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 233,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 231,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 234,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 236,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 237,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 238,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 235,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 239,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 241,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 243,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 244,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 242,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 240,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 246,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 245,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 247,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 250,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 248,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 251,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 256,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 249,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 252,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 253,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 254,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 255,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 257,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 258,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 265,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 261,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 260,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 259,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 263,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 262,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 264,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 267,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 266,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 268,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 271,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 273,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 269,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 274,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 270,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 275,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 272,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 277,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 279,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 276,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 278,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 423,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 424,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 428,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 426,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 420,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 429,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 431,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 427,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 425,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 388,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 435,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 416,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 437,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 430,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 433,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 432,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 438,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 436,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 434,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 440,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 441,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 439,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 445,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 448,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 442,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 444,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 446,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 450,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 451,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 449,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 443,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 454,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 457,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 453,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 456,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 447,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 459,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 461,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 460,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 462,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 455,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 463,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 466,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 464,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 469,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 467,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 465,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 470,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 468,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 471,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 472,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 474,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 477,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 452,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 478,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 475,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 479,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 476,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 480,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 481,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 524,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 523,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 510,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 526,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 525,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 528,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 531,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 530,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 527,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 520,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 533,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 529,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 534,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 537,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 535,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 532,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 536,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 540,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 538,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 541,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 562,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 556,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 564,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 568,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 566,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 565,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 569,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 570,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 567,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 563,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 571,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 574,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 572,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 576,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 578,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 575,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 581,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 583,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 579,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 577,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 499,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 507,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 501,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 502,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 500,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 505,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 503,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 506,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 509,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 508,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 511,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 513,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 512,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 514,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 516,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 515,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 517,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 518,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 521,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 522,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 403,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 406,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 405,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 404,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 402,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 407,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 409,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 408,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 414,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 411,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 410,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 412,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 413,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 385,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 417,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 419,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 418,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 421,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 415,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 422,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 585,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 584,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 582,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 588,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 587,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 589,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 592,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 590,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 591,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 586,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 594,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 593,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 580,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 596,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 598,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 599,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 595,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 600,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 597,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 573,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 542,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 543,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 519,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 546,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 545,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 547,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 550,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 549,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 548,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 544,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 539,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 551,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 554,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 555,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 558,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 553,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 557,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 560,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 559,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 561,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 484,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 473,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 483,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 486,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 482,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 485,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 487,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 488,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 491,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 492,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 493,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 490,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 489,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 494,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 498,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 495,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 496,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 497,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 504,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 458,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 643,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 642,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 647,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 646,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 651,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 650,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 648,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 645,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 644,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 655,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 649,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 653,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 657,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 654,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 652,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 658,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 656,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 635,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 660,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 661,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 602,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 604,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 607,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 601,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 603,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 609,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 605,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 611,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 610,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 606,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 613,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 608,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 614,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 616,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 612,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 615,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 617,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 619,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 618,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 620,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 719,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 722,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 725,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 723,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 726,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 724,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 727,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 728,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 730,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 721,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 733,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 732,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 729,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 731,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 735,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 736,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 738,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 734,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 737,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 742,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 704,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 702,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 706,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 701,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 708,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 709,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 705,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 552,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 711,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 710,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 707,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 712,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 714,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 715,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 693,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 716,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 717,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 718,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 720,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 713,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 621,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 624,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 623,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 622,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 625,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 626,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 629,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 627,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 631,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 630,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 632,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 628,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 633,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 634,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 638,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 639,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 637,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 640,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 636,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 641,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 680,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 685,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 684,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 682,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 681,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 686,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 687,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 692,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 691,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 689,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 690,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 688,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 694,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 696,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 698,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 697,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 699,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 700,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 703,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 695,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 756,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 761,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 762,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 766,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 763,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 764,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 768,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 770,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 767,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 769,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 771,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 775,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 773,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 774,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 776,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 777,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 778,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 780,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 781,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 772,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 741,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 740,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 739,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 749,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 745,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 744,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 748,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 750,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 746,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 751,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 752,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 747,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 755,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 743,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 754,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 753,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 757,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 759,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 758,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 760,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 823,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 821,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 820,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 824,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 826,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 822,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 828,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 832,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 831,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 829,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 827,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 830,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 835,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 834,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 833,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 837,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 836,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 838,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 841,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 840,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 785,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 779,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 784,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 782,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 788,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 791,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 783,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 792,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 787,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 786,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 790,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 765,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 795,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 796,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 794,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 789,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 797,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 800,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 799,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 793,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 801,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 805,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 802,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 806,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 803,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 807,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 808,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 804,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 810,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 812,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 798,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 814,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 811,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 815,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 809,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 817,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 816,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 818,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 813,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 819,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 900,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 894,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 902,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 905,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 906,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 909,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 908,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 903,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 904,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 907,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 911,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 910,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 912,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 913,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 917,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 919,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 914,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 916,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 915,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 918,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 839,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 842,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 844,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 848,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 847,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 843,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 849,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 846,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 851,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 850,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 852,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 854,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 825,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 856,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 853,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 855,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 857,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 858,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 861,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 860,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 862,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 865,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 863,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 867,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 866,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 864,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 845,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 868,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 871,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 870,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 872,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 874,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 875,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 873,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 869,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 859,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 878,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 876,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 879,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 883,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 920,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 922,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 927,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 924,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 925,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 929,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 921,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 930,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 923,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 928,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 932,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 933,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 931,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 936,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 935,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 934,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 937,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 938,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 940,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 944,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 960,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 955,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 962,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 953,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 969,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 965,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 964,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 966,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 967,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 968,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 972,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 970,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 973,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 977,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 971,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 976,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 974,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 981,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 979,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 975,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 939,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 942,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 945,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 946,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 948,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 926,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 943,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 951,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 949,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 950,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 947,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 941,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 952,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 954,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 958,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 961,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 959,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 956,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 957,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 963,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 662,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 663,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 666,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 659,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 664,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 669,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 667,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 665,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 668,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 672,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 673,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 670,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 677,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 674,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 678,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 671,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 676,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 679,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 675,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 683,
+    "poi_name": "Colosseum"
+  },
+  {
+    "cluster_id": 877,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 882,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 880,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 887,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 886,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 888,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 885,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 884,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 881,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 890,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 889,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 891,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 892,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 893,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 895,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 899,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 898,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 897,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 896,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 901,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1040,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1041,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1042,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1043,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1047,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1045,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1049,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1050,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1051,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1053,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1052,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1048,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1056,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1054,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1055,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1057,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1058,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1046,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1061,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1044,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 992,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1003,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1006,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1002,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1005,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1001,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1004,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1007,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1009,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1010,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1014,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1016,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1017,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1011,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1012,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1013,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1015,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1020,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1019,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1023,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1022,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1021,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1024,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1026,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1025,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1030,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1018,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1008,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1031,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1027,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1029,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1028,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1034,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1032,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1033,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1036,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1038,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1037,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1039,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1035,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1125,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1122,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1119,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1124,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1126,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1127,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1123,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1131,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1128,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1129,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1117,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1132,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1130,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1133,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1134,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1135,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1136,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1138,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1137,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1142,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 983,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 984,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 985,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 980,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 982,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 986,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 978,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 987,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 988,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 991,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 989,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 994,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 997,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 993,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 990,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 995,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 998,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 996,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 999,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1000,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1082,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1085,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1081,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1086,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1077,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1083,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1087,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1084,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1088,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1091,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1093,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1095,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1089,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1096,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1090,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1099,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1094,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1092,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1098,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1101,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1062,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1060,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1059,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1066,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1067,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1065,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1063,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1068,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1069,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1064,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1071,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1070,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1073,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1076,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1072,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1074,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1075,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1078,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1079,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1080,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1102,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1100,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1103,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1106,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1097,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1107,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1105,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1110,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1104,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1112,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1108,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1109,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1113,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1111,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1116,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1115,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1121,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1120,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1118,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1114,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1143,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1139,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1141,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1146,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1147,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1145,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1144,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1150,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1155,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1148,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1152,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1153,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1156,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1154,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1157,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1149,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1160,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1161,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1158,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1162,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1164,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1163,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1159,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1165,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1151,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1140,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1167,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1170,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1172,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1168,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1173,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1166,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1171,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1176,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1175,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1177,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1180,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1174,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1182,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1178,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1201,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1206,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1202,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1205,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1207,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1208,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1210,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1203,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1209,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1181,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1211,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1213,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1212,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1214,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1216,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1217,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1204,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1218,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1215,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1220,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1179,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1183,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1184,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1185,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1186,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1187,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1188,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1192,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1191,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1193,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1190,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1169,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1195,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1197,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1196,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1199,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1198,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1200,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1194,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1189,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1275,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1278,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1283,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1284,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1285,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1286,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1287,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1288,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1290,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1293,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1289,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1295,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1291,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1282,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1292,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1297,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1298,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1299,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1300,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1294,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1261,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1260,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1263,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1262,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1266,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1267,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1264,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1265,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1268,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1269,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1272,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1271,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1270,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1273,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1277,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1279,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1276,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1274,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1280,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1281,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1302,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1296,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1304,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1305,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1303,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1301,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1308,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1307,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1310,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1311,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1309,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1313,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1315,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1317,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1306,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1316,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1314,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1312,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1319,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1318,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1222,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1223,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1221,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1224,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1225,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1219,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1226,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1227,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1229,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1228,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1233,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1231,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1230,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1234,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1232,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1235,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1236,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1238,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1240,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1244,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1237,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1241,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1243,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1239,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1242,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1246,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1245,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1248,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1247,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1251,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1249,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1250,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1256,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1252,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1255,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1257,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1258,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1254,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1259,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1253,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1405,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1396,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1401,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1406,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1407,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1395,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1402,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1404,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1408,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1411,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1410,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1409,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1413,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1412,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1414,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1415,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1416,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1417,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1419,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1420,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1321,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1320,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1323,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1326,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1324,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1327,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1329,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1330,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1322,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1334,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1325,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1331,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1336,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1332,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1335,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1338,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1337,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1340,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1339,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1342,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1341,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1346,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1344,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1343,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1347,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1345,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1348,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1333,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1352,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1351,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1350,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1353,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1355,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1354,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1357,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1328,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1358,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1356,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1360,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1362,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1429,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1432,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1434,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1433,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1437,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1436,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1435,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1440,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1441,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1438,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1439,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1444,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1442,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1446,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1443,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1418,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1447,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1445,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1448,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1449,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1361,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1359,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1363,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1364,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1367,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1349,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1365,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1366,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1369,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1368,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1371,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1370,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1374,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1375,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1372,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1373,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1377,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1376,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1378,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1379,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1382,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1381,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1385,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1383,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1384,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1387,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1388,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1386,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1389,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1392,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1394,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1393,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1391,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1390,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1380,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1398,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1400,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1397,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1399,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1403,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1424,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1423,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1422,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1421,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1425,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1430,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1428,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1431,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1426,
+    "poi_name": "Louvre Museum"
+  },
+  {
+    "cluster_id": 1427,
+    "poi_name": "Louvre Museum"
+  }
+]

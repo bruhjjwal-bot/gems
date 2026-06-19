@@ -1,0 +1,22 @@
+[
+  {"poi": "Colosseum", "query": "Should I get the Roma Pass?", "expected_l1": "Visit Intelligence", "must_mention": ["Roma Pass", "skip", "queue", "pass"]},
+  {"poi": "Colosseum", "query": "When is the best time to visit?", "expected_l1": "Visit Intelligence", "must_mention": ["morning", "early", "crowd", "afternoon"]},
+  {"poi": "Colosseum", "query": "Are there scams or tourist traps I should avoid?", "expected_l1": "Operational Intelligence", "must_mention": ["scam", "tout", "fake", "avoid"]},
+  {"poi": "Colosseum", "query": "Is the underground arena tour worth it?", "expected_l1": "Attention Intelligence", "must_mention": ["underground", "arena", "hypogeum", "tour"]},
+  {"poi": "Colosseum", "query": "Where can I eat nearby?", "expected_l1": "Culinary Intelligence", "must_mention": ["restaurant", "trattoria", "nearby", "food"]},
+  {"poi": "Colosseum", "query": "How do I get there by metro?", "expected_l1": "Operational Intelligence", "must_mention": ["metro", "Colosseo", "line", "transport"]},
+  {"poi": "Louvre Museum", "query": "Is the Mona Lisa worth seeing?", "expected_l1": "Attention Intelligence", "must_mention": ["Mona Lisa", "small", "crowd", "disappointing"]},
+  {"poi": "Louvre Museum", "query": "How can I avoid the queue at the Louvre?", "expected_l1": "Visit Intelligence", "must_mention": ["queue", "Porte des Lions", "side", "entrance", "pyramid"]},
+  {"poi": "Louvre Museum", "query": "Which rooms should I prioritize?", "expected_l1": "Attention Intelligence", "must_mention": ["Denon", "Sully", "Richelieu", "wing"]},
+  {"poi": "Louvre Museum", "query": "Are food options inside good?", "expected_l1": "Culinary Intelligence", "must_mention": ["expensive", "limited", "cafe", "food"]},
+  {"poi": "Louvre Museum", "query": "Is the Paris Museum Pass worth it for the Louvre?", "expected_l1": "Visit Intelligence", "must_mention": ["pass", "museum pass", "Paris"]},
+  {"poi": "Louvre Museum", "query": "Any hidden artworks worth seeking out?", "expected_l1": "Attention Intelligence", "must_mention": ["Venus", "Winged Victory", "Napoleon", "Denon", "Mona Lisa", "highlight", "iconic"]},
+  {"poi": "Louvre Museum", "query": "What's the restroom situation?", "expected_l1": "Operational Intelligence", "must_mention": ["restroom", "toilet", "facilities", "bathroom"]},
+  {"poi": "Louvre Museum", "query": "How long should I plan to spend at the Louvre?", "expected_l1": "Visit Intelligence", "must_mention": ["hours", "time", "allow", "spend"]},
+  {"poi": "Colosseum", "query": "Can I bring a large backpack?", "expected_l1": "Operational Intelligence", "must_mention": ["bag", "security", "size", "backpack"]},
+  {"poi": "Louvre Museum", "query": "negative reviews about the Mona Lisa", "tier": "insight", "filters_hint": {"l1": "Attention Intelligence", "insight_sentiment": ["negative"]}, "must_mention": ["mona lisa", "disappointing", "small", "crowd"]},
+  {"poi": "Colosseum", "query": "specific price for entry ticket", "tier": "insight", "filters_hint": {"has_numeric": true}, "must_mention": ["€", "$", "euro", "EUR"]},
+  {"poi": "Louvre Museum", "query": "low rating reviews about queue", "tier": "insight", "filters_hint": {"rating_max": 2}, "must_mention": ["queue", "wait", "line", "long"]},
+  {"poi": "Colosseum", "query": "warnings from Reddit about scams", "tier": "insight", "filters_hint": {"source": ["reddit_post", "reddit_comment"], "intent_tag": ["warning"]}, "must_mention": ["scam", "avoid", "fake", "tout"]},
+  {"poi": "Louvre Museum", "query": "Denon Wing specific recommendations", "tier": "insight", "filters_hint": {"sub_attraction": "Denon"}, "must_mention": ["Denon", "wing", "painting"]}
+]

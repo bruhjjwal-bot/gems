@@ -1,0 +1,5000 @@
+[
+  {
+    "source": "reddit_post",
+    "source_id": "1b2wl6v",
+    "source_uuid": "7b8ba1c3-9c52-4ee4-a16c-b24a3e2d2ed4",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 956
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "gc9aaq",
+    "source_uuid": "f2df5f02-5830-4f7c-81a8-32fc1fb3d882",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 6337
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "uj6es8",
+    "source_uuid": "25fbe639-d343-4392-99a3-00becb1c6be6",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1049
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1dgww37",
+    "source_uuid": "63b36285-6b79-4e32-bf54-ef11f6d90317",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1080
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "8agytt",
+    "source_uuid": "0753b60c-8085-47d9-bfe1-433d1503dd4c",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3052
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "x38t8p",
+    "source_uuid": "17342ebf-0312-45c6-8a45-810cde5f05d3",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 73335
+    },
+    "insights": [],
+    "elapsed_s": 0.81
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "8l9bv4",
+    "source_uuid": "e3ba4751-9b70-4105-a2f7-183c6efdc145",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 11466
+    },
+    "insights": [
+      {
+        "text": "The Colosseum plaza is empty early in the morning, offering a peaceful experience.",
+        "strength": 0.5,
+        "anchor_entity": "Colosseum"
+      }
+    ],
+    "elapsed_s": 1.01
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "d5vs8l",
+    "source_uuid": "2fef816d-0d29-4b49-85ba-51741f0c82c8",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3948
+    },
+    "insights": [],
+    "elapsed_s": 1.22
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "r5xnif",
+    "source_uuid": "583bab5d-ee25-4545-a84b-d6bd3c9e44fd",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 400
+    },
+    "insights": [],
+    "elapsed_s": 0.61
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1m8aci8",
+    "source_uuid": "b5276e32-e1d9-4e25-998c-52f5eeafcd6f",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 452
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "19f7tzw",
+    "source_uuid": "651655bb-e716-4933-9277-356a3c0010ff",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 765
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "13qd6vl",
+    "source_uuid": "892f1256-b5aa-4db9-ac3a-6843fe503ded",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 354
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "4pmngr",
+    "source_uuid": "7e3c1036-f591-42f5-b44d-780f0c683880",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 346
+    },
+    "insights": [],
+    "elapsed_s": 0.58
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1fvjcw2",
+    "source_uuid": "ae9cff71-a547-4d26-b32b-dfa35db206c1",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 427
+    },
+    "insights": [],
+    "elapsed_s": 0.9
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "aajlky",
+    "source_uuid": "a93b268b-024f-4bd2-a833-792b1566c6a0",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1670
+    },
+    "insights": [
+      {
+        "text": "Arriving at the Colosseum by 5 am can provide a more private experience.",
+        "strength": 0.5,
+        "anchor_entity": "Colosseum"
+      }
+    ],
+    "elapsed_s": 1.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1n3bud3",
+    "source_uuid": "5cad2a83-ef8e-4f6c-80a1-5b03a9ffd29b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 474
+    },
+    "insights": [],
+    "elapsed_s": 1.42
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "72yj38",
+    "source_uuid": "e60a7642-a816-4ffb-a875-93128c173464",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 243
+    },
+    "insights": [],
+    "elapsed_s": 0.76
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cm76nk",
+    "source_uuid": "8cc26acf-d814-4aac-8e37-6ead35537111",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 166
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "wpcb0v",
+    "source_uuid": "b32d805f-750e-4e0e-860b-de0dc7fde2aa",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 272
+    },
+    "insights": [],
+    "elapsed_s": 1.02
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ciks7c",
+    "source_uuid": "162e26eb-c093-4e4b-91c4-2f32d5a9612a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 170
+    },
+    "insights": [],
+    "elapsed_s": 0.77
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1i9pafw",
+    "source_uuid": "b1e41a40-a1b2-404d-8730-406c5ad66d89",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 164
+    },
+    "insights": [],
+    "elapsed_s": 0.73
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1mkmsxo",
+    "source_uuid": "f11ab601-3926-4dd1-a7da-a047b34e167c",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 133
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cg0glk",
+    "source_uuid": "ac9cbf27-8dec-4764-b72e-fae2b7605c1f",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 124
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "9yz060",
+    "source_uuid": "b3feb8f3-6523-4c31-b4de-591b41a8ceda",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 107
+    },
+    "insights": [],
+    "elapsed_s": 0.56
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1mo5ghk",
+    "source_uuid": "77b59ca2-baa3-40dc-a798-5ace4819448b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 105
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "14z4apy",
+    "source_uuid": "8a1c4dbd-6d57-42cd-b161-ac914e7ca298",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 98
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1p7g6s2",
+    "source_uuid": "bb3a8980-65af-437d-9a16-b91937e4244a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 308
+    },
+    "insights": [],
+    "elapsed_s": 1.86
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1papslg",
+    "source_uuid": "48a448a4-05ae-4041-8e81-f7f90fd78e23",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 98
+    },
+    "insights": [],
+    "elapsed_s": 0.97
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "p022ct",
+    "source_uuid": "ce188eb0-9fe2-474b-9c26-dfa1535b7d8b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 820
+    },
+    "insights": [],
+    "elapsed_s": 3.36
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1go4ehn",
+    "source_uuid": "e79063be-cdab-4c9e-845b-1497cb6709af",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 83
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1nostj8",
+    "source_uuid": "06a1f73f-5da5-4753-8fc5-0c2675f1df6d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 98
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cdrw07",
+    "source_uuid": "ad4d7389-79c6-4952-989f-be4bceab624a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 82
+    },
+    "insights": [],
+    "elapsed_s": 0.79
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1curjbg",
+    "source_uuid": "bfe5a73c-6e6a-4058-a904-da415e7bd4c9",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 243
+    },
+    "insights": [
+      {
+        "text": "The official Colosseum tickets are sold exclusively on ticketing.colosseo.it; other sites resell at a markup.",
+        "strength": 0.8,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Colosseum tickets go on sale 30 days in advance at 08:45 CET; expect a queue and website issues.",
+        "strength": 0.7,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Using multiple browsers can help navigate the Colosseum ticketing website's frequent errors and queues.",
+        "strength": 0.6,
+        "anchor_entity": "Colosseum"
+      }
+    ],
+    "elapsed_s": 2.35
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cafpc8",
+    "source_uuid": "181570b7-83b5-4922-a833-c187006578b1",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 79
+    },
+    "insights": [],
+    "elapsed_s": 0.78
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1crwj6k",
+    "source_uuid": "6f693fd9-a278-4d1e-8451-74805157db76",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 73
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ks132f",
+    "source_uuid": "293eac51-c3e6-43f8-8d38-87fb1a99e2c0",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 65
+    },
+    "insights": [],
+    "elapsed_s": 0.68
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "iejf83",
+    "source_uuid": "5bfa93b9-ebce-4f3a-bb8d-214938474247",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 63
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "c16t2t",
+    "source_uuid": "c48edd2a-9099-458c-bd36-415e82576313",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 57
+    },
+    "insights": [],
+    "elapsed_s": 0.75
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1kdmvlm",
+    "source_uuid": "7e43c58f-c902-4bfb-b5d1-f6b18a30e20c",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 40
+    },
+    "insights": [],
+    "elapsed_s": 0.55
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1pjhumt",
+    "source_uuid": "4990a73c-71dd-4da9-a9ff-a909f1df77fe",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 50
+    },
+    "insights": [],
+    "elapsed_s": 0.87
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1fnqkg8",
+    "source_uuid": "c14f9bbc-c4ba-46a8-ade7-8558551ba784",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 48
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1bt7f8t",
+    "source_uuid": "05f44504-124d-4500-8e06-326d6817b437",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 38
+    },
+    "insights": [],
+    "elapsed_s": 0.84
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1fj5i5y",
+    "source_uuid": "1fe1828b-fe5e-47a7-b132-a5d1d6aa76be",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 38
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1kehl0j",
+    "source_uuid": "c1d93f3a-f09b-490b-8d5e-ba3b4d40b8b1",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 335
+    },
+    "insights": [
+      {
+        "text": "The Colosseum underground tour may not be worth the \u20ac700 cost for 4 people.",
+        "strength": 0.5,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Most features of the Colosseum underground tour are visible from the arena floor.",
+        "strength": 0.5,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "The Vatican tour is highly recommended for its extensive and worthwhile experience.",
+        "strength": 0.5,
+        "anchor_entity": "Vatican"
+      }
+    ],
+    "elapsed_s": 3.84
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1blb5j0",
+    "source_uuid": "6da5aa5b-18fc-4274-920f-906a889c37e7",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 59
+    },
+    "insights": [
+      {
+        "text": "Colosseum Underground tickets sell out within seconds, especially for morning sessions.",
+        "strength": 0.9,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Tickets for Colosseum Underground tours become available exactly 30 days in advance at random times.",
+        "strength": 0.8,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Refreshing the Coop Culture website too frequently may result in being blocked as a bot.",
+        "strength": 0.7,
+        "anchor_entity": "Coop Culture website"
+      }
+    ],
+    "elapsed_s": 1.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1548ivb",
+    "source_uuid": "1c559663-1445-48da-a792-b92a3b97fefe",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 33
+    },
+    "insights": [],
+    "elapsed_s": 0.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "16l8h5z",
+    "source_uuid": "74f5946b-1a89-47dd-8884-e8d99bef6d08",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 37
+    },
+    "insights": [],
+    "elapsed_s": 0.95
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1itwqje",
+    "source_uuid": "96cf9978-e092-49b2-b598-d03a4440370a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 35
+    },
+    "insights": [],
+    "elapsed_s": 1.17
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1dlaqwf",
+    "source_uuid": "a61243ea-ccd5-466b-bcbc-7644fb6c9766",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 29
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1pmftox",
+    "source_uuid": "07faeacf-f300-4ec9-a2c4-39c264eb6c10",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 33
+    },
+    "insights": [],
+    "elapsed_s": 0.88
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1qf2kbw",
+    "source_uuid": "5f317c15-1f90-449c-9acb-64588ad0bcc6",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 30
+    },
+    "insights": [],
+    "elapsed_s": 0.86
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "142vfbc",
+    "source_uuid": "54dd3ec3-aa81-4963-bf58-01d2c5baf52b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 39
+    },
+    "insights": [
+      {
+        "text": "Colosseum, Roman Forum, and Palatine Hill offer free entry on the first Sunday of each month.",
+        "strength": 0.8,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "The Colosseum provides extensive historical information and is laid out like a museum.",
+        "strength": 0.7,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Rome Termini is large; arrive 30 minutes early to navigate and purchase tickets.",
+        "strength": 0.6,
+        "anchor_entity": "Rome Termini"
+      }
+    ],
+    "elapsed_s": 1.98
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1rdekvk",
+    "source_uuid": "c54d1e87-8b92-4822-800c-e1a0beef9ec8",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 26
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1p41hsn",
+    "source_uuid": "b7a968f3-1da3-4642-8aaf-2f046bfc5260",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 29
+    },
+    "insights": [],
+    "elapsed_s": 1.03
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "mdt8j1",
+    "source_uuid": "86c0cf48-3a40-47fc-b64a-e3aa5a3ee7b5",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 24
+    },
+    "insights": [],
+    "elapsed_s": 0.79
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "up9x8b",
+    "source_uuid": "581cc79e-8753-443d-8252-86c7f00b9450",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 22
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1fs69lm",
+    "source_uuid": "08124a96-704b-416e-8f53-d4f75bfb20d5",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 20
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "aao0gf",
+    "source_uuid": "14c10fdf-f5de-4e2f-b355-64cfa1188c29",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 23
+    },
+    "insights": [],
+    "elapsed_s": 0.97
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1etn35e",
+    "source_uuid": "c20cece0-2b83-4551-bac5-655f359c4d2f",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 24
+    },
+    "insights": [],
+    "elapsed_s": 1.11
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lrta3u",
+    "source_uuid": "65f1f4d6-c96e-49a2-8927-e4b5c6a17a1a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 20
+    },
+    "insights": [],
+    "elapsed_s": 0.8
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1irh3gb",
+    "source_uuid": "4ab2088b-a1af-499f-af5f-361b3435068d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 20
+    },
+    "insights": [],
+    "elapsed_s": 0.75
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cv3q14",
+    "source_uuid": "fe500530-fef8-46d6-a108-adb1a8279baf",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 27
+    },
+    "insights": [
+      {
+        "text": "The Colosseum Full Experience ticket time is for underground access, not general entry.",
+        "strength": 0.8,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Visitors should arrive early to navigate queues and find the meeting point for underground tours.",
+        "strength": 0.7,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Multiple meeting points at the Colosseum can cause confusion for self-guided and guided tour groups.",
+        "strength": 0.6,
+        "anchor_entity": "Colosseum"
+      }
+    ],
+    "elapsed_s": 1.78
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ct96gm",
+    "source_uuid": "a43d5cc1-f2d8-44a3-a758-b1391d12389b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 73
+    },
+    "insights": [],
+    "elapsed_s": 3.89
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lytz8a",
+    "source_uuid": "1a1cf4ab-8c0d-46c9-b1df-dfb744f9781f",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 42
+    },
+    "insights": [
+      {
+        "text": "Colosseum Night Tour tickets are available exactly 7 days and 12 hours before the tour time.",
+        "strength": 0.8,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Colosseum Night Tours are offered only on Tuesdays and Thursdays and include access to the underground.",
+        "strength": 0.7,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "There are 7 time slots for the Colosseum Night Tour between 8:15 PM and 10:30 PM, released every 15\u201330 minutes.",
+        "strength": 0.6,
+        "anchor_entity": "Colosseum"
+      }
+    ],
+    "elapsed_s": 3.24
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1bqhkkq",
+    "source_uuid": "2c860384-efeb-404d-a098-452863653fd0",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 20
+    },
+    "insights": [],
+    "elapsed_s": 0.77
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "9cf7hx",
+    "source_uuid": "f163fc14-383d-4bcb-bbbe-4103c3ec7bc4",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 18
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "h9qxdx",
+    "source_uuid": "cd5629f9-6404-4ddf-8bdd-707bf9d40d7a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 17
+    },
+    "insights": [],
+    "elapsed_s": 0.77
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1d232vs",
+    "source_uuid": "a99d0dbc-d736-4116-b169-8fa62edac3aa",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 18
+    },
+    "insights": [],
+    "elapsed_s": 0.82
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1d84l3g",
+    "source_uuid": "9cfbf866-7ebf-4cc8-9326-6146abd39d99",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 17
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "16rtiqb",
+    "source_uuid": "7c91f0b3-7ce7-4060-8b21-75e65b4c7ae5",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 19
+    },
+    "insights": [],
+    "elapsed_s": 1.23
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "153k9tn",
+    "source_uuid": "a7020d2a-be6c-44ec-856c-7844cf39639d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 17
+    },
+    "insights": [],
+    "elapsed_s": 0.78
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "z8ruk5",
+    "source_uuid": "6fe1e9e5-c578-4ae7-b96c-b5add0c21612",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 17
+    },
+    "insights": [],
+    "elapsed_s": 0.88
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1nb7e3h",
+    "source_uuid": "62054fab-0bd9-4cbd-9789-087088353e4d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 16
+    },
+    "insights": [],
+    "elapsed_s": 0.8
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1jsvk2w",
+    "source_uuid": "5a748923-e081-475a-920b-21502e89445b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 13
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "ulhrl7",
+    "source_uuid": "21f56fb1-4dcb-43db-993d-1793858387e5",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 13
+    },
+    "insights": [],
+    "elapsed_s": 0.83
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "11adq0i",
+    "source_uuid": "bc8f7710-aafb-4c84-af8e-4146c80120c0",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 15
+    },
+    "insights": [],
+    "elapsed_s": 1.0
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "12ru1pl",
+    "source_uuid": "f8bcd508-9f8a-4c09-9939-81d74955d520",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 13
+    },
+    "insights": [],
+    "elapsed_s": 0.9
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1omcn6z",
+    "source_uuid": "4fdad87a-c5b2-4af3-ac2c-d260bc7ad108",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 16
+    },
+    "insights": [
+      {
+        "text": "On the first Sunday of the month, the Colosseum offers free entry but expect long lines.",
+        "strength": 0.8,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Free Colosseum tickets can be obtained at the Roman Forum, allowing entry at a specific time.",
+        "strength": 0.9,
+        "anchor_entity": "Roman Forum"
+      },
+      {
+        "text": "Avoid paying \u20ac30 for 'skip the line' tickets at the Colosseum as free tickets are available.",
+        "strength": 0.9,
+        "anchor_entity": "Colosseum"
+      }
+    ],
+    "elapsed_s": 1.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "unac53",
+    "source_uuid": "50e026b5-2f6e-46db-a34a-115ad075b0eb",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 13
+    },
+    "insights": [],
+    "elapsed_s": 0.82
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1eczcix",
+    "source_uuid": "28a565f8-de4e-4636-882c-fb7eb3907196",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 13
+    },
+    "insights": [],
+    "elapsed_s": 1.15
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "18fbjw3",
+    "source_uuid": "2ea22ad8-dec2-468c-9a38-919c75b6cfaf",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 13
+    },
+    "insights": [],
+    "elapsed_s": 0.79
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1bnrogr",
+    "source_uuid": "b843a560-47a4-4d55-980e-d6edda9808b0",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 13
+    },
+    "insights": [],
+    "elapsed_s": 0.83
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "13qq2vl",
+    "source_uuid": "ca8742dc-2baf-4c7c-9bee-0a9c0de8636d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 16
+    },
+    "insights": [
+      {
+        "text": "Trieste Pizza near the Colosseum is praised for its soft dough and well-balanced flavors.",
+        "strength": 0.5,
+        "anchor_entity": "Trieste Pizza"
+      },
+      {
+        "text": "Trieste Pizza offers a variety of dishes including pizza and lasagna, though cookies may be hard.",
+        "strength": 0.5,
+        "anchor_entity": "Trieste Pizza"
+      }
+    ],
+    "elapsed_s": 2.17
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "evrn8r",
+    "source_uuid": "26674530-47c9-4cf5-8974-57bf927386fb",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 13
+    },
+    "insights": [],
+    "elapsed_s": 1.52
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "12hqpjd",
+    "source_uuid": "ca3cf1cb-871d-435d-a452-52a4d9153182",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 12
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1tfner0",
+    "source_uuid": "a6d2e404-fb9e-4198-bf96-1b388d50fd75",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 16
+    },
+    "insights": [
+      {
+        "text": "Only approved third party tour companies can enter the Colosseum.",
+        "strength": 0.8,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Tour companies may cancel Colosseum tickets with less than 24 hours notice.",
+        "strength": 0.7,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Viator may offer full refunds for Colosseum tours if contacted by phone.",
+        "strength": 0.6,
+        "anchor_entity": "Viator"
+      }
+    ],
+    "elapsed_s": 2.13
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "plzo6g",
+    "source_uuid": "4853248b-f9c9-4561-8aac-7e9e90359058",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 12
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "5icc9k",
+    "source_uuid": "a89bacc7-6047-451e-abea-574203b004f2",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 12
+    },
+    "insights": [],
+    "elapsed_s": 1.14
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1omf7ya",
+    "source_uuid": "4887dc5c-f3cb-4488-aab4-3091da05be40",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 12
+    },
+    "insights": [],
+    "elapsed_s": 0.87
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cu2k2w",
+    "source_uuid": "aaeb4766-21a0-4994-84a5-8af46c7d42a9",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 11
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1bpstuk",
+    "source_uuid": "81980b02-e6cc-42af-90cf-c83fcbb72de4",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 11
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1t79fyd",
+    "source_uuid": "8ef5eda0-7bf9-47f1-b945-e9eb963982a8",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 10
+    },
+    "insights": [],
+    "elapsed_s": 0.53
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1g26fhl",
+    "source_uuid": "1bb4cce6-8576-4597-b11a-1846fdae8313",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 11
+    },
+    "insights": [],
+    "elapsed_s": 0.85
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "11eq4sq",
+    "source_uuid": "e91d0d4f-7eba-485a-8ba8-9c8b669a1d1c",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 10
+    },
+    "insights": [],
+    "elapsed_s": 0.65
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "wiesop",
+    "source_uuid": "acb935b6-7471-4c1a-8306-55881c1cb2a4",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 11
+    },
+    "insights": [],
+    "elapsed_s": 0.9
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1eam3z4",
+    "source_uuid": "092ff107-23cf-447b-9f2c-c03d0b004c09",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 9
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "14hoj0i",
+    "source_uuid": "8a945426-d50c-470f-99be-4f98bf58826b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 9
+    },
+    "insights": [],
+    "elapsed_s": 0.61
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1dstdcf",
+    "source_uuid": "daaedab1-e6e5-4d45-9297-feb33bb4914b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 9
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1nalwyi",
+    "source_uuid": "644535c2-18f8-439f-bd29-75153cd93f30",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 8
+    },
+    "insights": [],
+    "elapsed_s": 0.65
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cc5ohc",
+    "source_uuid": "ca6860ac-7985-4185-9a1c-c4427e0aa896",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 11
+    },
+    "insights": [],
+    "elapsed_s": 1.43
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1i4ew3m",
+    "source_uuid": "39f8e207-06b1-473a-a759-c59f22695971",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 11
+    },
+    "insights": [],
+    "elapsed_s": 1.39
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "10jznxx",
+    "source_uuid": "3f64fc77-3ec7-4389-83b7-f076a6e15e49",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 8
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "14hommo",
+    "source_uuid": "f9d68458-a513-41ab-964e-04cff7ef2eaf",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.61
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1p3165j",
+    "source_uuid": "a35b26d8-40f6-468a-b69c-5a7512a27a2b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.6
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1j03xf1",
+    "source_uuid": "e2c69cda-996b-403b-b5fd-b29a8dfff9c3",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 8
+    },
+    "insights": [],
+    "elapsed_s": 0.83
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1813d2q",
+    "source_uuid": "d76938c4-114e-4907-b751-f9f9c169742d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 8
+    },
+    "insights": [],
+    "elapsed_s": 0.91
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1erpi6w",
+    "source_uuid": "42ce41d6-c927-4eb8-b6da-e47c9dc4caba",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.83
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1rbjyif",
+    "source_uuid": "22e1cc1f-a00e-4ba9-b458-3ef0da64325c",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 1.0
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1l6urxx",
+    "source_uuid": "6d063059-a531-47bf-a4a4-0c5751fa8bc0",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "ul1uy8",
+    "source_uuid": "44777a89-745b-4261-88e3-962b8c857780",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cfbv0t",
+    "source_uuid": "dfc2503c-1e9d-4f92-8edf-fafe5a19e811",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.82
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "w3cew3",
+    "source_uuid": "94caf247-cd5c-4d49-a563-3acba0cb98dc",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "20qhcq",
+    "source_uuid": "db9c670f-2b05-4c71-bb6d-7b970170e5d0",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.79
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "jikego",
+    "source_uuid": "88114edb-140e-41a9-947d-67b5cef7306b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.58
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "rzhe6w",
+    "source_uuid": "4af5f0e5-a505-4817-b26c-42ae4cccd44e",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1sp2b2u",
+    "source_uuid": "e2e2cf72-00b6-492d-8afa-2ff8e40984c4",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.85
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1hsemap",
+    "source_uuid": "a23504d9-7389-4717-9870-78515f8d1771",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 1.0
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1gf6hz1",
+    "source_uuid": "0673c6bc-e02f-4654-bdb7-82d16e1d6737",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.78
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "dhngli",
+    "source_uuid": "ca787d85-53a1-4b65-8d22-4f057cb08b2e",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "wcqytl",
+    "source_uuid": "86b15eb9-f3d7-4a29-9535-8c945c216e4d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.81
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1173c28",
+    "source_uuid": "e4704b11-b3fa-4860-8102-022783bd1e86",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.75
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1c8mlm8",
+    "source_uuid": "52c1b300-a411-4948-bca1-3c62cdd86bea",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "18zx7f7",
+    "source_uuid": "34093bf8-4b8d-420f-a242-1dc6db1384e1",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.65
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1c5grx5",
+    "source_uuid": "ac75b63a-d110-4e2f-9a64-db69372819c2",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.77
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "kq58wn",
+    "source_uuid": "3a1b38a2-89e4-4f7f-a009-a8089f038648",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.9
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1no3tmn",
+    "source_uuid": "f5ad17e5-6991-418a-bd30-20cc39529e74",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1jdgprv",
+    "source_uuid": "9c57c3ce-4a67-4480-83df-6317110645ad",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1c2a4l2",
+    "source_uuid": "085f8a61-4721-473b-83ca-ccebeb3d84ad",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.94
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ixrzeu",
+    "source_uuid": "520432e0-2156-4c46-870d-0bfc8907df78",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [
+      {
+        "text": "Colosseum Full Experience tickets are difficult to obtain due to high demand and potential bot interference.",
+        "strength": 0.5,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Consider downloading an audio app for non-English guided tours at the Colosseum.",
+        "strength": 0.5,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Colosseum ticketing website may benefit from improvements for a fairer purchasing process.",
+        "strength": 0.5,
+        "anchor_entity": "Colosseum"
+      }
+    ],
+    "elapsed_s": 2.75
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "c8wjgb",
+    "source_uuid": "2ca7bc23-2052-4840-9dc0-8b10a08fb733",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cgoprd",
+    "source_uuid": "c99b948e-2616-4268-a688-307e790cb3a4",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.75
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1t1o8gj",
+    "source_uuid": "5a9a4b3d-9f22-4af1-aaa0-22123a7141cd",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 1.07
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "112yx32",
+    "source_uuid": "43db3967-c1ce-44e6-8f99-75f3bb6f845b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.87
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1jrf5lm",
+    "source_uuid": "74fdc009-05e7-4677-8442-2c5e009f1c23",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "9cd2ke",
+    "source_uuid": "2eb11b47-0b02-4628-985c-72e156e00bfe",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1jfkjj9",
+    "source_uuid": "e25a90d1-88b6-43ba-93e1-7667a5f8d233",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.9
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1001cbh",
+    "source_uuid": "599ba8d0-5c92-44cd-be0e-a2242d6cf20e",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1s0eqeg",
+    "source_uuid": "18bf7240-d065-46d2-a54e-b3f1397e716a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [
+      {
+        "text": "The outside views of the Colosseum, especially at night, are considered better and are free.",
+        "strength": 0.5,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "The inside of the Colosseum is perceived as crowded, hot, and offers similar views from most angles.",
+        "strength": 0.5,
+        "anchor_entity": "Colosseum"
+      },
+      {
+        "text": "Skipping the inside of the Colosseum can save money for other experiences in Rome.",
+        "strength": 0.5,
+        "anchor_entity": "Colosseum"
+      }
+    ],
+    "elapsed_s": 2.6
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "18yjjrc",
+    "source_uuid": "bf254952-37cf-4001-9293-7006385bb4ea",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1hsel7y",
+    "source_uuid": "4c6324f3-d9ee-4582-bbe2-fc0a330dee37",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1chfku8",
+    "source_uuid": "92c671b8-2966-432d-abed-9c25ce754ee9",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 1.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1buk39s",
+    "source_uuid": "f7edafd1-b3d3-4be5-8dba-3f8f2da38914",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1e4tlrj",
+    "source_uuid": "628e0146-2510-4bbf-85e0-9465e8df7d3a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.54
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "thu5gx",
+    "source_uuid": "bb9e9ebe-5792-4400-983f-f5471ab70aa3",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "4lmqh4",
+    "source_uuid": "325a63fc-9abe-42b6-8f3a-e6a0cbe9c2b8",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.88
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "164qun9",
+    "source_uuid": "eb339f46-fd53-4117-a968-fcecbf950f31",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.85
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "13jgu4p",
+    "source_uuid": "8cc18fc1-fc57-4d88-8d3d-5e7fc2006a4d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.84
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "s7k9ro",
+    "source_uuid": "44f788bf-1f8b-4618-a93a-2aa770b8a03f",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "14adrj4",
+    "source_uuid": "e5b7cc40-860e-4629-9066-a83229d14e88",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.79
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "i2sojb",
+    "source_uuid": "3bb6ab09-6917-49d2-abb5-3419a6b4a734",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.73
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lbv3fa",
+    "source_uuid": "25f896e4-c5fc-4fb3-927d-5af130fccd69",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.61
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1izg96j",
+    "source_uuid": "2c77a5d4-f45f-4b78-9533-32146f903475",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.73
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ntcm8h",
+    "source_uuid": "f417dd36-6f53-4970-a56e-4d865feef2f1",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.68
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1jjiyb5",
+    "source_uuid": "fb7f8933-9674-4609-9119-ea08bfd16807",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1oo13w2",
+    "source_uuid": "e4768b6c-84ca-41fc-97c7-6f63c3add6e2",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 1.0
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ody6qz",
+    "source_uuid": "26a5d709-f7a5-460d-a2da-564b0613ec68",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ki2m1u",
+    "source_uuid": "ef6a1823-634d-44b4-a062-26bcb58aac9a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.77
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "16dkya3",
+    "source_uuid": "b2264721-ede7-49e1-a32f-76b21666e8b0",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1az6xh2",
+    "source_uuid": "d5291d0e-8615-4304-95d9-609a3627b9b9",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.94
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "a5jmmf",
+    "source_uuid": "edcc6f9b-0b7e-439c-8aa3-d72576d3ba76",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.8
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1jd55rk",
+    "source_uuid": "ad76e753-2a2a-4431-9448-a2efa5dc70e8",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.88
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lc4om0",
+    "source_uuid": "abfb902f-a883-4a41-8702-389df1901b09",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 2.49
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1p0xnr2",
+    "source_uuid": "7f7f2a8f-7ccb-4122-a462-270bafc7cfc5",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.58
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1o3e9ni",
+    "source_uuid": "e804af5c-93cf-40a4-9db1-ed228335ff0c",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.75
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1oli5ib",
+    "source_uuid": "e7cd5a7e-edcf-4a90-a22e-deb0aabb870d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "15iuypx",
+    "source_uuid": "8b53a1bd-f78f-4928-8412-f5bea9adafb4",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.87
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1dbq46l",
+    "source_uuid": "41fca2cd-1f9d-4186-8b37-bd704d72307a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.8
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "x1t212",
+    "source_uuid": "b5d3958b-05f2-442a-b7f2-870bd6dda5e1",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "16egap8",
+    "source_uuid": "da99f2e7-b585-4ccc-8379-7440c4280c63",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.84
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "95a1gb",
+    "source_uuid": "7fea1d32-9a07-4fa9-aa2d-4f49e8208d1c",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 1.1
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "8lvb5l",
+    "source_uuid": "87e82bf6-fe9f-431b-b6d9-2caeccdebda7",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1midvuj",
+    "source_uuid": "5d4c6a8e-0219-48af-a0ad-7e0f61455a08",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.6
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "vd7576",
+    "source_uuid": "b6cd488d-e6bc-4482-9872-2f031c62874b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "19dm6t5",
+    "source_uuid": "0a7419a7-0fa9-4c50-a4d7-189a5323597f",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.73
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "16og3qw",
+    "source_uuid": "d0baaeea-144a-4450-aff2-b4513eec55e7",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.87
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1crw0ja",
+    "source_uuid": "b25937d1-5b1b-4e2f-81af-b43881769937",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lp4sdh",
+    "source_uuid": "034975fb-3b7c-419a-bbe1-2eff2e6bcfc8",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.65
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "18fryid",
+    "source_uuid": "bc499690-7754-4240-b495-6c8cb93f92ed",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1bhqz68",
+    "source_uuid": "639ac19a-5601-4d0a-a0c9-c298175f0464",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.79
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "ol8nj2",
+    "source_uuid": "69df05d4-2a4d-4998-81b9-de71836f489d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.68
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1nngyqx",
+    "source_uuid": "05531ecb-ea58-4fa6-8fac-8b3ed7725d5b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.53
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1hx4oao",
+    "source_uuid": "abab4ea2-bcf6-484a-8b63-1b385449f030",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1pupm3a",
+    "source_uuid": "29bdf3a9-00b7-4e60-bf9d-604a54c67d94",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1srq6af",
+    "source_uuid": "46ac4bdb-bc53-4d4c-bb99-22bca5da3685",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1fkp2uq",
+    "source_uuid": "7f6a54c5-c28f-453d-8fb2-495bc31bbb28",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.59
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "zkowum",
+    "source_uuid": "ec2c56e7-d76d-44b2-980d-d6becc0f640d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 1.45
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "11m6w1o",
+    "source_uuid": "33c0de44-1bc8-4a11-bed1-e041bae9bf75",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.73
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1kek86f",
+    "source_uuid": "a3e7f350-9e69-49b4-b81c-ce1868d61554",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.92
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1m2bshs",
+    "source_uuid": "e5135c76-373f-45e0-8612-aae90d265177",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.82
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1i2fejf",
+    "source_uuid": "c26cd29a-cd2f-4a1c-a869-55343b465fda",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 1.35
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1tjpdmh",
+    "source_uuid": "d97f141c-c0ab-48f8-ac41-fc228f5637f7",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "14ocn0l",
+    "source_uuid": "a5a2ad21-b03e-40ce-81ba-ba8f47ecbf1f",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "sbv8xf",
+    "source_uuid": "12f761f4-3fbc-49a2-883d-64315cbbc76b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1e3s2qg",
+    "source_uuid": "73c229ce-8a94-4f8a-9cac-e8ac7f0d0c9f",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "154v87e",
+    "source_uuid": "10d9a66e-b3f1-41b2-a6ee-041211456750",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.54
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1aqdc8m",
+    "source_uuid": "96263ac5-6fa4-46df-aaae-3adae42290b2",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1c5qfl5",
+    "source_uuid": "29474d3c-b765-46de-82d3-67f4a5d31d9d",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1kf5154",
+    "source_uuid": "db5b1b38-38d2-4c4a-86a4-c7f223f6226a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1fvd4nf",
+    "source_uuid": "ab14a91b-9be8-49b8-a8dd-e4b409f296cf",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.82
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1q9gr0c",
+    "source_uuid": "fd90b192-fb04-4901-99f2-c49660427842",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1e68prk",
+    "source_uuid": "8ef971bc-2de7-4664-bce6-9ed465284631",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 1.56
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1j5835e",
+    "source_uuid": "4e56206c-3b43-476b-98aa-de54ac918f1a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1saq9fu",
+    "source_uuid": "7b68ada5-8f80-490c-bab4-d5c0b5b0505a",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.9
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1scer5q",
+    "source_uuid": "a6d562d8-60d4-4614-94f8-df34f72bc0fa",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1f6d9ns",
+    "source_uuid": "92cca7c9-eb9e-49e0-90cd-a15ec99f9cb8",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1pkbfgo",
+    "source_uuid": "e2b65fbe-537d-4511-82ca-f8b4c9477c9b",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.56
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1p4fbx2",
+    "source_uuid": "71a3d066-dd8b-48c2-a0ec-3461887cbcb6",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 1.46
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1fuby19",
+    "source_uuid": "4c82f444-8bf4-4366-98ae-941ea11d7d23",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.61
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1qth0a0",
+    "source_uuid": "d5335331-74ee-4d2a-b895-14c4a7b09181",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.81
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1s6xpzt",
+    "source_uuid": "63fac5f5-fd2a-45b5-8464-13d997f0f606",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.68
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1g5nxjh",
+    "source_uuid": "f1149775-df19-4748-9e91-4242cc8d7fa8",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "3rit3k",
+    "source_uuid": "0a33e165-fd53-4125-8c13-24bb7a1a3351",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 24058
+    },
+    "insights": [],
+    "elapsed_s": 0.56
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "cgwjao",
+    "source_uuid": "0a23973a-885e-43e0-8fb0-5bd81dbcf0b1",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 30968
+    },
+    "insights": [],
+    "elapsed_s": 0.65
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "p2ijpx",
+    "source_uuid": "67cf7312-5936-4846-bb2d-f8b30bc30cca",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.84
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "192u6dg",
+    "source_uuid": "5d4fffb9-6197-41df-9789-c4e378597f8e",
+    "poi_id": "1a20c26c-e5fd-4ef7-8afd-9d90a7ccf97a",
+    "poi_name": "Colosseum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ce3068",
+    "source_uuid": "45239859-b34e-44e7-b455-57cbbe2bdc72",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 16366
+    },
+    "insights": [],
+    "elapsed_s": 0.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1oalck7",
+    "source_uuid": "114d4b0d-b354-4006-998b-5b6420c5a000",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 12609
+    },
+    "insights": [],
+    "elapsed_s": 0.65
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1oazxag",
+    "source_uuid": "fb4aef6a-43d1-4c97-bc61-3fe089732585",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 12730
+    },
+    "insights": [],
+    "elapsed_s": 0.82
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "9y80a3",
+    "source_uuid": "427769af-a31e-4590-a3e3-0255626b3836",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 12853
+    },
+    "insights": [],
+    "elapsed_s": 0.95
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "179du2u",
+    "source_uuid": "08025bf3-c4bc-479f-8d67-f6853ceb6e1d",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 6443
+    },
+    "insights": [],
+    "elapsed_s": 0.76
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1qcjcuo",
+    "source_uuid": "ba21aec8-5cdf-4c4d-b1c7-5518fed4a7d9",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 4219
+    },
+    "insights": [],
+    "elapsed_s": 0.73
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1p8q9tz",
+    "source_uuid": "674f29b5-b693-44cd-992f-090560c89624",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 3755
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "mlvjsf",
+    "source_uuid": "1fb9bfc1-ea07-4da0-9983-91c4888ad8a3",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 12229
+    },
+    "insights": [],
+    "elapsed_s": 0.98
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1n59oe5",
+    "source_uuid": "8a1298fa-1e33-4f11-864a-5e791b036dec",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 3853
+    },
+    "insights": [],
+    "elapsed_s": 0.98
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1j56wou",
+    "source_uuid": "05cacece-0f18-4fe3-81ff-be763dc238af",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2950
+    },
+    "insights": [],
+    "elapsed_s": 0.63
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1tv0kts",
+    "source_uuid": "6ac7cb72-c5c4-487d-94b4-f2884b2699c5",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1779
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "5drn7f",
+    "source_uuid": "62cb9b00-38ff-4618-a68a-5eae62d63fef",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 3232
+    },
+    "insights": [],
+    "elapsed_s": 1.05
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "2japjj",
+    "source_uuid": "7c364c64-4088-4e5d-8ba2-44524c9cbe95",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 900
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "hlyfd",
+    "source_uuid": "573d0b03-6968-46f0-8f9e-0a92009c23f7",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 836
+    },
+    "insights": [],
+    "elapsed_s": 0.77
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1obfzgm",
+    "source_uuid": "ee30ce10-3a87-471d-91e2-f54ef38871de",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 818
+    },
+    "insights": [],
+    "elapsed_s": 0.77
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lczxuj",
+    "source_uuid": "07aa4347-24a8-4257-82f6-397385fb47be",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 7217
+    },
+    "insights": [],
+    "elapsed_s": 2.0
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1q2drz5",
+    "source_uuid": "a9e523f5-0a83-4872-8d8c-b0099cc78810",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1605
+    },
+    "insights": [
+      {
+        "text": "The Louvre Museum's Assyrian collection is considered an underrated part of the museum.",
+        "strength": 0.5,
+        "anchor_entity": "Louvre Museum"
+      }
+    ],
+    "elapsed_s": 1.14
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1oamhjq",
+    "source_uuid": "50193fed-74fa-4a69-8396-01163b877fd9",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 667
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "7ihrkf",
+    "source_uuid": "f6ff6014-c3e4-4007-b152-3b22b51caba4",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1093
+    },
+    "insights": [],
+    "elapsed_s": 1.4
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1qwn1d4",
+    "source_uuid": "901aa919-3dff-4e1d-b637-84ea7af8f7c9",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 665
+    },
+    "insights": [],
+    "elapsed_s": 0.86
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "gak4c8",
+    "source_uuid": "5b4edcf5-92a5-498d-85ca-0f24f235f6ac",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 576
+    },
+    "insights": [],
+    "elapsed_s": 0.61
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ifh0n",
+    "source_uuid": "cfececa3-e1b9-440f-9055-54782ef97455",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 727
+    },
+    "insights": [
+      {
+        "text": "Use the Porte des Lions entrance at the Louvre Museum to avoid long lines.",
+        "strength": 0.5,
+        "anchor_entity": "Porte des Lions"
+      },
+      {
+        "text": "The Porte des Lions entrance leads directly into the Italian Renaissance wing at the Louvre Museum.",
+        "strength": 0.5,
+        "anchor_entity": "Italian Renaissance wing"
+      }
+    ],
+    "elapsed_s": 1.35
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ocfrc3",
+    "source_uuid": "7afd954d-0b38-451f-b67a-7ab1288a5d37",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 571
+    },
+    "insights": [],
+    "elapsed_s": 0.63
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ob46ql",
+    "source_uuid": "3f22ad07-c64d-40fc-ba06-25c1a4a9c41c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 935
+    },
+    "insights": [],
+    "elapsed_s": 1.79
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1keq0qu",
+    "source_uuid": "75ab8e87-57b1-4e00-b7c8-49afc29868d7",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1719
+    },
+    "insights": [],
+    "elapsed_s": 2.04
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "wykzhn",
+    "source_uuid": "56557f1e-0a6a-419a-85c6-3f6637192037",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 613
+    },
+    "insights": [],
+    "elapsed_s": 0.83
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "2wrktr",
+    "source_uuid": "3119a917-9108-4df3-9bc3-02008452c4bf",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 570
+    },
+    "insights": [],
+    "elapsed_s": 0.84
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1sdhf08",
+    "source_uuid": "f2f0cdd9-2bd6-4e1f-92e8-6390dce4b007",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 514
+    },
+    "insights": [
+      {
+        "text": "Salle 501 in Aile Richelieu at the Louvre Museum features a collection of Byzantine art.",
+        "strength": 0.5,
+        "anchor_entity": "Salle 501, Aile Richelieu"
+      }
+    ],
+    "elapsed_s": 1.49
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1oakz2n",
+    "source_uuid": "58cd4efa-348a-43fb-941b-89ef6cbdb539",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 402
+    },
+    "insights": [],
+    "elapsed_s": 0.89
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1kk0m27",
+    "source_uuid": "69dcfc6a-0447-4076-b97e-a923e255ad8f",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 504
+    },
+    "insights": [],
+    "elapsed_s": 1.08
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "dmdg91",
+    "source_uuid": "71afe5a9-33cc-494e-a685-ff38762854d1",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 419
+    },
+    "insights": [],
+    "elapsed_s": 1.06
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "cyquya",
+    "source_uuid": "7f793adf-d97d-41bf-a229-f8353e00e0c9",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 461
+    },
+    "insights": [],
+    "elapsed_s": 1.13
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lzvht2",
+    "source_uuid": "6d83dbfd-c78b-4f54-a179-6f38bafe514c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 269
+    },
+    "insights": [],
+    "elapsed_s": 0.89
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1oas6gg",
+    "source_uuid": "5fe8be85-e615-4834-90ec-96cd6bd110a3",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 474
+    },
+    "insights": [],
+    "elapsed_s": 1.39
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "awnlo7",
+    "source_uuid": "7087d3f8-d9ea-4470-908c-6176dc2db35d",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 387
+    },
+    "insights": [
+      {
+        "text": "Visit the Louvre Museum during sunset for a unique experience.",
+        "strength": 0.5,
+        "anchor_entity": "Louvre Museum"
+      }
+    ],
+    "elapsed_s": 1.32
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1pzoybv",
+    "source_uuid": "eb0447f1-aeec-4e72-bf74-2272e46fe163",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 512
+    },
+    "insights": [],
+    "elapsed_s": 2.09
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ob82aa",
+    "source_uuid": "a69adfa0-debc-480e-b080-5f0d2e015a1c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 224
+    },
+    "insights": [],
+    "elapsed_s": 0.81
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ml0gco",
+    "source_uuid": "081287d9-0429-4a56-bb52-f0c1d8993b10",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 117
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1rjei0m",
+    "source_uuid": "a4709f45-bd9f-4885-a358-942ac9eb0359",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 104
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "128u8pl",
+    "source_uuid": "6c24cf0f-59ab-4627-be0c-644890d4477b",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 378
+    },
+    "insights": [
+      {
+        "text": "The Ami du Louvre membership offers unlimited entry and discounts for under-26 visitors for \u20ac15.",
+        "strength": 0.9,
+        "anchor_entity": "Ami du Louvre"
+      },
+      {
+        "text": "The Mona Lisa may not require rushing during off-peak seasons for a good view.",
+        "strength": 0.7,
+        "anchor_entity": "Mona Lisa"
+      },
+      {
+        "text": "Upstairs areas like the Richelieu wing are less crowded and feature many masterpieces.",
+        "strength": 0.8,
+        "anchor_entity": "Richelieu wing"
+      }
+    ],
+    "elapsed_s": 1.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ifv0ru",
+    "source_uuid": "c5de98dd-cbe2-4451-bd30-a61c5e48c537",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 102
+    },
+    "insights": [],
+    "elapsed_s": 0.79
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "mrl9ts",
+    "source_uuid": "513d1145-1056-4196-a563-c8220ec8bc1a",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 134
+    },
+    "insights": [],
+    "elapsed_s": 1.09
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1micrsd",
+    "source_uuid": "89e66c13-698f-4e0b-be96-1676a70cafe6",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 100
+    },
+    "insights": [],
+    "elapsed_s": 0.86
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lco4b5",
+    "source_uuid": "1ef3277d-45dc-41d9-b961-b367dfd13772",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 134
+    },
+    "insights": [],
+    "elapsed_s": 1.28
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1k38joh",
+    "source_uuid": "85fefcd0-ad71-4d7a-871e-b809c35420fc",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 65
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1kajttl",
+    "source_uuid": "07938839-7e29-49ff-a8b5-b3245767c90e",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 64
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1fi40y8",
+    "source_uuid": "8f2f50c5-038f-42c2-814f-c8adb64b3b0f",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 40
+    },
+    "insights": [],
+    "elapsed_s": 0.77
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ovdroa",
+    "source_uuid": "caf4db88-3f60-43fd-8a7a-d8545ed012a1",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 29
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1i0iv42",
+    "source_uuid": "6cf04121-8bf0-4e4f-a9d3-b9ffa5b269b2",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 28
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "17m36cw",
+    "source_uuid": "29bbcfbb-ecda-4216-b0f3-26b784680967",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 31
+    },
+    "insights": [],
+    "elapsed_s": 0.93
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1fbpgdk",
+    "source_uuid": "a34dbf7c-cd00-4b7c-91ae-cc33a393d86f",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 26
+    },
+    "insights": [],
+    "elapsed_s": 0.75
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "wv3tky",
+    "source_uuid": "19f7ea99-3bb4-464d-b1e8-b4d7758258d5",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 18
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1fm1th6",
+    "source_uuid": "d0f26537-5fde-47a6-8f0c-2e6557998298",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 20
+    },
+    "insights": [],
+    "elapsed_s": 0.73
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1d0hyrl",
+    "source_uuid": "a7192d83-c009-42a8-9682-f351759e25f7",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 18
+    },
+    "insights": [],
+    "elapsed_s": 0.63
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lkxqsu",
+    "source_uuid": "bc03ff6f-efaf-42b4-87c5-7a15ae6c0e63",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 81
+    },
+    "insights": [
+      {
+        "text": "The Carousel entrance at the Louvre Museum offers shorter lines and air conditioning.",
+        "strength": 0.8,
+        "anchor_entity": "Carousel entrance"
+      },
+      {
+        "text": "Booking 6 pm entry tickets on a Wednesday may result in a less crowded experience at the Louvre Museum.",
+        "strength": 0.7,
+        "anchor_entity": "Louvre Museum"
+      },
+      {
+        "text": "The Louvre Museum's audio guide is considered outdated and unreliable by some visitors.",
+        "strength": 0.9,
+        "anchor_entity": "Louvre Museum"
+      }
+    ],
+    "elapsed_s": 1.83
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1rptabt",
+    "source_uuid": "1453ec7a-a3fd-44a2-92d4-f02f20cff44c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 18
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "zlxo9n",
+    "source_uuid": "f4379c5d-21cc-454c-a3ac-2d629d083c73",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 13
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "44n68a",
+    "source_uuid": "e4dfdec3-dcdf-4190-8b97-132f058c98d1",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 12
+    },
+    "insights": [],
+    "elapsed_s": 0.55
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "vq8xrd",
+    "source_uuid": "84cbce1d-00fc-46fc-b0f9-4a89df0be9bd",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 12
+    },
+    "insights": [],
+    "elapsed_s": 0.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1nf30we",
+    "source_uuid": "1a57b998-fd4b-4eaa-9580-1ea216310f65",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 12
+    },
+    "insights": [],
+    "elapsed_s": 1.05
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "16xekal",
+    "source_uuid": "cdb6cd92-5239-41de-929c-1349283371b7",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 11
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1aem1ys",
+    "source_uuid": "8bdd725b-9ca6-4e0d-b03a-94455878ce88",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 12
+    },
+    "insights": [],
+    "elapsed_s": 0.81
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "179g24n",
+    "source_uuid": "18ba9c6c-8a2f-44c2-9583-be3eb98b52b4",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 47
+    },
+    "insights": [
+      {
+        "text": "Arriving early at the Louvre Museum can help avoid long lines, especially at the pyramid entrance.",
+        "strength": 0.5,
+        "anchor_entity": "Louvre Museum"
+      },
+      {
+        "text": "The Italian paintings in the Denon Wing, including the Mona Lisa, are less crowded early in the day.",
+        "strength": 0.5,
+        "anchor_entity": "Denon Wing"
+      },
+      {
+        "text": "The Richelieu Wing features a multilevel courtyard with sculptures, distinct from the painting-focused Denon Wing.",
+        "strength": 0.5,
+        "anchor_entity": "Richelieu Wing"
+      }
+    ],
+    "elapsed_s": 2.44
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "yhpv5n",
+    "source_uuid": "e15d852f-a5cf-4a76-a663-49a879640dca",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 11
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "17j3oke",
+    "source_uuid": "bc27107c-dca3-4c2c-856c-f24fcc739986",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 17
+    },
+    "insights": [],
+    "elapsed_s": 1.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "12kj3ck",
+    "source_uuid": "f342931f-8187-42a7-8428-f986b68e1c4c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 11
+    },
+    "insights": [],
+    "elapsed_s": 0.78
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "4fhyqb",
+    "source_uuid": "461f831f-88da-477d-adaa-9de4fbee7054",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 10
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "v1sgwl",
+    "source_uuid": "1bfc665c-bd28-4ddf-884e-23f134e605e3",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 10
+    },
+    "insights": [],
+    "elapsed_s": 0.68
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1jmjy0i",
+    "source_uuid": "12886c2c-c06e-4351-8ce0-9dc45ad9ded5",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 66
+    },
+    "insights": [
+      {
+        "text": "The Louvre membership allows priority entrance with no need to pre-book a time.",
+        "strength": 0.8,
+        "anchor_entity": "Louvre Museum"
+      },
+      {
+        "text": "Adding the Navigo card to Apple Wallet facilitates easy electronic fund management.",
+        "strength": 0.7,
+        "anchor_entity": "Navigo card"
+      },
+      {
+        "text": "Booking a small group tour of the Louvre via AirBnB is recommended.",
+        "strength": 0.6,
+        "anchor_entity": "Louvre Museum"
+      }
+    ],
+    "elapsed_s": 3.05
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1hyutoz",
+    "source_uuid": "ea721e5e-0203-4d0e-853b-160fad40dd8e",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 10
+    },
+    "insights": [],
+    "elapsed_s": 0.82
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "14cttcs",
+    "source_uuid": "5af9c70c-0be7-4fb1-a6f3-99c6779d90e7",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 9
+    },
+    "insights": [],
+    "elapsed_s": 0.61
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "5y52el",
+    "source_uuid": "6ab78f53-a013-442c-9566-96ffd86a174f",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 10
+    },
+    "insights": [],
+    "elapsed_s": 0.91
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1bpmrdv",
+    "source_uuid": "06f26b05-3d96-49ec-81a3-e2d25e2af15c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 9
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1i8yy45",
+    "source_uuid": "fc33e887-8558-41b3-860f-8f0a28237c21",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 9
+    },
+    "insights": [],
+    "elapsed_s": 0.85
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "109qf3z",
+    "source_uuid": "6683d742-9042-4a35-b581-677731b66480",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 12
+    },
+    "insights": [],
+    "elapsed_s": 2.06
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1p3y195",
+    "source_uuid": "9287c9c7-4be7-4cbb-ba03-d7c61b7e2941",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 8
+    },
+    "insights": [],
+    "elapsed_s": 0.82
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "118klpl",
+    "source_uuid": "4ef56ad3-b79e-4c49-9171-2cb8d0cd6ef7",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 8
+    },
+    "insights": [],
+    "elapsed_s": 0.73
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "11hno47",
+    "source_uuid": "d162e303-21d4-4e62-ae75-3f950685fca1",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1j9llg9",
+    "source_uuid": "7af95bbe-653b-4f8e-9656-55d41b037e28",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1s7pbpq",
+    "source_uuid": "4519070e-468a-4a30-a6ec-93cade829f8e",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.73
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1dc9jm3",
+    "source_uuid": "cfb09525-6908-4598-8f38-dfef305d15ce",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1l8t9n8",
+    "source_uuid": "f8039997-c580-4c88-8611-3dc1f9250ba6",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 0.9
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1i30qd5",
+    "source_uuid": "04c90dab-67bd-4fbc-8b42-3eb8b96d9e9c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.78
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "14air6s",
+    "source_uuid": "4273da4b-a43a-45a7-8118-3ee7a218a024",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.63
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1tb2uk3",
+    "source_uuid": "4555e37c-aeaa-4efd-b468-769640d7adef",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 7
+    },
+    "insights": [],
+    "elapsed_s": 1.05
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1bxdfo7",
+    "source_uuid": "c68df217-3529-4a5b-8db7-58c84a36a552",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.76
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "xhbag3",
+    "source_uuid": "5f345122-31d2-4dbd-9119-7d3d2e70d9a2",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.78
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lgc942",
+    "source_uuid": "8e24c695-0b09-4dc5-8824-f7b4ef818478",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.73
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1j4fd49",
+    "source_uuid": "c13d73f5-6503-4cdb-9030-17ca8fdbe624",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.6
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1j8g52v",
+    "source_uuid": "7e1d8817-622d-489f-8a30-9f38fa042baa",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 6
+    },
+    "insights": [],
+    "elapsed_s": 0.82
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "11zxt9x",
+    "source_uuid": "c48bc26b-cbfd-43a8-85ff-77c45537f76b",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lktema",
+    "source_uuid": "ceac76ca-b712-49b8-87bb-6f4e1ae7ac4b",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.75
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1sj9kin",
+    "source_uuid": "7809cda1-c0c6-481a-909a-f1ec669042e6",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.8
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1io74eq",
+    "source_uuid": "6803b15e-976b-4b0e-849e-044fb5bf7adb",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "12gfm19",
+    "source_uuid": "6336c185-d532-4211-88eb-f415b60b1da4",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.71
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1r4x7l5",
+    "source_uuid": "7b44d31b-4eb1-4562-9a91-fcd70340c6a6",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 5
+    },
+    "insights": [],
+    "elapsed_s": 0.65
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lxcyma",
+    "source_uuid": "8ee2a6f7-d5ee-4b0e-a12e-bbb6a1ac8bc2",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 9
+    },
+    "insights": [
+      {
+        "text": "The Louvre Museum offers a kids tour that effectively engages children with interactive commentary.",
+        "strength": 0.5,
+        "anchor_entity": "Louvre Museum"
+      },
+      {
+        "text": "Tour guides at the Louvre Museum are praised for making art accessible and engaging for children.",
+        "strength": 0.5,
+        "anchor_entity": "Louvre Museum"
+      },
+      {
+        "text": "The kids tour at the Louvre Museum includes a special surprise related to the Mona Lisa.",
+        "strength": 0.5,
+        "anchor_entity": "Mona Lisa"
+      }
+    ],
+    "elapsed_s": 2.35
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1np4n6s",
+    "source_uuid": "c6800a18-60d3-4751-80ed-1c40a9b7df82",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.65
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1bfcbcw",
+    "source_uuid": "4312d9b9-037b-4688-8b1c-981665ff0ab6",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.62
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1k8s6z2",
+    "source_uuid": "6fc83018-17c3-4202-88e1-bd1a3fa1a3ae",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.75
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1jd2jlb",
+    "source_uuid": "862bf5ea-4744-43dd-bdce-e7965b781f55",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.78
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1klx3js",
+    "source_uuid": "986774c2-7fdf-477d-8c11-9de427d1ba93",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1e2vbyj",
+    "source_uuid": "38fde0ce-7902-4075-a069-e9e1a8058087",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.61
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1o5k239",
+    "source_uuid": "9fd49129-7f10-4aea-ae60-5856ec6486f7",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1evixoi",
+    "source_uuid": "1eb4d30e-db0b-4617-a39e-94fabee9d4f6",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 4
+    },
+    "insights": [],
+    "elapsed_s": 0.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "15ebfw4",
+    "source_uuid": "b339f594-a417-41e3-9faf-7aceb5aca528",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1sr1v0z",
+    "source_uuid": "73d2ed88-50d5-4d76-9a74-952eceba945b",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.86
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1dwrv6l",
+    "source_uuid": "59ef3a0a-f708-4da0-a500-72dd9d8d8d59",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1540txx",
+    "source_uuid": "b8f89f6d-efee-411d-8534-8fec16a096aa",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.81
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "16prkat",
+    "source_uuid": "87e7e218-033c-4983-9eed-3de224bd3f7f",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 3
+    },
+    "insights": [],
+    "elapsed_s": 0.63
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ja9a2g",
+    "source_uuid": "c1ef89e4-4675-4545-882f-68d781f61cad",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1n3aaa8",
+    "source_uuid": "90594451-26a2-45e6-8359-33072c0fd294",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.67
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1bu01ij",
+    "source_uuid": "9f8f3130-e07b-4c40-971b-d796d374b45a",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.68
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cvo29u",
+    "source_uuid": "72bac2db-d987-48f2-890e-c15b09c9485b",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.74
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1s8uhwm",
+    "source_uuid": "76c59fa5-6f44-48cf-a4e6-afe5d965545c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.69
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1rld5qg",
+    "source_uuid": "2a06a830-90a0-4c5f-9918-4622c75e8f91",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1knpygd",
+    "source_uuid": "0c4ac0f3-992b-46d3-80b5-ba7398b6b001",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.92
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1f6b1ji",
+    "source_uuid": "fcff6f91-eb44-40bb-931b-4b3e5f6addb9",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.79
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "14ce8ld",
+    "source_uuid": "2977e87d-d4fc-4e35-98a7-824f723c2a1c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.83
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1o58dog",
+    "source_uuid": "e4a562f8-a005-48e0-93f8-6b71607d6817",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.65
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1qm5c7t",
+    "source_uuid": "efa9ead4-2b69-41eb-a75a-521855288711",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 0.9
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1cjjnsd",
+    "source_uuid": "e2dbf5ac-6008-4aae-b098-2e7b7dda6c6e",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1s69jqm",
+    "source_uuid": "c831bc18-e20f-49e3-877d-a108587a5788",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.64
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ltv0ti",
+    "source_uuid": "396f0b0f-2bd0-4274-936e-6510dfa6b689",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 1.17
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "188bv2n",
+    "source_uuid": "2bb5e615-65e7-482b-8343-88c469f7c977",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 2
+    },
+    "insights": [],
+    "elapsed_s": 1.58
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1qb3bvq",
+    "source_uuid": "2679cef7-ffb7-469b-a7de-28a2541129ff",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.8
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1mjodr7",
+    "source_uuid": "8a9d216f-fe42-4848-89e5-ffd988e42cd9",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.89
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1r4x9zj",
+    "source_uuid": "3e0c099f-7531-4460-8137-4ef836a4bcf9",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.88
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1jenfds",
+    "source_uuid": "1891aeb1-6bb4-4a6d-86f4-1a8f39dabf4c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ix6h96",
+    "source_uuid": "10ed85ca-da48-4896-abd5-98353e5b568e",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 1
+    },
+    "insights": [],
+    "elapsed_s": 0.82
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1o93ota",
+    "source_uuid": "c33c0e52-26c9-44ec-a14c-2c891ccb4922",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.76
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1tq0u9i",
+    "source_uuid": "25765309-9034-440e-aa2c-988719bb3da6",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.68
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1s8xblo",
+    "source_uuid": "2a28c1d3-8714-4b30-a72c-8234871af24f",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.76
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1rtvghs",
+    "source_uuid": "d0cc51ee-f490-43b7-b0d7-fc20d05aaa04",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.61
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1caffdy",
+    "source_uuid": "7c27857d-63a4-47f9-9df5-9bf8a762dda0",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.7
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lcahx2",
+    "source_uuid": "4ef3a024-517c-4307-bcac-968cb6a69fa3",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.72
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1kxua5j",
+    "source_uuid": "c0544521-b4b1-4981-810f-5917f1986048",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.75
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1chnsnt",
+    "source_uuid": "0f2482b6-4c2c-4cdb-9731-52f10ddcddd1",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.76
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1kig1vm",
+    "source_uuid": "ed581123-7b79-4be8-a284-6687d56d0bc5",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.88
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1eqo5ch",
+    "source_uuid": "0efbe36d-5ffb-4361-babd-108a0bcea34c",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 1.07
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1ltyfly",
+    "source_uuid": "e591e20b-23a9-425e-b799-4dc89a452c34",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.58
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "14omvp4",
+    "source_uuid": "f0026c9e-46c0-4ac1-b002-cb4693e7a23b",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.68
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1jcnwvs",
+    "source_uuid": "20687ef1-b4d6-4917-9514-d52d7f335b6a",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 1.26
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1lcaj2m",
+    "source_uuid": "5456bbf2-05bd-4bff-ab11-7ecac267304a",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 1.13
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1aiph2d",
+    "source_uuid": "af33d673-cb22-4fc8-9285-71bd6a6488d0",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.66
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1foz4wy",
+    "source_uuid": "54adb408-9994-41d5-a3c4-e5a218326b8d",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.83
+  },
+  {
+    "source": "reddit_post",
+    "source_id": "1eed9c5",
+    "source_uuid": "8f14201d-f81f-4050-a9ee-01f28fe1e90b",
+    "poi_id": "ea32b51d-31b5-47c6-a359-fe3652eab62e",
+    "poi_name": "Louvre Museum",
+    "rating": null,
+    "meta": {
+      "score": 0
+    },
+    "insights": [],
+    "elapsed_s": 0.65
+  }
+]

@@ -1,0 +1,251 @@
+{
+  "summary": {
+    "pass": 12,
+    "total": 15,
+    "pct": 80.0
+  },
+  "results": [
+    {
+      "query": "Should I get the Roma Pass?",
+      "poi": "Colosseum",
+      "expected_l1": "Visit Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "Roma Pass",
+        "queue",
+        "pass"
+      ],
+      "top_hit": "Visitors frequently recommend purchasing tickets in advance to avoid long queues at the Colosseum.",
+      "top_l1": "Visit Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "When is the best time to visit?",
+      "poi": "Colosseum",
+      "expected_l1": "Visit Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "morning",
+        "early",
+        "crowd"
+      ],
+      "top_hit": "Visitors frequently recommend purchasing tickets in advance to avoid long queues at the Colosseum.",
+      "top_l1": "Visit Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "Are there scams or tourist traps I should avoid?",
+      "poi": "Colosseum",
+      "expected_l1": "Operational Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "scam",
+        "avoid"
+      ],
+      "top_hit": "Visitors to the Colosseum frequently warn about pickpockets and street scammers in the surrounding area.",
+      "top_l1": "Operational Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "Is the underground arena tour worth it?",
+      "poi": "Colosseum",
+      "expected_l1": "Attention Intelligence",
+      "passed": false,
+      "l1_hit": false,
+      "text_hit": true,
+      "matched_terms": [
+        "underground",
+        "arena",
+        "tour"
+      ],
+      "top_hit": "Visitors frequently note that accessing the Colosseum's arena, attic, and underground areas requires separate fees.",
+      "top_l1": "Operational Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "Where can I eat nearby?",
+      "poi": "Colosseum",
+      "expected_l1": "Culinary Intelligence",
+      "passed": false,
+      "l1_hit": false,
+      "text_hit": true,
+      "matched_terms": [
+        "nearby"
+      ],
+      "top_hit": "The Colosseum frequently offers a breathtaking and immediate view upon exiting the nearby metro station.",
+      "top_l1": "Discovery Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "How do I get there by metro?",
+      "poi": "Colosseum",
+      "expected_l1": "Operational Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "metro",
+        "line"
+      ],
+      "top_hit": "The Colosseum is frequently praised for its easy accessibility via the nearby metro station in Rome.",
+      "top_l1": "Operational Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "Is the Mona Lisa worth seeing?",
+      "poi": "Louvre Museum",
+      "expected_l1": "Attention Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "Mona Lisa",
+        "crowd",
+        "disappointing"
+      ],
+      "top_hit": "The Mona Lisa is frequently highlighted as a must-see artwork at the Louvre Museum.",
+      "top_l1": "Attention Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "How can I avoid the queue at the Louvre?",
+      "poi": "Louvre Museum",
+      "expected_l1": "Visit Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "queue",
+        "Porte des Lions",
+        "side",
+        "entrance",
+        "pyramid"
+      ],
+      "top_hit": "Using alternative entrances like Porte des Lions at the Louvre Museum frequently reduces waiting times.",
+      "top_l1": "Visit Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "Which rooms should I prioritize?",
+      "poi": "Louvre Museum",
+      "expected_l1": "Attention Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "Denon",
+        "Sully",
+        "Richelieu",
+        "wing"
+      ],
+      "top_hit": "The Mona Lisa room at the Louvre Museum is frequently overcrowded and rushed, affecting visitor experience.",
+      "top_l1": "Attention Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "Are food options inside good?",
+      "poi": "Louvre Museum",
+      "expected_l1": "Culinary Intelligence",
+      "passed": false,
+      "l1_hit": false,
+      "text_hit": true,
+      "matched_terms": [
+        "limited",
+        "cafe",
+        "food"
+      ],
+      "top_hit": "Using alternative entrances like Porte des Lions at the Louvre Museum frequently reduces waiting times.",
+      "top_l1": "Visit Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "Is the Paris Museum Pass worth it for the Louvre?",
+      "poi": "Louvre Museum",
+      "expected_l1": "Visit Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "pass",
+        "museum pass",
+        "Paris"
+      ],
+      "top_hit": "Visitors frequently recommend allocating a full day to explore the extensive collection at the Louvre Museum.",
+      "top_l1": "Visit Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "Any hidden artworks worth seeking out?",
+      "poi": "Louvre Museum",
+      "expected_l1": "Attention Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "Venus",
+        "Napoleon",
+        "Denon",
+        "Mona Lisa",
+        "highlight",
+        "iconic"
+      ],
+      "top_hit": "The Mona Lisa is frequently highlighted as a must-see artwork at the Louvre Museum.",
+      "top_l1": "Attention Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "What's the restroom situation?",
+      "poi": "Louvre Museum",
+      "expected_l1": "Operational Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "restroom",
+        "toilet",
+        "facilities",
+        "bathroom"
+      ],
+      "top_hit": "The Mona Lisa room at the Louvre Museum is frequently overcrowded and rushed, affecting visitor experience.",
+      "top_l1": "Attention Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "How long should I plan to spend at the Louvre?",
+      "poi": "Louvre Museum",
+      "expected_l1": "Visit Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "hours",
+        "time",
+        "spend"
+      ],
+      "top_hit": "Visitors frequently recommend allocating a full day to explore the extensive collection at the Louvre Museum.",
+      "top_l1": "Visit Intelligence",
+      "n_hits": 5
+    },
+    {
+      "query": "Can I bring a large backpack?",
+      "poi": "Colosseum",
+      "expected_l1": "Operational Intelligence",
+      "passed": true,
+      "l1_hit": true,
+      "text_hit": true,
+      "matched_terms": [
+        "security",
+        "backpack"
+      ],
+      "top_hit": "Visitors are not permitted to bring large backpacks into the Colosseum.",
+      "top_l1": "Operational Intelligence",
+      "n_hits": 5
+    }
+  ]
+}

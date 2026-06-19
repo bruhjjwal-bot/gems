@@ -1,0 +1,77 @@
+# Files NOT to upload to Railway. The API image needs only:
+#   - l2/api_server.py, ask_gems.py, llm_client.py
+#   - l2/mcp_server/*.py
+#   - l2/data/{labelled_clusters_all,flat_insights_enriched,flat_insights_all}.json
+#   - l2/data/{cluster_embeddings,insight_embeddings}.{npy,_meta.json}
+#   - l2/data/raw_{reviews,google_review,reddit_post,reddit_comment,youtube_transcript_chunk}.json
+#   - requirements_api.txt, Procfile, nixpacks.toml, runtime.txt
+
+# Virtualenvs, caches, build artifacts
+.venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Pipeline scripts (taxonomy/labels/embed are build-time, not runtime)
+l2/extract.py
+l2/extract_multi.py
+l2/cluster_all.py
+l2/embed_cluster.py
+l2/name_clusters.py
+l2/name_all.py
+l2/score.py
+l2/score_all.py
+l2/label.py
+l2/label_all.py
+l2/build_index.py
+l2/embed_insights.py
+l2/enrich_insights.py
+l2/clean_raw.py
+l2/eval_mcp.py
+l2/run_eval.py
+l2/analyse_eval.py
+l2/fetchers.py
+l2/taxonomy.py
+l2/chunking.py
+l2/sampling.py
+l2/prompts.py
+l2/eval_results.json
+l2/eval-run.log
+
+# Scraping/ingestion scripts (not used by API)
+scripts/
+
+# Raw data not used at retrieval-time
+l2/data/raw_youtube_comment.json
+l2/data/raw_blog_culinary.json
+l2/data/raw_blog_culinary_clean.json
+l2/data/raw_reddit_targeted.json
+l2/data/raw_reddit_targeted_clean.json
+l2/data/insights_*.json
+l2/data/clusters.json
+l2/data/clusters_all.json
+l2/data/named_clusters.json
+l2/data/named_clusters_all.json
+l2/data/scored_clusters_all.json
+l2/data/scored_clusters.json
+l2/data/labelled_clusters.json
+l2/data/flat_insights.json
+
+# Logs
+*.log
+l2/data/*.log
+
+# Tests + eval artefacts
+tests/
+l2/data/eval_*.json
+
+# Git / IDE
+.git/
+.gitignore
+.idea/
+.vscode/
+
+# OS junk
+.DS_Store
