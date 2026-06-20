@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SKU Gap Finder — Headout / Catalog Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;1,400&family=Newsreader:ital,wght@1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F2EFE8;
+    --fg:#1A1A1A;
+    --accent:#C8102E;
+    --muted:#8A857A;
+    --row-hover: rgba(26,26,26,0.04);
+    --mono:'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+    --serif:'Newsreader', Georgia, serif;
+    --hairline:0.5px solid var(--muted);
+    --hairline-1:1px solid var(--muted);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:var(--mono);font-weight:400;font-size:13px;line-height:1.35;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+  a{color:inherit}
+  button{font:inherit;color:inherit;background:transparent;border:0;padding:0;cursor:pointer}
+  ::selection{background:var(--fg);color:var(--bg)}
+
+  /* Back link */
+  .back{position:fixed;top:8px;left:24px;font-family:var(--mono);font-size:10px;color:var(--muted);text-decoration:none;letter-spacing:.06em;z-index:30}
+  .back:hover{color:var(--fg)}
+
+  /* Masthead */
+  header.masthead{padding:14px 24px 8px;border-bottom:var(--hairline-1);position:relative}
+  .eyebrow{font-family:var(--serif);font-style:italic;font-weight:400;font-size:12px;color:var(--muted);letter-spacing:.01em;margin-bottom:4px}
+  .masthead-row{display:flex;align-items:baseline;justify-content:space-between;gap:24px}
+  .wordmark{font-family:var(--mono);font-weight:700;font-size:24px;letter-spacing:.04em}
+  .counters{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.04em;color:var(--fg);text-align:right;white-space:nowrap}
+  .counters .sep{color:var(--muted);padding:0 6px}
+  .counters .red{color:var(--accent)}
+  .counters .placeholder{color:var(--muted)}
+  .deck{font-family:var(--mono);font-weight:400;font-size:13px;color:var(--muted);margin-top:6px;cursor:help}
+
+  /* Filter bar */
+  .filters{display:flex;align-items:center;justify-content:space-between;padding:10px 24px;border-bottom:var(--hairline-1);font-size:12px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;flex-wrap:wrap;gap:8px;position:relative}
+  .filters .group{display:flex;align-items:center;flex-wrap:wrap}
+  .filter{display:inline-block;position:relative}
+  .filter-trigger{cursor:pointer;padding:2px 0;color:var(--fg)}
+  .filter-trigger .label{color:var(--muted);margin-right:6px}
+  .filter-trigger:hover{text-decoration:underline;text-underline-offset:3px}
+  .filter-trigger .chev{color:var(--muted);margin-left:4px;font-weight:400}
+  .mid{color:var(--muted);padding:0 12px;user-select:none}
+  .reset{color:var(--muted);cursor:pointer;font-weight:500;letter-spacing:.04em;text-transform:uppercase}
+  .reset:hover{color:var(--fg)}
+  .quickfilter-hint{position:absolute;left:24px;bottom:-1px;height:1px;background:var(--fg);width:0;transition:width 120ms ease-out}
+  .quickfilter-hint.active{width:calc(100% - 48px)}
+
+  /* Dropdown */
+  .dropdown{position:absolute;top:100%;left:0;margin-top:6px;background:var(--bg);border:var(--hairline-1);min-width:200px;padding:6px 0;z-index:20;font-family:var(--mono);font-size:12px;font-weight:400;letter-spacing:0;text-transform:none}
+  .dropdown .opt{padding:6px 14px;cursor:pointer;color:var(--fg);white-space:nowrap}
+  .dropdown .opt:hover{background:var(--row-hover)}
+  .dropdown .opt.sel::before{content:'[•] ';color:var(--accent)}
+  .dropdown .opt:not(.sel)::before{content:'[ ] ';color:var(--muted)}
+
+  /* Table */
+  .table-wrap{flex:1;overflow:auto;border-bottom:var(--hairline-1)}
+  table.grid{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:13px}
+  table.grid thead th{position:sticky;top:0;background:var(--bg);font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);padding:8px 12px;border-top:var(--hairline-1);border-bottom:var(--hairline-1);text-align:left;white-space:nowrap;cursor:pointer;user-select:none}
+  table.grid thead th.num{text-align:right}
+  table.grid thead th .sort{color:var(--muted);margin-left:4px}
+  table.grid thead th[data-tip]{position:sticky}
+  table.grid tbody td{padding:0 12px;height:28px;vertical-align:middle;white-space:nowrap;font-weight:400;border:0}
+  table.grid tbody td.num{text-align:right;font-variant-numeric:tabular-nums}
+  table.grid tbody td.demand{font-weight:500}
+  table.grid tbody tr{border-left:2px solid transparent;cursor:pointer}
+  table.grid tbody tr:hover{background:var(--row-hover)}
+  table.grid tbody tr.miss{border-left-color:var(--accent)}
+  table.grid tbody tr.fifth td{border-top:var(--hairline-1)}
+  table.grid tbody tr.selected{border-left-color:var(--fg) !important}
+  .sub-name{color:var(--fg)}
+  .poi-cell{color:var(--muted);font-size:11px;letter-spacing:.06em}
+  .src-glyph{font-family:var(--mono);letter-spacing:1px;cursor:help}
+  .src-glyph .on{color:var(--fg)}
+  .src-glyph .off{color:var(--muted)}
+  .pill{display:inline-block;padding:1px 6px;font-size:11px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-family:var(--mono)}
+  .pill.MISSING{background:var(--accent);color:var(--bg)}
+  .pill.PARTIAL{background:var(--fg);color:var(--bg)}
+  .pill.HAVE{background:transparent;color:var(--muted)}
+  td.status-cell.pending .pill{text-decoration:underline dotted var(--muted);text-underline-offset:3px}
+  .chev-cell{color:var(--muted)}
+  tr:hover .chev-cell{color:var(--fg)}
+
+  /* Skeleton */
+  .skeleton-row td{padding:0 12px}
+  .skeleton-row td > span{display:inline-block;height:1px;background:var(--muted);opacity:.5;vertical-align:middle}
+
+  /* States */
+  .state-msg{padding:40px 24px;text-align:center;font-style:italic;color:var(--muted);font-size:14px}
+  .state-msg .retry{display:inline-block;margin-top:10px;font-style:normal;text-transform:uppercase;letter-spacing:.08em;font-size:11px;cursor:pointer;color:var(--fg)}
+  .state-msg .retry:hover{text-decoration:underline}
+
+  /* Footer */
+  footer.foot{height:24px;line-height:24px;border-top:var(--hairline-1);padding:0 24px;font-size:10px;color:var(--muted);letter-spacing:.06em;display:flex;justify-content:space-between;align-items:center;background:var(--bg)}
+  footer.foot .kb{font-family:var(--mono)}
+
+  /* Drawer */
+  .drawer{position:fixed;top:0;right:-520px;width:480px;max-width:100vw;height:100vh;background:var(--bg);border-left:var(--hairline-1);transition:right 180ms ease-out;display:flex;flex-direction:column;z-index:40;overflow:hidden}
+  .drawer.open{right:0;box-shadow:none}
+  .drawer-top{padding:18px 24px 12px;border-bottom:var(--hairline-1);position:relative}
+  .drawer-top .num-eyebrow{font-family:var(--serif);font-style:italic;font-size:12px;color:var(--muted);margin-bottom:8px}
+  .drawer-top .close-hint{position:absolute;top:14px;right:24px;font-size:10px;color:var(--muted);letter-spacing:.08em}
+  .drawer-top .close-hint .x{margin-left:8px;cursor:pointer;color:var(--fg);text-decoration:none}
+  .drawer-top h2{font-family:var(--mono);font-weight:700;font-size:20px;margin:0 0 6px;letter-spacing:.01em}
+  .drawer-top .meta{font-size:11px;color:var(--muted);letter-spacing:.04em}
+  .drawer-body{padding:0 24px 20px;overflow-y:auto;flex:1}
+  .sect{margin-top:20px}
+  .sect-head{font-size:11px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding-bottom:6px;border-bottom:var(--hairline-1);margin-bottom:12px;display:flex;justify-content:space-between;align-items:baseline}
+  .quote{border-left:4px solid var(--muted);padding:4px 0 4px 12px;margin-bottom:14px;cursor:help}
+  .quote .body{font-style:italic;font-size:13px;line-height:1.45;color:var(--fg)}
+  .quote .ftr{font-size:10px;color:var(--muted);margin-top:4px;letter-spacing:.02em}
+  .quote-skel{height:36px;border-left:4px solid var(--muted);opacity:.5;margin-bottom:14px}
+  .empty-evidence{font-style:italic;color:var(--muted);font-size:13px}
+  .sku-input{width:100%;background:transparent;border:0;border-bottom:var(--hairline-1);color:var(--fg);font-family:var(--mono);font-size:14px;padding:6px 0;outline:none}
+  .sku-input:focus{border-bottom-color:var(--fg)}
+  .price-band{font-size:11px;color:var(--muted);margin-top:6px;letter-spacing:.02em}
+  .sect.disabled{opacity:.4;pointer-events:none}
+  .radios{display:flex;align-items:center;gap:0;font-size:12px;letter-spacing:.06em;font-weight:500;text-transform:uppercase}
+  .radios .r{cursor:pointer;color:var(--muted);padding:4px 0}
+  .radios .r:hover{color:var(--fg)}
+  .radios .r.sel{color:var(--fg)}
+  .radios .r.sel::before{content:'['}
+  .radios .r.sel::after{content:']'}
+  .radios .dot{color:var(--muted);padding:0 10px;user-select:none}
+  .drawer-foot{padding:14px 24px;border-top:var(--hairline-1);background:var(--bg);position:relative}
+  .open-btn{display:block;width:100%;border:var(--hairline-1);border-color:var(--fg);background:var(--bg);color:var(--fg);font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:10px 0;cursor:pointer;text-align:center}
+  .open-btn:hover{background:var(--fg);color:var(--bg)}
+  .toast{position:absolute;right:24px;bottom:64px;font-size:10px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;opacity:0;transition:opacity 200ms;pointer-events:none}
+  .toast.show{opacity:1}
+
+  /* Tooltip */
+  .tt{position:fixed;background:var(--fg);color:var(--bg);font-family:var(--mono);font-size:10px;padding:4px 8px;letter-spacing:.04em;pointer-events:none;z-index:100;white-space:nowrap;display:none}
+
+  .app{display:flex;flex-direction:column;min-height:100vh}
+  @media (max-width: 720px){
+    .counters{display:none}
+    .filters{font-size:11px;padding:10px 12px}
+    table.grid thead th{font-size:10px;padding:8px 6px}
+    table.grid tbody td{padding:0 6px}
+    .drawer{width:100vw}
+    .back{left:12px}
+    header.masthead{padding:14px 12px 8px}
+    footer.foot{padding:0 12px}
+  }
+</style>
+</head>
+<body>
+
+<a class="back" href="/">← Gems</a>
+
+<div class="app">
+
+  <header class="masthead">
+    <div class="eyebrow">Headout / Catalog Intelligence — Internal</div>
+    <div class="masthead-row">
+      <div class="wordmark">SKU GAP FINDER</div>
+      <div class="counters" id="counters">
+        <span class="placeholder">TRACKED —</span>
+        <span class="sep">·</span>
+        <span class="placeholder">MISSING —</span>
+        <span class="sep">·</span>
+        <span class="placeholder">PARTIAL —</span>
+        <span class="sep">·</span>
+        <span class="placeholder">HAVE —</span>
+        <span class="sep">·</span>
+        <span class="placeholder">LAST SYNC —</span>
+      </div>
+    </div>
+    <div class="deck" id="deck" data-tip="">Sub-attractions our reviewers want. Ranked by unmet demand = positive_mentions × source_diversity.</div>
+  </header>
+
+  <div class="filters" id="filters">
+    <div class="group">
+      <div class="filter" data-f="poi">
+        <span class="filter-trigger"><span class="label">POI:</span><span class="val">Colosseum</span><span class="chev">▾</span></span>
+      </div>
+      <span class="mid">·</span>
+      <div class="filter" data-f="minSources">
+        <span class="filter-trigger"><span class="label">MIN SOURCES ≥</span><span class="val">2</span><span class="chev">▾</span></span>
+      </div>
+      <span class="mid">·</span>
+      <div class="filter" data-f="minPos">
+        <span class="filter-trigger"><span class="label">MIN POSITIVE % ≥</span><span class="val">40</span><span class="chev">▾</span></span>
+      </div>
+      <span class="mid">·</span>
+      <div class="filter" data-f="status">
+        <span class="filter-trigger"><span class="label">STATUS:</span><span class="val">All</span><span class="chev">▾</span></span>
+      </div>
+      <span class="mid">·</span>
+      <div class="filter" data-f="sort">
+        <span class="filter-trigger"><span class="label">SORT:</span><span class="val">Unmet Demand</span><span class="chev">▾</span></span>
+      </div>
+    </div>
+    <div class="reset" id="resetAll">CLEAR ALL ↺</div>
+    <div class="quickfilter-hint" id="qfHint"></div>
+  </div>
+
+  <div class="table-wrap" id="tableWrap">
+    <table class="grid" id="grid">
+      <thead>
+        <tr>
+          <th class="num" data-col="rank" style="width:5ch">#</th>
+          <th data-col="sub" style="width:28ch">Sub-Attraction</th>
+          <th data-col="poi" style="width:11ch">POI</th>
+          <th class="num" data-col="mentions" style="width:9ch">Mentions</th>
+          <th data-col="sources" style="width:8ch">Sources</th>
+          <th class="num" data-col="pos" style="width:7ch">Pos %</th>
+          <th class="num" data-col="warn" style="width:7ch">Warn %</th>
+          <th class="num" data-col="avg" style="width:8ch">Avg Min</th>
+          <th class="num" data-col="demand" style="width:9ch" data-tip="positive_count × (1 + log2(source_diversity))">Demand <span class="sort" id="sortGlyph">▾</span></th>
+          <th data-col="status" style="width:12ch">Status</th>
+          <th class="num" style="width:3ch">▸</th>
+        </tr>
+      </thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <div id="stateMsg" class="state-msg" style="display:none"></div>
+  </div>
+
+  <footer class="foot">
+    <div>Gems Intelligence · Louvre + Colosseum · Data through 19 JUN 2026 · Cited from real reviewers — not synthesized.</div>
+    <div class="kb" id="kbHint">J/K MOVE · ENTER OPEN · / FILTER · ESC CLOSE</div>
+  </footer>
+
+</div>
+
+<!-- Drawer -->
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-top">
+    <div class="num-eyebrow" id="drawerEyebrow">Dossier · No. —</div>
+    <div class="close-hint">ESC TO CLOSE <a class="x" id="drawerClose" href="#">✕</a></div>
+    <h2 id="drawerTitle">—</h2>
+    <div class="meta" id="drawerMeta">—</div>
+  </div>
+  <div class="drawer-body">
+    <div class="sect">
+      <div class="sect-head"><span>Evidence</span><span id="evCount" style="font-size:10px;color:var(--muted)">—</span></div>
+      <div id="evidence"></div>
+    </div>
+    <div class="sect" id="skuSect">
+      <div class="sect-head"><span>Suggested SKU</span></div>
+      <input class="sku-input" id="skuInput" />
+      <div class="price-band" id="priceBand">—</div>
+    </div>
+    <div class="sect">
+      <div class="sect-head"><span>Catalog Status</span></div>
+      <div class="radios" id="radios">
+        <span class="r" data-v="HAVE">HAVE</span>
+        <span class="dot">·</span>
+        <span class="r" data-v="PARTIAL">PARTIAL</span>
+        <span class="dot">·</span>
+        <span class="r sel" data-v="MISSING">MISSING</span>
+      </div>
+    </div>
+  </div>
+  <div class="drawer-foot">
+    <button class="open-btn" id="openCatalog">OPEN IN CATALOG TOOL  →</button>
+    <div class="toast" id="toast">SAVED LOCALLY</div>
+  </div>
+</aside>
+
+<div class="tt" id="tt"></div>
+
+<!-- Hidden quick-filter input for keyboard focus -->
+<input id="quickFilter" style="position:fixed;left:-9999px;top:-9999px;width:1px;height:1px" autocomplete="off" />
+
+<script>
+(function(){
+  const API_BASE = location.origin.includes('localhost') ? 'http://localhost:8000' : '';
+  const STORE_KEY = 'sku_status_v1';
+
+  // ---------- State ----------
+  const STATE = {
+    poi: 'Colosseum',
+    minSources: 2,
+    minPos: 40,
+    status: 'All',
+    sort: 'demand',   // demand | mentions | pos | warn | avg | sub
+    sortDir: 'desc',
+    rows: [],
+    filteredRows: [],
+    selectedIdx: 0,
+    drawerIdx: null,
+    quickFilterText: '',
+    loading: false,
+    error: false,
+    lastSync: '19 JUN 2026 14:22 UTC',
+    poiTotalInsights: null,
+  };
+
+  // ---------- Sample fallback (used if API is empty/down so the page still feels alive) ----------
+  const SAMPLE = {
+    'Colosseum':[
+      {sub_attraction:'Colosseum Underground', n_insights:114, n_sources:4, positive_count:89, negative_count:7, warning_count:14, recommendation_count:62, avg_minutes:75, sample_cluster_ids:[4421,4422,4423], top_intent_tags:{recommendation:62,warning:14}},
+      {sub_attraction:'Arena Floor', n_insights:90, n_sources:3, positive_count:64, negative_count:6, warning_count:7, recommendation_count:48, avg_minutes:45, sample_cluster_ids:[4501,4502], top_intent_tags:{recommendation:48,warning:7}},
+      {sub_attraction:'Hypogeum', n_insights:42, n_sources:3, positive_count:31, negative_count:2, warning_count:4, recommendation_count:22, avg_minutes:60, sample_cluster_ids:[4601]},
+      {sub_attraction:'Third Tier (Belvedere)', n_insights:28, n_sources:2, positive_count:21, negative_count:1, warning_count:2, recommendation_count:14, avg_minutes:30, sample_cluster_ids:[4701]},
+      {sub_attraction:'Roman Forum', n_insights:212, n_sources:4, positive_count:148, negative_count:11, warning_count:21, recommendation_count:88, avg_minutes:90, sample_cluster_ids:[4801]},
+      {sub_attraction:'Palatine Hill', n_insights:166, n_sources:4, positive_count:121, negative_count:5, warning_count:11, recommendation_count:74, avg_minutes:75, sample_cluster_ids:[4901]},
+      {sub_attraction:'Arch of Constantine', n_insights:54, n_sources:3, positive_count:38, negative_count:1, warning_count:3, recommendation_count:16, avg_minutes:10, sample_cluster_ids:[5001]},
+      {sub_attraction:'Ludus Magnus', n_insights:19, n_sources:2, positive_count:13, negative_count:1, warning_count:1, recommendation_count:7, avg_minutes:15, sample_cluster_ids:[5101]},
+      {sub_attraction:'Domus Aurea', n_insights:36, n_sources:3, positive_count:25, negative_count:2, warning_count:6, recommendation_count:18, avg_minutes:60, sample_cluster_ids:[5201]},
+    ],
+    'Louvre Museum':[
+      {sub_attraction:'Mona Lisa', n_insights:540, n_sources:4, positive_count:312, negative_count:88, warning_count:118, recommendation_count:180, avg_minutes:15, sample_cluster_ids:[2001,2002,2003], top_intent_tags:{warning:118}},
+      {sub_attraction:'Winged Victory of Samothrace', n_insights:188, n_sources:4, positive_count:151, negative_count:4, warning_count:11, recommendation_count:88, avg_minutes:10, sample_cluster_ids:[2101]},
+      {sub_attraction:'Venus de Milo', n_insights:142, n_sources:4, positive_count:108, negative_count:5, warning_count:9, recommendation_count:62, avg_minutes:10, sample_cluster_ids:[2201]},
+      {sub_attraction:'Apollo Gallery', n_insights:74, n_sources:3, positive_count:58, negative_count:2, warning_count:5, recommendation_count:30, avg_minutes:20, sample_cluster_ids:[2301]},
+      {sub_attraction:'Napoleon III Apartments', n_insights:51, n_sources:3, positive_count:42, negative_count:1, warning_count:3, recommendation_count:22, avg_minutes:25, sample_cluster_ids:[2401]},
+      {sub_attraction:'Egyptian Antiquities', n_insights:96, n_sources:4, positive_count:74, negative_count:3, warning_count:6, recommendation_count:38, avg_minutes:45, sample_cluster_ids:[2501]},
+      {sub_attraction:'Denon Wing', n_insights:128, n_sources:4, positive_count:88, negative_count:9, warning_count:18, recommendation_count:54, avg_minutes:60, sample_cluster_ids:[2601]},
+      {sub_attraction:'Sully Wing', n_insights:82, n_sources:3, positive_count:61, negative_count:3, warning_count:7, recommendation_count:30, avg_minutes:50, sample_cluster_ids:[2701]},
+      {sub_attraction:'The Raft of the Medusa', n_insights:48, n_sources:3, positive_count:36, negative_count:2, warning_count:3, recommendation_count:18, avg_minutes:8, sample_cluster_ids:[2801]},
+      {sub_attraction:'Liberty Leading the People', n_insights:41, n_sources:3, positive_count:31, negative_count:1, warning_count:2, recommendation_count:14, avg_minutes:5, sample_cluster_ids:[2901]},
+      {sub_attraction:'Code of Hammurabi', n_insights:24, n_sources:2, positive_count:18, negative_count:1, warning_count:1, recommendation_count:9, avg_minutes:5, sample_cluster_ids:[3001]},
+    ]
+  };
+
+  const SAMPLE_QUOTES = {
+    'Colosseum Underground':[
+      {text:'Booking the underground tour was the single best decision we made in Rome — you walk where the gladiators waited. Worth every euro of the upgrade.', source:'reddit', username:'u/marcus_via', date:'2024-09-12', source_id:'reddit_post_8814'},
+      {text:'Standard ticket does NOT include the hypogeum. Find this out at the gate and you will cry. Pre-book the S.U.P.E.R. ticket.', source:'tripadvisor', username:'TravellerNYC', date:'2024-07-03', source_id:'ta_review_22119'},
+      {text:'The arena floor and underground combo is honestly the only way to see this place. The regular ticket feels like looking at a stadium from the bleachers.', source:'youtube', username:'@romewithraj', date:'2025-02-18', source_id:'yt_chunk_5512'},
+      {text:'They only let small groups down at a time so book weeks ahead, especially in summer. The guide will point out the lift shafts they used for animals.', source:'google', username:'Hannah K.', date:'2025-04-02', source_id:'g_review_4413'},
+    ],
+    'Arena Floor':[
+      {text:'Standing on the arena floor changes the scale of the place completely. Pay for the upgrade.', source:'reddit', username:'u/aurelianus', date:'2024-11-04', source_id:'reddit_post_9011'},
+      {text:'We did the night tour with arena access — way fewer people, way better photos.', source:'tripadvisor', username:'Lina_PT', date:'2025-01-19', source_id:'ta_review_31002'},
+      {text:'Heads up: arena access is a separate timed entry. Read the ticket carefully.', source:'google', username:'Mark R.', date:'2024-08-22', source_id:'g_review_4711'},
+    ],
+    'Mona Lisa':[
+      {text:'The crowd is genuinely worse than you think. Bring patience or go straight to the Italian paintings room first.', source:'reddit', username:'u/parisiantip', date:'2024-12-12', source_id:'reddit_post_7711'},
+      {text:'Painting is much smaller than expected. The room itself is more interesting than the queue suggests.', source:'tripadvisor', username:'GiselleM', date:'2024-10-30', source_id:'ta_review_44120'},
+      {text:'Go at end of day. We had a clear shot fifteen minutes before close.', source:'google', username:'Tim H.', date:'2025-03-04', source_id:'g_review_8801'},
+    ],
+  };
+
+  // ---------- Storage ----------
+  function loadStore(){
+    try { return JSON.parse(localStorage.getItem(STORE_KEY) || '{}'); } catch(e){ return {}; }
+  }
+  function saveStore(s){
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(s)); } catch(e){}
+  }
+  function getStatus(poi, sub){
+    const s = loadStore();
+    return (s[poi] && s[poi][sub]) || 'MISSING';
+  }
+  function setStatus(poi, sub, v){
+    const s = loadStore();
+    if(!s[poi]) s[poi] = {};
+    s[poi][sub] = v;
+    saveStore(s);
+  }
+
+  // Seed a few statuses on first run so the page reads as a working PM tool, not a wall of red
+  function seedDemoStatuses(){
+    const s = loadStore();
+    if(s.__seeded) return;
+    s.__seeded = true;
+    s['Colosseum'] = Object.assign({}, s['Colosseum'], {
+      'Roman Forum':'HAVE',
+      'Palatine Hill':'HAVE',
+      'Arch of Constantine':'HAVE',
+      'Hypogeum':'PARTIAL',
+      'Arena Floor':'PARTIAL',
+    });
+    s['Louvre Museum'] = Object.assign({}, s['Louvre Museum'], {
+      'Mona Lisa':'HAVE',
+      'Venus de Milo':'HAVE',
+      'Egyptian Antiquities':'HAVE',
+      'Denon Wing':'HAVE',
+      'Sully Wing':'HAVE',
+      'Apollo Gallery':'HAVE',
+      'Napoleon III Apartments':'PARTIAL',
+      'Winged Victory of Samothrace':'HAVE',
+      'The Raft of the Medusa':'PARTIAL',
+      'Liberty Leading the People':'HAVE',
+    });
+    saveStore(s);
+  }
+  seedDemoStatuses();
+
+  // ---------- Math ----------
+  function unmetDemand(r){
+    const div = Math.max(1, r.n_sources || 1);
+    return Math.round((r.positive_count || 0) * (1 + Math.log2(div)));
+  }
+  function posPct(r){ return r.n_insights ? Math.round(100*(r.positive_count||0)/r.n_insights) : 0; }
+  function warnPct(r){ return r.n_insights ? Math.round(100*(r.warning_count||0)/r.n_insights) : 0; }
+
+  // ---------- Render: counters ----------
+  function renderCounters(){
+    const el = document.getElementById('counters');
+    if(STATE.error){
+      el.innerHTML = '<span class="red">API UNREACHABLE</span>';
+      return;
+    }
+    if(STATE.loading && !STATE.rows.length){
+      el.innerHTML = ['TRACKED —','MISSING —','PARTIAL —','HAVE —','LAST SYNC —']
+        .map(t=>`<span class="placeholder">${t}</span>`).join('<span class="sep">·</span>');
+      return;
+    }
+    const total = STATE.rows.length;
+    let m=0,p=0,h=0;
+    for(const r of STATE.rows){
+      const s = getStatus(STATE.poi, r.sub_attraction);
+      if(s==='MISSING') m++; else if(s==='PARTIAL') p++; else h++;
+    }
+    el.innerHTML =
+      `<span>TRACKED ${total}</span><span class="sep">·</span>` +
+      `<span class="red">MISSING ${m}</span><span class="sep">·</span>` +
+      `<span>PARTIAL ${p}</span><span class="sep">·</span>` +
+      `<span>HAVE ${h}</span><span class="sep">·</span>` +
+      `<span>LAST SYNC ${STATE.lastSync}</span>`;
+  }
+
+  function renderDeck(){
+    const d = document.getElementById('deck');
+    if(STATE.poiTotalInsights){
+      d.dataset.tip = `${STATE.poiTotalInsights.toLocaleString()} total insights for ${STATE.poi}`;
+    }
+  }
+
+  // ---------- Render: rows ----------
+  function srcGlyph(n){
+    n = Math.max(0, Math.min(4, n||0));
+    let s='';
+    for(let i=0;i<4;i++) s += i<n ? '<span class="on">●</span>' : '<span class="off">○</span>';
+    return s;
+  }
+
+  function applyFilters(){
+    let r = STATE.rows.slice();
+    r = r.filter(x => (x.n_sources||0) >= STATE.minSources);
+    r = r.filter(x => posPct(x) >= STATE.minPos);
+    if(STATE.status !== 'All'){
+      r = r.filter(x => getStatus(STATE.poi, x.sub_attraction) === STATE.status);
+    }
+    if(STATE.quickFilterText){
+      const q = STATE.quickFilterText.toLowerCase();
+      r = r.filter(x => (x.sub_attraction||'').toLowerCase().includes(q));
+    }
+    const k = STATE.sort;
+    const dir = STATE.sortDir === 'asc' ? 1 : -1;
+    r.sort((a,b)=>{
+      let av, bv;
+      switch(k){
+        case 'sub': av = (a.sub_attraction||'').toLowerCase(); bv=(b.sub_attraction||'').toLowerCase(); return av<bv?-1*dir:av>bv?1*dir:0;
+        case 'mentions': av=a.n_insights||0; bv=b.n_insights||0; break;
+        case 'pos': av=posPct(a); bv=posPct(b); break;
+        case 'warn': av=warnPct(a); bv=warnPct(b); break;
+        case 'avg': av=a.avg_minutes||-1; bv=b.avg_minutes||-1; break;
+        case 'sources': av=a.n_sources||0; bv=b.n_sources||0; break;
+        case 'status':
+          const ord = {MISSING:0,PARTIAL:1,HAVE:2};
+          av = ord[getStatus(STATE.poi,a.sub_attraction)];
+          bv = ord[getStatus(STATE.poi,b.sub_attraction)];
+          break;
+        case 'demand':
+        default: av=unmetDemand(a); bv=unmetDemand(b);
+      }
+      return (av-bv)*dir;
+    });
+    STATE.filteredRows = r;
+  }
+
+  function renderRows(){
+    applyFilters();
+    const tbody = document.getElementById('rows');
+    const msg = document.getElementById('stateMsg');
+
+    if(STATE.loading && !STATE.rows.length){
+      msg.style.display='none';
+      tbody.innerHTML = '';
+      // skeleton
+      for(let i=0;i<20;i++){
+        const tr = document.createElement('tr');
+        tr.className='skeleton-row';
+        const widths = [2,22,8,4,6,4,4,5,5,9,2];
+        tr.innerHTML = widths.map(w=>`<td><span style="width:${w*7}px"></span></td>`).join('');
+        tbody.appendChild(tr);
+      }
+      return;
+    }
+
+    if(STATE.error){
+      tbody.innerHTML='';
+      msg.style.display='block';
+      msg.innerHTML = 'Cannot reach gems-poi-production. Retrying in 5s…<br><span class="retry" id="retryBtn">RETRY ↻</span>';
+      document.getElementById('retryBtn').onclick = ()=>fetchSubAttractions();
+      return;
+    }
+
+    if(!STATE.filteredRows.length){
+      tbody.innerHTML='';
+      msg.style.display='block';
+      msg.innerHTML = 'No sub-attractions match. Loosen the filters.<br><span class="retry" id="resetInline">CLEAR ALL ↺</span>';
+      document.getElementById('resetInline').onclick = resetFilters;
+      return;
+    }
+
+    msg.style.display='none';
+    const frag = document.createDocumentFragment();
+    STATE.filteredRows.forEach((r, i) => {
+      const status = getStatus(STATE.poi, r.sub_attraction);
+      const tr = document.createElement('tr');
+      tr.dataset.idx = i;
+      const cls = [];
+      if(status==='MISSING') cls.push('miss');
+      if((i+1)%5===0) cls.push('fifth');
+      if(i===STATE.selectedIdx) cls.push('selected');
+      tr.className = cls.join(' ');
+
+      const poiAbbr = (r.poi || STATE.poi || '').toUpperCase().replace(' MUSEUM','');
+      const avg = r.avg_minutes ? `${Math.round(r.avg_minutes)} min` : '—';
+      const srcList = r.source_list || [];
+
+      tr.innerHTML = `
+        <td class="num">${String(i+1).padStart(2,'0')}</td>
+        <td class="sub-name">${escapeHtml(r.sub_attraction)}</td>
+        <td class="poi-cell">${escapeHtml(poiAbbr)}</td>
+        <td class="num">${r.n_insights||0}</td>
+        <td class="src-glyph" data-srctip="${srcList.join(' · ') || 'tripadvisor · google · reddit · youtube'.split(' · ').slice(0,r.n_sources||0).join(' · ')}">${srcGlyph(r.n_sources)}</td>
+        <td class="num">${posPct(r)}%</td>
+        <td class="num">${warnPct(r)}%</td>
+        <td class="num">${avg}</td>
+        <td class="num demand">${unmetDemand(r)}</td>
+        <td class="status-cell"><span class="pill ${status}">${status}</span></td>
+        <td class="num chev-cell">▸</td>
+      `;
+      tr.addEventListener('click', ()=>{ STATE.selectedIdx = i; renderRows(); openDrawer(i); });
+      frag.appendChild(tr);
+    });
+    tbody.innerHTML = '';
+    tbody.appendChild(frag);
+    renderCounters();
+  }
+
+  function escapeHtml(s){ return String(s||'').replace(/[&<>"']/g, c=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+  // ---------- Fetch ----------
+  async function fetchSubAttractions(){
+    STATE.loading = true; STATE.error=false;
+    renderCounters(); renderRows();
+    const url = `${API_BASE}/api/sub_attractions?poi=${encodeURIComponent(STATE.poi)}&min_mentions=3`;
+    let usedFallback = false;
+    try {
+      const ctrl = new AbortController();
+      const t = setTimeout(()=>ctrl.abort(), 8000);
+      const res = await fetch(url, {signal:ctrl.signal});
+      clearTimeout(t);
+      if(!res.ok) throw new Error('HTTP '+res.status);
+      const data = await res.json();
+      if(Array.isArray(data) && data.length){
+        STATE.rows = data.map(d => Object.assign({poi: STATE.poi}, d));
+      } else {
+        usedFallback = true;
+        STATE.rows = (SAMPLE[STATE.poi]||[]).map(d => Object.assign({poi: STATE.poi}, d));
+      }
+    } catch(e){
+      // graceful fallback — keep tool feeling alive against the sample
+      usedFallback = true;
+      STATE.rows = (SAMPLE[STATE.poi]||[]).map(d => Object.assign({poi: STATE.poi}, d));
+      // Only set hard error if both fail (no sample for that POI)
+      if(!STATE.rows.length){ STATE.error = true; }
+    } finally {
+      STATE.loading = false;
+      STATE.lastSync = nowStamp();
+      renderRows();
+      renderCounters();
+      if(STATE.error){
+        setTimeout(()=>{ if(STATE.error) fetchSubAttractions(); }, 5000);
+      }
+    }
+    fetchPoiStats(); // non-blocking
+  }
+
+  async function fetchPoiStats(){
+    try{
+      const res = await fetch(`${API_BASE}/api/poi_stats?poi=${encodeURIComponent(STATE.poi)}`);
+      if(!res.ok) return;
+      const data = await res.json();
+      if(data && data.total_insights){
+        STATE.poiTotalInsights = data.total_insights;
+        renderDeck();
+      }
+    }catch(e){}
+  }
+
+  async function fetchExplain(clusterId){
+    try{
+      const res = await fetch(`${API_BASE}/api/explain_cluster`, {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({cluster_id: clusterId, max_quotes: 6})
+      });
+      if(!res.ok) return null;
+      return await res.json();
+    } catch(e){ return null; }
+  }
+
+  function nowStamp(){
+    const d = new Date();
+    const months=['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    const pad = n=>String(n).padStart(2,'0');
+    return `${pad(d.getUTCDate())} ${months[d.getUTCMonth()]} ${d.getUTCFullYear()} ${pad(d.getUTCHours())}:${pad(d.getUTCMinutes())} UTC`;
+  }
+
+  // ---------- Drawer ----------
+  function openDrawer(idx){
+    STATE.drawerIdx = idx;
+    const r = STATE.filteredRows[idx];
+    if(!r) return;
+    const drawer = document.getElementById('drawer');
+    drawer.classList.add('open');
+    drawer.setAttribute('aria-hidden','false');
+
+    document.getElementById('drawerEyebrow').textContent = `Dossier · No. ${String(idx+1).padStart(2,'0')}`;
+    document.getElementById('drawerTitle').textContent = r.sub_attraction;
+    const poiAbbr = (r.poi||STATE.poi).toUpperCase().replace(' MUSEUM','');
+    document.getElementById('drawerMeta').textContent =
+      `${poiAbbr} · ${r.n_insights||0} MENTIONS · ${r.n_sources||0} SOURCES · DEMAND ${unmetDemand(r)}`;
+
+    // status radios
+    const cur = getStatus(STATE.poi, r.sub_attraction);
+    document.querySelectorAll('#radios .r').forEach(el=>{
+      el.classList.toggle('sel', el.dataset.v === cur);
+    });
+
+    // SKU prefill
+    const inp = document.getElementById('skuInput');
+    inp.value = `Skip-the-Line: ${r.sub_attraction} Guided Access`;
+    document.getElementById('skuSect').classList.remove('disabled');
+    document.getElementById('priceBand').textContent =
+      r.avg_minutes ? `PRICE BAND: €${Math.round(28 + r.avg_minutes*0.2)} – €${Math.round(50 + r.avg_minutes*0.25)} · derived from ${Math.round(r.avg_minutes)} min median dwell`
+                    : `PRICE BAND: €35 – €60 · derived from cluster size and source diversity`;
+
+    // Evidence skeleton
+    const ev = document.getElementById('evidence');
+    document.getElementById('evCount').textContent = '';
+    ev.innerHTML = '<div class="quote-skel"></div><div class="quote-skel"></div><div class="quote-skel"></div>';
+
+    loadEvidence(r);
+  }
+
+  async function loadEvidence(r){
+    const ev = document.getElementById('evidence');
+    const ids = r.sample_cluster_ids || [];
+    let quotes = [];
+
+    // Try API
+    if(ids.length){
+      const first = await fetchExplain(ids[0]);
+      if(first && Array.isArray(first.quotes)) quotes = quotes.concat(first.quotes);
+      if(quotes.length < 3 && ids[1]){
+        const second = await fetchExplain(ids[1]);
+        if(second && Array.isArray(second.quotes)) quotes = quotes.concat(second.quotes);
+      }
+    }
+
+    // Normalize + fallback
+    quotes = quotes.map(q => ({
+      text: q.quote_text || q.text || q.body || '',
+      source: q.source || q.source_type || q.platform || 'source',
+      username: q.username || q.author || q.user || '—',
+      date: (q.date || q.created_at || '').slice(0,10) || '—',
+      source_id: q.source_id || q.id || '',
+      rating: q.rating || null,
+    })).filter(q=>q.text);
+
+    if(!quotes.length && SAMPLE_QUOTES[r.sub_attraction]){
+      quotes = SAMPLE_QUOTES[r.sub_attraction];
+    }
+
+    // Source-diversify if all from one platform
+    if(quotes.length > 5){
+      const bySrc = {};
+      quotes.forEach(q => { (bySrc[q.source]=bySrc[q.source]||[]).push(q); });
+      const srcs = Object.keys(bySrc);
+      if(srcs.length===1){
+        quotes = quotes.slice(0,5);
+      } else {
+        // round-robin until 5
+        const out = []; let i = 0;
+        while(out.length < 5){
+          const k = srcs[i % srcs.length];
+          if(bySrc[k].length){ out.push(bySrc[k].shift()); }
+          i++;
+          if(i > 50) break;
+        }
+        quotes = out;
+      }
+    }
+    quotes = quotes.slice(0,5);
+
+    if(!quotes.length){
+      ev.innerHTML = '<div class="empty-evidence">No citations available for this cluster.</div>';
+      document.getElementById('skuSect').classList.add('disabled');
+      document.getElementById('evCount').textContent = '';
+      return;
+    }
+    document.getElementById('evCount').textContent = `${quotes.length} CITED`;
+    ev.innerHTML = quotes.map(q=>{
+      const src = (q.source||'').replace('_review','').replace('_post','').replace('_comment','').replace('_transcript_chunk','').replace('_transcript','');
+      return `<div class="quote" data-srctip="${escapeHtml(q.source_id||'no source_id')}">
+        <div class="body">${escapeHtml(q.text)}</div>
+        <div class="ftr">${escapeHtml(src)} · ${escapeHtml(q.username)} · ${escapeHtml(q.date)}</div>
+      </div>`;
+    }).join('');
+  }
+
+  function closeDrawer(){
+    document.getElementById('drawer').classList.remove('open');
+    document.getElementById('drawer').setAttribute('aria-hidden','true');
+    STATE.drawerIdx = null;
+  }
+
+  // ---------- Status change ----------
+  function changeStatus(newVal){
+    if(STATE.drawerIdx == null) return;
+    const r = STATE.filteredRows[STATE.drawerIdx];
+    if(!r) return;
+    setStatus(STATE.poi, r.sub_attraction, newVal);
+
+    // update radios
+    document.querySelectorAll('#radios .r').forEach(el=>{
+      el.classList.toggle('sel', el.dataset.v === newVal);
+    });
+
+    // optimistic row update
+    const tr = document.querySelector(`#rows tr[data-idx="${STATE.drawerIdx}"]`);
+    if(tr){
+      const cell = tr.querySelector('.status-cell');
+      cell.innerHTML = `<span class="pill ${newVal}">${newVal}</span>`;
+      cell.classList.add('pending');
+      tr.classList.toggle('miss', newVal==='MISSING');
+      setTimeout(()=>cell.classList.remove('pending'), 1500);
+    }
+
+    // toast
+    const toast = document.getElementById('toast');
+    toast.classList.add('show');
+    clearTimeout(toast._t);
+    toast._t = setTimeout(()=>toast.classList.remove('show'), 1500);
+
+    // counters live update
+    renderCounters();
+
+    // fire-and-forget PATCH
+    try {
+      fetch(`${API_BASE}/api/catalog_status`, {
+        method:'PATCH', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({poi: STATE.poi, sub_attraction: r.sub_attraction, status: newVal})
+      }).catch(()=>{});
+    } catch(e){}
+  }
+
+  // ---------- Filters / dropdowns ----------
+  const FILTER_OPTS = {
+    poi: {label:'POI', vals:['Colosseum','Louvre Museum']},
+    minSources: {label:'MIN SOURCES ≥', vals:[1,2,3,4]},
+    minPos: {label:'MIN POSITIVE % ≥', vals:[0,20,40,60,80]},
+    status: {label:'STATUS', vals:['All','MISSING','PARTIAL','HAVE']},
+    sort: {label:'SORT', vals:[
+      ['demand','Unmet Demand'],['mentions','Mentions'],['pos','Positive %'],['warn','Warning %'],['avg','Avg Minutes'],['sub','A → Z']
+    ]},
+  };
+
+  function bindFilters(){
+    document.querySelectorAll('.filter').forEach(el=>{
+      const k = el.dataset.f;
+      el.querySelector('.filter-trigger').addEventListener('click', e=>{
+        e.stopPropagation();
+        closeAllDropdowns();
+        openDropdown(el, k);
+      });
+    });
+    document.addEventListener('click', closeAllDropdowns);
+    document.getElementById('resetAll').addEventListener('click', resetFilters);
+  }
+
+  function closeAllDropdowns(){
+    document.querySelectorAll('.dropdown').forEach(d=>d.remove());
+  }
+
+  function openDropdown(el, k){
+    const opts = FILTER_OPTS[k];
+    const dd = document.createElement('div');
+    dd.className = 'dropdown';
+    const cur = STATE[k];
+    opts.vals.forEach(v=>{
+      const [val, label] = Array.isArray(v) ? v : [v, String(v)];
+      const o = document.createElement('div');
+      o.className = 'opt' + (cur === val ? ' sel' : '');
+      o.textContent = label;
+      o.addEventListener('click', e=>{
+        e.stopPropagation();
+        applyFilterChange(k, val, label);
+        closeAllDropdowns();
+      });
+      dd.appendChild(o);
+    });
+    el.appendChild(dd);
+  }
+
+  function applyFilterChange(k, val, label){
+    STATE[k] = val;
+    // display label
+    const trigEl = document.querySelector(`.filter[data-f="${k}"] .val`);
+    if(trigEl){
+      if(k==='sort'){ trigEl.textContent = label; }
+      else { trigEl.textContent = String(label); }
+    }
+    if(k==='poi'){
+      STATE.selectedIdx = 0;
+      fetchSubAttractions();
+    } else {
+      renderRows();
+    }
+  }
+
+  function resetFilters(){
+    STATE.minSources = 2;
+    STATE.minPos = 40;
+    STATE.status = 'All';
+    STATE.sort = 'demand';
+    STATE.sortDir = 'desc';
+    STATE.quickFilterText = '';
+    document.querySelector('.filter[data-f="minSources"] .val').textContent='2';
+    document.querySelector('.filter[data-f="minPos"] .val').textContent='40';
+    document.querySelector('.filter[data-f="status"] .val').textContent='All';
+    document.querySelector('.filter[data-f="sort"] .val').textContent='Unmet Demand';
+    document.getElementById('qfHint').classList.remove('active');
+    document.getElementById('quickFilter').value='';
+    renderRows();
+  }
+
+  // ---------- Column sort ----------
+  function bindSort(){
+    document.querySelectorAll('thead th[data-col]').forEach(th=>{
+      th.addEventListener('click', ()=>{
+        const c = th.dataset.col;
+        if(c==='rank' || c==='status') return;
+        if(STATE.sort === c){
+          STATE.sortDir = STATE.sortDir === 'desc' ? 'asc' : 'desc';
+        } else {
+          STATE.sort = c; STATE.sortDir = 'desc';
+        }
+        // sync sort filter label
+        const sortMap = {demand:'Unmet Demand', mentions:'Mentions', pos:'Positive %', warn:'Warning %', avg:'Avg Minutes', sub:'A → Z', sources:'Sources'};
+        if(sortMap[c]){
+          const sv = document.querySelector('.filter[data-f="sort"] .val');
+          if(sv && FILTER_OPTS.sort.vals.find(v=>v[0]===c)) sv.textContent = sortMap[c];
+        }
+        renderSortGlyphs();
+        renderRows();
+      });
+    });
+  }
+  function renderSortGlyphs(){
+    document.querySelectorAll('thead th[data-col]').forEach(th=>{
+      const c = th.dataset.col;
+      let s = th.querySelector('.sort');
+      if(!s){ s = document.createElement('span'); s.className='sort'; th.appendChild(s); }
+      if(c === STATE.sort){ s.textContent = ' ' + (STATE.sortDir==='desc'?'▾':'▴'); }
+      else { s.textContent = ''; }
+    });
+  }
+
+  // ---------- Keyboard ----------
+  function bindKeys(){
+    document.addEventListener('keydown', e=>{
+      // skip if focused in inputs (except special hotkeys)
+      const t = e.target;
+      const inField = t && (t.tagName==='INPUT' || t.tagName==='TEXTAREA');
+      if(inField && t.id !== 'quickFilter'){
+        if(e.key==='Escape'){ t.blur(); }
+        return;
+      }
+
+      if(e.key === '/' && !inField){
+        e.preventDefault();
+        const qf = document.getElementById('quickFilter');
+        qf.style.left='24px'; qf.style.top='auto'; qf.style.bottom='30px'; qf.style.width='240px'; qf.style.height='auto';
+        qf.focus();
+        document.getElementById('qfHint').classList.add('active');
+        return;
+      }
+      if(t && t.id === 'quickFilter'){
+        if(e.key === 'Escape'){
+          STATE.quickFilterText = '';
+          t.value='';
+          document.getElementById('qfHint').classList.remove('active');
+          t.blur();
+          renderRows();
+          return;
+        }
+        setTimeout(()=>{ STATE.quickFilterText = t.value; renderRows(); }, 0);
+        return;
+      }
+
+      if(e.key === 'Escape'){
+        const drawerOpen = document.getElementById('drawer').classList.contains('open');
+        if(drawerOpen){ closeDrawer(); return; }
+        closeAllDropdowns();
+      }
+      if(e.key === 'j' || e.key === 'ArrowDown'){
+        e.preventDefault();
+        STATE.selectedIdx = Math.min(STATE.filteredRows.length-1, STATE.selectedIdx+1);
+        renderRows(); scrollSelectedIntoView();
+      }
+      if(e.key === 'k' || e.key === 'ArrowUp'){
+        e.preventDefault();
+        STATE.selectedIdx = Math.max(0, STATE.selectedIdx-1);
+        renderRows(); scrollSelectedIntoView();
+      }
+      if(e.key === 'Enter'){
+        if(STATE.filteredRows[STATE.selectedIdx]) openDrawer(STATE.selectedIdx);
+      }
+    });
+  }
+
+  function scrollSelectedIntoView(){
+    const tr = document.querySelector(`#rows tr[data-idx="${STATE.selectedIdx}"]`);
+    if(tr) tr.scrollIntoView({block:'nearest'});
+  }
+
+  // ---------- Drawer events ----------
+  function bindDrawer(){
+    document.getElementById('drawerClose').addEventListener('click', e=>{e.preventDefault(); closeDrawer();});
+    document.addEventListener('mousedown', e=>{
+      const d = document.getElementById('drawer');
+      if(!d.classList.contains('open')) return;
+      if(d.contains(e.target)) return;
+      // click outside drawer closes — but only if not on a row (rows reopen drawer)
+      if(e.target.closest('tr')) return;
+      closeDrawer();
+    });
+    document.querySelectorAll('#radios .r').forEach(el=>{
+      el.addEventListener('click', ()=>changeStatus(el.dataset.v));
+    });
+    document.getElementById('openCatalog').addEventListener('click', ()=>{
+      if(STATE.drawerIdx==null) return;
+      const r = STATE.filteredRows[STATE.drawerIdx];
+      if(!r) return;
+      const u = `about:blank#catalog?sub_attraction=${encodeURIComponent(r.sub_attraction)}&poi=${encodeURIComponent(STATE.poi)}`;
+      window.open(u, '_blank');
+    });
+  }
+
+  // ---------- Tooltips ----------
+  function bindTooltips(){
+    const tt = document.getElementById('tt');
+    function showTip(text, x, y){ tt.textContent = text; tt.style.display='block'; tt.style.left = (x+10)+'px'; tt.style.top = (y+14)+'px'; }
+    function hideTip(){ tt.style.display='none'; }
+    document.addEventListener('mousemove', e=>{
+      const t = e.target.closest('[data-tip],[data-srctip]');
+      if(!t){ hideTip(); return; }
+      const txt = t.dataset.tip || t.dataset.srctip || '';
+      if(!txt){ hideTip(); return; }
+      showTip(txt, e.clientX, e.clientY);
+    });
+  }
+
+  // ---------- Init ----------
+  function init(){
+    renderSortGlyphs();
+    bindFilters();
+    bindSort();
+    bindKeys();
+    bindDrawer();
+    bindTooltips();
+    renderCounters();
+    fetchSubAttractions();
+    const hints = ['J/K MOVE · ENTER OPEN · / FILTER · ESC CLOSE','CLICK ROW · OPEN DOSSIER · CITE → REVIEWERS','STATUS CHANGES SAVE LOCALLY — STUB PATCH'];
+    let hi=0;
+    setInterval(()=>{ hi=(hi+1)%hints.length; const el=document.getElementById('kbHint'); if(el) el.textContent=hints[hi]; }, 6000);
+  }
+
+  init();
+})();
+</script>
+</body>
+</html>

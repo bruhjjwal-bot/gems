@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Carousel Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,800;1,6..72,400;1,6..72,600&family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F5F1E8;
+    --paper: #FBF8F0;
+    --ink: #14110E;
+    --muted: #6B655C;
+    --rule: #C9C0AF;
+    --rule-soft: #E2D9C6;
+    --accent: #B33A1E;   /* vermillion stamp */
+    --accent-soft: #E8C8BE;
+    --max: 1180px;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; font-size: 15px; line-height: 1.55; }
+  body { min-height: 100vh; }
+  a { color: var(--ink); text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; }
+  a:hover { text-decoration-color: var(--accent); }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 500; }
+  .serif { font-family: 'Newsreader', Georgia, serif; }
+  .display { font-family: 'Fraunces', Georgia, serif; }
+
+  /* MASTHEAD */
+  .masthead { border-bottom: 1px solid var(--ink); background: var(--bg); position: sticky; top: 0; z-index: 10; }
+  .masthead-inner { max-width: var(--max); margin: 0 auto; padding: 18px 32px 14px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: end; gap: 24px; }
+  .masthead-left { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .masthead-center { font-family: 'Fraunces', serif; font-weight: 700; font-size: 36px; font-variation-settings: 'opsz' 144, 'SOFT' 50; letter-spacing: -0.02em; text-align: center; line-height: 1; }
+  .masthead-right { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); text-align: right; }
+  .masthead-right .health-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--muted); margin-right: 6px; vertical-align: middle; }
+  .masthead-right .health-dot.ok { background: #2D7A2D; }
+  .masthead-right .health-dot.err { background: var(--accent); }
+
+  /* PROGRESS RAIL */
+  .progress { border-bottom: 1px solid var(--rule); background: var(--paper); }
+  .progress-inner { max-width: var(--max); margin: 0 auto; padding: 14px 32px; display: flex; align-items: center; gap: 0; justify-content: space-between; }
+  .step-dot { display: flex; align-items: center; gap: 10px; flex: 1; cursor: default; }
+  .step-dot button { background: none; border: 0; padding: 0; cursor: pointer; display: flex; align-items: center; gap: 10px; color: inherit; font: inherit; }
+  .step-dot[data-state="done"] button, .step-dot[data-state="active"] button { cursor: pointer; }
+  .step-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500; width: 22px; height: 22px; border: 1px solid var(--rule); border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; background: var(--bg); color: var(--muted); }
+  .step-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+  .step-dot[data-state="active"] .step-num { border-color: var(--accent); color: var(--accent); background: var(--bg); }
+  .step-dot[data-state="active"] .step-label { color: var(--ink); }
+  .step-dot[data-state="done"] .step-num { border-color: var(--ink); background: var(--ink); color: var(--bg); }
+  .step-dot[data-state="done"] .step-label { color: var(--ink); }
+  .step-rule { flex: 0 0 28px; height: 1px; background: var(--rule); }
+
+  /* PAGE SHELL */
+  main { max-width: var(--max); margin: 0 auto; padding: 56px 32px 120px; }
+  .step { display: none; }
+  .step.active { display: block; }
+  .step-head { margin-bottom: 36px; }
+  .step-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+  .step-title { font-family: 'Fraunces', serif; font-weight: 700; font-variation-settings: 'opsz' 144, 'SOFT' 60; font-size: 64px; line-height: 0.98; letter-spacing: -0.025em; margin: 0 0 14px; }
+  .step-deck { font-family: 'Newsreader', serif; font-size: 19px; line-height: 1.5; font-style: italic; color: var(--muted); max-width: 640px; margin: 0; }
+
+  /* FORMS */
+  .form-row { display: flex; gap: 16px; align-items: flex-end; flex-wrap: wrap; padding: 20px 0 24px; border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  .field label { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+  .field select, .field input[type="text"], .field textarea { background: var(--paper); border: 1px solid var(--rule); border-radius: 0; padding: 10px 12px; font-family: 'Inter', sans-serif; font-size: 15px; color: var(--ink); min-width: 220px; }
+  .field select:focus, .field input:focus, .field textarea:focus { outline: 0; border-color: var(--accent); }
+  .field.grow input { width: 100%; min-width: 320px; }
+
+  /* BUTTONS */
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; border: 1px solid var(--ink); background: var(--ink); color: var(--bg); cursor: pointer; transition: all 120ms ease; }
+  .btn:hover { background: var(--bg); color: var(--ink); }
+  .btn:disabled { opacity: 0.35; cursor: not-allowed; }
+  .btn:disabled:hover { background: var(--ink); color: var(--bg); }
+  .btn.ghost { background: transparent; color: var(--ink); }
+  .btn.ghost:hover { background: var(--ink); color: var(--bg); }
+  .btn.accent { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+  .btn.accent:hover { background: var(--bg); color: var(--accent); }
+  .btn.small { padding: 6px 10px; font-size: 10px; letter-spacing: 0.08em; }
+  .btn.icon-only { padding: 6px 10px; }
+
+  /* TOPIC CARDS */
+  .topic-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0; border-top: 1px solid var(--rule); margin-top: 28px; }
+  .topic-card { padding: 24px 28px; border-bottom: 1px solid var(--rule); border-right: 1px solid var(--rule); cursor: pointer; transition: background 120ms; position: relative; }
+  .topic-card:nth-child(2n) { border-right: 0; }
+  .topic-card:hover { background: var(--paper); }
+  .topic-card.selected { background: var(--paper); }
+  .topic-card.selected::before { content: ''; position: absolute; top: 0; bottom: 0; left: 0; width: 3px; background: var(--accent); }
+  .topic-card .topic-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
+  .topic-card .topic-title { font-family: 'Fraunces', serif; font-weight: 700; font-size: 22px; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 10px; }
+  .topic-card .topic-hook { font-family: 'Newsreader', serif; font-style: italic; font-size: 16px; line-height: 1.45; color: var(--ink); margin: 0 0 14px; }
+  .topic-card .topic-meta { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.04em; color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; }
+  .topic-card .topic-why { font-size: 13px; color: var(--muted); margin-top: 10px; line-height: 1.5; }
+
+  /* SLIDE CARDS (outline) */
+  .slide-list { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--rule); margin-top: 28px; }
+  .slide-card { padding: 28px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 80px 1fr 200px; gap: 32px; }
+  .slide-card .slide-kind { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+  .slide-card .slide-index { font-family: 'Fraunces', serif; font-variation-settings: 'opsz' 144; font-weight: 700; font-size: 38px; line-height: 1; color: var(--muted); margin-top: 4px; }
+  .slide-card .slide-body { display: flex; flex-direction: column; gap: 12px; }
+  .slide-card .slide-headline { font-family: 'Fraunces', serif; font-weight: 700; font-size: 28px; line-height: 1.1; letter-spacing: -0.015em; border: 0; background: transparent; padding: 0; color: var(--ink); resize: none; outline: 0; width: 100%; }
+  .slide-card .slide-subhead { font-family: 'Newsreader', serif; font-style: italic; font-size: 17px; line-height: 1.4; color: var(--muted); border: 0; background: transparent; padding: 0; resize: none; outline: 0; width: 100%; }
+  .slide-card .slide-body-copy { font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.55; border: 0; background: transparent; padding: 0; resize: none; outline: 0; width: 100%; color: var(--ink); }
+  .slide-card .slide-citation { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); border-left: 2px solid var(--rule-soft); padding-left: 12px; margin-top: 6px; line-height: 1.5; }
+  .slide-card .slide-citation .src { color: var(--accent); font-weight: 500; }
+  .slide-card .slide-actions { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+
+  .add-slide-row { padding: 24px 0; text-align: center; }
+
+  /* DIRECTION */
+  .direction-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 32px; padding-top: 32px; border-top: 1px solid var(--rule); }
+  .direction-block { display: flex; flex-direction: column; gap: 12px; }
+  .direction-block .block-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+  .direction-block .block-title { font-family: 'Fraunces', serif; font-weight: 700; font-size: 28px; line-height: 1.1; margin: 0; }
+  .palette-swatches { display: flex; gap: 0; margin-top: 12px; border: 1px solid var(--rule); }
+  .swatch { flex: 1; height: 80px; display: flex; flex-direction: column; justify-content: flex-end; padding: 8px; }
+  .swatch .swatch-hex { font-family: 'JetBrains Mono', monospace; font-size: 10px; }
+  .type-specimen .display-line { font-family: 'Fraunces', serif; font-weight: 700; font-size: 44px; line-height: 1; }
+  .type-specimen .body-line { font-family: 'Newsreader', serif; font-style: italic; font-size: 19px; margin-top: 6px; }
+  .type-specimen .mono-line { font-family: 'JetBrains Mono', monospace; font-size: 12px; margin-top: 8px; color: var(--muted); }
+  .layout-chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+  .layout-chip { font-family: 'JetBrains Mono', monospace; font-size: 11px; padding: 4px 10px; border: 1px solid var(--rule); }
+  .anti-slop-list { margin: 8px 0 0; padding-left: 0; list-style: none; }
+  .anti-slop-list li { font-family: 'Newsreader', serif; font-size: 16px; line-height: 1.5; padding: 4px 0; position: relative; padding-left: 22px; }
+  .anti-slop-list li::before { content: '×'; position: absolute; left: 0; top: 2px; font-family: 'JetBrains Mono', monospace; color: var(--accent); }
+
+  /* RENDER */
+  .render-shell { display: grid; grid-template-columns: 320px 1fr; gap: 40px; margin-top: 32px; padding-top: 32px; border-top: 1px solid var(--rule); }
+  .render-queue { display: flex; flex-direction: column; gap: 4px; }
+  .queue-row { padding: 10px 12px; border: 1px solid var(--rule); background: var(--paper); display: flex; gap: 10px; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); }
+  .queue-row.active { border-color: var(--accent); color: var(--ink); background: var(--bg); }
+  .queue-row.done { color: var(--ink); background: var(--bg); border-color: var(--ink); }
+  .queue-row .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--rule); flex-shrink: 0; }
+  .queue-row.active .dot { background: var(--accent); animation: pulse 1.2s ease-in-out infinite; }
+  .queue-row.done .dot { background: var(--ink); }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+  .thumb-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .thumb { aspect-ratio: 1; background: var(--paper); border: 1px solid var(--rule); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; cursor: pointer; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .thumb .thumb-empty { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); }
+  .thumb-meta { position: absolute; top: 6px; left: 6px; font-family: 'JetBrains Mono', monospace; font-size: 9px; color: var(--bg); background: var(--ink); padding: 2px 5px; letter-spacing: 0.06em; }
+
+  /* MODAL */
+  .modal { position: fixed; inset: 0; background: rgba(20,17,14,0.85); display: none; align-items: center; justify-content: center; z-index: 100; padding: 40px; }
+  .modal.open { display: flex; }
+  .modal-inner { background: var(--bg); max-width: min(720px, 90vw); width: 100%; max-height: 90vh; overflow: auto; padding: 32px; position: relative; }
+  .modal-close { position: absolute; top: 16px; right: 16px; background: none; border: 0; cursor: pointer; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+  .modal img { width: 100%; height: auto; display: block; }
+  .modal-prompt { font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 1.55; padding: 12px; background: var(--paper); border: 1px solid var(--rule); margin-top: 14px; white-space: pre-wrap; max-height: 180px; overflow: auto; color: var(--muted); }
+
+  /* NAV BAR */
+  .nav-bar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg); border-top: 1px solid var(--ink); padding: 14px 32px; display: flex; justify-content: space-between; align-items: center; z-index: 9; }
+  .nav-bar-inner { max-width: var(--max); margin: 0 auto; width: 100%; display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+  .nav-bar .status { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.08em; color: var(--muted); text-transform: uppercase; }
+  .nav-bar .nav-actions { display: flex; gap: 10px; }
+
+  /* SPINNER */
+  .spinner { display: inline-block; width: 12px; height: 12px; border: 1.5px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* TOAST */
+  .toast { position: fixed; bottom: 90px; left: 50%; transform: translateX(-50%); background: var(--ink); color: var(--bg); padding: 10px 16px; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; z-index: 11; opacity: 0; transition: opacity 200ms; pointer-events: none; }
+  .toast.show { opacity: 1; }
+
+  /* SKELETON */
+  .skeleton { background: linear-gradient(90deg, var(--paper) 25%, var(--rule-soft) 50%, var(--paper) 75%); background-size: 200% 100%; animation: skeleton 1.6s ease-in-out infinite; min-height: 16px; }
+  @keyframes skeleton { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }
+  .topic-skeleton { padding: 24px 28px; border-bottom: 1px solid var(--rule); border-right: 1px solid var(--rule); }
+  .topic-skeleton:nth-child(2n) { border-right: 0; }
+  .topic-skeleton .skel-meta { height: 11px; width: 80px; margin-bottom: 12px; }
+  .topic-skeleton .skel-title { height: 22px; width: 80%; margin-bottom: 10px; }
+  .topic-skeleton .skel-hook { height: 16px; width: 95%; margin-bottom: 6px; }
+  .topic-skeleton .skel-hook2 { height: 16px; width: 60%; margin-bottom: 14px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 880px) {
+    .masthead-inner { grid-template-columns: 1fr; text-align: center; }
+    .masthead-left, .masthead-right { text-align: center; }
+    .progress-inner { padding: 10px 16px; gap: 0; overflow-x: auto; }
+    .step-label { display: none; }
+    .step-rule { flex: 0 0 12px; }
+    main { padding: 28px 16px 120px; }
+    .step-title { font-size: 40px; }
+    .step-deck { font-size: 17px; }
+    .topic-grid { grid-template-columns: 1fr; }
+    .topic-card { border-right: 0; }
+    .slide-card { grid-template-columns: 1fr; gap: 12px; }
+    .slide-card .slide-index { font-size: 24px; }
+    .slide-card .slide-actions { flex-direction: row; align-items: flex-start; flex-wrap: wrap; }
+    .direction-grid { grid-template-columns: 1fr; gap: 32px; }
+    .render-shell { grid-template-columns: 1fr; gap: 28px; }
+    .thumb-grid { grid-template-columns: repeat(2, 1fr); }
+    .form-row { flex-direction: column; align-items: stretch; }
+    .field select, .field input[type="text"] { min-width: 0; width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="masthead-left">Vol. 1 · Issue 1<br>POI Intelligence Press</div>
+    <div class="masthead-center">Carousel Studio</div>
+    <div class="masthead-right"><span class="health-dot" id="health-dot"></span><span id="health-text">checking…</span></div>
+  </div>
+</header>
+
+<nav class="progress">
+  <div class="progress-inner">
+    <div class="step-dot" data-step="1" data-state="active"><button onclick="goStep(1)"><span class="step-num">01</span><span class="step-label">Pitch</span></button></div>
+    <div class="step-rule"></div>
+    <div class="step-dot" data-step="2" data-state=""><button onclick="goStep(2)"><span class="step-num">02</span><span class="step-label">Outline</span></button></div>
+    <div class="step-rule"></div>
+    <div class="step-dot" data-step="3" data-state=""><button onclick="goStep(3)"><span class="step-num">03</span><span class="step-label">Direction</span></button></div>
+    <div class="step-rule"></div>
+    <div class="step-dot" data-step="4" data-state=""><button onclick="goStep(4)"><span class="step-num">04</span><span class="step-label">Render</span></button></div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- STEP 1: PITCH -->
+  <section class="step active" id="step-1">
+    <div class="step-head">
+      <div class="step-eyebrow">Step 01 · Pitch</div>
+      <h1 class="step-title">What's the story?</h1>
+      <p class="step-deck">Eight topic ideas, generated from real reviewer signal. Pick one, refine it, or regenerate the lot.</p>
+    </div>
+
+    <div class="form-row">
+      <div class="field">
+        <label for="pitch-poi">Point of interest</label>
+        <select id="pitch-poi">
+          <option value="Louvre Museum">Louvre Museum</option>
+          <option value="Colosseum">Colosseum</option>
+        </select>
+      </div>
+      <div class="field grow">
+        <label for="pitch-theme">Theme · optional</label>
+        <input id="pitch-theme" type="text" placeholder="e.g. things tourists regret · scams · time of day · what locals do" />
+      </div>
+      <button class="btn accent" id="btn-topics" onclick="generateTopics()">Generate topics</button>
+    </div>
+
+    <div id="topics-container"></div>
+  </section>
+
+  <!-- STEP 2: OUTLINE -->
+  <section class="step" id="step-2">
+    <div class="step-head">
+      <div class="step-eyebrow">Step 02 · Outline</div>
+      <h1 class="step-title" id="outline-title">The slide structure</h1>
+      <p class="step-deck">Each slide does one job. Edit any line, regenerate a single slide, add or remove as you like.</p>
+    </div>
+
+    <div class="form-row">
+      <div class="field">
+        <label for="outline-n">Slides</label>
+        <select id="outline-n">
+          <option value="5">5</option>
+          <option value="6" selected>6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+      </div>
+      <button class="btn accent" id="btn-outline" onclick="generateOutline()">Architect outline</button>
+      <button class="btn ghost" id="btn-outline-regen" onclick="generateOutline()" style="display:none">Regenerate all</button>
+    </div>
+
+    <div id="outline-container"></div>
+  </section>
+
+  <!-- STEP 3: DIRECTION -->
+  <section class="step" id="step-3">
+    <div class="step-head">
+      <div class="step-eyebrow">Step 03 · Direction</div>
+      <h1 class="step-title">The visual language</h1>
+      <p class="step-deck">The Design Director picks a palette, a type pairing, and a layout vocabulary from a curated library — no freelancing, no slop.</p>
+    </div>
+
+    <div class="form-row">
+      <button class="btn accent" id="btn-direction" onclick="generateDirection()">Direct the carousel</button>
+      <button class="btn ghost" id="btn-direction-regen" onclick="generateDirection()" style="display:none">Try a different direction</button>
+    </div>
+
+    <div id="direction-container"></div>
+  </section>
+
+  <!-- STEP 4: RENDER -->
+  <section class="step" id="step-4">
+    <div class="step-head">
+      <div class="step-eyebrow">Step 04 · Render</div>
+      <h1 class="step-title">The carousel</h1>
+      <p class="step-deck">Each slide gets a tailored prompt and a fresh gpt-image-2 call. Click any tile to enlarge or regenerate.</p>
+    </div>
+
+    <div class="form-row">
+      <div class="field">
+        <label for="render-quality">Quality</label>
+        <select id="render-quality">
+          <option value="low">Low · $0.01</option>
+          <option value="medium" selected>Medium · $0.04</option>
+          <option value="high">High · $0.17</option>
+        </select>
+      </div>
+      <button class="btn accent" id="btn-render" onclick="renderAll()">Render carousel</button>
+      <button class="btn ghost" id="btn-download" onclick="downloadAll()" style="display:none">Download all</button>
+    </div>
+
+    <div id="render-container"></div>
+  </section>
+
+</main>
+
+<nav class="nav-bar">
+  <div class="nav-bar-inner">
+    <div class="status" id="status-text">Step 01 · pick a topic</div>
+    <div class="nav-actions">
+      <button class="btn ghost" id="btn-prev" onclick="prevStep()" disabled>← Back</button>
+      <button class="btn" id="btn-next" onclick="nextStep()" disabled>Next →</button>
+    </div>
+  </div>
+</nav>
+
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="closeModal()">[ esc ]</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+// ------------------------------ STATE ------------------------------
+const STATE_KEY = 'carousel_studio_state_v1';
+const initialState = () => ({
+  step: 1,
+  pitch: { poi: 'Louvre Museum', theme: '', topics: [], selected_id: null, grounded: false, loading: false },
+  outline: { topic: null, n_slides: 6, slides: [], loading: false, regenerating_index: -1 },
+  direction: { style_bible: null, loading: false },
+  render: { slides: [], in_progress_index: -1, quality: 'medium' },
+});
+
+let state = loadState() || initialState();
+
+function loadState() {
+  try {
+    const raw = sessionStorage.getItem(STATE_KEY);
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch { return null; }
+}
+function saveState() {
+  try {
+    // Don't persist b64 images — too big
+    const toSave = JSON.parse(JSON.stringify(state));
+    if (toSave.render?.slides) {
+      toSave.render.slides = toSave.render.slides.map(s => ({ ...s, image_b64: s.image_b64 ? '[stored]' : null }));
+    }
+    sessionStorage.setItem(STATE_KEY, JSON.stringify(toSave));
+  } catch {}
+}
+
+// ------------------------------ API ------------------------------
+const API_BASE = ''; // same-origin when deployed
+async function api(path, body) {
+  const r = await fetch(`${API_BASE}${path}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(body),
+  });
+  if (!r.ok) {
+    let err = '';
+    try { err = (await r.json()).error || ''; } catch {}
+    throw new Error(err || `HTTP ${r.status}`);
+  }
+  return await r.json();
+}
+
+// ------------------------------ ROUTING ------------------------------
+function goStep(n) {
+  // Don't allow skipping ahead past unfinished work
+  if (n > state.step && !canAdvanceTo(n)) return;
+  state.step = n;
+  saveState();
+  render();
+}
+function canAdvanceTo(n) {
+  if (n === 2) return !!state.pitch.selected_id;
+  if (n === 3) return state.outline.slides?.length > 0;
+  if (n === 4) return !!state.direction.style_bible;
+  return true;
+}
+function nextStep() { if (state.step < 4) goStep(state.step + 1); }
+function prevStep() { if (state.step > 1) goStep(state.step - 1); }
+
+// ------------------------------ TOAST ------------------------------
+let toastTimer;
+function toast(msg, ms = 2400) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), ms);
+}
+
+// ------------------------------ STEP 1: PITCH ------------------------------
+async function generateTopics() {
+  const poi = document.getElementById('pitch-poi').value;
+  const theme = document.getElementById('pitch-theme').value.trim();
+  state.pitch.poi = poi;
+  state.pitch.theme = theme;
+  state.pitch.loading = true;
+  state.pitch.topics = [];
+  state.pitch.selected_id = null;
+  renderTopics();
+
+  try {
+    const r = await api('/api/topics', { poi, theme, n_topics: 8 });
+    state.pitch.topics = r.topics || [];
+    state.pitch.grounded = !!r.grounded;
+    state.pitch.loading = false;
+    saveState();
+    renderTopics();
+    if (!r.grounded) toast('Gems API unreachable · topics ungrounded');
+  } catch (e) {
+    state.pitch.loading = false;
+    renderTopics();
+    toast(`Topics failed: ${e.message}`);
+  }
+}
+
+function selectTopic(id) {
+  state.pitch.selected_id = id;
+  saveState();
+  renderTopics();
+  renderNav();
+}
+
+function renderTopics() {
+  const c = document.getElementById('topics-container');
+  const btn = document.getElementById('btn-topics');
+  if (state.pitch.loading) {
+    btn.disabled = true;
+    btn.innerHTML = '<span class="spinner"></span> Generating…';
+    c.innerHTML = '<div class="topic-grid">' + Array.from({length:8}).map(() =>
+      '<div class="topic-skeleton"><div class="skeleton skel-meta"></div><div class="skeleton skel-title"></div><div class="skeleton skel-hook"></div><div class="skeleton skel-hook2"></div></div>'
+    ).join('') + '</div>';
+    return;
+  }
+  btn.disabled = false;
+  btn.innerHTML = state.pitch.topics.length ? 'Regenerate' : 'Generate topics';
+
+  if (!state.pitch.topics.length) {
+    c.innerHTML = '';
+    return;
+  }
+
+  c.innerHTML = `
+    <div style="margin-top:24px; font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--muted); letter-spacing:0.08em; text-transform:uppercase;">
+      ${state.pitch.topics.length} topics · ${state.pitch.grounded ? 'grounded in real reviewer signal' : 'ungrounded · evidence unavailable'}
+    </div>
+    <div class="topic-grid">
+      ${state.pitch.topics.map((t, i) => `
+        <div class="topic-card ${state.pitch.selected_id === t.id ? 'selected' : ''}" onclick="selectTopic('${t.id}')">
+          <div class="topic-num"><span>No. ${String(i+1).padStart(2,'0')}</span><span>${(t.source_cluster_ids||[]).length} clusters</span></div>
+          <h3 class="topic-title">${esc(t.title)}</h3>
+          <p class="topic-hook">${esc(t.hook)}</p>
+          <div class="topic-meta">${(t.source_cluster_ids||[]).slice(0,5).map(id=>`#${id}`).join(' · ')}</div>
+          <p class="topic-why">${esc(t.why_it_works || t.angle || '')}</p>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+// ------------------------------ STEP 2: OUTLINE ------------------------------
+async function generateOutline() {
+  const topic = state.pitch.topics.find(t => t.id === state.pitch.selected_id);
+  if (!topic) { toast('Pick a topic first'); return; }
+  const n_slides = parseInt(document.getElementById('outline-n').value, 10) || 6;
+  state.outline.topic = topic;
+  state.outline.n_slides = n_slides;
+  state.outline.loading = true;
+  saveState();
+  renderOutline();
+  try {
+    const r = await api('/api/outline', { poi: state.pitch.poi, topic, n_slides });
+    state.outline.slides = (r.outline?.slides || []).map(s => ({ ...s, _id: cryptoId() }));
+    state.outline.loading = false;
+    saveState();
+    renderOutline();
+    renderNav();
+  } catch (e) {
+    state.outline.loading = false;
+    renderOutline();
+    toast(`Outline failed: ${e.message}`);
+  }
+}
+
+async function regenerateSlide(index) {
+  // Lightweight: just re-architect the whole outline. Future: per-slide.
+  state.outline.regenerating_index = index;
+  renderOutline();
+  try {
+    const r = await api('/api/outline', { poi: state.pitch.poi, topic: state.outline.topic, n_slides: state.outline.slides.length });
+    const newSlide = (r.outline?.slides || [])[index];
+    if (newSlide) {
+      state.outline.slides[index] = { ...newSlide, _id: state.outline.slides[index]._id };
+    }
+  } catch (e) {
+    toast(`Regenerate failed: ${e.message}`);
+  } finally {
+    state.outline.regenerating_index = -1;
+    saveState();
+    renderOutline();
+  }
+}
+
+function updateSlideField(id, field, value) {
+  const s = state.outline.slides.find(x => x._id === id);
+  if (s) { s[field] = value; saveState(); }
+}
+function deleteSlide(id) {
+  state.outline.slides = state.outline.slides.filter(s => s._id !== id);
+  state.outline.slides.forEach((s, i) => s.index = i);
+  saveState();
+  renderOutline();
+}
+function addSlide(afterIndex) {
+  const newSlide = {
+    _id: cryptoId(),
+    index: afterIndex + 1,
+    kind: 'tip',
+    role_note: 'new slide — write a single idea',
+    headline: 'New slide',
+    subhead: '',
+    body_copy: '',
+    key_fact: '',
+    citation_cluster_id: null,
+    citation_quote: '',
+    citation_source: '',
+  };
+  state.outline.slides.splice(afterIndex + 1, 0, newSlide);
+  state.outline.slides.forEach((s, i) => s.index = i);
+  saveState();
+  renderOutline();
+}
+
+function renderOutline() {
+  const c = document.getElementById('outline-container');
+  const btn = document.getElementById('btn-outline');
+  const btnRegen = document.getElementById('btn-outline-regen');
+  document.getElementById('outline-title').textContent = state.outline.topic ? state.outline.topic.title : 'The slide structure';
+
+  if (state.outline.loading) {
+    btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Architecting…';
+    c.innerHTML = '<div style="padding:60px 0; text-align:center; color:var(--muted); font-family:JetBrains Mono,monospace; font-size:12px;">Reading 24 reviewer quotes…</div>';
+    return;
+  }
+  btn.disabled = false;
+  btn.innerHTML = state.outline.slides.length ? 'Re-architect' : 'Architect outline';
+  btnRegen.style.display = state.outline.slides.length ? 'inline-flex' : 'none';
+
+  if (!state.outline.slides.length) { c.innerHTML = ''; return; }
+
+  c.innerHTML = `
+    <div class="slide-list">
+      ${state.outline.slides.map((s, i) => `
+        <div class="slide-card">
+          <div>
+            <div class="slide-index">${String(i+1).padStart(2,'0')}</div>
+            <div class="slide-kind">${esc(s.kind)}</div>
+          </div>
+          <div class="slide-body">
+            <textarea class="slide-headline" rows="2" oninput="updateSlideField('${s._id}','headline',this.value)" placeholder="Headline">${esc(s.headline)}</textarea>
+            <textarea class="slide-subhead" rows="2" oninput="updateSlideField('${s._id}','subhead',this.value)" placeholder="Subhead · optional">${esc(s.subhead || '')}</textarea>
+            ${s.body_copy ? `<textarea class="slide-body-copy" rows="3" oninput="updateSlideField('${s._id}','body_copy',this.value)" placeholder="Body · optional">${esc(s.body_copy)}</textarea>` : ''}
+            ${s.key_fact ? `<div class="mono" style="font-size:13px; color:var(--accent);">FACT · ${esc(s.key_fact)}</div>` : ''}
+            ${s.citation_quote ? `<div class="slide-citation">"${esc(s.citation_quote)}" <span class="src">— ${esc(s.citation_source || 'unattributed')}${s.citation_cluster_id ? ` · #${s.citation_cluster_id}` : ''}</span></div>` : ''}
+          </div>
+          <div class="slide-actions">
+            <button class="btn ghost small" onclick="regenerateSlide(${i})" ${state.outline.regenerating_index === i ? 'disabled' : ''}>${state.outline.regenerating_index === i ? '<span class="spinner"></span> regen…' : '↻ regen'}</button>
+            <button class="btn ghost small" onclick="addSlide(${i})">+ insert</button>
+            ${state.outline.slides.length > 4 ? `<button class="btn ghost small" onclick="deleteSlide('${s._id}')">delete</button>` : ''}
+          </div>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+// ------------------------------ STEP 3: DIRECTION ------------------------------
+async function generateDirection() {
+  if (!state.outline.slides?.length) { toast('Need an outline first'); return; }
+  state.direction.loading = true;
+  saveState();
+  renderDirection();
+  try {
+    const outlinePayload = {
+      topic_title: state.outline.topic.title,
+      n_slides: state.outline.slides.length,
+      slides: state.outline.slides,
+    };
+    const r = await api('/api/direction', { poi: state.pitch.poi, outline: outlinePayload });
+    state.direction.style_bible = r.style_bible;
+    state.direction.loading = false;
+    saveState();
+    renderDirection();
+    renderNav();
+  } catch (e) {
+    state.direction.loading = false;
+    renderDirection();
+    toast(`Direction failed: ${e.message}`);
+  }
+}
+
+function renderDirection() {
+  const c = document.getElementById('direction-container');
+  const btn = document.getElementById('btn-direction');
+  const btnRegen = document.getElementById('btn-direction-regen');
+  if (state.direction.loading) {
+    btn.disabled = true; btn.innerHTML = '<span class="spinner"></span> Directing…';
+    c.innerHTML = '<div style="padding:60px 0; text-align:center; color:var(--muted); font-family:JetBrains Mono,monospace; font-size:12px;">Choosing palette · typeface · layouts…</div>';
+    return;
+  }
+  btn.disabled = false;
+  btn.innerHTML = state.direction.style_bible ? 'Choose again' : 'Direct the carousel';
+  btnRegen.style.display = state.direction.style_bible ? 'inline-flex' : 'none';
+
+  if (!state.direction.style_bible) { c.innerHTML = ''; return; }
+
+  const sb = state.direction.style_bible;
+  const p = sb.palette || {};
+  const t = sb.type_pairing || {};
+
+  c.innerHTML = `
+    <div class="direction-grid">
+      <div class="direction-block">
+        <div class="block-eyebrow">Palette · ${esc(p.id || '')}</div>
+        <h3 class="block-title">${esc(p.name || 'palette')}</h3>
+        <p class="serif" style="font-style:italic; color:var(--muted); margin:0 0 4px;">${esc(p.mood || '')}</p>
+        <div class="palette-swatches">
+          <div class="swatch" style="background:${p.bg};color:${p.fg}"><div class="swatch-hex">${esc(p.bg||'')}</div></div>
+          <div class="swatch" style="background:${p.fg};color:${p.bg}"><div class="swatch-hex">${esc(p.fg||'')}</div></div>
+          <div class="swatch" style="background:${p.accent};color:${p.bg}"><div class="swatch-hex">${esc(p.accent||'')}</div></div>
+          ${p.muted ? `<div class="swatch" style="background:${p.muted};color:${p.bg}"><div class="swatch-hex">${esc(p.muted)}</div></div>` : ''}
+        </div>
+      </div>
+      <div class="direction-block">
+        <div class="block-eyebrow">Type pairing · ${esc(t.id || '')}</div>
+        <h3 class="block-title">${esc(t.name || 'type')}</h3>
+        <p class="serif" style="font-style:italic; color:var(--muted); margin:0 0 4px;">${esc(t.rationale || '')}</p>
+        <div class="type-specimen">
+          <div class="display-line" style="font-family:'${esc(t.display?.family || 'Fraunces')}',serif; font-weight:${t.display?.weight || 700}; font-style:${t.display?.italic ? 'italic' : 'normal'};">${esc(state.outline.topic?.title || 'The Headline')}</div>
+          <div class="body-line" style="font-family:'${esc(t.body?.family || 'Newsreader')}',serif; font-style:${t.body?.italic ? 'italic' : 'normal'};">${esc(state.outline.topic?.hook || 'The deck reads like an editor wrote it.')}</div>
+          <div class="mono-line" style="font-family:'${esc(t.mono?.family || 'JetBrains Mono')}',monospace;">— from ${state.outline.slides.length} cited clusters</div>
+        </div>
+      </div>
+      <div class="direction-block" style="grid-column:1/-1;">
+        <div class="block-eyebrow">Layout vocabulary · ${sb.layouts?.length || 0} chosen</div>
+        <div class="layout-chips">
+          ${(sb.layouts || []).map(l => `<div class="layout-chip" title="${esc(l.description || '')}">${esc(l.name || l.id)}</div>`).join('')}
+        </div>
+        <p class="serif" style="margin-top:8px; color:var(--muted);"><em>Photo treatment:</em> ${esc(sb.photo_treatment || '')}<br><em>Tonal direction:</em> ${esc(sb.tonal_direction || '')}</p>
+      </div>
+      <div class="direction-block" style="grid-column:1/-1;">
+        <div class="block-eyebrow">Anti-slop manifest</div>
+        <ul class="anti-slop-list">
+          ${(sb.anti_slop_rules || []).map(r => `<li>${esc(r)}</li>`).join('')}
+        </ul>
+        <p class="mono" style="font-size:11px; color:var(--muted); margin-top:12px;">NEGATIVE_PROMPT · ${esc(sb.negative_prompt || '')}</p>
+      </div>
+    </div>
+  `;
+}
+
+// ------------------------------ STEP 4: RENDER ------------------------------
+async function renderAll() {
+  if (!state.direction.style_bible) { toast('Need direction first'); return; }
+  const quality = document.getElementById('render-quality').value;
+  state.render.quality = quality;
+  state.render.slides = state.outline.slides.map(s => ({
+    headline: s.headline,
+    kind: s.kind,
+    prompt: null,
+    layout_id: null,
+    image_b64: null,
+    error: null,
+    status: 'pending',
+  }));
+  state.render.in_progress_index = 0;
+  saveState();
+  renderRender();
+
+  for (let i = 0; i < state.render.slides.length; i++) {
+    state.render.in_progress_index = i;
+    state.render.slides[i].status = 'prompting';
+    renderRender();
+    try {
+      const promptRes = await api('/api/prompt-slide', {
+        slide: state.outline.slides[i],
+        style_bible: state.direction.style_bible,
+        slide_index: i,
+        total_slides: state.render.slides.length,
+      });
+      state.render.slides[i].prompt = promptRes.prompt;
+      state.render.slides[i].layout_id = promptRes.layout_id;
+      state.render.slides[i].status = 'rendering';
+      renderRender();
+      const renderRes = await api('/api/render-slide', { prompt: promptRes.prompt, quality });
+      state.render.slides[i].image_b64 = renderRes.image_b64;
+      state.render.slides[i].cost_usd = renderRes.cost_usd;
+      state.render.slides[i].latency_ms = renderRes.latency_ms;
+      state.render.slides[i].status = 'done';
+    } catch (e) {
+      state.render.slides[i].error = String(e?.message || e);
+      state.render.slides[i].status = 'error';
+    }
+    saveState();
+    renderRender();
+  }
+  state.render.in_progress_index = -1;
+  document.getElementById('btn-download').style.display = 'inline-flex';
+  renderRender();
+}
+
+async function regenSingle(i) {
+  state.render.slides[i].status = 'prompting';
+  state.render.slides[i].image_b64 = null;
+  state.render.slides[i].error = null;
+  renderRender();
+  try {
+    const promptRes = await api('/api/prompt-slide', {
+      slide: state.outline.slides[i],
+      style_bible: state.direction.style_bible,
+      slide_index: i,
+      total_slides: state.render.slides.length,
+    });
+    state.render.slides[i].prompt = promptRes.prompt;
+    state.render.slides[i].layout_id = promptRes.layout_id;
+    state.render.slides[i].status = 'rendering';
+    renderRender();
+    const renderRes = await api('/api/render-slide', { prompt: promptRes.prompt, quality: state.render.quality });
+    state.render.slides[i].image_b64 = renderRes.image_b64;
+    state.render.slides[i].cost_usd = renderRes.cost_usd;
+    state.render.slides[i].status = 'done';
+  } catch (e) {
+    state.render.slides[i].error = String(e?.message || e);
+    state.render.slides[i].status = 'error';
+  }
+  renderRender();
+}
+
+function renderRender() {
+  const c = document.getElementById('render-container');
+  const btn = document.getElementById('btn-render');
+  const anyRunning = state.render.slides.some(s => s.status === 'prompting' || s.status === 'rendering');
+  const allDone = state.render.slides.length > 0 && state.render.slides.every(s => s.status === 'done' || s.status === 'error');
+  btn.disabled = anyRunning;
+  btn.innerHTML = anyRunning ? '<span class="spinner"></span> Rendering…' : (allDone ? 'Render again' : 'Render carousel');
+
+  if (!state.render.slides.length) { c.innerHTML = ''; return; }
+
+  const totalCost = state.render.slides.reduce((sum, s) => sum + (s.cost_usd || 0), 0);
+
+  c.innerHTML = `
+    <div class="render-shell">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:10px;">Queue</div>
+        <div class="render-queue">
+          ${state.render.slides.map((s, i) => `
+            <div class="queue-row ${s.status === 'prompting' || s.status === 'rendering' ? 'active' : ''} ${s.status === 'done' ? 'done' : ''}">
+              <div class="dot"></div>
+              <div style="flex:1;">${String(i+1).padStart(2,'0')} · ${esc(s.kind)} · ${statusLabel(s.status)}</div>
+              ${s.status === 'error' ? `<div title="${esc(s.error || '')}" style="color:var(--accent)">!</div>` : ''}
+            </div>
+          `).join('')}
+        </div>
+        <div style="margin-top:14px; font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--muted);">
+          Total cost · $${totalCost.toFixed(3)}<br>
+          Quality · ${state.render.quality}
+        </div>
+      </div>
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.12em; text-transform:uppercase; color:var(--muted); margin-bottom:10px;">Slides</div>
+        <div class="thumb-grid">
+          ${state.render.slides.map((s, i) => `
+            <div class="thumb" onclick="${s.image_b64 ? `openSlideModal(${i})` : ''}">
+              <div class="thumb-meta">${String(i+1).padStart(2,'0')} · ${esc(s.layout_id || s.kind)}</div>
+              ${s.image_b64
+                ? `<img src="data:image/png;base64,${s.image_b64}" alt="slide ${i+1}">`
+                : (s.status === 'error'
+                    ? `<div class="thumb-empty" style="color:var(--accent); text-align:center; padding:12px;">render failed<br><br>${esc((s.error||'').slice(0,60))}</div>`
+                    : `<div class="thumb-empty">${anyRunning && state.render.in_progress_index === i ? '<span class="spinner"></span>' : '—'}</div>`)
+              }
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function statusLabel(s) {
+  return ({ pending: 'queued', prompting: 'writing prompt…', rendering: 'rendering image…', done: 'done', error: 'failed' })[s] || s;
+}
+
+// ------------------------------ MODAL ------------------------------
+function openSlideModal(i) {
+  const s = state.render.slides[i];
+  if (!s?.image_b64) return;
+  const el = document.getElementById('modal-content');
+  el.innerHTML = `
+    <div class="step-eyebrow">Slide ${i+1} · ${esc(s.layout_id || s.kind)}</div>
+    <h2 class="display" style="font-weight:700; font-size:28px; margin:6px 0 16px;">${esc(s.headline || '')}</h2>
+    <img src="data:image/png;base64,${s.image_b64}" alt="">
+    <div style="display:flex; gap:8px; margin-top:14px;">
+      <button class="btn small" onclick="downloadSingle(${i})">Download PNG</button>
+      <button class="btn ghost small" onclick="regenSingle(${i}); closeModal();">Regenerate</button>
+    </div>
+    <details style="margin-top:14px;">
+      <summary class="mono" style="font-size:11px; cursor:pointer; color:var(--muted);">Show prompt</summary>
+      <div class="modal-prompt">${esc(s.prompt || '')}</div>
+    </details>
+  `;
+  document.getElementById('modal').classList.add('open');
+}
+function closeModal() { document.getElementById('modal').classList.remove('open'); }
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ------------------------------ DOWNLOAD ------------------------------
+function downloadSingle(i) {
+  const s = state.render.slides[i];
+  if (!s?.image_b64) return;
+  const a = document.createElement('a');
+  a.href = `data:image/png;base64,${s.image_b64}`;
+  a.download = `carousel-${slugify(state.outline.topic?.title || 'slide')}-${String(i+1).padStart(2,'0')}.png`;
+  a.click();
+}
+function downloadAll() {
+  state.render.slides.forEach((s, i) => {
+    if (s.image_b64) setTimeout(() => downloadSingle(i), i * 200);
+  });
+}
+
+// ------------------------------ NAV / RENDER ------------------------------
+function render() {
+  for (let i = 1; i <= 4; i++) {
+    const sec = document.getElementById(`step-${i}`);
+    if (sec) sec.classList.toggle('active', i === state.step);
+    const dot = document.querySelector(`.step-dot[data-step="${i}"]`);
+    if (dot) {
+      dot.dataset.state = i === state.step ? 'active' : (i < state.step ? 'done' : '');
+    }
+  }
+  if (state.step === 1) renderTopics();
+  if (state.step === 2) renderOutline();
+  if (state.step === 3) renderDirection();
+  if (state.step === 4) renderRender();
+  renderNav();
+}
+
+function renderNav() {
+  const prev = document.getElementById('btn-prev');
+  const next = document.getElementById('btn-next');
+  const status = document.getElementById('status-text');
+  prev.disabled = state.step === 1;
+  if (state.step === 1) {
+    next.disabled = !state.pitch.selected_id;
+    status.textContent = state.pitch.selected_id ? 'Step 01 · ready to architect' : 'Step 01 · pick a topic';
+  } else if (state.step === 2) {
+    next.disabled = !state.outline.slides.length;
+    status.textContent = state.outline.slides.length ? 'Step 02 · ready to direct' : 'Step 02 · architect the outline';
+  } else if (state.step === 3) {
+    next.disabled = !state.direction.style_bible;
+    status.textContent = state.direction.style_bible ? 'Step 03 · ready to render' : 'Step 03 · direct the carousel';
+  } else if (state.step === 4) {
+    next.disabled = true;
+    const done = state.render.slides.filter(s => s.status === 'done').length;
+    status.textContent = state.render.slides.length ? `Step 04 · ${done}/${state.render.slides.length} rendered` : 'Step 04 · render the carousel';
+  }
+}
+
+// ------------------------------ HEALTH ------------------------------
+async function checkHealth() {
+  const dot = document.getElementById('health-dot');
+  const txt = document.getElementById('health-text');
+  try {
+    // Probe an arbitrary endpoint — OPTIONS won't hit OpenAI
+    const r = await fetch('/api/topics', { method: 'OPTIONS' });
+    if (r.ok || r.status === 204 || r.status === 405) {
+      dot.classList.add('ok');
+      txt.textContent = 'studio online';
+    } else {
+      dot.classList.add('err');
+      txt.textContent = 'studio offline';
+    }
+  } catch {
+    dot.classList.add('err');
+    txt.textContent = 'studio offline';
+  }
+}
+
+// ------------------------------ UTIL ------------------------------
+function esc(s) { return String(s ?? '').replace(/[&<>"]/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;' }[c])); }
+function slugify(s) { return String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 50); }
+function cryptoId() { return 's_' + Math.random().toString(36).slice(2, 10); }
+
+// ------------------------------ INIT ------------------------------
+// Hydrate inputs from state
+document.getElementById('pitch-poi').value = state.pitch.poi;
+document.getElementById('pitch-theme').value = state.pitch.theme || '';
+document.getElementById('outline-n').value = String(state.outline.n_slides || 6);
+document.getElementById('render-quality').value = state.render.quality || 'medium';
+
+// Restore selected topic if cached
+checkHealth();
+render();
+</script>
+
+</body>
+</html>

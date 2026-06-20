@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Citation Mode — Gems Editorial, Vol. I</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,400;9..144,500;9..144,700;9..144,900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #F4EFE6; --fg: #1A1714; --accent: #7A1F1F;
+    --muted: #8A8175; --rule: #2A211B;
+    --body-w: 70ch; --gutter-l: 14ch; --gutter-r: 32ch;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+  body {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 19px; line-height: 1.65;
+    font-feature-settings: "kern", "liga", "onum";
+    -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+  }
+  a { color: inherit; text-decoration: none; }
+  ::selection { background: var(--accent); color: var(--bg); }
+
+  /* —— Top admin bar —— */
+  .topbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 14px 28px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    z-index: 50; pointer-events: none;
+    background: linear-gradient(to bottom, var(--bg) 60%, rgba(244,239,230,0));
+  }
+  .topbar a, .topbar button { pointer-events: auto; }
+  .topbar .back { color: var(--muted); }
+  .topbar .back:hover { color: var(--accent); }
+  .receipts-toggle {
+    border: 1px solid var(--fg); background: transparent; color: var(--fg);
+    padding: 7px 12px; font-family: inherit; font-size: 11px;
+    letter-spacing: 0.14em; text-transform: uppercase;
+    cursor: pointer; transition: all 180ms ease;
+  }
+  .receipts-toggle:hover { background: var(--fg); color: var(--bg); }
+  .receipts-toggle.on { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+
+  /* —— Page grid —— */
+  .page {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 72px 56px 120px;
+    display: grid;
+    grid-template-columns: var(--gutter-l) var(--body-w) var(--gutter-r);
+    column-gap: 36px;
+    align-items: start;
+  }
+
+  /* —— Masthead —— */
+  .masthead {
+    grid-column: 1 / -1; position: relative;
+    border-top: 2px solid var(--accent); padding-top: 14px; margin-bottom: 56px;
+  }
+  .masthead .topline {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+  }
+  .masthead .topline .vol { color: var(--muted); }
+  .masthead .confidence { color: var(--accent); font-weight: 500; }
+  .masthead h1 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 50, "wght" 700;
+    font-size: clamp(54px, 7.4vw, 104px); line-height: 0.95;
+    margin: 28px 0 0; letter-spacing: -0.02em;
+  }
+  .masthead .deck {
+    font-style: italic; font-size: 22px; line-height: 1.45;
+    max-width: 56ch; margin: 22px 0 0;
+  }
+  .poi-switch {
+    position: absolute; top: 14px; right: 0;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    display: flex; gap: 14px; align-items: center;
+  }
+  .poi-switch button {
+    background: none; border: 0; padding: 0;
+    font: inherit; letter-spacing: inherit; text-transform: inherit;
+    color: var(--muted); cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: color 160ms, border-color 160ms;
+  }
+  .poi-switch button:hover { color: var(--fg); }
+  .poi-switch button.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .poi-switch .div { color: var(--muted); opacity: 0.5; }
+
+  /* —— Folio (left gutter) —— */
+  .folio {
+    grid-column: 1; font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--muted); line-height: 1.4;
+    padding: 6px 10px 0 0; text-align: right;
+  }
+  .folio .roman { color: var(--accent); font-weight: 500; font-size: 11px; }
+
+  /* —— Section —— */
+  .section-head {
+    grid-column: 2; margin: 56px 0 12px;
+    border-top: 1px solid var(--accent); padding-top: 18px;
+  }
+  .section-head h2 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 72, "SOFT" 50, "wght" 500;
+    font-size: 30px; letter-spacing: 0.05em;
+    font-variant: small-caps; text-transform: lowercase;
+    margin: 0; line-height: 1.1;
+  }
+  .section-head .count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--muted); margin-top: 6px;
+  }
+
+  /* —— Body paragraphs —— */
+  .briefing p {
+    grid-column: 2; margin: 0 0 14px;
+    text-align: justify; hyphens: auto; -webkit-hyphens: auto;
+    text-indent: 1.6em; font-size: 19px; line-height: 1.65;
+    transition: background 220ms;
+  }
+  .briefing p.first { text-indent: 0; }
+  .briefing p.first::first-letter {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 50, "wght" 900;
+    font-size: 6.8em; line-height: 0.82; float: left;
+    color: var(--accent); padding: 6px 10px 0 0; margin-top: 4px;
+  }
+  sup.cite {
+    color: var(--accent); font-family: 'JetBrains Mono', monospace;
+    font-weight: 500; font-size: 0.65em; margin-left: 1px;
+    cursor: pointer; padding: 0 2px;
+    border: 1px solid var(--accent); border-radius: 2px;
+    line-height: 1; vertical-align: super; user-select: none;
+    transition: background 140ms, color 140ms;
+  }
+  sup.cite:hover { background: rgba(122,31,31,0.15); }
+  sup.cite.active { background: var(--accent); color: var(--bg); }
+
+  /* —— Marginalia (right gutter) —— */
+  .marginalia-anchor {
+    grid-column: 3; align-self: start; min-height: 1px;
+    border-left: 1px solid rgba(122,31,31,0.4); padding-left: 18px;
+  }
+  .marginalia-empty {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--muted); line-height: 1.4; padding-top: 4px;
+  }
+  .margcard {
+    opacity: 0; transform: translateY(4px);
+    transition: opacity 260ms ease, transform 260ms ease, border-color 200ms;
+    padding: 8px 0 14px 12px; margin: 0 0 8px -12px;
+    border-left: 2px solid transparent;
+  }
+  .margcard.shown { opacity: 1; transform: translateY(0); }
+  .margcard.active {
+    border-left-color: var(--accent);
+    background: linear-gradient(to right, rgba(122,31,31,0.04), transparent 80%);
+  }
+  .margcard .caption {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 8px; line-height: 1.4;
+  }
+  .margcard .caption .num { color: var(--accent); font-weight: 500; margin-right: 6px; }
+  .quote {
+    font-style: italic; font-size: 15px; line-height: 1.5;
+    margin: 0 0 6px; text-indent: -0.45em; padding-left: 0.45em;
+  }
+  .quote::before { content: "\201C"; color: var(--accent); font-style: normal; margin-right: 0.05em; }
+  .quote::after  { content: "\201D"; color: var(--accent); font-style: normal; }
+  .qmeta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9.5px; letter-spacing: 0.06em;
+    color: var(--muted); margin: 0 0 14px; line-height: 1.4;
+  }
+  .qmeta .star { color: var(--accent); }
+
+  /* —— Skeleton —— */
+  .skel-rule { height: 1px; background: var(--accent); width: 0; transition: width 900ms ease; margin: 4px 0 10px; }
+  .skel-rule.go { width: 100%; }
+  .skel-line { height: 12px; background: rgba(26,23,20,0.07); border-radius: 1px; margin: 8px 0; }
+  .skel-line.w1 { width: 95%; } .skel-line.w2 { width: 88%; } .skel-line.w3 { width: 76%; }
+
+  /* —— Colophon —— */
+  .colophon {
+    grid-column: 2; margin-top: 80px;
+    border-top: 1px solid var(--rule); padding-top: 20px;
+    font-style: italic; font-size: 15px;
+    color: var(--muted); text-align: center; line-height: 1.6;
+  }
+  .colophon .mark {
+    font-family: 'JetBrains Mono', monospace; font-style: normal;
+    font-size: 10px; letter-spacing: 0.2em;
+    color: var(--accent); display: block; margin-bottom: 8px;
+  }
+
+  /* —— Mobile sheet —— */
+  .sheet-scrim {
+    position: fixed; inset: 0; background: rgba(26,23,20,0.4);
+    opacity: 0; pointer-events: none; transition: opacity 220ms; z-index: 80;
+  }
+  .sheet-scrim.open { opacity: 1; pointer-events: auto; }
+  .sheet {
+    position: fixed; left: 0; right: 0; bottom: 0;
+    background: var(--bg); border-top: 2px solid var(--accent);
+    transform: translateY(100%);
+    transition: transform 280ms cubic-bezier(.2,.7,.2,1);
+    z-index: 90; max-height: 90vh; overflow-y: auto;
+    padding: 22px 22px 40px;
+  }
+  .sheet.open { transform: translateY(0); }
+  .sheet .close {
+    float: right; font-family: 'JetBrains Mono', monospace;
+    font-size: 18px; color: var(--muted); cursor: pointer; line-height: 1;
+  }
+
+  .briefing p[data-hover="1"] { background: rgba(122,31,31,0.06); }
+  .briefing-root.swapping { opacity: 0; }
+  .briefing-root { opacity: 1; transition: opacity 220ms; }
+  .err { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); letter-spacing: 0.08em; }
+
+  /* —— Mobile —— */
+  @media (max-width: 720px) {
+    .page {
+      padding: 64px 16px 80px;
+      grid-template-columns: 92vw;
+      column-gap: 0;
+    }
+    .masthead, .section-head, .body-col, .briefing p, .colophon {
+      grid-column: 1;
+    }
+    .folio, .marginalia-anchor { display: none; }
+    .masthead h1 { font-size: 44px; }
+    .masthead .deck { font-size: 18px; }
+    .poi-switch { position: static; margin-top: 14px; }
+    .receipts-toggle { display: none; }
+    .briefing p { text-align: left; hyphens: none; text-indent: 0; margin-bottom: 18px; }
+    .briefing p.first::first-letter { font-size: 5.2em; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="/" class="back">&larr; Gems</a>
+  <button id="receiptsBtn" class="receipts-toggle" aria-pressed="false">Show receipts</button>
+</div>
+
+<main class="page" id="page">
+  <header class="masthead">
+    <div class="topline">
+      <span>Citation Mode &nbsp;·&nbsp; <span class="confidence" id="confidence">CONFIDENCE —</span></span>
+      <span class="vol">Vol. I &nbsp;—&nbsp; Nº 1</span>
+    </div>
+    <h1 id="poiName">Louvre Museum</h1>
+    <p class="deck" id="deck">A briefing compiled from real human testimony. Every claim below is footnoted to the person who made it.</p>
+    <nav class="poi-switch" id="poiSwitch">
+      <button data-poi="Louvre Museum" class="active">Louvre Museum</button>
+      <span class="div">|</span>
+      <button data-poi="Colosseum">Colosseum</button>
+    </nav>
+  </header>
+
+  <div class="briefing-root" id="briefingRoot" style="display:contents">
+    <!-- sections injected here -->
+    <div class="folio" id="folio0" style="grid-column:1; padding-top: 6px;">
+      <span class="roman">—</span><br/>Loading
+    </div>
+    <div class="section-head" style="grid-column:2;">
+      <div class="skel-rule" id="skelRule"></div>
+      <div class="skel-line w1"></div>
+      <div class="skel-line w2"></div>
+      <div class="skel-line w3"></div>
+      <div class="skel-line w1"></div>
+      <div class="skel-line w2"></div>
+    </div>
+    <div class="marginalia-anchor" style="grid-column:3;">
+      <div class="marginalia-empty">Marginalia &nbsp;—&nbsp; click any numeral</div>
+    </div>
+  </div>
+
+  <footer class="colophon" id="colophon">
+    <span class="mark">¶</span>
+    Compiled from real human testimony across TripAdvisor, Google, Reddit, and YouTube. Every footnote is a real person. — Gems Editorial, Vol. I.
+  </footer>
+</main>
+
+<div class="sheet-scrim" id="sheetScrim"></div>
+<aside class="sheet" id="sheet" aria-hidden="true">
+  <span class="close" id="sheetClose">×</span>
+  <div id="sheetBody"></div>
+</aside>
+
+<script>
+const API_BASE = location.origin.includes('localhost') ? 'http://localhost:8000' : '';
+
+const SECTION_TITLES = {
+  "Visit Intelligence":       { num: "I",   title: "On Arrival & Queues" },
+  "Attention Intelligence":   { num: "II",  title: "What to See" },
+  "Operational Intelligence": { num: "III", title: "Warnings & Restrictions" },
+  "Discovery Intelligence":   { num: "IV",  title: "Near & Around" },
+  "Culinary Intelligence":    { num: "V",   title: "On Eating" },
+};
+const L1_ORDER = [
+  "Visit Intelligence",
+  "Attention Intelligence",
+  "Operational Intelligence",
+  "Discovery Intelligence",
+  "Culinary Intelligence",
+];
+
+// In-memory cache: cluster_id -> {cluster, quotes[]}
+const explainCache = new Map();
+
+// State
+let state = {
+  poi: "Louvre Museum",
+  stats: null,
+  sections: [],       // [{l1, clusters: [{cluster_id, name, sentiment, size, sentence}]}]
+  flatCitations: [],  // [{n, cluster_id, l1, name}]
+  receiptsOn: false,
+  activeN: null,
+};
+
+// —— Utility —————————————————————————————————————————————
+const SUP_DIGITS = ["⁰","¹","²","³","⁴","⁵","⁶","⁷","⁸","⁹"];
+function toSup(n) {
+  return String(n).split("").map(d => SUP_DIGITS[+d] || d).join("");
+}
+function shortId(s) {
+  if (!s) return "—";
+  s = String(s);
+  if (s.length <= 14) return s;
+  return s.slice(0, 4) + "…" + s.slice(-4);
+}
+function fmtDate(s) {
+  if (!s) return "";
+  // accept YYYY-MM-DD or ISO
+  const m = String(s).match(/(\d{4})-(\d{2})-(\d{2})/);
+  return m ? `${m[1]}-${m[2]}-${m[3]}` : String(s).slice(0, 10);
+}
+function stars(rating) {
+  if (rating == null || rating === "") return "";
+  const r = Math.round(Number(rating));
+  if (!r || r < 1) return "";
+  return "★".repeat(Math.min(r,5));
+}
+function platformLabel(source) {
+  if (!source) return "source";
+  const s = String(source).toLowerCase();
+  if (s.includes("reddit_comment")) return "reddit_comment";
+  if (s.includes("reddit")) return "reddit_post";
+  if (s.includes("tripadvisor")) return "tripadvisor_review";
+  if (s.includes("google")) return "google_review";
+  if (s.includes("youtube")) return "youtube_transcript";
+  return s;
+}
+
+// —— Cluster name → declarative sentence ——————————————————
+// We don't have the LLM at render time, so we humanize cluster.name into a sentence.
+function humanizeClusterName(raw, l1) {
+  if (!raw) return "An observation worth noting.";
+  let s = String(raw).trim();
+  s = s.replace(/_/g, " ").replace(/\s+/g, " ");
+  // Capitalize first letter
+  s = s.charAt(0).toUpperCase() + s.slice(1);
+  if (!/[.?!]$/.test(s)) s += ".";
+  return s;
+}
+
+// —— API ————————————————————————————————————————————————
+async function api(path, opts = {}) {
+  const url = API_BASE + path;
+  const res = await fetch(url, {
+    headers: { "Content-Type": "application/json" },
+    ...opts,
+  });
+  if (!res.ok) throw new Error(`${path} ${res.status}`);
+  return res.json();
+}
+
+async function loadStats(poi) {
+  try {
+    return await api(`/api/poi_stats?poi=${encodeURIComponent(poi)}`);
+  } catch (e) {
+    return null;
+  }
+}
+
+async function loadClusters(poi) {
+  // Try empty-q first; fall back to per-L1 queries.
+  try {
+    const r = await api("/api/search_clusters", {
+      method: "POST",
+      body: JSON.stringify({ poi, query: "", limit: 40, min_tier: "A" }),
+    });
+    if (Array.isArray(r) && r.length > 0) return r;
+    if (r && Array.isArray(r.results) && r.results.length > 0) return r.results;
+  } catch (_) { /* fall through */ }
+
+  // Fallback: per-L1 queries
+  const queries = {
+    "Visit Intelligence":       "queue timing booking entrance",
+    "Attention Intelligence":   "what to see highlights masterpiece",
+    "Operational Intelligence": "warning scam pickpocket restriction",
+    "Discovery Intelligence":   "near nearby sub attraction hidden",
+    "Culinary Intelligence":    "food eat cafe restaurant",
+  };
+  const all = [];
+  for (const [l1, q] of Object.entries(queries)) {
+    try {
+      const r = await api("/api/search_clusters", {
+        method: "POST",
+        body: JSON.stringify({ poi, query: q, intent_l1: l1, limit: 10, min_tier: "A" }),
+      });
+      const arr = Array.isArray(r) ? r : (r?.results || []);
+      arr.forEach(c => { c.intent_l1 = c.intent_l1 || l1; });
+      all.push(...arr);
+    } catch (_) {}
+  }
+  return all;
+}
+
+async function loadExplain(cluster_id) {
+  if (explainCache.has(cluster_id)) return explainCache.get(cluster_id);
+  const r = await api("/api/explain_cluster", {
+    method: "POST",
+    body: JSON.stringify({ cluster_id, max_quotes: 3 }),
+  });
+  explainCache.set(cluster_id, r);
+  return r;
+}
+
+// —— Render ————————————————————————————————————————————
+function buildSections(clusters, l1_counts) {
+  // Group by intent_l1 -> sort by size desc -> take top 5-7 per L1
+  const byL1 = {};
+  for (const c of clusters) {
+    const l1 = c.intent_l1 || c.l1 || "Visit Intelligence";
+    if (!byL1[l1]) byL1[l1] = [];
+    byL1[l1].push(c);
+  }
+  const sections = [];
+  for (const l1 of L1_ORDER) {
+    // Filter L1s with l1_counts[name] > 20
+    if (l1_counts && typeof l1_counts[l1] === "number" && l1_counts[l1] <= 20) continue;
+    const group = (byL1[l1] || [])
+      .filter(c => (c.quality_tier || "A") === "A" || c.quality_tier == null)
+      .sort((a,b) => (b.size||0) - (a.size||0))
+      .slice(0, 6);
+    if (group.length === 0) continue;
+    sections.push({ l1, clusters: group });
+  }
+  return sections;
+}
+
+function render() {
+  const root = document.getElementById("briefingRoot");
+  root.innerHTML = "";
+
+  // Update header masthead
+  document.getElementById("poiName").textContent = state.poi;
+  const stats = state.stats;
+  if (stats) {
+    const platformCount = Object.values(stats.source_counts || {}).filter(v => v > 0).length;
+    const total = (stats.total_insights || 0).toLocaleString();
+    document.getElementById("deck").innerHTML =
+      `A briefing compiled from <strong>${total}</strong> insights across <strong>${platformCount || 4}</strong> platforms. Every claim below is footnoted to the human who made it.`;
+    document.getElementById("confidence").textContent =
+      `CONFIDENCE ${stats.verdict_score ?? "—"}`;
+    document.getElementById("colophon").innerHTML =
+      `<span class="mark">¶</span>Compiled from <strong>${total}</strong> insights across TripAdvisor, Google, Reddit, and YouTube. Every footnote is a real human. — Gems Editorial, Vol. I.`;
+  }
+
+  // Active POI switch
+  document.querySelectorAll("#poiSwitch button").forEach(b => {
+    b.classList.toggle("active", b.dataset.poi === state.poi);
+  });
+
+  // Build sections
+  let citationCounter = 0;
+  state.flatCitations = [];
+
+  state.sections.forEach((sec, si) => {
+    const info = SECTION_TITLES[sec.l1] || { num: String(si+1), title: sec.l1 };
+
+    // Folio (left gutter): roman + label
+    const folio = document.createElement("div");
+    folio.className = "folio";
+    folio.innerHTML = `<span class="roman">§ ${info.num}</span><br/>${info.title.split(" & ").join("<br/>& ")}`;
+    root.appendChild(folio);
+
+    // Section heading (center)
+    const head = document.createElement("div");
+    head.className = "section-head";
+    head.innerHTML = `
+      <h2>${info.num}. ${info.title}</h2>
+      <div class="count">${sec.clusters.length} clusters &nbsp;·&nbsp; A-tier signal</div>
+    `;
+    root.appendChild(head);
+
+    // Right gutter empty placeholder for the section row
+    const rGutter = document.createElement("div");
+    rGutter.className = "marginalia-anchor";
+    rGutter.innerHTML = ``;
+    root.appendChild(rGutter);
+
+    // For each cluster: one paragraph + one marginalia anchor on its own row
+    sec.clusters.forEach((c, ci) => {
+      citationCounter += 1;
+      const n = citationCounter;
+      state.flatCitations.push({
+        n, cluster_id: c.cluster_id, l1: sec.l1, name: c.name,
+      });
+
+      // Left folio (small mark)
+      const fol = document.createElement("div");
+      fol.className = "folio";
+      fol.style.paddingTop = "6px";
+      fol.innerHTML = `<span class="roman">${toSup(n)}</span>`;
+      root.appendChild(fol);
+
+      // Paragraph (center)
+      const p = document.createElement("p");
+      p.dataset.cite = String(n);
+      p.dataset.cluster = String(c.cluster_id);
+      if (si === 0 && ci === 0) p.classList.add("first");
+      const sentence = humanizeClusterName(c.name, sec.l1);
+      p.innerHTML = `${sentence} <sup class="cite" data-n="${n}" data-cluster="${c.cluster_id}">${n}</sup>`;
+      root.appendChild(p);
+
+      // Marginalia anchor (right)
+      const mar = document.createElement("div");
+      mar.className = "marginalia-anchor";
+      mar.id = `marg-${n}`;
+      mar.innerHTML = `
+        <div class="margcard" id="card-${n}" data-cluster="${c.cluster_id}">
+          <div class="caption"><span class="num">${toSup(n)}</span>${escapeHTML(c.name || "")}${c.size ? ` · ${c.size} mentions` : ""}</div>
+          <div class="quotes" id="quotes-${n}">
+            <div class="qmeta">— click numeral to reveal receipts</div>
+          </div>
+        </div>
+      `;
+      root.appendChild(mar);
+    });
+  });
+
+  // Wire interactions
+  wireCitations();
+}
+
+function escapeHTML(s) {
+  return String(s).replace(/[&<>"']/g, ch => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[ch]));
+}
+
+function wireCitations() {
+  document.querySelectorAll("sup.cite").forEach(sup => {
+    sup.addEventListener("click", () => {
+      const n = +sup.dataset.n;
+      activateCitation(n, { scroll: true });
+    });
+    sup.addEventListener("mouseenter", () => {
+      const p = sup.closest("p");
+      if (p) p.dataset.hover = "1";
+    });
+    sup.addEventListener("mouseleave", () => {
+      const p = sup.closest("p");
+      if (p) p.dataset.hover = "";
+    });
+  });
+}
+
+async function activateCitation(n, { scroll = true } = {}) {
+  // Clear previous
+  document.querySelectorAll("sup.cite.active").forEach(el => el.classList.remove("active"));
+  document.querySelectorAll(".margcard.active").forEach(el => el.classList.remove("active"));
+
+  const sup = document.querySelector(`sup.cite[data-n="${n}"]`);
+  const card = document.getElementById(`card-${n}`);
+  if (!sup || !card) return;
+
+  sup.classList.add("active");
+  card.classList.add("active", "shown");
+  state.activeN = n;
+
+  // Mobile: open sheet
+  if (window.innerWidth <= 720) {
+    openSheet(n);
+  } else if (scroll) {
+    const anchor = document.getElementById(`marg-${n}`);
+    if (anchor) anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  // Load quotes (and cache)
+  const cluster_id = +card.dataset.cluster;
+  await ensureQuotes(n, cluster_id);
+}
+
+async function ensureQuotes(n, cluster_id) {
+  const target = document.getElementById(`quotes-${n}`);
+  if (!target) return;
+  if (target.dataset.loaded === "1") return;
+  target.innerHTML = `<div class="qmeta">Loading testimony…</div>`;
+  try {
+    const r = await loadExplain(cluster_id);
+    renderQuotes(target, r);
+    target.dataset.loaded = "1";
+    // Mirror into sheet if open for this n
+    const sheetBody = document.getElementById("sheetBody");
+    if (sheetBody && sheetBody.dataset.n === String(n)) {
+      renderSheet(n);
+    }
+  } catch (e) {
+    target.innerHTML = `<div class="err">Source temporarily unreachable — try again.</div>`;
+  }
+}
+
+function renderQuotes(container, payload) {
+  const quotes = (payload && payload.quotes) || [];
+  if (!quotes.length) {
+    container.innerHTML = `<div class="err">No quotes returned for this cluster.</div>`;
+    return;
+  }
+  container.innerHTML = quotes.slice(0, 3).map(q => {
+    const text = q.text || q.quote || q.raw_text || q.body || "";
+    const src = platformLabel(q.source || q.source_type);
+    const rating = stars(q.rating);
+    const date = fmtDate(q.date || q.created_at || q.timestamp);
+    const sid = shortId(q.source_id || q.id || q.url || "");
+    const meta = [src, rating && `<span class="star">${rating}</span>`, date, sid].filter(Boolean).join(" · ");
+    return `<p class="quote">${escapeHTML(text.trim())}</p><div class="qmeta">${meta}</div>`;
+  }).join("");
+}
+
+// —— Show receipts (toggle) —————————————————————————————
+async function toggleReceipts() {
+  state.receiptsOn = !state.receiptsOn;
+  const btn = document.getElementById("receiptsBtn");
+  btn.textContent = state.receiptsOn ? "Hide receipts" : "Show receipts";
+  btn.classList.toggle("on", state.receiptsOn);
+  btn.setAttribute("aria-pressed", state.receiptsOn);
+
+  if (state.receiptsOn) {
+    // Mark all cards shown
+    document.querySelectorAll(".margcard").forEach(el => el.classList.add("shown"));
+    // Fetch all clusters in parallel
+    const jobs = state.flatCitations.map(c => ensureQuotes(c.n, c.cluster_id));
+    Promise.allSettled(jobs);
+  } else {
+    document.querySelectorAll(".margcard").forEach(el => {
+      if (state.activeN && el.id === `card-${state.activeN}`) return;
+      el.classList.remove("shown");
+    });
+  }
+}
+
+// —— Mobile sheet —————————————————————————————————————
+function openSheet(n) {
+  const sheet = document.getElementById("sheet");
+  const scrim = document.getElementById("sheetScrim");
+  renderSheet(n);
+  sheet.classList.add("open");
+  scrim.classList.add("open");
+  sheet.setAttribute("aria-hidden", "false");
+}
+function closeSheet() {
+  document.getElementById("sheet").classList.remove("open");
+  document.getElementById("sheetScrim").classList.remove("open");
+  document.getElementById("sheet").setAttribute("aria-hidden", "true");
+}
+function renderSheet(n) {
+  const cit = state.flatCitations.find(c => c.n === n);
+  if (!cit) return;
+  const cached = explainCache.get(cit.cluster_id);
+  const sheetBody = document.getElementById("sheetBody");
+  sheetBody.dataset.n = String(n);
+  const caption = `<div class="caption" style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:var(--muted);text-transform:uppercase;margin-bottom:14px;"><span style="color:var(--accent);font-weight:500;margin-right:6px;">${toSup(n)}</span>${escapeHTML(cit.name || "")}</div>`;
+  if (!cached) {
+    sheetBody.innerHTML = caption + `<div class="qmeta">Loading testimony…</div>`;
+    return;
+  }
+  const tmp = document.createElement("div");
+  renderQuotes(tmp, cached);
+  sheetBody.innerHTML = caption + tmp.innerHTML;
+}
+
+// —— POI switch ————————————————————————————————————————
+async function setPOI(poi, { fromHash = false } = {}) {
+  if (poi === state.poi && state.sections.length) return;
+  state.poi = poi;
+  if (!fromHash) {
+    location.hash = poi === "Colosseum" ? "colosseum" : "louvre";
+  }
+
+  // Soft fade body
+  const root = document.getElementById("briefingRoot");
+  root.classList.add("swapping");
+
+  // Show skeleton
+  setTimeout(() => {
+    root.innerHTML = `
+      <div class="folio" style="grid-column:1; padding-top: 6px;">
+        <span class="roman">—</span><br/>Loading
+      </div>
+      <div class="section-head" style="grid-column:2;">
+        <div class="skel-rule go"></div>
+        <div class="skel-line w1"></div>
+        <div class="skel-line w2"></div>
+        <div class="skel-line w3"></div>
+      </div>
+      <div class="marginalia-anchor" style="grid-column:3;">
+        <div class="marginalia-empty">Marginalia &nbsp;—&nbsp; loading</div>
+      </div>
+    `;
+    requestAnimationFrame(() => {
+      const r = root.querySelector(".skel-rule");
+      if (r) r.classList.add("go");
+    });
+  }, 60);
+
+  // Update masthead immediately
+  document.getElementById("poiName").textContent = poi;
+  document.querySelectorAll("#poiSwitch button").forEach(b => {
+    b.classList.toggle("active", b.dataset.poi === poi);
+  });
+
+  // Fetch in parallel
+  const [stats, clusters] = await Promise.all([
+    loadStats(poi),
+    loadClusters(poi),
+  ]);
+  state.stats = stats;
+  state.sections = buildSections(clusters, stats?.l1_counts || {});
+  state.activeN = null;
+
+  // Fade back in & render
+  setTimeout(() => {
+    render();
+    root.classList.remove("swapping");
+  }, 160);
+}
+
+// —— Boot ——————————————————————————————————————————————
+function readHashPOI() {
+  const h = (location.hash || "").replace("#", "").toLowerCase();
+  if (h === "colosseum") return "Colosseum";
+  if (h === "louvre") return "Louvre Museum";
+  return null;
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+  // Bind events
+  document.getElementById("receiptsBtn").addEventListener("click", toggleReceipts);
+  document.getElementById("sheetClose").addEventListener("click", closeSheet);
+  document.getElementById("sheetScrim").addEventListener("click", closeSheet);
+  document.querySelectorAll("#poiSwitch button").forEach(b => {
+    b.addEventListener("click", () => setPOI(b.dataset.poi));
+  });
+  window.addEventListener("hashchange", () => {
+    const p = readHashPOI();
+    if (p) setPOI(p, { fromHash: true });
+  });
+
+  // Keyboard shortcuts
+  document.addEventListener("keydown", (e) => {
+    if (e.target && /input|textarea/i.test(e.target.tagName)) return;
+    if (e.key === "[") {
+      const list = state.flatCitations;
+      if (!list.length) return;
+      const idx = state.activeN ? list.findIndex(c => c.n === state.activeN) : 0;
+      const next = list[Math.max(0, idx - 1)];
+      activateCitation(next.n);
+    } else if (e.key === "]") {
+      const list = state.flatCitations;
+      if (!list.length) return;
+      const idx = state.activeN ? list.findIndex(c => c.n === state.activeN) : -1;
+      const next = list[Math.min(list.length - 1, idx + 1)];
+      activateCitation(next.n);
+    } else if (e.key === "r" || e.key === "R") {
+      toggleReceipts();
+    } else if (e.key === "Escape") {
+      document.querySelectorAll("sup.cite.active").forEach(el => el.classList.remove("active"));
+      document.querySelectorAll(".margcard.active").forEach(el => el.classList.remove("active"));
+      state.activeN = null;
+      closeSheet();
+    }
+  });
+
+  // Kick off skel animation
+  requestAnimationFrame(() => {
+    const r = document.getElementById("skelRule");
+    if (r) r.classList.add("go");
+  });
+
+  // Initial POI: hash or Louvre
+  const initial = readHashPOI() || "Louvre Museum";
+  await setPOI(initial, { fromHash: true });
+});
+</script>
+</body>
+</html>

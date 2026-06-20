@@ -1,0 +1,10 @@
+# Railway/Nixpacks build config for the standalone Node service.
+
+[phases.setup]
+nixPkgs = ["nodejs_20"]
+
+[phases.install]
+cmds = ["npm install --omit=dev"]
+
+[start]
+cmd = "node server.js"

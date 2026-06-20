@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/*.js": {
+      "memory": 1024,
+      "maxDuration": 60
+    },
+    "api/render-slide.js": {
+      "memory": 1024,
+      "maxDuration": 120
+    }
+  }
+}

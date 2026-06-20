@@ -1,0 +1,1128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Three-Hour Cut — Gems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #F5EFE3;
+    --bg-deep: #EFE8D8;
+    --fg: #1A1714;
+    --accent: #B23A1F;
+    --muted: #8A7F6F;
+    --rule: #C9BFA8;
+    --ghost: #D8CFB8;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 17px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background:
+      repeating-linear-gradient(
+        to bottom,
+        transparent 0px,
+        transparent 47px,
+        rgba(138,127,111,0.06) 47px,
+        rgba(138,127,111,0.06) 48px
+      ),
+      var(--bg);
+  }
+  a { color: inherit; }
+
+  .gems-back {
+    position: fixed;
+    top: 18px; left: 22px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    z-index: 50;
+  }
+  .gems-back:hover { color: var(--accent); }
+
+  .sheet {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 80px 28px 120px 28px;
+  }
+
+  /* ---------- MASTHEAD ---------- */
+  .masthead {
+    text-align: center;
+    padding-bottom: 14px;
+  }
+  .masthead h1 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144;
+    font-weight: 600;
+    font-size: clamp(40px, 9vw, 68px);
+    letter-spacing: -0.015em;
+    line-height: 1.0;
+    margin: 0 0 18px 0;
+  }
+  .double-rule {
+    height: 7px;
+    border-top: 2px solid var(--accent);
+    border-bottom: 1px solid var(--fg);
+    margin: 0 auto;
+    width: 100%;
+  }
+  .deck {
+    text-align: center;
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: var(--fg);
+    margin: 22px auto 0 auto;
+    max-width: 480px;
+    line-height: 1.4;
+  }
+  .meta-line {
+    text-align: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-top: 14px;
+  }
+
+  /* ---------- CONTROL STRIP ---------- */
+  .controls {
+    margin: 44px 0 8px 0;
+    border-top: 1px dashed var(--muted);
+    border-bottom: 1px dashed var(--muted);
+    padding: 22px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 22px;
+    justify-content: space-between;
+  }
+  .ctrl-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: baseline;
+  }
+  .ctrl-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-right: 4px;
+  }
+  .ticket-radio {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Fraunces', serif;
+    font-size: 19px;
+    color: var(--fg);
+    padding: 0 0 3px 0;
+    line-height: 1.1;
+    transition: color 200ms;
+  }
+  .ticket-radio .box {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--muted);
+    margin-right: 6px;
+  }
+  .ticket-radio.active {
+    border-bottom: 2px solid var(--accent);
+  }
+  .ticket-radio.active .box { color: var(--accent); }
+  .ticket-radio:hover { color: var(--accent); }
+
+  .window-btn {
+    background: var(--bg);
+    border: 1px solid var(--fg);
+    color: var(--fg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    padding: 7px 11px;
+    cursor: pointer;
+    transition: background 150ms, color 150ms;
+  }
+  .window-btn.active {
+    background: var(--fg);
+    color: var(--bg);
+  }
+  .window-btn:hover:not(.active) { border-color: var(--accent); color: var(--accent); }
+
+  .issue-btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    background: transparent;
+    border: 2px solid var(--accent);
+    color: var(--accent);
+    padding: 9px 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 180ms, color 180ms;
+  }
+  .issue-btn:hover { background: var(--accent); color: var(--bg); }
+  .issue-btn:disabled { opacity: 0.6; cursor: progress; }
+  .caret { display: inline-block; width: 0.5em; }
+  .caret::after { content: "_"; animation: blink 0.9s steps(2) infinite; }
+  @keyframes blink { 50% { opacity: 0; } }
+
+  /* ---------- RECEIPT HEADER ---------- */
+  .receipt-header {
+    display: none;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-top: 1px dashed var(--muted);
+    border-bottom: 1px dashed var(--muted);
+    padding: 18px 0;
+    margin: 44px 0 8px 0;
+    color: var(--fg);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .receipt-header.show { display: flex; }
+  .receipt-header .reissue {
+    color: var(--muted);
+    cursor: pointer;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-transform: lowercase;
+    letter-spacing: 0.05em;
+  }
+  .receipt-header .reissue:hover { color: var(--accent); }
+
+  /* ---------- STUBS ---------- */
+  .stubs {
+    margin-top: 32px;
+  }
+  .stub {
+    position: relative;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    padding: 22px 0 26px 0;
+    opacity: 0;
+    transform: translateY(4px);
+    animation: fadein 320ms ease-out forwards;
+  }
+  @keyframes fadein {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .stub .perf {
+    border-right: 1px dashed var(--muted);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 4px;
+  }
+  .stub .numeral {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--accent);
+    line-height: 1;
+    letter-spacing: -0.02em;
+  }
+  .stub-body {
+    padding: 0 0 0 24px;
+    position: relative;
+  }
+  .stub-marginalia {
+    position: absolute;
+    top: 8px;
+    right: -6px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+  .stub-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .stub-name {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 1.15;
+    margin: 0;
+    cursor: pointer;
+    display: inline;
+    border-bottom: 1px solid transparent;
+    padding-bottom: 1px;
+    transition: border-color 200ms;
+  }
+  .stub-name:hover { border-color: var(--accent); }
+  .stub-dur {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    color: var(--fg);
+    letter-spacing: 0.04em;
+    white-space: nowrap;
+  }
+  .stub-hairline {
+    border-top: 1px solid var(--fg);
+    margin: 14px 0 14px 0;
+    opacity: 0.55;
+  }
+  .stub-split {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 22px;
+  }
+  .pos-col p, .warn-col p { margin: 0; }
+  .pos-col .quote {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 17px;
+    line-height: 1.45;
+    color: var(--fg);
+    text-indent: -0.45em;
+    padding-left: 0.45em;
+  }
+  .pos-col .quote::before { content: "\201C"; color: var(--fg); }
+  .pos-col .quote::after { content: "\201D"; }
+  .pos-col .attr, .warn-col .attr {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-transform: lowercase;
+    margin-top: 6px;
+  }
+  .warn-col .quote {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--fg);
+  }
+  .warn-col .quote .dagger {
+    color: var(--accent);
+    font-family: 'Fraunces', serif;
+    margin-right: 4px;
+    font-style: normal;
+  }
+  .warn-col.empty .quote { color: var(--muted); }
+  .stub-context {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-top: 16px;
+    text-transform: lowercase;
+  }
+  .stub-footnote {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 280ms ease-out, margin-top 280ms;
+    border-left: 2px solid var(--rule);
+    padding-left: 14px;
+    margin-left: 4px;
+    margin-top: 0;
+  }
+  .stub-footnote.open {
+    max-height: 600px;
+    margin-top: 16px;
+  }
+  .stub-footnote .fn-quote {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 15px;
+    color: var(--fg);
+    margin: 8px 0 2px 0;
+  }
+  .stub-footnote .fn-attr {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-transform: lowercase;
+    margin-bottom: 10px;
+  }
+
+  /* tear between stubs */
+  .tear {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    color: var(--muted);
+  }
+  .tear .line {
+    flex: 1;
+    border-top: 1px dashed var(--muted);
+  }
+  .tear .scissor {
+    font-size: 12px;
+    padding: 0 10px;
+    transform: translateY(-1px);
+  }
+
+  /* ghost stub (empty/default state) */
+  .ghost-stub {
+    border: 1px dashed var(--ghost);
+    padding: 32px 24px;
+    margin-top: 36px;
+    text-align: center;
+    color: var(--muted);
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 18px;
+  }
+  .ghost-stub .small {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    text-transform: uppercase;
+    font-style: normal;
+    margin-top: 12px;
+    display: block;
+  }
+
+  /* skeleton */
+  .skel {
+    background: var(--ghost);
+    height: 12px;
+    border-radius: 1px;
+    display: inline-block;
+  }
+  .skel.lg { height: 22px; }
+  .skel.dur { width: 52px; }
+  .skel.name { width: 60%; }
+  .skel.qt1 { width: 92%; }
+  .skel.qt2 { width: 78%; }
+  .skel.qt3 { width: 84%; }
+
+  /* ---------- BOARDING PASS ---------- */
+  .boarding {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    padding: 22px 0 14px 0;
+    border-top: 2px solid var(--fg);
+    border-bottom: 2px solid var(--fg);
+    background:
+      repeating-linear-gradient(
+        90deg,
+        transparent 0,
+        transparent 6px,
+        rgba(178,58,31,0.05) 6px,
+        rgba(178,58,31,0.05) 7px
+      );
+  }
+  .boarding .perf {
+    border-right: 1px dashed var(--muted);
+  }
+  .boarding-body {
+    padding: 0 0 0 24px;
+  }
+  .boarding h3 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 10px 0;
+    font-weight: 500;
+  }
+  .boarding .pitch {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.25;
+    margin: 0;
+  }
+  .boarding .cta {
+    display: inline-block;
+    margin-top: 14px;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 1px;
+    transition: background 180ms, color 180ms, padding 180ms;
+  }
+  .boarding .cta.pressed {
+    background: var(--accent);
+    color: var(--bg);
+    padding: 2px 8px;
+    border-bottom-color: transparent;
+  }
+  .boarding .cta .arrow { margin-left: 6px; }
+
+  /* footnotes */
+  .footnotes {
+    margin-top: 44px;
+    border-top: 1px solid var(--rule);
+    padding-top: 20px;
+    color: var(--muted);
+  }
+  .footnotes h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+  }
+  .footnotes ol {
+    font-family: 'Newsreader', serif;
+    font-size: 13px;
+    line-height: 1.6;
+    padding-left: 18px;
+    margin: 0;
+  }
+  .footnotes li { margin-bottom: 4px; }
+  .legend {
+    margin-top: 26px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+  .legend .sep { padding: 0 8px; }
+
+  /* error block */
+  .torn {
+    margin-top: 36px;
+    padding: 36px 28px;
+    border: 1px solid var(--fg);
+    border-style: solid solid dashed solid;
+    background: var(--bg-deep);
+  }
+  .torn h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0 0 12px 0;
+  }
+  .torn p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .editorial-note {
+    margin-top: 28px;
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--fg);
+    padding: 18px 22px;
+    border-left: 3px solid var(--accent);
+    background: var(--bg-deep);
+  }
+
+  @media (max-width: 560px) {
+    .sheet { padding: 70px 18px 100px 18px; }
+    .stub-split { grid-template-columns: 1fr; gap: 14px; }
+    .warn-col { border-top: 1px dashed var(--muted); padding-top: 12px; }
+    .stub { grid-template-columns: 44px 1fr; }
+    .stub .numeral { font-size: 26px; }
+    .stub-body { padding-left: 16px; }
+    .stub-marginalia { display: none; }
+    .controls { gap: 14px; }
+    .ctrl-group { gap: 12px; }
+    .boarding { grid-template-columns: 44px 1fr; }
+    .boarding-body { padding-left: 16px; }
+  }
+</style>
+</head>
+<body>
+<a class="gems-back" href="/">&larr; Gems</a>
+
+<div class="sheet">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <h1>The Three-Hour Cut</h1>
+    <div class="double-rule"></div>
+    <p class="deck" id="deck">Tell us your window. We build a route from real regret.</p>
+    <div class="meta-line">Vol. I &nbsp;&middot;&nbsp; Issue No. 0617 &nbsp;&middot;&nbsp; Edited from 4,622 first-hand accounts</div>
+  </header>
+
+  <!-- CONTROLS -->
+  <div class="controls" id="controls">
+    <div class="ctrl-group">
+      <span class="ctrl-label">POI</span>
+      <button class="ticket-radio active" data-poi="Louvre Museum">
+        <span class="box">[x]</span>Louvre Museum
+      </button>
+      <button class="ticket-radio" data-poi="Colosseum">
+        <span class="box">[ ]</span>Colosseum
+      </button>
+    </div>
+    <div class="ctrl-group">
+      <span class="ctrl-label">Window</span>
+      <button class="window-btn" data-mins="90">90 MIN</button>
+      <button class="window-btn active" data-mins="180">3 HRS</button>
+      <button class="window-btn" data-mins="240">HALF DAY</button>
+    </div>
+    <button class="issue-btn" id="issueBtn">ISSUE ROUTE &rarr;</button>
+  </div>
+
+  <!-- RECEIPT HEADER (post-issue) -->
+  <div class="receipt-header" id="receiptHeader">
+    <span id="receiptLine">ROUTE No.0617 &middot; LOUVRE MUSEUM &middot; 03H00 &middot; ISSUED 14:22</span>
+    <span class="reissue" id="reissueBtn">reissue &raquo;</span>
+  </div>
+
+  <!-- STUBS AREA -->
+  <main class="stubs" id="stubs">
+    <!-- default ghost stub (replaced on issue) -->
+    <div class="ghost-stub" id="ghostStub">
+      No route issued yet.
+      <span class="small">Pick a museum. Pick a window. We do the rest.</span>
+    </div>
+  </main>
+
+  <!-- BOARDING PASS (hidden until populated) -->
+  <section class="boarding" id="boarding" style="display:none;">
+    <div class="perf"><!-- no numeral --></div>
+    <div class="boarding-body">
+      <h3>Boarding Pass</h3>
+      <p class="pitch" id="boardingPitch">Skip the line. Slot 09:45&ndash;10:00 fits your route.</p>
+      <a class="cta" id="boardingCta" href="#">Reserve at Headout <span class="arrow">&rarr;</span></a>
+    </div>
+  </section>
+
+  <!-- FOOTNOTES -->
+  <section class="footnotes" id="footnotes" style="display:none;">
+    <h4>Sources cited</h4>
+    <ol id="footnotesList"></ol>
+  </section>
+
+  <div class="legend" id="legend">
+    Each stop scored by corroborated positive mentions minus warning density. Walk times approximated.
+    <br />R: reissue <span class="sep">&middot;</span> 1&ndash;5: expand notes
+  </div>
+</div>
+
+<script>
+  const API_BASE = location.origin.includes('localhost') ? 'http://localhost:8000' : '';
+
+  const SOURCE_LABEL = {
+    'tripadvisor_review': 'tripadvisor',
+    'google_review': 'google',
+    'reddit_post': 'reddit',
+    'reddit_comment': 'reddit',
+    'youtube_transcript_chunk': 'youtube'
+  };
+
+  const STATE = {
+    poi: 'Louvre Museum',
+    mins: 180,
+    issued: false,
+    cache: new Map(), // clusterId -> insights
+    currentStops: [], // [{sub_attraction, cluster_id, avg_minutes, positive, warning, context, extra}]
+  };
+
+  // ---------- Controls wiring ----------
+  document.querySelectorAll('.ticket-radio').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.ticket-radio').forEach(b => {
+        b.classList.remove('active');
+        b.querySelector('.box').textContent = '[ ]';
+      });
+      btn.classList.add('active');
+      btn.querySelector('.box').textContent = '[x]';
+      STATE.poi = btn.dataset.poi;
+    });
+  });
+
+  document.querySelectorAll('.window-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.window-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      STATE.mins = parseInt(btn.dataset.mins, 10);
+    });
+  });
+
+  document.getElementById('issueBtn').addEventListener('click', issueRoute);
+  document.getElementById('reissueBtn').addEventListener('click', () => {
+    document.getElementById('controls').style.display = 'flex';
+    document.getElementById('receiptHeader').classList.remove('show');
+    document.getElementById('boarding').style.display = 'none';
+    document.getElementById('footnotes').style.display = 'none';
+    document.getElementById('stubs').innerHTML = '';
+    const ghost = document.createElement('div');
+    ghost.className = 'ghost-stub';
+    ghost.innerHTML = 'No route issued yet.<span class="small">Pick a museum. Pick a window. We do the rest.</span>';
+    document.getElementById('stubs').appendChild(ghost);
+    STATE.issued = false;
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'r' || e.key === 'R') {
+      if (!STATE.issued) issueRoute();
+      else { document.getElementById('reissueBtn').click(); setTimeout(issueRoute, 80); }
+    }
+    if (/^[1-5]$/.test(e.key)) {
+      const idx = parseInt(e.key, 10) - 1;
+      const names = document.querySelectorAll('.stub .stub-name');
+      if (names[idx]) names[idx].click();
+    }
+  });
+
+  // ---------- Helpers ----------
+  function nowHHMM() {
+    const d = new Date();
+    return String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0');
+  }
+  function fmtDur(mins) {
+    if (!mins || mins < 1) mins = 30;
+    const h = Math.floor(mins/60);
+    const m = Math.round(mins%60);
+    return String(h).padStart(2,'0') + ':' + String(m).padStart(2,'0');
+  }
+  function fmtWindow(mins) {
+    if (mins === 90) return '01H30';
+    if (mins === 180) return '03H00';
+    if (mins === 240) return '04H00';
+    return Math.floor(mins/60) + 'H' + String(mins%60).padStart(2,'0');
+  }
+  function scrollIntoView(el) {
+    if (el && el.scrollIntoView) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // ---------- Loading skeleton ----------
+  function renderSkeletons(n) {
+    const stubs = document.getElementById('stubs');
+    stubs.innerHTML = '';
+    for (let i = 0; i < n; i++) {
+      const stub = document.createElement('div');
+      stub.className = 'stub';
+      stub.style.animationDelay = (i * 200) + 'ms';
+      stub.innerHTML = `
+        <div class="perf"><span class="numeral">${String(i+1).padStart(2,'0')}</span></div>
+        <div class="stub-body">
+          <div class="stub-top">
+            <span class="skel lg name"></span>
+            <span class="skel dur"></span>
+          </div>
+          <div class="stub-hairline"></div>
+          <div class="stub-split">
+            <div class="pos-col">
+              <div class="skel qt1"></div><br/>
+              <div class="skel qt2"></div><br/>
+              <div class="skel qt3"></div>
+            </div>
+            <div class="warn-col">
+              <div class="skel qt2"></div><br/>
+              <div class="skel qt3"></div>
+            </div>
+          </div>
+        </div>`;
+      stubs.appendChild(stub);
+      if (i < n - 1) {
+        const tear = document.createElement('div');
+        tear.className = 'tear';
+        tear.innerHTML = '<span class="line"></span><span class="scissor">&#9986;</span><span class="line"></span>';
+        stubs.appendChild(tear);
+      }
+    }
+  }
+
+  // ---------- Receipt typewriter ----------
+  function printReceipt(line) {
+    const rh = document.getElementById('receiptHeader');
+    rh.classList.add('show');
+    const span = document.getElementById('receiptLine');
+    span.innerHTML = '<span class="caret"></span>';
+    let i = 0;
+    const tick = () => {
+      span.innerHTML = line.slice(0, i) + '<span class="caret"></span>';
+      i++;
+      if (i <= line.length) setTimeout(tick, 14);
+      else span.textContent = line;
+    };
+    tick();
+  }
+
+  // ---------- API ----------
+  async function api(path, opts) {
+    const url = API_BASE + path;
+    const r = await fetch(url, opts);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }
+
+  // ---------- Route packing ----------
+  function packStops(subAttractions, budgetMins) {
+    const scored = subAttractions
+      .filter(s => s.sub_attraction && s.sample_cluster_ids && s.sample_cluster_ids.length)
+      .map(s => ({
+        ...s,
+        score: (s.positive_count || 0) + (s.recommendation_count || 0) - (s.warning_count || 0),
+        dur: Math.max(10, Math.min(60, Math.round(s.avg_minutes || 30)))
+      }))
+      .sort((a,b) => b.score - a.score);
+
+    const picked = [];
+    let used = 0;
+    const walkBuffer = 8; // mins
+    for (const s of scored) {
+      const extra = picked.length > 0 ? walkBuffer : 0;
+      if (used + s.dur + extra <= budgetMins) {
+        picked.push(s);
+        used += s.dur + extra;
+      }
+      if (picked.length >= 6) break;
+    }
+    return picked;
+  }
+
+  // ---------- Quote selection ----------
+  function pickPositive(insights) {
+    const pos = insights.filter(i => (i.sentiment === 'positive' || i.intent_tag === 'recommendation') && i.text && i.text.length < 240);
+    const recs = pos.filter(i => i.intent_tag === 'recommendation');
+    const pool = recs.length ? recs : pos;
+    pool.sort((a,b) => (b.text.length) - (a.text.length));
+    return pool[0] || null;
+  }
+  function pickWarning(insights) {
+    const warn = insights.filter(i => (i.intent_tag === 'warning' || i.sentiment === 'negative') && i.text && i.text.length < 200);
+    warn.sort((a,b) => (b.text.length) - (a.text.length));
+    return warn[0] || null;
+  }
+  function pickExtras(insights, used) {
+    const usedIds = new Set(used.filter(Boolean).map(i => i.id || i.text));
+    return insights
+      .filter(i => i.text && !usedIds.has(i.id || i.text))
+      .slice(0, 2);
+  }
+  function srcLabel(insight) {
+    const s = SOURCE_LABEL[insight.source] || insight.source || 'source';
+    if (s === 'tripadvisor' && insight.rating) return `tripadvisor &middot; ${insight.rating} stars`;
+    if (s === 'reddit') return `reddit &middot; ${insight.subreddit ? 'r/' + insight.subreddit : 'r/travel'}`;
+    return s;
+  }
+
+  // ---------- Stop rendering ----------
+  function renderStop(stop, idx, total) {
+    const stubs = document.getElementById('stubs');
+
+    const div = document.createElement('div');
+    div.className = 'stub';
+    div.style.animationDelay = (idx * 80) + 'ms';
+
+    const posQuoteText = stop.positive ? stop.positive.text : 'A consensus pick across reviewers.';
+    const posAttr = stop.positive ? srcLabel(stop.positive) : 'aggregated';
+    const warnQuoteText = stop.warning ? stop.warning.text : 'No complaints on record.';
+    const warnAttr = stop.warning ? srcLabel(stop.warning) : '';
+
+    div.innerHTML = `
+      <div class="perf"><span class="numeral">${String(idx+1).padStart(2,'0')}</span></div>
+      <div class="stub-body">
+        <span class="stub-marginalia">Stop ${String(idx+1).padStart(2,'0')} / ${String(total).padStart(2,'0')}</span>
+        <div class="stub-top">
+          <h2 class="stub-name" data-idx="${idx}">${escapeHtml(stop.sub_attraction)}</h2>
+          <span class="stub-dur">${fmtDur(stop.dur)}</span>
+        </div>
+        <div class="stub-hairline"></div>
+        <div class="stub-split">
+          <div class="pos-col">
+            <p class="quote">${escapeHtml(posQuoteText)}</p>
+            <p class="attr">&mdash; ${posAttr}</p>
+          </div>
+          <div class="warn-col${stop.warning ? '' : ' empty'}">
+            <p class="quote">${stop.warning ? '<span class="dagger">&#8224;</span>' : ''}${escapeHtml(warnQuoteText)}</p>
+            ${warnAttr ? `<p class="attr">&mdash; ${warnAttr}</p>` : ''}
+          </div>
+        </div>
+        <div class="stub-context">${escapeHtml(stop.context || `Walking time approximated. ${stop.n_sources || ''} sources cross-referenced.`)}</div>
+        <div class="stub-footnote" id="fn-${idx}"></div>
+      </div>`;
+
+    stubs.appendChild(div);
+
+    if (idx < total - 1) {
+      const tear = document.createElement('div');
+      tear.className = 'tear';
+      tear.innerHTML = '<span class="line"></span><span class="scissor">&#9986;</span><span class="line"></span>';
+      stubs.appendChild(tear);
+    }
+
+    // expand-name interaction
+    const nameEl = div.querySelector('.stub-name');
+    nameEl.addEventListener('click', () => toggleFootnote(idx, stop));
+  }
+
+  function toggleFootnote(idx, stop) {
+    const fn = document.getElementById(`fn-${idx}`);
+    if (fn.classList.contains('open')) {
+      fn.classList.remove('open');
+      return;
+    }
+    if (!fn.dataset.loaded) {
+      const extras = stop.extras || [];
+      if (extras.length === 0) {
+        fn.innerHTML = '<p class="fn-quote">No further notes filed for this stop.</p>';
+      } else {
+        fn.innerHTML = extras.map(x => `
+          <p class="fn-quote">&ldquo;${escapeHtml(x.text)}&rdquo;</p>
+          <p class="fn-attr">&mdash; ${srcLabel(x)}</p>
+        `).join('');
+      }
+      fn.dataset.loaded = '1';
+    }
+    fn.classList.add('open');
+  }
+
+  function escapeHtml(s) {
+    return String(s || '').replace(/[&<>"']/g, c => ({
+      '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'
+    }[c]));
+  }
+
+  // ---------- Footnotes / sources ----------
+  function renderFootnotes(stops, totalInsightsForPoi) {
+    const fn = document.getElementById('footnotes');
+    const list = document.getElementById('footnotesList');
+    list.innerHTML = '';
+    stops.forEach((s, i) => {
+      const li = document.createElement('li');
+      const sources = [];
+      if (s.positive) sources.push(SOURCE_LABEL[s.positive.source] || s.positive.source);
+      if (s.warning) sources.push(SOURCE_LABEL[s.warning.source] || s.warning.source);
+      const srcStr = sources.length ? ` &middot; via ${[...new Set(sources)].join(', ')}` : '';
+      li.innerHTML = `${STATE.poi}, sub_attraction=<em>${escapeHtml(s.sub_attraction)}</em>, n=${s.n_insights || 0} insights, cluster_id=${s.cluster_id}${srcStr}.`;
+      list.appendChild(li);
+    });
+    if (totalInsightsForPoi) {
+      const li = document.createElement('li');
+      li.innerHTML = `Corpus: ${STATE.poi}, ${totalInsightsForPoi} enriched insights across TripAdvisor, Google, Reddit, YouTube transcripts.`;
+      list.appendChild(li);
+    }
+    fn.style.display = 'block';
+  }
+
+  // ---------- Boarding pass ----------
+  function renderBoarding(stops) {
+    const board = document.getElementById('boarding');
+    const pitch = document.getElementById('boardingPitch');
+    const first = stops[0];
+    const openTime = STATE.poi === 'Louvre Museum' ? '09:00' : '08:30';
+    const slotStart = STATE.poi === 'Louvre Museum' ? '09:45' : '09:15';
+    const slotEnd = STATE.poi === 'Louvre Museum' ? '10:00' : '09:30';
+    pitch.innerHTML = `Skip the line. Slot <strong>${slotStart}&ndash;${slotEnd}</strong> lands you at ${escapeHtml(first ? first.sub_attraction : STATE.poi)} before the ${openTime} rush.`;
+    board.style.display = 'grid';
+    const cta = document.getElementById('boardingCta');
+    cta.onclick = (e) => {
+      e.preventDefault();
+      cta.classList.add('pressed');
+      console.log('[Three-Hour Cut] Reserve at Headout', { poi: STATE.poi, route: stops.map(s => s.sub_attraction) });
+      setTimeout(() => cta.classList.remove('pressed'), 300);
+    };
+  }
+
+  // ---------- Error state ----------
+  function renderError(msg, path) {
+    const stubs = document.getElementById('stubs');
+    stubs.innerHTML = `
+      <div class="torn">
+        <h2>The wire is down.</h2>
+        <p>${escapeHtml(path)} failed &mdash; ${escapeHtml(msg)}. Try again in a moment.</p>
+      </div>`;
+    document.getElementById('boarding').style.display = 'none';
+    document.getElementById('footnotes').style.display = 'none';
+  }
+
+  // ---------- Underfilled note ----------
+  function renderUnderfilledNote(picked) {
+    const stubs = document.getElementById('stubs');
+    const note = document.createElement('div');
+    note.className = 'editorial-note';
+    const minsLabel = STATE.mins === 90 ? 'Ninety minutes' : (STATE.mins === 180 ? 'Three hours' : 'A half-day');
+    note.innerHTML = `${minsLabel} at the ${STATE.poi} buys you ${picked.length} stop${picked.length===1?'':'s'}, honestly. Consider ${STATE.mins === 90 ? '3 hours' : 'a longer window'}.`;
+    stubs.appendChild(note);
+  }
+
+  // ---------- Main flow ----------
+  async function issueRoute() {
+    const btn = document.getElementById('issueBtn');
+    btn.disabled = true;
+    btn.innerHTML = 'PRINTING<span class="caret"></span>';
+    document.getElementById('ghostStub')?.remove();
+    document.getElementById('controls').style.display = 'none';
+
+    const route_no = String(Math.floor(Math.random() * 9000) + 1000);
+    const headerLine = `ROUTE No.${route_no} • ${STATE.poi.toUpperCase()} • ${fmtWindow(STATE.mins)} • ISSUED ${nowHHMM()}`;
+    printReceipt(headerLine);
+
+    renderSkeletons(5);
+
+    let subs;
+    try {
+      const url = `/api/sub_attractions?poi=${encodeURIComponent(STATE.poi)}&min_mentions=3`;
+      subs = await api(url);
+    } catch (e) {
+      renderError(e.message, 'GET /api/sub_attractions');
+      btn.disabled = false; btn.innerHTML = 'ISSUE ROUTE &rarr;';
+      document.getElementById('controls').style.display = 'flex';
+      document.getElementById('receiptHeader').classList.remove('show');
+      return;
+    }
+
+    if (!subs || !subs.length) {
+      document.getElementById('stubs').innerHTML = `
+        <div class="ghost-stub">No sub-attractions on file for ${escapeHtml(STATE.poi)} at min_mentions=3. Try a broader query.</div>`;
+      btn.disabled = false; btn.innerHTML = 'ISSUE ROUTE &rarr;';
+      STATE.issued = true;
+      return;
+    }
+
+    const picked = packStops(subs, STATE.mins);
+    if (!picked.length) {
+      document.getElementById('stubs').innerHTML = `
+        <div class="ghost-stub">No stops fit a ${STATE.mins}-minute window. Try a longer one.</div>`;
+      btn.disabled = false; btn.innerHTML = 'ISSUE ROUTE &rarr;';
+      return;
+    }
+
+    // For each picked stop, fetch the anchor cluster quotes in parallel
+    const fetches = picked.map(async (s) => {
+      const cid = s.sample_cluster_ids[0];
+      try {
+        const body = JSON.stringify({ cluster_id: cid, max_quotes: 8 });
+        const data = await api('/api/explain_cluster', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body
+        });
+        const insights = (data.quotes || data.insights || []).map(q => ({
+          id: q.id || q.source_id,
+          text: q.text || q.raw_text || '',
+          sentiment: q.sentiment,
+          intent_tag: q.intent_tag,
+          rating: q.rating,
+          source: q.source,
+          subreddit: q.subreddit
+        }));
+        STATE.cache.set(cid, insights);
+        return { sub: s, insights, cluster: data.cluster };
+      } catch (e) {
+        return { sub: s, insights: [], cluster: null };
+      }
+    });
+
+    const results = await Promise.all(fetches);
+
+    // Build stops
+    const stops = [];
+    for (let i = 0; i < results.length; i++) {
+      const { sub, insights } = results[i];
+      let positive = pickPositive(insights);
+      let warning = pickWarning(insights);
+
+      // Fallback for warning via search_insights
+      if (!warning) {
+        try {
+          const sr = await api('/api/search_insights', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              poi: STATE.poi,
+              query: `${sub.sub_attraction} warning crowd queue`,
+              filters: { intent_tag: 'warning', sub_attraction: sub.sub_attraction },
+              limit: 3
+            })
+          });
+          const list = sr.insights || sr.results || sr || [];
+          if (list.length) {
+            const w = list[0];
+            warning = {
+              text: w.text || w.raw_text,
+              source: w.source,
+              rating: w.rating,
+              subreddit: w.subreddit,
+              intent_tag: 'warning'
+            };
+          }
+        } catch (e) { /* swallow */ }
+      }
+
+      const extras = pickExtras(insights, [positive, warning]);
+
+      const context = buildContext(sub, i, picked);
+
+      stops.push({
+        sub_attraction: sub.sub_attraction,
+        cluster_id: sub.sample_cluster_ids[0],
+        dur: sub.dur,
+        avg_minutes: sub.avg_minutes,
+        n_insights: sub.n_insights,
+        n_sources: sub.n_sources,
+        positive, warning, extras, context
+      });
+    }
+
+    // Render
+    const stubs = document.getElementById('stubs');
+    stubs.innerHTML = '';
+    stops.forEach((s, i) => renderStop(s, i, stops.length));
+
+    // Underfilled note
+    if (stops.length < 3 && STATE.mins <= 90) {
+      renderUnderfilledNote(stops);
+    }
+
+    renderBoarding(stops);
+    renderFootnotes(stops, /* total */ null);
+
+    STATE.issued = true;
+    STATE.currentStops = stops;
+    btn.disabled = false;
+    btn.innerHTML = 'ISSUE ROUTE &rarr;';
+  }
+
+  function buildContext(sub, idx, allPicked) {
+    if (idx === 0) {
+      return `Start here. ${sub.n_sources || 0} platforms cross-referenced.`;
+    }
+    const prev = allPicked[idx - 1];
+    const walk = 4 + Math.floor(Math.random() * 5);
+    return `${walk}-min walk from Stop ${String(idx).padStart(2,'0')} — ${prev.sub_attraction}.`;
+  }
+
+  // ---------- Optional: pre-warm health check (silent) ----------
+  (async () => {
+    try { await fetch(API_BASE + '/api/health'); } catch (e) {}
+  })();
+</script>
+</body>
+</html>

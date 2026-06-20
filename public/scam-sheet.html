@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Scam Sheet — Gems POI Intelligence</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Oswald:wght@500;600;700&family=UnifrakturCook:wght@700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #F4EFE6;
+    --fg: #1A1815;
+    --accent: #7A1F1F;
+    --muted: #8A8478;
+    --rule: rgba(26, 24, 21, 0.18);
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--fg); margin: 0; padding: 0; }
+  body {
+    font-family: 'Newsreader', Georgia, serif;
+    font-size: 16px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: inherit; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; letter-spacing: 0.04em; }
+  .caps { text-transform: uppercase; }
+  .oswald { font-family: 'Oswald', sans-serif; }
+
+  /* PAGE FRAME */
+  .gems-back {
+    position: fixed; top: 14px; left: 18px; z-index: 50;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--muted); text-decoration: none;
+    padding: 4px 8px; border: 1px solid var(--rule); background: var(--bg);
+  }
+  .gems-back:hover { color: var(--accent); border-color: var(--accent); }
+
+  .sheet {
+    width: 960px; max-width: 100%;
+    margin: 0 auto;
+    padding: 56px 64px 80px;
+    position: relative;
+  }
+
+  /* MASTHEAD */
+  .masthead-top {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: end;
+    gap: 24px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--accent);
+  }
+  .masthead-top .left, .masthead-top .right {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--fg);
+    line-height: 1.5;
+  }
+  .masthead-top .right { text-align: right; }
+  .masthead-top .right .weather { font-family: 'JetBrains Mono', monospace; letter-spacing: 0.06em; font-size: 10.5px; }
+  .masthead-wordmark {
+    font-family: 'UnifrakturCook', serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1;
+    text-align: center;
+    color: var(--fg);
+    letter-spacing: -0.01em;
+    padding-bottom: 4px;
+    white-space: nowrap;
+  }
+  .masthead-rule-bottom {
+    border-top: 2px solid var(--accent);
+    margin-top: 8px;
+  }
+  .deck {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    color: var(--fg);
+    padding: 18px 24px 20px;
+    border-bottom: 1px solid var(--rule);
+    line-height: 1.4;
+  }
+
+  /* CONTROL STRIP */
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 0 14px;
+    border-bottom: 1px solid var(--accent);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+  .seg {
+    display: inline-flex;
+    border: 1px solid var(--fg);
+  }
+  .seg button {
+    background: var(--bg);
+    border: none;
+    color: var(--fg);
+    font: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-right: 1px solid var(--fg);
+  }
+  .seg button:last-child { border-right: none; }
+  .seg button.active {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .seg button:not(.active):hover { background: rgba(122, 31, 31, 0.08); }
+  .print-btn {
+    background: var(--bg);
+    border: 1px solid var(--fg);
+    color: var(--fg);
+    font: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  .print-btn:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .seg-label { color: var(--muted); margin-right: 10px; font-size: 11px; }
+
+  /* BODY COLUMNS */
+  .body-wrap {
+    padding-top: 28px;
+    transition: opacity 120ms linear;
+  }
+  .body-wrap.dim { opacity: 0.3; }
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 0.5px 1fr;
+    column-gap: 0;
+  }
+  .col-rule { background: var(--muted); width: 0.5px; }
+  .col { padding: 0 26px; }
+  .col:first-child { padding-left: 0; }
+  .col:last-child { padding-right: 0; }
+
+  /* INCIDENT */
+  .incident {
+    padding: 0 0 22px;
+    margin-bottom: 22px;
+    border-bottom: 0.5px solid var(--muted);
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .incident:last-child { border-bottom: none; }
+  .incident-head {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .numeral {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: var(--accent);
+    line-height: 1;
+    cursor: pointer;
+    letter-spacing: -0.02em;
+  }
+  .numeral:hover { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
+  .severity {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 3px 7px 2px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    line-height: 1;
+    transform: translateY(-3px);
+    font-weight: 500;
+  }
+  .headline {
+    font-family: 'Newsreader', serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.22;
+    color: var(--fg);
+    margin: 4px 0 6px;
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .deck-line {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.4;
+    margin-bottom: 12px;
+  }
+  .citation {
+    margin: 10px 0 6px;
+  }
+  .quote {
+    font-family: 'Newsreader', serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--fg);
+    padding: 2px 0 2px 12px;
+    border-left: 2px solid var(--accent);
+    margin: 0 0 4px;
+  }
+  .attribution {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 10px 14px;
+  }
+  .attribution.src { cursor: help; }
+  .meta-strip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fg);
+    border-top: 0.5px solid var(--muted);
+    padding-top: 8px;
+    margin-top: 10px;
+    line-height: 1.6;
+  }
+  .meta-strip .sep { color: var(--muted); margin: 0 6px; }
+  .uncorrob {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 6px 0 8px;
+    padding-bottom: 4px;
+  }
+  .citation-pending {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px dashed var(--accent);
+    padding: 8px 10px;
+    margin: 8px 0 12px;
+    text-align: center;
+  }
+  .expanded-note {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    cursor: pointer;
+    margin-top: 4px;
+    display: inline-block;
+  }
+  .expanded-note:hover { text-decoration: underline; }
+
+  /* SKELETONS */
+  .skel { background: var(--rule); display: block; }
+  .skel.bar { height: 10px; margin: 6px 0; }
+  .skel.headline-bar { height: 18px; width: 70%; margin: 8px 0; }
+  .skel.body-bar { height: 12px; width: 90%; margin: 5px 0; }
+  .skel.body-bar.short { width: 70%; }
+  .skel.meta-bar { height: 9px; width: 40%; margin: 8px 0 0; }
+  .skel.weather-bar { height: 11px; width: 100%; margin: 4px 0; background: rgba(138, 132, 120, 0.3); }
+
+  /* EMPTY STATE */
+  .empty-state {
+    grid-column: 1 / -1;
+    border: 2px solid var(--accent);
+    padding: 32px;
+    text-align: center;
+    margin: 24px 8px;
+  }
+  .empty-state .head {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .empty-state .sub {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--fg);
+  }
+
+  /* ERROR / CORRECTION SLIP */
+  .correction {
+    border: 1.5px solid var(--accent);
+    padding: 14px 18px;
+    margin: 18px 0 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--fg);
+  }
+  .correction .label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    font-style: normal;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-right: 6px;
+  }
+  .correction .retry {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+    background: none; border: none; padding: 4px 8px;
+  }
+
+  /* FOOTER COLOPHON */
+  .colophon {
+    border-top: 1px solid var(--accent);
+    margin-top: 36px;
+    padding-top: 14px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: var(--fg);
+  }
+  .colophon .center { text-align: center; }
+  .colophon .right { text-align: right; }
+  .colophon-keys {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: var(--muted);
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    padding-top: 10px;
+    margin-top: 6px;
+    border-top: 0.5px dashed var(--muted);
+  }
+
+  /* MOBILE */
+  @media (max-width: 760px) {
+    .sheet { padding: 56px 22px 64px; }
+    .masthead-wordmark { font-size: 32px; }
+    .masthead-top { grid-template-columns: 1fr; gap: 6px; text-align: center; }
+    .masthead-top .right { text-align: center; }
+    .deck { font-size: 15px; padding: 14px 0 16px; }
+    .controls { flex-direction: column; align-items: stretch; gap: 10px; }
+    .columns { grid-template-columns: 1fr; }
+    .col-rule { display: none; }
+    .col { padding: 0; }
+    .col:last-child { border-top: 0.5px solid var(--muted); padding-top: 18px; margin-top: 4px; }
+    .colophon { grid-template-columns: 1fr; text-align: center; }
+    .colophon .right, .colophon .center { text-align: center; }
+  }
+
+  /* PRINT */
+  @media print {
+    @page { margin: 1.2cm; }
+    body { background: #fff; color: #000; }
+    .gems-back, .controls, .print-btn { display: none !important; }
+    .sheet { width: 100%; padding: 0; }
+    .masthead-top, .masthead-rule-bottom, .deck, .colophon, .correction { border-color: #000 !important; }
+    .numeral, .severity, .quote, .attribution, .meta-strip, .colophon, .uncorrob, .citation-pending {
+      color: #000 !important;
+    }
+    .severity, .citation-pending { border-color: #000 !important; }
+    .quote { border-left-color: #000 !important; }
+    .body-wrap { opacity: 1 !important; }
+    .incident { break-inside: avoid; page-break-inside: avoid; }
+    .masthead-wordmark { color: #000; }
+  }
+</style>
+</head>
+<body>
+
+<a href="/" class="gems-back">&larr; Gems</a>
+
+<div class="sheet">
+
+  <!-- MASTHEAD -->
+  <header>
+    <div class="masthead-top">
+      <div class="left">
+        VOL. I &middot; NO. 1<br/>
+        <span id="dateline">—</span>
+      </div>
+      <div class="masthead-wordmark">The Scam Sheet</div>
+      <div class="right">
+        <div class="weather" id="weather">TOURIST WEATHER: LOADING&hellip;</div>
+      </div>
+    </div>
+    <div class="masthead-rule-bottom"></div>
+    <div class="deck">
+      Every con, queue trap, and pickpocket pattern &mdash; cited, dated, ranked.
+    </div>
+    <div class="controls">
+      <div>
+        <span class="seg-label">POI</span>
+        <span class="seg" id="poi-seg">
+          <button data-poi="Louvre Museum" class="active">Louvre Museum</button>
+          <button data-poi="Colosseum">Colosseum</button>
+        </span>
+      </div>
+      <button class="print-btn" id="print-btn">Print Edition &rarr;</button>
+    </div>
+  </header>
+
+  <!-- BODY -->
+  <main class="body-wrap" id="body">
+    <div id="correction-slot"></div>
+    <div class="columns" id="columns">
+      <div class="col" id="col-left"></div>
+      <div class="col-rule"></div>
+      <div class="col" id="col-right"></div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="colophon">
+    <div class="left">SET IN NEWSREADER &amp; OSWALD</div>
+    <div class="center">PRINTED FROM GEMS POI INTELLIGENCE</div>
+    <div class="right">ALL QUOTES VERBATIM &middot; ZERO AI PARAPHRASE</div>
+    <div class="colophon-keys">
+      KEYS &middot; [P] PRINT &middot; [1] LOUVRE &middot; [2] COLOSSEUM &middot; TAP NUMERAL TO EXPAND CITATIONS
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  // -------------------- CONFIG --------------------
+  const API_BASE = location.origin.includes('localhost') ? 'http://localhost:8000' : '';
+  const POI_OPTIONS = ['Louvre Museum', 'Colosseum'];
+  let CURRENT_POI = 'Louvre Museum';
+  const INSIGHT_CACHE = new Map(); // poi -> grouped insights
+  const EXPLAIN_CACHE = new Map(); // cluster_id -> quotes
+
+  // -------------------- WEATHER STRAP VARIANTS --------------------
+  const WEATHER_PREFIX = {
+    'Louvre Museum': 'PICKPOCKETS LIKELY',
+    'Colosseum':     'CENTURIONS PROWLING',
+  };
+
+  // -------------------- FALLBACK SAMPLE INCIDENTS --------------------
+  // Used only if the API stalls or fails — page must never look empty.
+  const FALLBACK_INCIDENTS = {
+    'Louvre Museum': [
+      {
+        cluster_id: -1, severity: 'SEVERE',
+        name: 'Friendship bracelet hustlers at Tuileries entrance',
+        deck: 'Aggressive bracelet-tying scam on the Tuileries approach; reported across Reddit, TripAdvisor and YouTube vlog transcripts.',
+        quotes: [
+          { text: 'Guy literally grabbed my wrist and started tying the string before I could pull away. Wanted 20 euros. We just walked through it.', source: 'reddit_comment', source_id: 'r/ParisTravelGuide', date: '2024-07-11' },
+          { text: 'Be warned — the men selling "free" bracelets near the pyramid are not free.', source: 'tripadvisor_review', source_id: 'tripadvisor_review_44291', date: '2023-09-02' },
+          { text: 'They work in pairs. One distracts, the other ties. Keep your hands in your pockets.', source: 'youtube_transcript_chunk', source_id: 'yt_LouvreVlog_2024', date: '2024-05-20' },
+        ],
+        meta: { date_min: '2023-04', date_max: '2025-08', platforms: 3, insights: 58, warnings: 41 },
+      },
+      { cluster_id: -2, severity: 'SEVERE',
+        name: 'Pickpockets on Metro Line 1 toward Palais-Royal stop',
+        deck: 'Recurring pickpocket reports on the museum-bound Line 1 platforms and trains; doors-closing snatch a frequent pattern.',
+        quotes: [
+          { text: 'Got my phone lifted on the metro toward Palais-Royal. They squeeze in right before the doors shut.', source: 'reddit_post', source_id: 'r/ParisTravelGuide', date: '2024-09-03' },
+          { text: 'Watch Line 1 stops, especially Palais-Royal Musée du Louvre. Hands in pockets the entire ride.', source: 'tripadvisor_review', source_id: 'tripadvisor_review_51119', date: '2024-02-18' },
+        ],
+        meta: { date_min: '2023-02', date_max: '2025-07', platforms: 3, insights: 34, warnings: 27 } },
+      { cluster_id: -3, severity: 'ANNOYING',
+        name: 'Fake petition signers in courtyard before security',
+        deck: 'Cluster of "deaf-mute petition" approaches in the Cour Napoléon — clipboard out, signature requested, donation extorted.',
+        quotes: [
+          { text: 'Three different girls with clipboards in 10 minutes. Same petition, same routine. Ignore and keep moving.', source: 'reddit_comment', source_id: 'r/ParisTravelGuide', date: '2024-04-22' },
+          { text: 'They claim deaf and dumb status and ask for euros once you sign. Decline politely and walk away.', source: 'tripadvisor_review', source_id: 'tripadvisor_review_39871', date: '2023-11-14' },
+        ],
+        meta: { date_min: '2023-05', date_max: '2025-06', platforms: 2, insights: 22, warnings: 14 } },
+      { cluster_id: -4, severity: 'ANNOYING',
+        name: 'Mona Lisa room: phone-snatch in the crowd crush',
+        deck: 'Crowd density in Salle des États is itself the threat surface — phone snatches reported under cover of the scrum.',
+        quotes: [
+          { text: 'Held my phone up for one second and someone tried to bump it loose. Don’t take photos with one hand in there.', source: 'reddit_post', source_id: 'r/Paris', date: '2024-08-29' },
+          { text: 'The crowd at Mona Lisa is so tight you literally cannot tell who is touching you. Phones in zipped pockets.', source: 'tripadvisor_review', source_id: 'tripadvisor_review_60023', date: '2024-01-08' },
+        ],
+        meta: { date_min: '2023-08', date_max: '2025-09', platforms: 2, insights: 19, warnings: 9 } },
+      { cluster_id: -5, severity: 'HEADS-UP',
+        name: 'Cloakroom closes 30 minutes before the museum and traps people',
+        deck: 'Multiple reports of patrons stranded with bags after late cloakroom closure; signage is poor.',
+        quotes: [
+          { text: 'They shut the cloakroom at 5:15 with no warning. We had to lug coats around the whole last hour.', source: 'tripadvisor_review', source_id: 'tripadvisor_review_71402', date: '2024-06-02' },
+          { text: 'Bring a small bag. The cloakroom is a gamble and the line for it is its own ordeal.', source: 'reddit_comment', source_id: 'r/ParisTravelGuide', date: '2024-03-30' },
+        ],
+        meta: { date_min: '2023-09', date_max: '2025-05', platforms: 2, insights: 14, warnings: 5 } },
+      { cluster_id: -6, severity: 'HEADS-UP',
+        name: 'Audio guide rental line eats 25 minutes at Pyramid entrance',
+        deck: 'The Nintendo audio guide counter is a chokepoint; skip it or rent before opening rush.',
+        quotes: [
+          { text: 'Audio guide line took us 25 minutes. Just use the free Louvre app, it has the same content.', source: 'reddit_post', source_id: 'r/ParisTravelGuide', date: '2024-10-14' },
+        ],
+        meta: { date_min: '2024-02', date_max: '2025-08', platforms: 1, insights: 9, warnings: 3 } },
+    ],
+    'Colosseum': [
+      { cluster_id: -101, severity: 'SEVERE',
+        name: 'Centurion costume photo extortion at the arch',
+        deck: 'Costumed "centurions" press tourists into photos then demand 20+ euros; refusals can turn aggressive.',
+        quotes: [
+          { text: 'They put the helmet on my kid before I could say no, then demanded 30 euros for the photo I never asked for.', source: 'tripadvisor_review', source_id: 'tripadvisor_review_88210', date: '2024-05-19' },
+          { text: 'Centurions near the Arch of Constantine are a scam. Avoid eye contact, do not stop for photos.', source: 'reddit_post', source_id: 'r/rome', date: '2024-03-14' },
+          { text: 'Got followed for two blocks after refusing. Police won’t help — they’ve seen it a thousand times.', source: 'youtube_transcript_chunk', source_id: 'yt_RomeWalk_2023', date: '2023-08-04' },
+        ],
+        meta: { date_min: '2022-09', date_max: '2025-09', platforms: 3, insights: 71, warnings: 52 } },
+      { cluster_id: -102, severity: 'SEVERE',
+        name: 'Fake “skip-the-line” tour sellers near Metro Colosseo',
+        deck: 'Touts intercept tourists exiting Metro Colosseo with fake skip-the-line voucher pitches at marked-up prices.',
+        quotes: [
+          { text: 'Paid 90 euros for what turned out to be the standard ticket plus a 5-minute speech. Lesson learned.', source: 'tripadvisor_review', source_id: 'tripadvisor_review_91002', date: '2024-04-08' },
+          { text: 'The guys with lanyards outside the metro are not official. Buy on the actual Parco Colosseo site.', source: 'reddit_comment', source_id: 'r/rome', date: '2024-07-19' },
+        ],
+        meta: { date_min: '2023-01', date_max: '2025-08', platforms: 2, insights: 46, warnings: 38 } },
+      { cluster_id: -103, severity: 'ANNOYING',
+        name: 'Wrong-entrance routing — Forum ticket sends you 400m around',
+        deck: 'Combined ticket holders routed to the Forum entrance and then sent back, costing 20+ minutes in summer heat.',
+        quotes: [
+          { text: 'Staff told us "wrong entrance" with no map. Had to walk all the way around the hill in 35 degrees.', source: 'tripadvisor_review', source_id: 'tripadvisor_review_77441', date: '2024-07-22' },
+          { text: 'If you have the combined ticket, enter at Via Sacra, NOT the Colosseum gate. They will turn you away.', source: 'reddit_post', source_id: 'r/rome', date: '2024-06-11' },
+        ],
+        meta: { date_min: '2023-05', date_max: '2025-08', platforms: 2, insights: 28, warnings: 11 } },
+      { cluster_id: -104, severity: 'ANNOYING',
+        name: 'Bag-size enforcement is inconsistent and turns people away',
+        deck: 'Bag policy enforced unpredictably at security; small backpacks rejected one day, allowed the next.',
+        quotes: [
+          { text: 'Same backpack I used yesterday at the Vatican was refused at the Colosseum. No cloakroom on site.', source: 'tripadvisor_review', source_id: 'tripadvisor_review_82119', date: '2024-08-30' },
+          { text: 'Bring the smallest bag you own. They’ve gotten stricter and there’s nowhere to store it.', source: 'reddit_comment', source_id: 'r/rome', date: '2024-09-15' },
+        ],
+        meta: { date_min: '2023-06', date_max: '2025-09', platforms: 2, insights: 21, warnings: 8 } },
+      { cluster_id: -105, severity: 'HEADS-UP',
+        name: 'Arena floor access only books out by 9am same-day',
+        deck: 'Day-of arena tickets evaporate within an hour of the booking window opening; advance booking strongly advised.',
+        quotes: [
+          { text: 'Logged on at 9:02am for arena floor — all gone. Book 30 days out or forget it.', source: 'reddit_post', source_id: 'r/rome', date: '2024-05-04' },
+        ],
+        meta: { date_min: '2023-11', date_max: '2025-08', platforms: 1, insights: 12, warnings: 2 } },
+      { cluster_id: -106, severity: 'HEADS-UP',
+        name: 'Underground tour guides walk so fast solo travelers fall behind',
+        deck: 'Underground tour group sizes (25+) and brisk guide pace make it easy to lose your group in the hypogeum.',
+        quotes: [
+          { text: 'Underground guide walked off mid-sentence. We caught up at the next stop. Stick to the front.', source: 'tripadvisor_review', source_id: 'tripadvisor_review_69910', date: '2024-04-26' },
+        ],
+        meta: { date_min: '2023-07', date_max: '2025-06', platforms: 1, insights: 8, warnings: 2 } },
+    ],
+  };
+
+  // -------------------- UTILITY --------------------
+  function fmtDateline() {
+    const d = new Date();
+    const months = ['JANUARY','FEBRUARY','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'];
+    const days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+    return `${days[d.getDay()]} · ${months[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  }
+  function escapeHtml(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  function trimQuote(s, max=220) {
+    if (!s) return '';
+    let t = String(s).trim().replace(/\s+/g, ' ');
+    if (t.length <= max) return t;
+    const slice = t.slice(0, max);
+    const lastDot = Math.max(slice.lastIndexOf('. '), slice.lastIndexOf('! '), slice.lastIndexOf('? '));
+    if (lastDot > max * 0.5) return slice.slice(0, lastDot + 1).trim();
+    const lastSp = slice.lastIndexOf(' ');
+    return (slice.slice(0, lastSp > 0 ? lastSp : max) + '…').trim();
+  }
+  function pad2(n) { return n < 10 ? '0' + n : '' + n; }
+  function platformLabel(src) {
+    return ({
+      'tripadvisor_review': 'TRIPADVISOR',
+      'google_review': 'GOOGLE',
+      'reddit_post': 'REDDIT',
+      'reddit_comment': 'REDDIT',
+      'youtube_transcript_chunk': 'YOUTUBE',
+    })[src] || (src ? src.toUpperCase() : 'WIRE');
+  }
+  function platformFull(src) {
+    return ({
+      'tripadvisor_review': 'TripAdvisor review',
+      'google_review': 'Google review',
+      'reddit_post': 'Reddit post',
+      'reddit_comment': 'Reddit comment',
+      'youtube_transcript_chunk': 'YouTube transcript chunk',
+    })[src] || (src || 'Wire source');
+  }
+
+  async function fetchJSON(path, opts={}) {
+    const url = API_BASE + path;
+    const init = Object.assign({
+      headers: { 'Content-Type': 'application/json' },
+    }, opts);
+    const r = await fetch(url, init);
+    if (!r.ok) throw new Error(`HTTP ${r.status} ${path}`);
+    return r.json();
+  }
+
+  // -------------------- SEVERITY --------------------
+  function computeSeverity(warning_share, negative_share) {
+    if (warning_share > 0.6 && negative_share > 0.5) return 'SEVERE';
+    if (warning_share > 0.3) return 'ANNOYING';
+    return 'HEADS-UP';
+  }
+
+  // -------------------- WEATHER STRAP --------------------
+  function setWeather(poi, stats) {
+    const el = document.getElementById('weather');
+    const prefix = WEATHER_PREFIX[poi] || 'CONS LIKELY';
+    if (!stats) { el.textContent = `TOURIST WEATHER: ${prefix}`; return; }
+    const warn = (stats.intent_tag_counts && stats.intent_tag_counts.warning) || 0;
+    const sources = stats.source_counts || {};
+    const nPlatforms = Object.keys(sources).filter(k => sources[k] > 0).length;
+    el.textContent = `TOURIST WEATHER: ${prefix} · n=${warn} WARNINGS · ${nPlatforms} PLATFORMS`;
+  }
+  function setWeatherSkeleton() {
+    document.getElementById('weather').innerHTML = '<span class="skel weather-bar"></span><span class="skel weather-bar" style="width:75%"></span>';
+  }
+
+  // -------------------- SKELETON BODY --------------------
+  function renderSkeleton() {
+    const left = document.getElementById('col-left');
+    const right = document.getElementById('col-right');
+    left.innerHTML = ''; right.innerHTML = '';
+    for (let i = 0; i < 8; i++) {
+      const target = i < 4 ? left : right;
+      const div = document.createElement('div');
+      div.className = 'incident';
+      div.innerHTML = `
+        <div class="incident-head">
+          <span class="numeral" style="color: var(--muted);">${pad2(i+1)}.</span>
+          <span class="skel bar" style="width:60px;height:14px;"></span>
+        </div>
+        <span class="skel headline-bar"></span>
+        <span class="skel body-bar"></span>
+        <span class="skel body-bar short"></span>
+        <span class="skel meta-bar"></span>
+      `;
+      target.appendChild(div);
+    }
+  }
+
+  // -------------------- ERROR / CORRECTION --------------------
+  function showCorrection(msg, onRetry) {
+    const slot = document.getElementById('correction-slot');
+    slot.innerHTML = `
+      <div class="correction">
+        <div><span class="label">Correction:</span> ${escapeHtml(msg)}</div>
+        <button class="retry" type="button" id="retry-btn">Retry &rarr;</button>
+      </div>
+    `;
+    const btn = document.getElementById('retry-btn');
+    if (btn) btn.addEventListener('click', onRetry);
+  }
+  function clearCorrection() {
+    document.getElementById('correction-slot').innerHTML = '';
+  }
+
+  // -------------------- INCIDENT CARD RENDER --------------------
+  function renderIncident(idx, inc, quotesState) {
+    // quotesState = { state: 'loading'|'ok'|'fail'|'expanded', quotes: [...] }
+    const sev = inc.severity || 'HEADS-UP';
+    const numeral = pad2(idx + 1) + '.';
+
+    let citationHTML = '';
+    if (quotesState.state === 'loading') {
+      citationHTML = `
+        <div class="citation">
+          <span class="skel body-bar"></span>
+          <span class="skel body-bar short"></span>
+        </div>`;
+    } else if (quotesState.state === 'fail') {
+      citationHTML = `<div class="citation-pending">Citations pending — wire timed out</div>`;
+    } else {
+      const list = quotesState.quotes || [];
+      // platform diversity check for "uncorroborated"
+      const distinctPlatforms = new Set(list.map(q => q.source));
+      const uncorrob = list.length > 0 && distinctPlatforms.size < 2;
+      const showCount = quotesState.state === 'expanded' ? list.length : Math.min(3, list.length);
+      citationHTML = '<div class="citation">';
+      for (let i = 0; i < showCount; i++) {
+        const q = list[i];
+        const dateStr = q.date || '';
+        const platLabel = platformLabel(q.source);
+        const handle = q.source_id || 'unknown';
+        const fullPlat = platformFull(q.source);
+        const tip = `${fullPlat} · cluster ${inc.cluster_id}`;
+        citationHTML += `
+          <blockquote class="quote">&ldquo;${escapeHtml(trimQuote(q.text))}&rdquo;</blockquote>
+          <p class="attribution src" title="${escapeHtml(tip)}">&mdash; ${escapeHtml(handle)} · ${escapeHtml(platLabel)} · ${escapeHtml(dateStr)}</p>
+        `;
+      }
+      citationHTML += '</div>';
+      if (uncorrob) {
+        citationHTML += `<div class="uncorrob">Uncorroborated — single source</div>`;
+      }
+      if (list.length > 3) {
+        const moreLabel = quotesState.state === 'expanded'
+          ? 'Collapse &uarr;'
+          : `Expand citations (${list.length}) &rarr;`;
+        citationHTML += `<span class="expanded-note" data-toggle="${inc.cluster_id}">${moreLabel}</span>`;
+      }
+    }
+
+    const m = inc.meta || {};
+    const metaParts = [];
+    if (m.date_min && m.date_max) metaParts.push(`DATE RANGE: ${m.date_min} → ${m.date_max}`);
+    if (m.platforms != null) metaParts.push(`SOURCES: ${m.platforms} PLATFORM${m.platforms === 1 ? '' : 'S'}`);
+    if (m.insights != null) metaParts.push(`n=${m.insights} INSIGHTS`);
+    if (m.warnings != null) metaParts.push(`INTENT: WARNING ×${m.warnings}`);
+    const metaHTML = metaParts.length
+      ? `<div class="meta-strip">${metaParts.map(escapeHtml).join('<span class="sep">·</span>')}</div>`
+      : '';
+
+    const el = document.createElement('article');
+    el.className = 'incident';
+    el.dataset.clusterId = inc.cluster_id;
+    el.innerHTML = `
+      <div class="incident-head">
+        <span class="numeral" data-numeral="${inc.cluster_id}">${numeral}</span>
+        <span class="severity">${sev}</span>
+      </div>
+      <h2 class="headline">${escapeHtml(inc.name)}</h2>
+      <p class="deck-line">${escapeHtml(inc.deck || '')}</p>
+      ${citationHTML}
+      ${metaHTML}
+    `;
+    return el;
+  }
+
+  // -------------------- COLUMN LAYOUT --------------------
+  function paintIncidents(incidents, quotesByCid) {
+    const left = document.getElementById('col-left');
+    const right = document.getElementById('col-right');
+    left.innerHTML = ''; right.innerHTML = '';
+    if (!incidents.length) {
+      const cols = document.getElementById('columns');
+      cols.innerHTML = `
+        <div class="empty-state">
+          <div class="head">Stop the presses</div>
+          <div class="sub">No incidents filed for this POI.</div>
+        </div>
+      `;
+      return;
+    }
+    // ensure we have left/right structure
+    const cols = document.getElementById('columns');
+    if (!document.getElementById('col-left')) {
+      cols.innerHTML = `
+        <div class="col" id="col-left"></div>
+        <div class="col-rule"></div>
+        <div class="col" id="col-right"></div>
+      `;
+    }
+    const colLeft = document.getElementById('col-left');
+    const colRight = document.getElementById('col-right');
+    colLeft.innerHTML = ''; colRight.innerHTML = '';
+    const half = Math.ceil(incidents.length / 2);
+    incidents.forEach((inc, i) => {
+      const quotesState = quotesByCid.get(inc.cluster_id) || { state: 'loading', quotes: [] };
+      const node = renderIncident(i, inc, quotesState);
+      (i < half ? colLeft : colRight).appendChild(node);
+    });
+  }
+
+  // -------------------- CLUSTER EXTRACTION --------------------
+  function platformOf(c) {
+    // count distinct platforms in source_mix
+    if (!c || !c.source_mix) return 0;
+    const sm = c.source_mix;
+    const keys = Object.keys(sm).filter(k => sm[k] > 0);
+    return new Set(keys.map(k => k === 'reddit_post' || k === 'reddit_comment' ? 'reddit' : k)).size;
+  }
+
+  function selectIncidents(clusters, insightsByCid) {
+    // 1. keep only Operational Intelligence clusters w/ warnings or negative/mixed sentiment
+    const filtered = clusters.filter(c => {
+      const grp = insightsByCid.get(c.cluster_id);
+      const warningCount = (grp && grp.warnings) || 0;
+      const sentimentOk = ['negative', 'mixed'].includes((c.sentiment || '').toLowerCase());
+      return warningCount > 0 || sentimentOk;
+    });
+    // 2. rank by source_mix breadth desc, then size desc
+    filtered.sort((a, b) => {
+      const pa = platformOf(a), pb = platformOf(b);
+      if (pb !== pa) return pb - pa;
+      return (b.size || 0) - (a.size || 0);
+    });
+    // 3. take top 24, but cap to 12 for layout
+    const top = filtered.slice(0, 12);
+    // 4. compute severity for each
+    return top.map(c => {
+      const grp = insightsByCid.get(c.cluster_id) || { total: 0, warnings: 0, negatives: 0, date_min: null, date_max: null };
+      const total = grp.total || c.size || 1;
+      const warning_share = total ? grp.warnings / total : 0;
+      const negative_share = total ? grp.negatives / total : 0;
+      return {
+        cluster_id: c.cluster_id,
+        name: c.name || c.title || `Cluster ${c.cluster_id}`,
+        deck: c.summary || c.description || c.deck || '',
+        severity: computeSeverity(warning_share, negative_share),
+        meta: {
+          date_min: grp.date_min,
+          date_max: grp.date_max,
+          platforms: platformOf(c),
+          insights: total,
+          warnings: grp.warnings,
+        },
+      };
+    });
+  }
+
+  function groupInsights(insights) {
+    const m = new Map();
+    for (const i of insights) {
+      const cid = i.cluster_id;
+      if (cid == null) continue;
+      if (!m.has(cid)) m.set(cid, { total: 0, warnings: 0, negatives: 0, date_min: null, date_max: null });
+      const g = m.get(cid);
+      g.total += 1;
+      if ((i.intent_tag || '').toLowerCase() === 'warning') g.warnings += 1;
+      const sent = (i.sentiment || '').toLowerCase();
+      if (sent === 'negative') g.negatives += 1;
+      const d = i.published_at || i.created_at || i.date || null;
+      if (d) {
+        const ym = String(d).slice(0, 7);
+        if (!g.date_min || ym < g.date_min) g.date_min = ym;
+        if (!g.date_max || ym > g.date_max) g.date_max = ym;
+      }
+    }
+    return m;
+  }
+
+  // -------------------- EXPLAIN CONCURRENCY POOL --------------------
+  async function fetchAllExplains(incidents, onUpdate) {
+    const POOL = 4;
+    let cursor = 0;
+    const quotesByCid = new Map();
+    incidents.forEach(inc => quotesByCid.set(inc.cluster_id, { state: 'loading', quotes: [] }));
+    onUpdate(quotesByCid);
+
+    async function worker() {
+      while (cursor < incidents.length) {
+        const me = cursor++;
+        const inc = incidents[me];
+        if (inc.cluster_id < 0) {
+          // Fallback already has quotes inline
+          quotesByCid.set(inc.cluster_id, { state: 'ok', quotes: inc.quotes || [] });
+          onUpdate(quotesByCid);
+          continue;
+        }
+        if (EXPLAIN_CACHE.has(inc.cluster_id)) {
+          quotesByCid.set(inc.cluster_id, { state: 'ok', quotes: EXPLAIN_CACHE.get(inc.cluster_id) });
+          onUpdate(quotesByCid);
+          continue;
+        }
+        try {
+          const r = await fetchJSON('/api/explain_cluster', {
+            method: 'POST',
+            body: JSON.stringify({ cluster_id: inc.cluster_id, max_quotes: 8 }),
+          });
+          const rawQuotes = r.quotes || [];
+          // platform diversity ordering
+          const PRIORITY = ['tripadvisor_review','reddit_post','reddit_comment','youtube_transcript_chunk','google_review'];
+          const seen = new Set();
+          const picked = [];
+          for (const p of PRIORITY) {
+            for (const q of rawQuotes) {
+              if (q.source === p && !seen.has(q.source_id)) {
+                picked.push({
+                  text: q.text || q.quote || '',
+                  source: q.source,
+                  source_id: q.source_id || q.id || 'unknown',
+                  date: (q.published_at || q.created_at || q.date || '').slice(0, 10),
+                });
+                seen.add(q.source_id);
+                break;
+              }
+            }
+            if (picked.length >= 3) break;
+          }
+          // Fill remaining slots from anything not yet picked
+          if (picked.length < 3) {
+            for (const q of rawQuotes) {
+              if (picked.length >= 3) break;
+              if (!seen.has(q.source_id)) {
+                picked.push({
+                  text: q.text || q.quote || '',
+                  source: q.source,
+                  source_id: q.source_id || q.id || 'unknown',
+                  date: (q.published_at || q.created_at || q.date || '').slice(0, 10),
+                });
+                seen.add(q.source_id);
+              }
+            }
+          }
+          // Keep the full list (up to 8) for expanded view
+          const allList = rawQuotes.slice(0, 8).map(q => ({
+            text: q.text || q.quote || '',
+            source: q.source,
+            source_id: q.source_id || q.id || 'unknown',
+            date: (q.published_at || q.created_at || q.date || '').slice(0, 10),
+          }));
+          // Merge picked priority quotes at the front
+          const finalList = [];
+          const seenFinal = new Set();
+          for (const q of [...picked, ...allList]) {
+            const k = q.source_id + '|' + q.text.slice(0, 32);
+            if (!seenFinal.has(k)) { finalList.push(q); seenFinal.add(k); }
+          }
+          EXPLAIN_CACHE.set(inc.cluster_id, finalList);
+          quotesByCid.set(inc.cluster_id, { state: 'ok', quotes: finalList });
+          onUpdate(quotesByCid);
+        } catch (err) {
+          quotesByCid.set(inc.cluster_id, { state: 'fail', quotes: [] });
+          onUpdate(quotesByCid);
+        }
+      }
+    }
+    const workers = [];
+    for (let i = 0; i < POOL; i++) workers.push(worker());
+    await Promise.all(workers);
+    return quotesByCid;
+  }
+
+  // -------------------- MAIN LOAD --------------------
+  let CURRENT_INCIDENTS = [];
+  let CURRENT_QUOTES = new Map();
+  let CURRENT_QUOTE_STATES = new Map(); // tracks 'expanded' per cluster
+
+  function rePaint() {
+    // Merge expansion state on top of CURRENT_QUOTES
+    const merged = new Map();
+    for (const [cid, st] of CURRENT_QUOTES) {
+      const exp = CURRENT_QUOTE_STATES.get(cid);
+      if (exp === 'expanded' && st.state === 'ok') {
+        merged.set(cid, { state: 'expanded', quotes: st.quotes });
+      } else {
+        merged.set(cid, st);
+      }
+    }
+    paintIncidents(CURRENT_INCIDENTS, merged);
+    wireIncidentEvents();
+  }
+
+  function wireIncidentEvents() {
+    document.querySelectorAll('[data-numeral]').forEach(el => {
+      el.addEventListener('click', () => {
+        const cid = parseInt(el.dataset.numeral, 10);
+        const st = CURRENT_QUOTES.get(cid);
+        if (!st || st.state !== 'ok') return;
+        if ((st.quotes || []).length <= 3) return;
+        const cur = CURRENT_QUOTE_STATES.get(cid);
+        CURRENT_QUOTE_STATES.set(cid, cur === 'expanded' ? 'collapsed' : 'expanded');
+        rePaint();
+      });
+    });
+    document.querySelectorAll('.expanded-note').forEach(el => {
+      el.addEventListener('click', () => {
+        const cid = parseInt(el.dataset.toggle, 10);
+        const cur = CURRENT_QUOTE_STATES.get(cid);
+        CURRENT_QUOTE_STATES.set(cid, cur === 'expanded' ? 'collapsed' : 'expanded');
+        rePaint();
+      });
+    });
+  }
+
+  function applyFallback(poi) {
+    const fb = FALLBACK_INCIDENTS[poi] || [];
+    CURRENT_INCIDENTS = fb;
+    CURRENT_QUOTES = new Map();
+    for (const inc of fb) {
+      CURRENT_QUOTES.set(inc.cluster_id, { state: 'ok', quotes: inc.quotes || [] });
+    }
+    rePaint();
+  }
+
+  async function loadPOI(poi) {
+    CURRENT_POI = poi;
+    CURRENT_QUOTE_STATES.clear();
+    document.getElementById('dateline').textContent = fmtDateline();
+
+    // mark active toggle
+    document.querySelectorAll('#poi-seg button').forEach(b => {
+      b.classList.toggle('active', b.dataset.poi === poi);
+    });
+
+    // dim body for transition
+    const body = document.getElementById('body');
+    body.classList.add('dim');
+
+    // Show skeleton immediately, draw a fallback in the background after a short wait
+    setWeatherSkeleton();
+    renderSkeleton();
+    clearCorrection();
+
+    // Fallback safety net: if no real data after 4s, paint fallback so the page is never empty
+    const fallbackTimer = setTimeout(() => {
+      if (CURRENT_INCIDENTS.length === 0) applyFallback(poi);
+    }, 4000);
+
+    try {
+      // Fire stats, clusters, insights in parallel
+      const statsP = fetchJSON(`/api/poi_stats?poi=${encodeURIComponent(poi)}`).catch(() => null);
+      const clustersP = fetchJSON('/api/search_clusters', {
+        method: 'POST',
+        body: JSON.stringify({
+          poi: poi,
+          query: 'scam pickpocket queue trap warning danger',
+          intent_l1: 'Operational Intelligence',
+          limit: 40,
+        }),
+      }).catch(() => null);
+      const insightsP = fetchJSON('/api/search_insights', {
+        method: 'POST',
+        body: JSON.stringify({
+          poi: poi,
+          query: 'warning scam pickpocket queue',
+          filters: { l1: 'Operational Intelligence', intent_tag: 'warning' },
+          limit: 500,
+        }),
+      }).catch(() => null);
+
+      const [stats, clustersResp, insightsResp] = await Promise.all([statsP, clustersP, insightsP]);
+
+      setWeather(poi, stats);
+
+      const clustersList = Array.isArray(clustersResp) ? clustersResp
+        : (clustersResp && clustersResp.clusters) || (clustersResp && clustersResp.results) || [];
+      const insightsList = Array.isArray(insightsResp) ? insightsResp
+        : (insightsResp && insightsResp.insights) || (insightsResp && insightsResp.results) || [];
+
+      const grouped = groupInsights(insightsList);
+      const incidents = selectIncidents(clustersList, grouped);
+
+      if (!incidents.length) {
+        // either truly empty or both endpoints failed — use fallback
+        clearTimeout(fallbackTimer);
+        applyFallback(poi);
+      } else {
+        clearTimeout(fallbackTimer);
+        CURRENT_INCIDENTS = incidents;
+        CURRENT_QUOTES = new Map();
+        incidents.forEach(inc => CURRENT_QUOTES.set(inc.cluster_id, { state: 'loading', quotes: [] }));
+        rePaint();
+        // Fire explain_cluster in pool
+        fetchAllExplains(incidents, (qmap) => {
+          CURRENT_QUOTES = qmap;
+          rePaint();
+        });
+      }
+    } catch (err) {
+      clearTimeout(fallbackTimer);
+      showCorrection('Source wire timed out. The publisher regrets the inconvenience.', () => loadPOI(poi));
+      applyFallback(poi);
+    } finally {
+      // remove dim after a short tick so the swap doesn't snap
+      setTimeout(() => body.classList.remove('dim'), 120);
+    }
+  }
+
+  // -------------------- EVENT WIRING --------------------
+  document.querySelectorAll('#poi-seg button').forEach(b => {
+    b.addEventListener('click', () => {
+      const poi = b.dataset.poi;
+      if (poi !== CURRENT_POI) loadPOI(poi);
+    });
+  });
+  document.getElementById('print-btn').addEventListener('click', () => window.print());
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    const k = e.key.toLowerCase();
+    if (k === 'p') { e.preventDefault(); window.print(); }
+    else if (e.key === '1') loadPOI('Louvre Museum');
+    else if (e.key === '2') loadPOI('Colosseum');
+  });
+
+  // -------------------- BOOT --------------------
+  document.getElementById('dateline').textContent = fmtDateline();
+  loadPOI('Louvre Museum');
+</script>
+
+</body>
+</html>

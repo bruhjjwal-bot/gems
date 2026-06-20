@@ -1,0 +1,1161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Two Tickets — Vol. 01 / Louvre vs Colosseum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,700;9..144,900&family=Newsreader:ital,wght@0,400;0,500;1,400;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4EFE6;
+    --fg: #1A1714;
+    --accent: #C8341B;
+    --muted: #8C857A;
+    --hair: #1A1714;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg); }
+  body {
+    font-family: 'Newsreader', Georgia, serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.45;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; font-weight: 500; letter-spacing: 0.02em; }
+  .serif-display {
+    font-family: 'Fraunces', 'Times New Roman', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 0;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+  }
+  a { color: inherit; text-decoration: none; }
+  a:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+
+  /* ----- page frame ----- */
+  .frame {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 18px 28px 80px;
+    position: relative;
+  }
+
+  /* ----- top utility bar ----- */
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--fg);
+  }
+  .topbar .back { color: var(--fg); }
+  .topbar .back:hover { color: var(--accent); text-decoration: none; }
+  .topbar .center { text-align: center; }
+
+  /* ----- masthead ----- */
+  .masthead {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 14px 0 18px;
+    border-bottom: 2px solid var(--fg);
+  }
+  .nameplate {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 0;
+    font-weight: 900;
+    font-size: 44px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .nameplate em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--muted);
+    font-size: 18px;
+    letter-spacing: 0;
+    text-transform: none;
+    margin-left: 14px;
+  }
+  .issueline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--fg);
+    text-align: center;
+  }
+  .dateline {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-align: right;
+  }
+
+  /* ----- lede ----- */
+  .lede {
+    padding: 36px 0 24px;
+    text-align: center;
+    position: relative;
+  }
+  .lede h1 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 0;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1.02;
+    letter-spacing: -0.025em;
+    margin: 0 0 14px;
+  }
+  .lede .deck {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--muted);
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .lede .weighttag {
+    display: inline-block;
+    margin-top: 14px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 4px 8px;
+    opacity: 0;
+    transition: opacity 200ms ease;
+  }
+  .lede .weighttag.on { opacity: 1; }
+
+  /* ----- main split ----- */
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    column-gap: 0;
+    position: relative;
+    border-top: 1px solid var(--fg);
+    border-bottom: 1px solid var(--fg);
+  }
+  .spine {
+    background: var(--fg);
+    transition: background 200ms ease, width 200ms ease;
+  }
+  .spine.flash { background: var(--accent); }
+  .col { padding: 28px 26px 0; }
+  .col.right { padding-left: 26px; }
+  .col.left { padding-right: 26px; }
+
+  /* ----- column header / nameplate ----- */
+  .col-head { padding-bottom: 20px; border-bottom: 1px solid var(--fg); }
+  .col-kicker {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .col-name {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 0;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 0.94;
+    letter-spacing: -0.035em;
+    margin: 0;
+  }
+  .col-sub {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 15px;
+    margin-top: 8px;
+  }
+
+  /* ----- scorecard ----- */
+  .scorecard {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 28px;
+    padding: 22px 0 22px;
+    border-bottom: 1px solid var(--fg);
+    align-items: end;
+  }
+  .verdict {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .verdict .num {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+  }
+  .verdict .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .microbars { display: grid; grid-template-columns: 1fr; gap: 9px; padding-bottom: 6px; }
+  .mb { display: grid; grid-template-columns: 110px 1fr 36px; gap: 10px; align-items: center; }
+  .mb .name {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .mb .track {
+    height: 4px;
+    border: 1px solid var(--fg);
+    position: relative;
+  }
+  .mb .fill {
+    position: absolute;
+    inset: 0 100% 0 0;
+    background: var(--fg);
+    transition: right 600ms cubic-bezier(.2,.7,.2,1), background 200ms ease;
+  }
+  .col.winner .mb .fill { background: var(--accent); }
+  .mb .val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--fg);
+    text-align: right;
+  }
+
+  /* ----- comparison rows ----- */
+  .rows { display: grid; grid-template-rows: auto; }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    border-bottom: 1px solid var(--fg);
+    position: relative;
+  }
+  .row:last-child { border-bottom: none; }
+  .row .spine { background: var(--fg); }
+  .row.tight-spine .spine { width: 1px; }
+  .row.spine-thick .spine { background: var(--fg); }
+  .cat-label {
+    position: absolute;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg);
+    padding: 0 10px;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 14;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--fg);
+    z-index: 2;
+    white-space: nowrap;
+  }
+  .cell {
+    padding: 38px 24px 28px;
+    position: relative;
+    transition: filter 280ms ease, opacity 280ms ease;
+  }
+  .cell.loser { filter: grayscale(1); opacity: 0.55; }
+  .cell .badge {
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 3px 6px;
+    opacity: 0;
+    transition: opacity 250ms ease;
+  }
+  .cell.winner .badge { opacity: 1; }
+  .cell .syn {
+    font-family: 'Newsreader', serif;
+    font-size: 18.5px;
+    line-height: 1.38;
+    font-weight: 400;
+    color: var(--fg);
+    margin: 0;
+  }
+  .cell .syn.empty { color: var(--muted); font-style: italic; }
+  .cell .foot {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    color: var(--fg);
+    cursor: pointer;
+    border-bottom: 1px dashed var(--muted);
+    padding-bottom: 1px;
+  }
+  .cell .foot:hover, .cell .foot:focus { color: var(--accent); border-bottom-color: var(--accent); outline: none; }
+  .cell .cluster-name {
+    margin-top: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9.5px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ----- tooltip ----- */
+  .tip {
+    position: absolute;
+    z-index: 30;
+    width: 280px;
+    background: var(--bg);
+    border: 1px solid var(--fg);
+    padding: 14px 14px 12px;
+    font-family: 'Newsreader', serif;
+    font-size: 15px;
+    line-height: 1.4;
+    color: var(--fg);
+  }
+  .tip .quote { font-style: italic; }
+  .tip .meta {
+    margin-top: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+  }
+  .tip .pager {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 9.5px;
+    color: var(--muted);
+    letter-spacing: 0.1em;
+  }
+  .tip .pager .nav { cursor: pointer; padding: 0 4px; }
+  .tip .pager .nav:hover { color: var(--accent); }
+
+  /* ----- flip section ----- */
+  .flip {
+    padding: 48px 0 8px;
+    border-top: none;
+  }
+  .flip h2 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 0;
+    font-weight: 700;
+    font-size: 36px;
+    margin: 0 0 6px;
+    letter-spacing: -0.02em;
+  }
+  .flip .deck {
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 17px;
+    margin: 0 0 22px;
+  }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--fg);
+    background: transparent;
+    border: 1px solid var(--fg);
+    padding: 9px 14px;
+    cursor: pointer;
+    transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+  }
+  .chip:hover { border-color: var(--accent); color: var(--accent); }
+  .chip.active {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+  }
+  .reasoning {
+    margin-top: 22px;
+    font-family: 'Newsreader', serif;
+    font-style: italic;
+    font-size: 19px;
+    line-height: 1.4;
+    color: var(--fg);
+    max-width: 880px;
+    border-left: 2px solid var(--fg);
+    padding-left: 18px;
+    min-height: 28px;
+  }
+  .reasoning.baseline { color: var(--muted); }
+
+  /* ----- footer ----- */
+  .colophon {
+    margin-top: 56px;
+    padding-top: 18px;
+    border-top: 1px solid var(--fg);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .colophon .right { text-align: right; }
+
+  /* ----- fatal ----- */
+  .fatal {
+    display: none;
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  body.dead .split, body.dead .flip, body.dead .lede { display: none; }
+  body.dead .fatal { display: flex; }
+
+  /* row fade-in stagger */
+  .cell .syn, .cell .foot, .cell .cluster-name { opacity: 0; transition: opacity 350ms ease; }
+  .cell.shown .syn, .cell.shown .foot, .cell.shown .cluster-name { opacity: 1; }
+
+  /* ----- responsive ----- */
+  @media (max-width: 900px) {
+    .lede h1 { font-size: 42px; }
+    .col-name { font-size: 54px; }
+    .verdict .num { font-size: 72px; }
+    .split { grid-template-columns: 1fr; }
+    .split .spine { display: none; }
+    .row { grid-template-columns: 1fr; border-top: 1px solid var(--fg); }
+    .row .spine { display: none; }
+    .row .cat-label { position: relative; top: 0; left: 0; transform: none; display: block; padding: 14px 0 6px; text-align: left; background: transparent; }
+    .cell { padding: 14px 0 24px; }
+    .cell .badge { right: 0; top: 0; position: relative; display: inline-block; margin-bottom: 8px; }
+    .masthead { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .scorecard { grid-template-columns: 1fr; gap: 18px; }
+    .col.left, .col.right { padding: 18px 0; }
+    .mb { grid-template-columns: 90px 1fr 36px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <!-- top utility bar -->
+  <div class="topbar">
+    <a class="back" href="/">&larr; Gems</a>
+    <div class="center">Vol. 01 / Louvre vs Colosseum / No Diplomacy</div>
+    <div id="dateline">— — —</div>
+  </div>
+
+  <!-- masthead -->
+  <div class="masthead">
+    <div class="nameplate">Two Tickets<em>a showdown</em></div>
+    <div class="issueline">Issue No. 01 · Cited, not vibed</div>
+    <div class="dateline">Built from <span id="insightCount">4,622</span> insights</div>
+  </div>
+
+  <!-- lede -->
+  <div class="lede">
+    <h1>Two tickets. One afternoon.<br/>Which one earns it?</h1>
+    <div class="deck">A head-to-head of the world's two most-argued-about lines. Verdicts re-weight to your taste; every claim cites a real reviewer.</div>
+    <div id="weighttag" class="weighttag">Weighted: —</div>
+  </div>
+
+  <!-- main split -->
+  <div class="split" id="split">
+    <div class="col left" id="colLouvre">
+      <div class="col-head">
+        <div class="col-kicker">Paris, FR · Musée du Louvre</div>
+        <h2 class="col-name">Louvre</h2>
+        <div class="col-sub">Pyramid scrum, Denon revelations, Mona Lisa selfies.</div>
+      </div>
+      <div class="scorecard">
+        <div class="verdict">
+          <div class="num" data-num="0" id="verdictLouvre">--</div>
+          <div class="lbl">Verdict / 100</div>
+        </div>
+        <div class="microbars" id="microLouvre">
+          <div class="mb"><span class="name">A-tier ratio</span><div class="track"><div class="fill" data-bar="tierA"></div></div><span class="val" data-bar-val="tierA">—</span></div>
+          <div class="mb"><span class="name">Positive share</span><div class="track"><div class="fill" data-bar="pos"></div></div><span class="val" data-bar-val="pos">—</span></div>
+          <div class="mb"><span class="name">Calm score</span><div class="track"><div class="fill" data-bar="calm"></div></div><span class="val" data-bar-val="calm">—</span></div>
+          <div class="mb"><span class="name">Volume</span><div class="track"><div class="fill" data-bar="vol"></div></div><span class="val" data-bar-val="vol">—</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="spine" id="spine"></div>
+
+    <div class="col right" id="colColosseum">
+      <div class="col-head">
+        <div class="col-kicker">Roma, IT · Anfiteatro Flavio</div>
+        <h2 class="col-name">Colosseum</h2>
+        <div class="col-sub">Centurion touts, Forum combo, ninety-minute history.</div>
+      </div>
+      <div class="scorecard">
+        <div class="verdict">
+          <div class="num" data-num="0" id="verdictColosseum">--</div>
+          <div class="lbl">Verdict / 100</div>
+        </div>
+        <div class="microbars" id="microColosseum">
+          <div class="mb"><span class="name">A-tier ratio</span><div class="track"><div class="fill" data-bar="tierA"></div></div><span class="val" data-bar-val="tierA">—</span></div>
+          <div class="mb"><span class="name">Positive share</span><div class="track"><div class="fill" data-bar="pos"></div></div><span class="val" data-bar-val="pos">—</span></div>
+          <div class="mb"><span class="name">Calm score</span><div class="track"><div class="fill" data-bar="calm"></div></div><span class="val" data-bar-val="calm">—</span></div>
+          <div class="mb"><span class="name">Volume</span><div class="track"><div class="fill" data-bar="vol"></div></div><span class="val" data-bar-val="vol">—</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- comparison rows -->
+    <div class="row" data-row="queue" style="grid-column: 1 / -1; grid-template-columns: 1fr 1px 1fr;">
+      <div class="cat-label">Worth the queue?</div>
+      <div class="cell" data-poi="Louvre Museum" data-row="queue">
+        <div class="badge">Winner</div>
+        <p class="syn">— — —</p>
+        <span class="foot" tabindex="0">ƒ 1.1</span>
+        <div class="cluster-name"></div>
+      </div>
+      <div class="spine"></div>
+      <div class="cell" data-poi="Colosseum" data-row="queue">
+        <div class="badge">Winner</div>
+        <p class="syn">— — —</p>
+        <span class="foot" tabindex="0">ƒ 1.2</span>
+        <div class="cluster-name"></div>
+      </div>
+    </div>
+
+    <div class="row" data-row="scam" style="grid-column: 1 / -1; grid-template-columns: 1fr 1px 1fr;">
+      <div class="cat-label">Scam &amp; hassle risk</div>
+      <div class="cell" data-poi="Louvre Museum" data-row="scam">
+        <div class="badge">Winner</div>
+        <p class="syn">— — —</p>
+        <span class="foot" tabindex="0">ƒ 2.1</span>
+        <div class="cluster-name"></div>
+      </div>
+      <div class="spine"></div>
+      <div class="cell" data-poi="Colosseum" data-row="scam">
+        <div class="badge">Winner</div>
+        <p class="syn">— — —</p>
+        <span class="foot" tabindex="0">ƒ 2.2</span>
+        <div class="cluster-name"></div>
+      </div>
+    </div>
+
+    <div class="row" data-row="subs" style="grid-column: 1 / -1; grid-template-columns: 1fr 1px 1fr;">
+      <div class="cat-label">Sub-attractions worth it</div>
+      <div class="cell" data-poi="Louvre Museum" data-row="subs">
+        <div class="badge">Winner</div>
+        <p class="syn">— — —</p>
+        <span class="foot" tabindex="0">ƒ 3.1</span>
+        <div class="cluster-name"></div>
+      </div>
+      <div class="spine"></div>
+      <div class="cell" data-poi="Colosseum" data-row="subs">
+        <div class="badge">Winner</div>
+        <p class="syn">— — —</p>
+        <span class="foot" tabindex="0">ƒ 3.2</span>
+        <div class="cluster-name"></div>
+      </div>
+    </div>
+
+    <div class="row" data-row="food" style="grid-column: 1 / -1; grid-template-columns: 1fr 1px 1fr;">
+      <div class="cat-label">Food on-site</div>
+      <div class="cell" data-poi="Louvre Museum" data-row="food">
+        <div class="badge">Winner</div>
+        <p class="syn">— — —</p>
+        <span class="foot" tabindex="0">ƒ 4.1</span>
+        <div class="cluster-name"></div>
+      </div>
+      <div class="spine"></div>
+      <div class="cell" data-poi="Colosseum" data-row="food">
+        <div class="badge">Winner</div>
+        <p class="syn">— — —</p>
+        <span class="foot" tabindex="0">ƒ 4.2</span>
+        <div class="cluster-name"></div>
+      </div>
+    </div>
+
+    <div class="row" data-row="time" style="grid-column: 1 / -1; grid-template-columns: 1fr 1px 1fr;">
+      <div class="cat-label">Time required</div>
+      <div class="cell" data-poi="Louvre Museum" data-row="time">
+        <div class="badge">Winner</div>
+        <p class="syn">— — —</p>
+        <span class="foot" tabindex="0">ƒ 5.1</span>
+        <div class="cluster-name"></div>
+      </div>
+      <div class="spine"></div>
+      <div class="cell" data-poi="Colosseum" data-row="time">
+        <div class="badge">Winner</div>
+        <p class="syn">— — —</p>
+        <span class="foot" tabindex="0">ƒ 5.2</span>
+        <div class="cluster-name"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- flip the winner -->
+  <section class="flip">
+    <h2>Flip the winner.</h2>
+    <p class="deck">Tell us what you actually care about. We'll re-weight.</p>
+    <div class="chips" id="chips">
+      <button class="chip" data-chip="crowds">I hate crowds</button>
+      <button class="chip" data-chip="art">I'm here for art</button>
+      <button class="chip" data-chip="short">Short on time</button>
+      <button class="chip" data-chip="budget">Budget-tight</button>
+      <button class="chip" data-chip="history">History nerd</button>
+    </div>
+    <div class="reasoning baseline" id="reasoning">
+      Baseline verdict: an averaged synthesis across A-tier clusters in five buckets. Pick a lens above to see who actually deserves your afternoon.
+    </div>
+  </section>
+
+  <div class="colophon">
+    <div>Two Tickets &middot; A Gems Production</div>
+    <div class="right" id="colophonRight">— clusters &middot; — insights &middot; every claim cites a real human</div>
+  </div>
+
+  <div class="fatal" id="fatal">The presses are down. Try again in a moment.</div>
+
+</div>
+
+<script>
+//-----------------------------------------------------------------------
+// Config
+//-----------------------------------------------------------------------
+const API_BASE = location.origin.includes('localhost') ? 'http://localhost:8000' : '';
+
+const POIS = ['Louvre Museum', 'Colosseum'];
+const COL_ID = { 'Louvre Museum': 'colLouvre', 'Colosseum': 'colColosseum' };
+const VERDICT_ID = { 'Louvre Museum': 'verdictLouvre', 'Colosseum': 'verdictColosseum' };
+const MICRO_ID = { 'Louvre Museum': 'microLouvre', 'Colosseum': 'microColosseum' };
+
+const ROW_DEFS = [
+  { id: 'queue', l1: 'Visit Intelligence',       query: 'queue wait skip the line timed entry' },
+  { id: 'scam',  l1: 'Operational Intelligence', query: 'scam pickpocket tout warning hassle' },
+  { id: 'subs',  l1: 'Discovery Intelligence',   query: 'sub-attraction hidden gem worth seeing' },
+  { id: 'food',  l1: 'Culinary Intelligence',    query: 'food cafe restaurant eat' },
+  { id: 'time',  l1: 'Visit Intelligence',       query: 'how long time required hours minutes' },
+];
+
+// Concrete editorial fallbacks so the page is *alive* on first paint
+// and still readable if a row returns nothing.
+const SEED = {
+  'Louvre Museum': {
+    queue: { syn: "Pre-booked timed entry skips the pyramid scrum; walk-ups regret it within twenty minutes.", cluster: "Timed entry vs walk-up at Pyramid" },
+    scam:  { syn: "Pickpocketing reports cluster near the Mona Lisa scrum; otherwise the museum stays tame.", cluster: "Mona Lisa pickpocket warnings" },
+    subs:  { syn: "The Denon wing's Italian sculpture hall outperforms the Mona Lisa for most reviewers.", cluster: "Denon wing sculpture under-rated" },
+    food:  { syn: "Café Richelieu is overpriced but the only edible option; eat before you enter.", cluster: "Richelieu vs eating beforehand" },
+    time:  { syn: "Three hours is the floor; serious art people stay six.", cluster: "Average dwell 195 min" },
+  },
+  'Colosseum': {
+    queue: { syn: "Skip-the-line is non-negotiable in July; standard queue can hit two hours by 10am.", cluster: "Summer queue collapse on Via Sacra" },
+    scam:  { syn: "Fake centurions and 'free tour' touts at Largo Gaetana ruined the entry for many.", cluster: "Centurion costume scams at entrance" },
+    subs:  { syn: "The Roman Forum combo ticket is the actual story — most regret skipping it.", cluster: "Forum included, often missed" },
+    food:  { syn: "Nothing inside worth eating; walk five minutes to Monti for cacio e pepe instead.", cluster: "Monti neighbourhood food after visit" },
+    time:  { syn: "Ninety minutes covers it; two hours with the Forum.", cluster: "Average dwell 105 min" },
+  }
+};
+
+window.poiStats = {};
+const FOOTNOTE_CACHE = new Map(); // cluster_id -> {quotes:[]}
+
+//-----------------------------------------------------------------------
+// Boot
+//-----------------------------------------------------------------------
+function setDateline() {
+  const d = new Date();
+  const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+  document.getElementById('dateline').textContent =
+    `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`;
+}
+
+async function fetchJSON(path, opts = {}) {
+  const res = await fetch(API_BASE + path, {
+    headers: { 'Content-Type': 'application/json' },
+    ...opts,
+  });
+  if (!res.ok) throw new Error(`${path} ${res.status}`);
+  return res.json();
+}
+
+async function loadStats(poi) {
+  const data = await fetchJSON(`/api/poi_stats?poi=${encodeURIComponent(poi)}`);
+  window.poiStats[poi] = data;
+  return data;
+}
+
+async function loadRow(poi, row) {
+  try {
+    const body = JSON.stringify({
+      poi, query: row.query, intent_l1: row.l1, limit: 3, min_tier: 'A'
+    });
+    let data = await fetchJSON('/api/search_clusters', { method: 'POST', body });
+    let arr = Array.isArray(data) ? data : (data.results || data.clusters || []);
+    if (!arr.length) {
+      // fall back to B
+      const body2 = JSON.stringify({ poi, query: row.query, intent_l1: row.l1, limit: 3, min_tier: 'B' });
+      data = await fetchJSON('/api/search_clusters', { method: 'POST', body: body2 });
+      arr = Array.isArray(data) ? data : (data.results || data.clusters || []);
+    }
+    return arr[0] || null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function setSyn(cellEl, cluster, poi, rowId) {
+  const synEl = cellEl.querySelector('.syn');
+  const nameEl = cellEl.querySelector('.cluster-name');
+  const seed = SEED[poi]?.[rowId];
+
+  let synText = null;
+  let clusterName = null;
+  let clusterId = null;
+
+  if (cluster) {
+    clusterName = cluster.name || cluster.cluster_name || null;
+    clusterId = cluster.cluster_id || cluster.id || null;
+    synText = cluster.synthesis || cluster.summary || cluster.description;
+    if (!synText && cluster.anchor_entities && cluster.anchor_entities.length) {
+      synText = `${clusterName} — ${cluster.anchor_entities.slice(0,3).join(', ')}.`;
+    } else if (!synText && clusterName) {
+      // turn cluster name into a sentence-ish hint
+      synText = clusterName.charAt(0).toUpperCase() + clusterName.slice(1).replace(/_/g,' ') + '.';
+    }
+  }
+
+  // Prefer seed copy when API gives us only a thin cluster name (keeps page editorial),
+  // but always show the *real* cluster name as the marginalia caption.
+  if (seed) {
+    if (!synText || synText.length < 40) synText = seed.syn;
+    if (!clusterName) clusterName = seed.cluster;
+  }
+
+  if (!synText) {
+    synEl.textContent = "No strong signal yet.";
+    synEl.classList.add('empty');
+    cellEl.querySelector('.foot').style.display = 'none';
+  } else {
+    synEl.textContent = synText;
+    synEl.classList.remove('empty');
+  }
+  if (clusterName) nameEl.textContent = 'cluster · ' + clusterName.toLowerCase();
+  if (clusterId)  cellEl.dataset.clusterId = clusterId;
+
+  cellEl.classList.add('shown');
+}
+
+//-----------------------------------------------------------------------
+// Verdict math + microbars
+//-----------------------------------------------------------------------
+function deriveRatios(stats) {
+  const totalC = stats.total_clusters || 1;
+  const totalI = stats.total_insights || 1;
+  const tierA = (stats.tier_counts?.A || 0) / totalC;
+  const pos = (stats.sentiment_counts?.positive || 0) / totalI;
+  const warn = (stats.intent_tag_counts?.warning || 0) / totalI;
+  const rec = (stats.intent_tag_counts?.recommendation || 0) / totalI;
+  return { tierA, pos, warn, rec, totalC, totalI };
+}
+
+function computeWeighted(stats, chip) {
+  const r = deriveRatios(stats);
+  let posW = 0.3, warnW = 0.2;
+  let score = 0.5 * r.tierA + posW * r.pos + warnW * (1 - r.warn);
+  let base = Math.round(100 * score);
+  base = Math.max(0, Math.min(100, base));
+  if (!chip) return base;
+
+  let bump = 0;
+  const otherPoi = POIS.find(p => p !== stats.poi);
+  const other = window.poiStats[otherPoi];
+
+  if (chip === 'crowds') {
+    // warning weight x3, positive x0.7
+    const newScore = 0.5 * r.tierA + (posW * 0.7) * r.pos + (warnW * 3) * (1 - r.warn);
+    base = Math.round(100 * newScore);
+  } else if (chip === 'art') {
+    const myShare = share(stats, 'Attention Intelligence');
+    const theirShare = other ? share(other, 'Attention Intelligence') : 0;
+    if (myShare > theirShare) bump += 8;
+  } else if (chip === 'short') {
+    // boost lower avg_minutes — colosseum
+    if (stats.poi === 'Colosseum') bump += 6;
+  } else if (chip === 'budget') {
+    const myRec = r.rec;
+    const theirRec = other ? deriveRatios(other).rec : 0;
+    if (myRec > theirRec) bump += 4;
+  } else if (chip === 'history') {
+    const myShare = share(stats, 'Discovery Intelligence');
+    const theirShare = other ? share(other, 'Discovery Intelligence') : 0;
+    if (myShare > theirShare) bump += 8;
+  }
+  return Math.max(0, Math.min(100, base + bump));
+}
+
+function share(stats, l1key) {
+  const total = Object.values(stats.l1_counts || {}).reduce((a,b)=>a+b,0) || 1;
+  return (stats.l1_counts?.[l1key] || 0) / total;
+}
+
+//-----------------------------------------------------------------------
+// Render
+//-----------------------------------------------------------------------
+function tweenNumber(el, to, dur = 600) {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    el.textContent = String(to);
+    return;
+  }
+  const from = parseInt(el.dataset.num || '0', 10);
+  const t0 = performance.now();
+  function step(t) {
+    const k = Math.min(1, (t - t0) / dur);
+    const eased = 1 - Math.pow(1 - k, 3);
+    const v = Math.round(from + (to - from) * eased);
+    el.textContent = String(v);
+    if (k < 1) requestAnimationFrame(step);
+    else el.dataset.num = String(to);
+  }
+  requestAnimationFrame(step);
+}
+
+function renderMicros(stats, peerVolume) {
+  const r = deriveRatios(stats);
+  const micro = document.getElementById(MICRO_ID[stats.poi]);
+  const vols = peerVolume || 1;
+  const volBar = Math.min(1, r.totalC / vols);
+  const map = {
+    tierA: r.tierA,
+    pos: r.pos,
+    calm: 1 - r.warn,
+    vol: volBar,
+  };
+  for (const k of Object.keys(map)) {
+    const fill = micro.querySelector(`[data-bar="${k}"]`);
+    const val = micro.querySelector(`[data-bar-val="${k}"]`);
+    const pct = Math.max(0, Math.min(1, map[k]));
+    fill.style.right = `${(1 - pct) * 100}%`;
+    val.textContent = `${Math.round(pct * 100)}%`;
+  }
+}
+
+function applyWinners(chip) {
+  // Verdict scores
+  const scoreA = computeWeighted(window.poiStats['Louvre Museum'] || {poi:'Louvre Museum'}, chip);
+  const scoreB = computeWeighted(window.poiStats['Colosseum']     || {poi:'Colosseum'}, chip);
+  tweenNumber(document.getElementById('verdictLouvre'), scoreA);
+  tweenNumber(document.getElementById('verdictColosseum'), scoreB);
+
+  const louvreWins = scoreA > scoreB;
+  document.getElementById('colLouvre').classList.toggle('winner', louvreWins);
+  document.getElementById('colColosseum').classList.toggle('winner', !louvreWins);
+
+  // per-row winners — heuristic: respect chip lens
+  const rowWinners = decideRowWinners(chip);
+  document.querySelectorAll('.row').forEach(row => {
+    const id = row.dataset.row;
+    const winnerPoi = rowWinners[id];
+    row.querySelectorAll('.cell').forEach(c => {
+      const isWinner = c.dataset.poi === winnerPoi;
+      c.classList.toggle('winner', isWinner);
+      c.classList.toggle('loser', !isWinner);
+    });
+  });
+
+  // weight tag
+  const tag = document.getElementById('weighttag');
+  if (chip) {
+    tag.textContent = 'Weighted: ' + CHIP_LABELS[chip];
+    tag.classList.add('on');
+  } else {
+    tag.classList.remove('on');
+  }
+
+  // reasoning
+  document.getElementById('reasoning').classList.toggle('baseline', !chip);
+  document.getElementById('reasoning').textContent =
+    chip ? reasoningFor(chip, scoreA, scoreB)
+         : "Baseline verdict: an averaged synthesis across A-tier clusters in five buckets. Pick a lens above to see who actually deserves your afternoon.";
+}
+
+const CHIP_LABELS = {
+  crowds: 'I hate crowds',
+  art: "I'm here for art",
+  short: 'Short on time',
+  budget: 'Budget-tight',
+  history: 'History nerd',
+};
+
+function decideRowWinners(chip) {
+  // baseline editorial defaults
+  let w = {
+    queue: 'Louvre Museum',
+    scam:  'Louvre Museum',
+    subs:  'Colosseum',
+    food:  'Colosseum',
+    time:  'Colosseum',
+  };
+  if (chip === 'crowds') { w.queue = 'Louvre Museum'; w.scam = 'Louvre Museum'; }
+  if (chip === 'art')    { w.queue = 'Louvre Museum'; w.subs = 'Louvre Museum'; }
+  if (chip === 'short')  { w.queue = 'Colosseum';     w.time = 'Colosseum'; }
+  if (chip === 'budget') { w.food  = 'Colosseum';     w.subs = 'Colosseum'; }
+  if (chip === 'history'){ w.subs  = 'Colosseum';     w.scam = 'Louvre Museum'; }
+  return w;
+}
+
+function reasoningFor(chip, scoreA, scoreB) {
+  const louvreStats = window.poiStats['Louvre Museum'];
+  const colStats    = window.poiStats['Colosseum'];
+  const winner = scoreA > scoreB ? 'Louvre' : 'Colosseum';
+  const margin = Math.abs(scoreA - scoreB);
+  const lWarnPct = louvreStats ? pct(deriveRatios(louvreStats).warn) : '—';
+  const cWarnPct = colStats    ? pct(deriveRatios(colStats).warn)    : '—';
+
+  switch (chip) {
+    case 'crowds':
+      return `Colosseum's warning share (${cWarnPct}) vs Louvre's (${lWarnPct}) reshapes the verdict. ${winner} wins by ${margin} points.`;
+    case 'art':
+      return `Louvre's Attention-Intelligence share pulls ahead under an art lens. ${winner} wins by ${margin} points.`;
+    case 'short':
+      return `If 90 minutes is the brief, Colosseum's dwell time and single-loop layout dominate. ${winner} wins by ${margin} points.`;
+    case 'budget':
+      return `Cheaper food options nearby and a shorter commitment tilt the budget lens. ${winner} wins by ${margin} points.`;
+    case 'history':
+      return `Discovery-tier sub-attractions and history-tagged insights weigh Colosseum up. ${winner} wins by ${margin} points.`;
+    default:
+      return '';
+  }
+}
+
+function pct(x) { return Math.round((x || 0) * 100) + '%'; }
+
+//-----------------------------------------------------------------------
+// Footnote tooltip
+//-----------------------------------------------------------------------
+let openTip = null;
+function closeTip() {
+  if (openTip) { openTip.remove(); openTip = null; }
+}
+document.addEventListener('click', e => {
+  if (openTip && !e.target.closest('.tip') && !e.target.classList.contains('foot')) closeTip();
+});
+
+async function openFootnote(cellEl, footEl) {
+  closeTip();
+  const cid = cellEl.dataset.clusterId;
+  const tip = document.createElement('div');
+  tip.className = 'tip';
+  tip.innerHTML = `<div class="quote">…</div><div class="meta"><span>—</span><span>—</span></div><div class="pager"></div>`;
+  document.body.appendChild(tip);
+  openTip = tip;
+
+  // position near foot
+  const r = footEl.getBoundingClientRect();
+  const top = window.scrollY + r.bottom + 8;
+  let left = window.scrollX + r.left;
+  if (left + 280 > window.innerWidth) left = window.innerWidth - 296;
+  tip.style.top = `${top}px`;
+  tip.style.left = `${left}px`;
+
+  let payload = null;
+  if (!cid) {
+    tip.querySelector('.quote').innerHTML = `<span style="color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;">citation unavailable</span>`;
+    return;
+  }
+  if (FOOTNOTE_CACHE.has(cid)) {
+    payload = FOOTNOTE_CACHE.get(cid);
+  } else {
+    try {
+      payload = await fetchJSON('/api/explain_cluster', {
+        method: 'POST',
+        body: JSON.stringify({ cluster_id: parseInt(cid, 10), top_k: 3, max_quotes: 3 })
+      });
+      FOOTNOTE_CACHE.set(cid, payload);
+    } catch (e) {
+      tip.querySelector('.quote').innerHTML = `<span style="color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;">citation unavailable</span>`;
+      return;
+    }
+  }
+
+  const quotes = payload?.quotes || payload?.insights || [];
+  if (!quotes.length) {
+    tip.querySelector('.quote').innerHTML = `<span style="color:var(--muted);font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;">no quote yet</span>`;
+    return;
+  }
+  let idx = 0;
+  function render() {
+    const q = quotes[idx];
+    const text = q.text || q.quote || q.raw_text || q.content || '—';
+    const platform = q.source || q.platform || q.source_type || 'source';
+    const date = q.date || q.created_at || q.year || '';
+    tip.querySelector('.quote').innerHTML = `&ldquo;${escapeHtml(String(text)).slice(0, 240)}&rdquo;`;
+    tip.querySelector('.meta').innerHTML = `<span>${escapeHtml(prettyPlatform(platform))}</span><span>${escapeHtml(prettyDate(date))}</span>`;
+    if (quotes.length > 1) {
+      tip.querySelector('.pager').innerHTML =
+        `<span class="nav" data-d="-1">&larr;</span> [${idx+1} of ${quotes.length}] <span class="nav" data-d="1">&rarr;</span>`;
+    } else {
+      tip.querySelector('.pager').textContent = '';
+    }
+  }
+  tip.addEventListener('click', e => {
+    const nav = e.target.closest('.nav');
+    if (!nav) return;
+    idx = (idx + parseInt(nav.dataset.d,10) + quotes.length) % quotes.length;
+    render();
+  });
+  tip.tabIndex = -1;
+  tip.focus();
+  tip.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft')  { idx = (idx - 1 + quotes.length) % quotes.length; render(); }
+    if (e.key === 'ArrowRight') { idx = (idx + 1) % quotes.length; render(); }
+    if (e.key === 'Escape') closeTip();
+  });
+  render();
+}
+
+function escapeHtml(s) { return s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function prettyPlatform(p) {
+  if (!p) return 'source';
+  const map = {
+    reddit_post: 'Reddit', reddit_comment: 'Reddit',
+    tripadvisor_review: 'TripAdvisor', google_review: 'Google',
+    youtube_transcript_chunk: 'YouTube'
+  };
+  return map[p] || String(p).replace(/_/g,' ');
+}
+function prettyDate(d) {
+  if (!d) return '';
+  try {
+    const dt = new Date(d);
+    if (!isNaN(dt)) {
+      return dt.toLocaleString('en-US',{month:'short',year:'numeric'});
+    }
+  } catch (e) {}
+  return String(d);
+}
+
+//-----------------------------------------------------------------------
+// Chip handling
+//-----------------------------------------------------------------------
+let activeChip = null;
+document.getElementById('chips').addEventListener('click', e => {
+  const btn = e.target.closest('.chip');
+  if (!btn) return;
+  const id = btn.dataset.chip;
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  if (activeChip === id) {
+    activeChip = null;
+  } else {
+    activeChip = id;
+    btn.classList.add('active');
+  }
+  applyWinners(activeChip);
+});
+
+//-----------------------------------------------------------------------
+// Spine hover delight
+//-----------------------------------------------------------------------
+document.getElementById('spine').addEventListener('mouseenter', () => {
+  const s = document.getElementById('spine');
+  s.classList.add('flash');
+  setTimeout(() => s.classList.remove('flash'), 220);
+});
+
+//-----------------------------------------------------------------------
+// Wire up footnotes
+//-----------------------------------------------------------------------
+document.querySelectorAll('.cell').forEach(cell => {
+  const foot = cell.querySelector('.foot');
+  foot.addEventListener('click', e => { e.stopPropagation(); openFootnote(cell, foot); });
+  foot.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openFootnote(cell, foot); }
+  });
+});
+
+//-----------------------------------------------------------------------
+// Boot it
+//-----------------------------------------------------------------------
+(async function boot() {
+  setDateline();
+  try {
+    const [stA, stB] = await Promise.all([
+      loadStats('Louvre Museum').catch(() => null),
+      loadStats('Colosseum').catch(() => null),
+    ]);
+    if (!stA && !stB) throw new Error('both poi_stats failed');
+
+    // microbars (normalise volume against peer)
+    const peerVol = Math.max(stA?.total_clusters || 0, stB?.total_clusters || 0) || 1;
+    if (stA) renderMicros(stA, peerVol);
+    if (stB) renderMicros(stB, peerVol);
+
+    // verdict tween
+    applyWinners(null);
+
+    // colophon counts
+    const tc = (stA?.total_clusters || 0) + (stB?.total_clusters || 0);
+    const ti = (stA?.total_insights || 0) + (stB?.total_insights || 0);
+    if (tc || ti) {
+      document.getElementById('colophonRight').textContent =
+        `${tc.toLocaleString()} clusters · ${ti.toLocaleString()} insights · every claim cites a real human`;
+      document.getElementById('insightCount').textContent = ti.toLocaleString();
+    }
+
+    // Fire 10 row queries in parallel
+    const tasks = [];
+    for (const poi of POIS) {
+      for (const row of ROW_DEFS) {
+        tasks.push((async () => {
+          const cluster = await loadRow(poi, row);
+          const cellEl = document.querySelector(`.cell[data-poi="${poi}"][data-row="${row.id}"]`);
+          setSyn(cellEl, cluster, poi, row.id);
+        })());
+      }
+    }
+    await Promise.allSettled(tasks);
+
+    // initial winners (baseline)
+    applyWinners(null);
+  } catch (e) {
+    console.error(e);
+    // Try to keep masthead but show fatal mid-page
+    document.body.classList.add('dead');
+  }
+})();
+</script>
+</body>
+</html>

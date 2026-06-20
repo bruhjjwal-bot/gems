@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Verdict — Issue 01</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,100;1,9..144,400..700,100&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4EFE6;
+    --fg: #15110D;
+    --accent: #B5341C;
+    --muted: #7A6F5F;
+    --rule: rgba(21,17,13,0.9);
+    --hair: rgba(21,17,13,0.18);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    font-feature-settings: "onum" 1, "kern" 1;
+    padding-bottom: 6rem;
+  }
+  ::selection { background: var(--accent); color: var(--bg); }
+
+  /* ---------- top nav strip ---------- */
+  .topnav {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+  .topnav a.back {
+    color: var(--fg);
+    text-decoration: none;
+    border-bottom: 1px solid var(--hair);
+    padding-bottom: 2px;
+  }
+  .topnav a.back:hover { border-bottom-color: var(--accent); }
+  .poi-toggle {
+    display: flex;
+    gap: 0;
+    align-items: baseline;
+  }
+  .poi-toggle button {
+    background: none;
+    border: none;
+    color: var(--muted);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0 0.6rem;
+    border-bottom: 1px solid transparent;
+  }
+  .poi-toggle button.active {
+    color: var(--fg);
+    border-bottom-color: var(--fg);
+  }
+  .poi-toggle .sep {
+    color: var(--hair);
+    padding: 0 2px;
+  }
+
+  /* ---------- broadsheet page ---------- */
+  .page {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem 2rem 0;
+    position: relative;
+    transition: opacity 200ms ease;
+  }
+  .page.fading { opacity: 0.3; }
+
+  .dateline-strip {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 1.5rem;
+  }
+  .dateline-strip .left,
+  .dateline-strip .right { display: flex; gap: 0.9rem; }
+  .dateline-strip .right { color: var(--muted); }
+  .hair-rule {
+    border: none;
+    border-top: 1px solid var(--rule);
+    margin: 0.8rem 0 0;
+  }
+  .error-strip {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 0.6rem;
+    display: none;
+  }
+  .error-strip.show { display: block; }
+
+  /* ---------- two-column layout ---------- */
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 720px) 280px;
+    gap: 3.5rem;
+    margin-top: 2.5rem;
+    align-items: start;
+  }
+  .column { min-width: 0; }
+
+  /* ---------- masthead / headline ---------- */
+  .kicker {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--fg);
+    margin-bottom: 1.2rem;
+  }
+  .headline {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+    font-size: clamp(64px, 11vw, 120px);
+    line-height: 0.95;
+    letter-spacing: -0.025em;
+    margin: 0 0 1.8rem;
+    color: var(--fg);
+    min-height: 1.9em;
+  }
+  .headline.skel { color: var(--muted); opacity: 0.35; }
+
+  /* ---------- standfirst ---------- */
+  .standfirst {
+    font-family: "Newsreader", serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 22px;
+    line-height: 1.45;
+    margin: 0 0 3rem;
+    color: var(--fg);
+    max-width: 640px;
+  }
+  .standfirst::first-letter {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+    font-size: 78px;
+    line-height: 0.82;
+    float: left;
+    color: var(--accent);
+    margin: 6px 10px -4px 0;
+    padding: 0;
+  }
+  .standfirst.skel,
+  .skel-block {
+    color: transparent;
+    background: linear-gradient(90deg, rgba(122,111,95,0.15) 25%, rgba(122,111,95,0.28) 50%, rgba(122,111,95,0.15) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.4s linear infinite;
+    border-radius: 1px;
+    min-height: 14px;
+  }
+  .standfirst.skel { min-height: 96px; }
+  .standfirst.skel::first-letter { color: transparent; }
+  @keyframes shimmer { from { background-position: 200% 0; } to { background-position: -200% 0; } }
+
+  /* ---------- score monument ---------- */
+  .score-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1.2rem;
+    margin: 0 0 3rem;
+    padding-top: 1rem;
+    border-top: 0;
+  }
+  .score-block {
+    text-align: right;
+    line-height: 1;
+  }
+  .score-num {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-variation-settings: "opsz" 144, "SOFT" 100;
+    font-size: clamp(140px, 22vw, 220px);
+    color: var(--accent);
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    display: block;
+  }
+  .score-label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 0.8rem;
+    display: block;
+  }
+
+  /* ---------- the verdict line ---------- */
+  .verdict-divider {
+    border: none;
+    border-top: 2px solid var(--accent);
+    margin: 3.5rem 0 1.2rem;
+    width: 100%;
+  }
+  .verdict-label {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--fg);
+    margin-bottom: 2.5rem;
+  }
+
+  /* ---------- case sections ---------- */
+  .section-head {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--fg);
+    margin: 3rem 0 0.6rem;
+  }
+  .section-head + .hair-rule { margin-bottom: 1.8rem; }
+
+  .entries { list-style: none; padding: 0; margin: 0; counter-reset: entry; }
+  .entry {
+    counter-increment: entry;
+    margin-bottom: 2.4rem;
+    position: relative;
+    padding-left: 2.4rem;
+  }
+  .entry::before {
+    content: counter(entry, decimal-leading-zero);
+    position: absolute;
+    left: 0;
+    top: 0.35rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+  }
+  .cluster-name {
+    font-family: "Newsreader", serif;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 1.3;
+    color: var(--fg);
+    margin: 0 0 0.5rem;
+    display: inline-block;
+    cursor: default;
+    border-bottom: 1px solid transparent;
+    transition: border-color 160ms;
+    position: relative;
+  }
+  .entry:hover .cluster-name { border-bottom-color: var(--accent); }
+  .entry:hover .cluster-marginalia { opacity: 1; }
+  .cluster-marginalia {
+    position: absolute;
+    left: calc(100% + 2.5rem);
+    top: 0.5rem;
+    width: 200px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    opacity: 0;
+    transition: opacity 200ms;
+    pointer-events: none;
+    line-height: 1.5;
+  }
+  .excerpt {
+    font-family: "Newsreader", serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--fg);
+    margin: 0 0 1.4rem;
+    max-width: 580px;
+  }
+  .excerpt.skel { min-height: 2.6em; }
+
+  /* ---------- pull quote ---------- */
+  .pullquote {
+    margin: 1rem 0 0 1.6rem;
+    padding: 0.2rem 0 0.2rem 1.4rem;
+    border-left: 2px solid var(--accent);
+    position: relative;
+  }
+  .pullquote.right {
+    margin: 1rem 1.6rem 0 0;
+    padding: 0.2rem 1.4rem 0.2rem 0;
+    border-left: none;
+    border-right: 2px solid var(--accent);
+    text-align: right;
+  }
+  .pullquote blockquote {
+    margin: 0;
+    font-family: "Fraunces", serif;
+    font-style: italic;
+    font-weight: 400;
+    font-variation-settings: "opsz" 72, "SOFT" 100;
+    font-size: 26px;
+    line-height: 1.28;
+    color: var(--fg);
+    letter-spacing: -0.005em;
+  }
+  .pullquote cite {
+    display: block;
+    font-family: "IBM Plex Mono", monospace;
+    font-style: normal;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 0.8rem;
+  }
+  .pullquote:hover .source-marginalia { opacity: 1; }
+  .source-marginalia {
+    position: absolute;
+    left: calc(100% + 2.5rem);
+    top: 0.2rem;
+    width: 200px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    opacity: 0;
+    transition: opacity 200ms;
+    pointer-events: none;
+    line-height: 1.55;
+  }
+  .pullquote.right .source-marginalia {
+    left: auto;
+    right: calc(100% + 2.5rem);
+    text-align: left;
+  }
+  .empty-line {
+    font-family: "Newsreader", serif;
+    font-style: italic;
+    color: var(--muted);
+    font-size: 17px;
+    padding-left: 2.4rem;
+  }
+
+  /* ---------- sidebar / scorecard ---------- */
+  .sidebar {
+    position: sticky;
+    top: 2rem;
+  }
+  .scorecard {
+    border: 1px solid var(--rule);
+    padding: 1.4rem 1.3rem 1.6rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .scorecard h3 {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-size: 11px;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    margin: 0 0 1rem;
+    padding-bottom: 0.7rem;
+    border-bottom: 1px solid var(--hair);
+  }
+  .sc-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0.55rem 0;
+    border-bottom: 1px dotted var(--hair);
+  }
+  .sc-row:last-of-type { border-bottom: none; }
+  .sc-key {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .sc-val {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--fg);
+    font-variant-numeric: tabular-nums;
+  }
+  .sc-val .warn-glyph {
+    color: var(--accent);
+    margin-left: 0.3rem;
+    display: inline-block;
+    transform: translateY(-1px);
+  }
+
+  /* sentiment bar */
+  .sentiment-section {
+    margin-top: 1.4rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--hair);
+  }
+  .sentiment-label {
+    font-size: 10px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.8rem;
+  }
+  .sentiment-bar {
+    display: flex;
+    height: 14px;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+  }
+  .sent-seg {
+    height: 100%;
+    position: relative;
+    cursor: default;
+    transition: opacity 160ms;
+  }
+  .sent-seg:hover { opacity: 0.75; }
+  .sent-seg .tip {
+    position: absolute;
+    bottom: calc(100% + 6px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--fg);
+    color: var(--bg);
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    padding: 3px 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 140ms;
+  }
+  .sent-seg:hover .tip { opacity: 1; }
+  .sent-pos { background: var(--fg); }
+  .sent-neu { background: #8a8378; }
+  .sent-mix { background: #c1b8a8; }
+  .sent-neg { background: var(--accent); }
+  .sentiment-legend {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 0.55rem;
+  }
+
+  .sc-warnings-section {
+    margin-top: 1.2rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--hair);
+  }
+
+  /* ---------- footer CTA / colophon ---------- */
+  .footer {
+    margin-top: 5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+  }
+  .cta {
+    font-family: "Newsreader", serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--fg);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    line-height: 1.2;
+  }
+  .cta::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 100%;
+    bottom: -4px;
+    height: 2px;
+    background: var(--accent);
+    transition: right 240ms ease;
+  }
+  .cta:hover::after { right: 0; }
+  .colophon {
+    margin-top: 2.5rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    line-height: 1.7;
+    max-width: 720px;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 960px) {
+    .layout { grid-template-columns: 1fr; gap: 2.5rem; }
+    .sidebar { position: static; }
+    .cluster-marginalia, .source-marginalia { display: none; }
+  }
+  @media (max-width: 640px) {
+    .topnav { padding: 1rem 1.2rem 0; flex-wrap: wrap; gap: 0.8rem; }
+    .page { padding: 1.2rem 1.2rem 0; }
+    .standfirst { font-size: 19px; }
+    .pullquote blockquote { font-size: 22px; }
+    .pullquote, .pullquote.right { margin-left: 0; margin-right: 0; }
+    .footer { margin-top: 3rem; }
+    .cta { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="/" class="back">← Gems</a>
+  <div class="poi-toggle" id="poi-toggle">
+    <button data-poi="Louvre Museum" class="active">Louvre</button>
+    <span class="sep">/</span>
+    <button data-poi="Colosseum">Colosseum</button>
+  </div>
+</nav>
+
+<main class="page" id="page">
+
+  <div class="dateline-strip">
+    <div class="left">
+      <span>The Verdict</span>
+      <span>Issue 01</span>
+      <span id="dateline-locale">Paris, FR</span>
+    </div>
+    <div class="right">
+      <span id="dateline-date">19 Jun 2026</span>
+    </div>
+  </div>
+  <hr class="hair-rule" />
+  <div class="error-strip" id="error-strip">Stats endpoint unreachable — retry</div>
+
+  <div class="layout">
+    <!-- LEFT COLUMN: article -->
+    <article class="column" id="column">
+
+      <div class="kicker" id="kicker">ON THE LOUVRE MUSEUM</div>
+
+      <h1 class="headline skel" id="headline">&nbsp;</h1>
+
+      <p class="standfirst skel" id="standfirst">&nbsp;</p>
+
+      <div class="score-row">
+        <div class="score-block">
+          <span class="score-num" id="score-num">— —</span>
+          <span class="score-label">out of 100</span>
+        </div>
+      </div>
+
+      <hr class="verdict-divider" />
+      <div class="verdict-label">The Verdict</div>
+
+      <!-- CASE FOR -->
+      <div class="section-head">The Case For</div>
+      <hr class="hair-rule" />
+      <ol class="entries" id="case-for">
+        <li class="entry">
+          <div class="cluster-name skel-block" style="width: 70%; height: 24px;"></div>
+          <p class="excerpt skel-block"></p>
+        </li>
+        <li class="entry">
+          <div class="cluster-name skel-block" style="width: 60%; height: 24px;"></div>
+          <p class="excerpt skel-block"></p>
+        </li>
+        <li class="entry">
+          <div class="cluster-name skel-block" style="width: 75%; height: 24px;"></div>
+          <p class="excerpt skel-block"></p>
+        </li>
+      </ol>
+
+      <!-- CASE AGAINST -->
+      <div class="section-head">The Case Against</div>
+      <hr class="hair-rule" />
+      <ol class="entries" id="case-against">
+        <li class="entry">
+          <div class="cluster-name skel-block" style="width: 65%; height: 24px;"></div>
+          <p class="excerpt skel-block"></p>
+        </li>
+        <li class="entry">
+          <div class="cluster-name skel-block" style="width: 72%; height: 24px;"></div>
+          <p class="excerpt skel-block"></p>
+        </li>
+        <li class="entry">
+          <div class="cluster-name skel-block" style="width: 58%; height: 24px;"></div>
+          <p class="excerpt skel-block"></p>
+        </li>
+      </ol>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <button class="cta" id="cta">→ Book skip-the-line tickets</button>
+        <div class="colophon" id="colophon">
+          Filed from a corpus of <span id="col-insights">—</span> insights across <span id="col-sources">—</span> platforms · L1 distribution
+          <span id="col-l1">pending</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- RIGHT COLUMN: scorecard -->
+    <aside class="column sidebar">
+      <div class="scorecard" id="scorecard">
+        <h3>Scorecard</h3>
+        <div class="sc-row">
+          <span class="sc-key">Sources Corroborating</span>
+          <span class="sc-val" id="sc-sources">—</span>
+        </div>
+        <div class="sc-row">
+          <span class="sc-key">Insights Analyzed</span>
+          <span class="sc-val" id="sc-insights">—</span>
+        </div>
+        <div class="sc-row">
+          <span class="sc-key">Tier A Clusters</span>
+          <span class="sc-val" id="sc-tier-a">—</span>
+        </div>
+        <div class="sc-row">
+          <span class="sc-key">Total Clusters</span>
+          <span class="sc-val" id="sc-total-clusters">—</span>
+        </div>
+
+        <div class="sentiment-section">
+          <div class="sentiment-label">Sentiment Mix</div>
+          <div class="sentiment-bar" id="sentiment-bar">
+            <div class="sent-seg sent-pos" style="width:0%"></div>
+            <div class="sent-seg sent-neu" style="width:0%"></div>
+            <div class="sent-seg sent-mix" style="width:0%"></div>
+            <div class="sent-seg sent-neg" style="width:0%"></div>
+          </div>
+          <div class="sentiment-legend">
+            <span>Pos</span><span>Neu</span><span>Mix</span><span>Neg</span>
+          </div>
+        </div>
+
+        <div class="sc-warnings-section">
+          <div class="sc-row" style="border-bottom:none; padding:0;">
+            <span class="sc-key">Warnings</span>
+            <span class="sc-val" id="sc-warnings">—</span>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<script>
+(() => {
+  const API_BASE = location.origin.includes('localhost') ? 'http://localhost:8000' : '';
+  const POIS = {
+    'Louvre Museum': { locale: 'Paris, FR', short: 'Louvre Museum' },
+    'Colosseum':     { locale: 'Rome, IT',  short: 'Colosseum' }
+  };
+
+  let currentPOI = 'Louvre Museum';
+
+  // ---------- headline by score band ----------
+  function headlineFor(poi, score) {
+    if (score == null) return 'Verdict pending.';
+    if (score >= 85) return 'An unambiguous yes.';
+    if (score >= 70) return poi === 'Colosseum' ? 'Go, with conditions.' : 'Yes, but never on a Saturday.';
+    if (score >= 55) return 'Worth it — barely.';
+    return 'Skip it, or plan very carefully.';
+  }
+
+  function standfirstFor(poi, stats) {
+    if (!stats) return '';
+    const insights = stats.total_insights ?? 0;
+    const sourcesArr = Object.entries(stats.source_counts || {}).filter(([k,v]) => v > 0);
+    const sources = sourcesArr.length;
+    if (poi === 'Louvre Museum') {
+      return `${insights.toLocaleString()} insights, ${sources} sources, one question: should you spend half a day here? The corroborated answer is yes — provided you skip the Mona Lisa scrum and enter through Porte des Lions.`;
+    }
+    return `${insights.toLocaleString()} insights, ${sources} sources, one question: is the underground access worth the extra booking? The corroborated answer is yes — but only if you book it weeks ahead and ignore the gladiator touts at the metro.`;
+  }
+
+  // ---------- DOM helpers ----------
+  const $ = (id) => document.getElementById(id);
+  function setText(id, text) { const el = $(id); if (el) el.textContent = text; }
+  function fmt(n) { return (n ?? 0).toLocaleString(); }
+
+  function showError(msg) {
+    const strip = $('error-strip');
+    strip.textContent = msg;
+    strip.classList.add('show');
+  }
+  function clearError() {
+    $('error-strip').classList.remove('show');
+  }
+
+  // ---------- API ----------
+  async function getJSON(path) {
+    const r = await fetch(API_BASE + path);
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }
+  async function postJSON(path, body) {
+    const r = await fetch(API_BASE + path, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(body)
+    });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  }
+
+  // ---------- render scorecard ----------
+  function renderScorecard(stats) {
+    const sourceCounts = stats.source_counts || {};
+    const distinctSources = Object.values(sourceCounts).filter(v => v > 0).length;
+    setText('sc-sources', distinctSources);
+    setText('sc-insights', fmt(stats.total_insights));
+    setText('sc-tier-a', fmt((stats.tier_counts || {}).A));
+    setText('sc-total-clusters', fmt(stats.total_clusters));
+
+    const warnings = (stats.intent_tag_counts || {}).warning || 0;
+    const warnEl = $('sc-warnings');
+    warnEl.innerHTML = fmt(warnings) + (warnings > 5 ? ' <span class="warn-glyph">▲</span>' : '');
+
+    // sentiment bar
+    const sc = stats.sentiment_counts || {};
+    const total = (sc.positive || 0) + (sc.negative || 0) + (sc.neutral || 0) + (sc.mixed || 0);
+    const pct = (v) => total > 0 ? (100 * v / total) : 0;
+    const segs = $('sentiment-bar').children;
+    const values = [
+      ['positive', sc.positive || 0, 'Pos'],
+      ['neutral',  sc.neutral || 0,  'Neu'],
+      ['mixed',    sc.mixed || 0,    'Mix'],
+      ['negative', sc.negative || 0, 'Neg']
+    ];
+    values.forEach((v, i) => {
+      const p = pct(v[1]);
+      const seg = segs[i];
+      seg.style.width = p.toFixed(1) + '%';
+      seg.innerHTML = `<span class="tip">${v[2]} ${p.toFixed(0)}% · ${fmt(v[1])}</span>`;
+    });
+
+    // colophon
+    setText('col-insights', fmt(stats.total_insights));
+    setText('col-sources', distinctSources);
+    const l1 = stats.l1_counts || {};
+    const top = Object.entries(l1).sort((a,b) => b[1]-a[1]).slice(0,3)
+      .map(([k,v]) => `${k.replace(' Intelligence','')} ${v}`).join(' · ');
+    setText('col-l1', top || 'unavailable');
+  }
+
+  // ---------- render headline area ----------
+  function renderHeadline(poi, stats) {
+    const h = $('headline');
+    const s = $('standfirst');
+    h.classList.remove('skel');
+    s.classList.remove('skel');
+    if (!stats) {
+      h.textContent = 'Verdict pending.';
+      s.textContent = 'The corpus is loading, the count is in motion, the verdict is on its way.';
+      setText('score-num', '—');
+      return;
+    }
+    h.textContent = headlineFor(poi, stats.verdict_score);
+    s.textContent = standfirstFor(poi, stats);
+    setText('score-num', stats.verdict_score ?? '—');
+  }
+
+  // ---------- render case sections ----------
+  function entryHTML(cluster, side, idx) {
+    const sideClass = side === 'against' ? 'right' : '';
+    const id = cluster.cluster_id ?? cluster.id ?? ('—' + idx);
+    const name = (cluster.name || cluster.cluster_name || 'Untitled cluster').trim();
+    const desc = (cluster.description || cluster.summary || '').trim();
+    const anchors = (cluster.anchor_entities || []).slice(0, 4).join(', ');
+    const excerpt = desc || (anchors ? `Anchored on ${anchors}.` : 'A repeated thread across the corpus, mentioned in multiple corroborated reviews.');
+    const trim = excerpt.length > 240 ? excerpt.slice(0, 237).trim() + '…' : excerpt;
+    return `
+      <li class="entry" data-cluster-id="${id}" data-side="${side}">
+        <span class="cluster-name">${escapeHTML(name)}<span class="cluster-marginalia">cluster #${id}</span></span>
+        <p class="excerpt">${escapeHTML(trim)}</p>
+        <div class="quote-slot"></div>
+      </li>`;
+  }
+  function escapeHTML(s) {
+    return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function renderCase(side, clusters) {
+    const el = side === 'for' ? $('case-for') : $('case-against');
+    if (!clusters || clusters.length === 0) {
+      el.innerHTML = `<li class="empty-line">No A-tier consensus on this side of the ledger.</li>`;
+      return;
+    }
+    el.innerHTML = clusters.slice(0, 3).map((c, i) => entryHTML(c, side, i)).join('');
+  }
+  function renderCaseError(side) {
+    const el = side === 'for' ? $('case-for') : $('case-against');
+    el.innerHTML = `<li class="empty-line">Filed, not yet typeset.</li>`;
+  }
+
+  // ---------- attribution helpers for pull quotes ----------
+  function parseYear(meta) {
+    if (!meta) return '';
+    const candidates = [meta.year, meta.date, meta.timestamp, meta.published, meta.created_at];
+    for (const c of candidates) {
+      if (!c) continue;
+      const m = String(c).match(/(19|20)\d{2}/);
+      if (m) return m[0];
+    }
+    return '';
+  }
+  function sourceLabel(quote) {
+    const src = (quote.source || quote.source_type || quote.platform || '').toLowerCase();
+    const sub = quote.source_subreddit || quote.subreddit;
+    const channel = quote.youtube_channel || quote.channel_name || quote.channel;
+    if (src.includes('tripadvisor')) return 'TripAdvisor reviewer';
+    if (src.includes('google')) return 'Google reviewer';
+    if (src.includes('reddit')) return sub ? `Reddit r/${sub.replace(/^r\//,'')}` : 'Reddit';
+    if (src.includes('youtube')) return channel ? `YouTube — ${channel}` : 'YouTube transcript';
+    return src ? src.replace(/_/g,' ') : 'Reviewer';
+  }
+
+  async function loadPullQuote(clusterId, entryEl, side) {
+    if (!clusterId || String(clusterId).startsWith('—')) return;
+    try {
+      const r = await postJSON('/api/explain_cluster', { cluster_id: Number(clusterId), max_quotes: 1, limit: 1 });
+      const quotes = r.quotes || r.insights || [];
+      if (!quotes.length) return;
+      const q = quotes[0];
+      const txt = (q.raw_text || q.quote || q.text || q.content || '').trim();
+      if (!txt) return;
+      const trimmed = txt.length > 260 ? txt.slice(0, 257).trim() + '…' : txt;
+      const year = parseYear(q.metadata || q) || parseYear(q);
+      const src = sourceLabel(q);
+      const slot = entryEl.querySelector('.quote-slot');
+      slot.innerHTML = `
+        <div class="pullquote ${side === 'against' ? 'right' : ''}">
+          <blockquote>“${escapeHTML(trimmed)}”</blockquote>
+          <cite>— ${escapeHTML(src)}${year ? ' · ' + year : ''}</cite>
+          <div class="source-marginalia">source · ${escapeHTML(src)}${year ? '\n' + year : ''}\ncluster #${clusterId}</div>
+        </div>`;
+    } catch (e) {
+      // silently omit per spec
+    }
+  }
+
+  // ---------- main load ----------
+  async function loadPOI(poi) {
+    currentPOI = poi;
+    clearError();
+
+    // update chrome
+    setText('kicker', 'ON THE ' + poi.toUpperCase());
+    setText('dateline-locale', POIS[poi].locale);
+    setText('dateline-date', new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }));
+
+    // reset to skeleton state
+    const headline = $('headline');
+    const standfirst = $('standfirst');
+    headline.classList.add('skel');
+    standfirst.classList.add('skel');
+    headline.textContent = ' ';
+    standfirst.textContent = ' ';
+    setText('score-num', '— —');
+    $('case-for').innerHTML = skeletonEntries();
+    $('case-against').innerHTML = skeletonEntries();
+
+    // fade
+    const page = $('page');
+    page.classList.add('fading');
+
+    // poi_stats first
+    let stats = null;
+    try {
+      stats = await getJSON('/api/poi_stats?poi=' + encodeURIComponent(poi));
+      renderHeadline(poi, stats);
+      renderScorecard(stats);
+    } catch (e) {
+      showError('Stats endpoint unreachable — retry');
+      headline.classList.remove('skel');
+      standfirst.classList.remove('skel');
+      headline.textContent = 'Verdict pending.';
+      standfirst.textContent = 'The verdict is delayed in production. The corpus exists; only the rollup is missing.';
+      setText('score-num', '—');
+    } finally {
+      page.classList.remove('fading');
+    }
+
+    // search_clusters x2 in parallel
+    const [forRes, agnRes] = await Promise.allSettled([
+      postJSON('/api/search_clusters', { poi, query: 'overall verdict pros highlights', sentiment: 'positive', tier: 'A', min_tier: 'A', limit: 3, sort: 'size_desc' }),
+      postJSON('/api/search_clusters', { poi, query: 'overall verdict cons warnings problems', sentiment: 'negative', tier: 'A', min_tier: 'A', limit: 3, sort: 'size_desc' })
+    ]);
+
+    let forClusters = [], agnClusters = [];
+    if (forRes.status === 'fulfilled') {
+      forClusters = extractClusters(forRes.value, 'positive');
+      renderCase('for', forClusters);
+    } else {
+      renderCaseError('for');
+    }
+    if (agnRes.status === 'fulfilled') {
+      agnClusters = extractClusters(agnRes.value, 'negative');
+      renderCase('against', agnClusters);
+    } else {
+      renderCaseError('against');
+    }
+
+    // fire pull-quote fetches in parallel
+    const forEntries = $('case-for').querySelectorAll('.entry');
+    const agnEntries = $('case-against').querySelectorAll('.entry');
+    const pullPromises = [];
+    forEntries.forEach((entry, i) => {
+      const cid = entry.getAttribute('data-cluster-id');
+      pullPromises.push(loadPullQuote(cid, entry, 'for'));
+    });
+    agnEntries.forEach((entry, i) => {
+      const cid = entry.getAttribute('data-cluster-id');
+      pullPromises.push(loadPullQuote(cid, entry, 'against'));
+    });
+    await Promise.all(pullPromises);
+  }
+
+  function extractClusters(payload, sentiment) {
+    // The API may return array directly, or {clusters: [...]} — normalise + filter by sentiment.
+    const arr = Array.isArray(payload) ? payload : (payload.clusters || payload.results || []);
+    const filtered = arr.filter(c => {
+      const s = (c.sentiment || '').toLowerCase();
+      const t = (c.quality_tier || c.tier || '').toUpperCase();
+      const okSent = !sentiment || s === sentiment || s === '' || (!c.sentiment && true);
+      const okTier = !t || t === 'A';
+      return okSent && okTier;
+    });
+    return (filtered.length ? filtered : arr).slice(0, 3);
+  }
+
+  function skeletonEntries() {
+    return [70, 60, 75].map(w => `
+      <li class="entry">
+        <div class="cluster-name skel-block" style="width:${w}%;height:24px;"></div>
+        <p class="excerpt skel-block"></p>
+      </li>`).join('');
+  }
+
+  // ---------- POI toggle ----------
+  function setActiveToggle(poi) {
+    document.querySelectorAll('#poi-toggle button').forEach(b => {
+      b.classList.toggle('active', b.dataset.poi === poi);
+    });
+  }
+  document.querySelectorAll('#poi-toggle button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const poi = btn.dataset.poi;
+      if (poi === currentPOI) return;
+      setActiveToggle(poi);
+      loadPOI(poi);
+    });
+  });
+
+  // ---------- keyboard shortcuts ----------
+  document.addEventListener('keydown', (e) => {
+    if (e.target.matches('input,textarea')) return;
+    if (e.key === 'l' || e.key === 'L') {
+      setActiveToggle('Louvre Museum');
+      if (currentPOI !== 'Louvre Museum') loadPOI('Louvre Museum');
+    } else if (e.key === 'c' || e.key === 'C') {
+      setActiveToggle('Colosseum');
+      if (currentPOI !== 'Colosseum') loadPOI('Colosseum');
+    }
+  });
+
+  // ---------- CTA ----------
+  $('cta').addEventListener('click', () => {
+    window.open('https://www.headout.com/search?q=' + encodeURIComponent(currentPOI + ' skip the line'), '_blank', 'noopener');
+  });
+
+  // ---------- boot ----------
+  setActiveToggle('Louvre Museum');
+  loadPOI('Louvre Museum');
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "carousel-studio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Agentic Instagram-carousel studio grounded in Gems POI insight data. Standalone, Vercel-deployable.",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "openai": "^4.79.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
