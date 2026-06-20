@@ -91,8 +91,14 @@
   .topic-card .topic-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; }
   .topic-card .topic-title { font-family: 'Fraunces', serif; font-weight: 700; font-size: 22px; line-height: 1.15; letter-spacing: -0.01em; margin: 0 0 10px; }
   .topic-card .topic-hook { font-family: 'Newsreader', serif; font-style: italic; font-size: 16px; line-height: 1.45; color: var(--ink); margin: 0 0 14px; }
-  .topic-card .topic-meta { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.04em; color: var(--muted); display: flex; gap: 12px; flex-wrap: wrap; }
-  .topic-card .topic-why { font-size: 13px; color: var(--muted); margin-top: 10px; line-height: 1.5; }
+  .topic-card .topic-tip { font-family: 'Newsreader', serif; font-size: 16px; line-height: 1.5; color: var(--ink); margin: 0 0 10px; padding: 10px 12px; border-left: 2px solid var(--accent); background: rgba(179,58,30,0.04); }
+  .topic-card .topic-tip-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.16em; color: var(--accent); margin-right: 8px; font-weight: 500; }
+  .topic-card .topic-reason { font-family: 'Newsreader', serif; font-size: 14px; line-height: 1.5; color: var(--muted); margin: 0 0 12px; font-style: italic; }
+  .topic-card .topic-reason-label { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.16em; color: var(--muted); margin-right: 6px; font-style: normal; }
+  .topic-card .topic-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip { font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 3px 8px; border: 1px solid var(--rule); color: var(--muted); letter-spacing: 0.04em; }
+  .chip.chip-named { border-color: var(--ink); color: var(--ink); }
+  .chip.chip-num { border-color: var(--accent); color: var(--accent); }
 
   /* SLIDE CARDS (outline) */
   .slide-list { display: flex; flex-direction: column; gap: 0; border-top: 1px solid var(--rule); margin-top: 28px; }
@@ -103,6 +109,7 @@
   .slide-card .slide-headline { font-family: 'Fraunces', serif; font-weight: 700; font-size: 28px; line-height: 1.1; letter-spacing: -0.015em; border: 0; background: transparent; padding: 0; color: var(--ink); resize: none; outline: 0; width: 100%; }
   .slide-card .slide-subhead { font-family: 'Newsreader', serif; font-style: italic; font-size: 17px; line-height: 1.4; color: var(--muted); border: 0; background: transparent; padding: 0; resize: none; outline: 0; width: 100%; }
   .slide-card .slide-body-copy { font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.55; border: 0; background: transparent; padding: 0; resize: none; outline: 0; width: 100%; color: var(--ink); }
+  .slide-card .slide-named-entity { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
   .slide-card .slide-citation { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); border-left: 2px solid var(--rule-soft); padding-left: 12px; margin-top: 6px; line-height: 1.5; }
   .slide-card .slide-citation .src { color: var(--accent); font-weight: 500; }
   .slide-card .slide-actions { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
@@ -466,11 +473,19 @@ function renderTopics() {
     <div class="topic-grid">
       ${state.pitch.topics.map((t, i) => `
         <div class="topic-card ${state.pitch.selected_id === t.id ? 'selected' : ''}" onclick="selectTopic('${t.id}')">
-          <div class="topic-num"><span>No. ${String(i+1).padStart(2,'0')}</span><span>${(t.source_cluster_ids||[]).length} clusters</span></div>
+          <div class="topic-num">
+            <span>No. ${String(i+1).padStart(2,'0')}</span>
+            <span>${(t.source_cluster_ids||[]).length} clusters cited</span>
+          </div>
           <h3 class="topic-title">${esc(t.title)}</h3>
           <p class="topic-hook">${esc(t.hook)}</p>
-          <div class="topic-meta">${(t.source_cluster_ids||[]).slice(0,5).map(id=>`#${id}`).join(' · ')}</div>
-          <p class="topic-why">${esc(t.why_it_works || t.angle || '')}</p>
+          ${t.the_tip ? `<div class="topic-tip"><span class="topic-tip-label">TIP</span> ${esc(t.the_tip)}</div>` : ''}
+          ${t.the_reason ? `<div class="topic-reason"><span class="topic-reason-label">WHY</span> ${esc(t.the_reason)}</div>` : ''}
+          <div class="topic-chips">
+            ${t.sub_attraction ? `<span class="chip chip-named">${esc(t.sub_attraction)}</span>` : ''}
+            ${t.numeric_hook ? `<span class="chip chip-num">${esc(t.numeric_hook)}</span>` : ''}
+            ${(t.source_cluster_ids||[]).slice(0,4).map(id=>`<span class="chip">#${id}</span>`).join('')}
+          </div>
         </div>
       `).join('')}
     </div>
@@ -576,6 +591,7 @@ function renderOutline() {
             <div class="slide-kind">${esc(s.kind)}</div>
           </div>
           <div class="slide-body">
+            ${s.named_entity ? `<div class="slide-named-entity">${esc(s.named_entity)}</div>` : ''}
             <textarea class="slide-headline" rows="2" oninput="updateSlideField('${s._id}','headline',this.value)" placeholder="Headline">${esc(s.headline)}</textarea>
             <textarea class="slide-subhead" rows="2" oninput="updateSlideField('${s._id}','subhead',this.value)" placeholder="Subhead · optional">${esc(s.subhead || '')}</textarea>
             ${s.body_copy ? `<textarea class="slide-body-copy" rows="3" oninput="updateSlideField('${s._id}','body_copy',this.value)" placeholder="Body · optional">${esc(s.body_copy)}</textarea>` : ''}
