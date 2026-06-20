@@ -114,6 +114,47 @@
   .tool-row .tool-name { font-family: 'JetBrains Mono', monospace; font-size: 14px; color: var(--accent); margin-bottom: 4px; }
   .tool-row .tool-desc { font-family: 'Inter', sans-serif; font-size: 14.5px; line-height: 1.45; color: var(--ink); }
 
+  /* COMPARE BLOCK (thesis slide) */
+  .compare-grid { display: grid; grid-template-rows: 1fr 1fr; gap: 18px; margin: 4px 0; }
+  .compare-row { border: 1px solid var(--rule); padding: 16px 20px; }
+  .compare-row.muted { border-style: dashed; opacity: 0.65; background: transparent; }
+  .compare-row.featured { background: var(--paper); border-color: var(--ink); }
+  .compare-row .row-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.18em; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; }
+  .compare-row.featured .row-label { color: var(--accent); }
+  .compare-row .row-body { display: flex; flex-direction: column; gap: 8px; }
+  .compare-row .lane { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .compare-row .lane-name { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); min-width: 110px; }
+  .compare-row .pill { font-family: 'JetBrains Mono', monospace; font-size: 11.5px; padding: 4px 10px; border: 1px solid var(--ink); background: var(--bg); }
+  .compare-row.muted .pill { border-color: var(--muted); color: var(--muted); }
+  .compare-row .pill.heavy { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .compare-row .pill.accent { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .compare-row .arr { color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+  .compare-row .row-foot { font-family: 'Inter', sans-serif; font-size: 14px; color: var(--muted); margin-top: 12px; font-style: italic; }
+
+  /* PATH DIAGRAM (cost slide) */
+  .path-block { display: flex; flex-direction: column; gap: 18px; margin-top: 4px; }
+  .path-row { padding: 16px 20px; border: 1px solid var(--rule); background: var(--paper); }
+  .path-row.muted { border-style: dashed; opacity: 0.65; background: transparent; }
+  .path-row.featured { border-color: var(--ink); }
+  .path-row .path-label { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.18em; color: var(--muted); text-transform: uppercase; margin-bottom: 12px; }
+  .path-row.featured .path-label { color: var(--accent); }
+  .path-steps { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .path-step { font-family: 'JetBrains Mono', monospace; font-size: 13px; padding: 7px 13px; border: 1px solid var(--ink); background: var(--bg); }
+  .path-row.muted .path-step { border-color: var(--muted); color: var(--muted); }
+  .path-step.taste { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .path-step.entry { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .path-arrow { color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 14px; }
+  .path-row .path-foot { font-family: 'Inter', sans-serif; font-size: 13.5px; color: var(--muted); margin-top: 10px; font-style: italic; }
+
+  /* UNLOCK STATS (slide 4) */
+  .unlock-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--ink); margin-top: 4px; }
+  .unlock-cell { padding: 22px 18px; border-bottom: 1px solid var(--rule); border-right: 1px solid var(--rule); }
+  .unlock-cell:nth-child(4n) { border-right: 0; }
+  .unlock-cell .uc-num { font-family: 'Fraunces', serif; font-weight: 700; font-variation-settings: 'opsz' 144, 'SOFT' 50; font-size: 64px; line-height: 0.95; letter-spacing: -0.025em; margin-bottom: 6px; }
+  .unlock-cell .uc-num .uc-arrow { font-family: 'JetBrains Mono', monospace; font-weight: 400; font-size: 26px; color: var(--accent); margin: 0 6px; }
+  .unlock-cell .uc-num .uc-unit { font-family: 'JetBrains Mono', monospace; font-weight: 400; font-size: 14px; color: var(--muted); letter-spacing: 0.06em; margin-left: 6px; }
+  .unlock-cell .uc-caption { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
+
   /* RAG AGENT */
   .rag-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 8px 0 18px; }
   .rag-box { border: 1px solid var(--ink); padding: 14px; min-height: 130px; display: flex; flex-direction: column; gap: 6px; background: var(--paper); }
@@ -147,6 +188,9 @@
     .cover-title { font-size: 116px; }
     .four-steps { grid-template-columns: repeat(2, 1fr); }
     .rag-flow { grid-template-columns: repeat(2, 1fr); }
+    .unlock-grid { grid-template-columns: repeat(2, 1fr); }
+    .unlock-cell:nth-child(4n) { border-right: 1px solid var(--rule); }
+    .unlock-cell:nth-child(2n) { border-right: 0; }
   }
   @media (max-width: 760px) {
     .slide { padding: 32px 24px 60px; }
@@ -162,6 +206,9 @@
     .tool-row:nth-child(even) { padding-left: 0; border-left: 0; }
     .rag-flow { grid-template-columns: 1fr; }
     .rag-constraints { grid-template-columns: 1fr; }
+    .compare-row .lane-name { min-width: 80px; font-size: 10px; }
+    .unlock-grid { grid-template-columns: 1fr; }
+    .unlock-cell { border-right: 0; }
   }
 </style>
 </head>
@@ -180,11 +227,100 @@
       <div>Clusters · <span>1,450</span></div>
       <div>Enriched insights · <span>4,622</span></div>
     </div>
-    <div class="slide-num">01 / 08</div>
+    <div class="slide-num">01 / 11</div>
   </section>
 
-  <!-- 2 — FLOWCHART -->
+  <!-- 2 — THESIS -->
   <section class="slide" data-i="2">
+    <div class="topline">What we built</div>
+    <h2 class="h2 display">A centralised intelligence repository.</h2>
+    <p class="deck-line muted">Real human travel advice scattered across Reddit, TripAdvisor, YouTube and Google reviews — unified into one queryable layer that any downstream product can plug into.</p>
+    <div class="compare-grid">
+      <div class="compare-row muted">
+        <div class="row-label">Today · every project rebuilds the stack</div>
+        <div class="row-body">
+          <div class="lane"><span class="lane-name">Project A</span><span class="pill">scrape</span><span class="arr">→</span><span class="pill">enrich</span><span class="arr">→</span><span class="pill">retrieve</span><span class="arr">→</span><span class="pill">product</span></div>
+          <div class="lane"><span class="lane-name">Project B</span><span class="pill">scrape</span><span class="arr">→</span><span class="pill">enrich</span><span class="arr">→</span><span class="pill">retrieve</span><span class="arr">→</span><span class="pill">product</span></div>
+          <div class="lane"><span class="lane-name">Project C</span><span class="pill">scrape</span><span class="arr">→</span><span class="pill">enrich</span><span class="arr">→</span><span class="pill">retrieve</span><span class="arr">→</span><span class="pill">product</span></div>
+        </div>
+        <div class="row-foot">n × scraping pipelines · n × enrichment passes · n × retrieval APIs · same tokens spent five different times</div>
+      </div>
+      <div class="compare-row featured">
+        <div class="row-label">What we built · shared layer + thin products</div>
+        <div class="row-body">
+          <div class="lane"><span class="lane-name">Products</span><span class="pill accent">Carousel Studio</span><span class="pill accent">RAG agent</span><span class="pill accent">app N…</span></div>
+          <div class="lane"><span class="lane-name" style="color:var(--accent);">↓ all plug into</span></div>
+          <div class="lane"><span class="lane-name">Shared</span><span class="pill heavy">5 scrapers</span><span class="arr">→</span><span class="pill heavy">4-pass enrichment</span><span class="arr">→</span><span class="pill heavy">master table</span><span class="arr">→</span><span class="pill heavy">MCP server</span></div>
+        </div>
+        <div class="row-foot">One scrape pipeline. One enrichment. One retrieval interface. N products on top — each one is a thin wrapper.</div>
+      </div>
+    </div>
+    <div class="slide-num">02 / 11</div>
+  </section>
+
+  <!-- 3 — THE COST OF NOT HAVING IT -->
+  <section class="slide" data-i="3">
+    <div class="topline">Why this matters</div>
+    <h2 class="h2 display">Without it, every project rebuilds the same plumbing.</h2>
+    <p class="deck-line muted">Concrete persona — a marketing team wants to build a tastemaker agent (a travel-advice recommender that doesn't feel like generic AI output).</p>
+    <div class="path-block">
+      <div class="path-row muted">
+        <div class="path-label">Today · path to first product commit</div>
+        <div class="path-steps">
+          <span class="path-step">marketing brief</span>
+          <span class="path-arrow">→</span>
+          <span class="path-step">data team builds scraper</span>
+          <span class="path-arrow">→</span>
+          <span class="path-step">eng team wires RAG</span>
+          <span class="path-arrow">→</span>
+          <span class="path-step taste">taste layer</span>
+        </div>
+        <div class="path-foot">Specialists spend weeks on plumbing before the work they're actually good at begins.</div>
+      </div>
+      <div class="path-row featured">
+        <div class="path-label">With the repository</div>
+        <div class="path-steps">
+          <span class="path-step entry">marketing brief</span>
+          <span class="path-arrow">→</span>
+          <span class="path-step">plug into MCP</span>
+          <span class="path-arrow">→</span>
+          <span class="path-step taste">taste layer</span>
+        </div>
+        <div class="path-foot">Marketing starts from a cited, intent-tagged, ranked corpus. Data team and engineering bandwidth stay unblocked.</div>
+      </div>
+    </div>
+    <div class="slide-num">03 / 11</div>
+  </section>
+
+  <!-- 4 — WHAT IT UNLOCKS -->
+  <section class="slide" data-i="4">
+    <div class="topline">What it unlocks</div>
+    <h2 class="h2 display">First commit is product code.</h2>
+    <p class="deck-line muted">Picture the room on Friday morning. Every team has the same starting line — and every team queries the same 4,622 cited insights on day zero.</p>
+    <div class="unlock-grid">
+      <div class="unlock-cell">
+        <div class="uc-num">0</div>
+        <div class="uc-caption">scraping pipelines<br>to write</div>
+      </div>
+      <div class="unlock-cell">
+        <div class="uc-num">0</div>
+        <div class="uc-caption">RAG pipelines<br>to wire</div>
+      </div>
+      <div class="unlock-cell">
+        <div class="uc-num">1<span class="uc-unit">MCP</span></div>
+        <div class="uc-caption">interface to learn</div>
+      </div>
+      <div class="unlock-cell">
+        <div class="uc-num">n<span class="uc-unit">products</span></div>
+        <div class="uc-caption">on top of one layer</div>
+      </div>
+    </div>
+    <p class="deck-line" style="margin-top: 32px; max-width: 880px;">The repository is the leverage. Everything in the rest of this deck is one team building one thing on top of it to prove the shape works.</p>
+    <div class="slide-num">04 / 11</div>
+  </section>
+
+  <!-- 5 — FLOWCHART -->
+  <section class="slide" data-i="5">
     <div class="topline">Pipeline overview</div>
     <h2 class="h2 display">Data flow.</h2>
     <p class="deck-line muted">Five sources of raw text → one enriched insight table → retrieval interface → consumers.</p>
@@ -307,11 +443,11 @@
         </g>
       </svg>
     </div>
-    <div class="slide-num">02 / 08</div>
+    <div class="slide-num">05 / 11</div>
   </section>
 
-  <!-- 3 — SCRAPERS -->
-  <section class="slide" data-i="3">
+  <!-- 6 — SCRAPERS -->
+  <section class="slide" data-i="6">
     <div class="topline">Step 01 · Scrape</div>
     <h2 class="h2 display">Five sources.</h2>
     <p class="deck-line muted">Each source is fetched by an independent scraper. Rows are persisted with the source_id plus the minimal metadata required to reconstruct provenance later.</p>
@@ -346,11 +482,11 @@
       <div class="td count">~2,400</div>
       <div class="td field">chunk_start_ms · video_id</div>
     </div>
-    <div class="slide-num">03 / 08</div>
+    <div class="slide-num">06 / 11</div>
   </section>
 
-  <!-- 4 — ROW SHAPE BEFORE/AFTER -->
-  <section class="slide" data-i="4">
+  <!-- 7 — ROW SHAPE BEFORE/AFTER -->
+  <section class="slide" data-i="7">
     <div class="topline">Step 02 · Enrich · row shape</div>
     <h2 class="h2 display">Raw row to enriched row.</h2>
     <p class="deck-line muted">A single TripAdvisor row before and after the four enrichment passes.</p>
@@ -377,11 +513,11 @@
         </div>
       </div>
     </div>
-    <div class="slide-num">04 / 08</div>
+    <div class="slide-num">07 / 11</div>
   </section>
 
-  <!-- 5 — 4-STEP ENRICHMENT -->
-  <section class="slide" data-i="5">
+  <!-- 8 — 4-STEP ENRICHMENT -->
+  <section class="slide" data-i="8">
     <div class="topline">Step 02 · Enrich · four passes</div>
     <h2 class="h2 display">Extract → Cluster → Score → Label.</h2>
     <p class="deck-line muted">Each pass runs once over the corpus and writes a new artifact. The next pass reads it.</p>
@@ -415,11 +551,11 @@
         <div class="step-out-box"><span class="label">OUT</span>flat_insights_enriched.json (22 fields)</div>
       </div>
     </div>
-    <div class="slide-num">05 / 08</div>
+    <div class="slide-num">08 / 11</div>
   </section>
 
-  <!-- 6 — MASTER TABLE -->
-  <section class="slide" data-i="6">
+  <!-- 9 — MASTER TABLE -->
+  <section class="slide" data-i="9">
     <div class="topline">Step 03 · The data layer</div>
     <h2 class="h2 display">flat_insights_enriched.json</h2>
     <p class="deck-line muted">One row per insight. 22 fields. Single source of truth for every downstream feature — joined across all five source feeds via cluster_id.</p>
@@ -460,11 +596,11 @@
         </div>
       </div>
     </div>
-    <div class="slide-num">06 / 08</div>
+    <div class="slide-num">09 / 11</div>
   </section>
 
-  <!-- 7 — MCP -->
-  <section class="slide" data-i="7">
+  <!-- 10 — MCP -->
+  <section class="slide" data-i="10">
     <div class="topline">Step 04 · MCP server</div>
     <h2 class="h2 display">Six tools.</h2>
     <p class="deck-line muted">JSON-RPC over stdio for local agents. Flask HTTP wrapper for browser clients. Both call the same retrieval functions over the same in-memory store.</p>
@@ -494,11 +630,11 @@
         <div class="tool-desc">Full RAG round-trip — agent loop wrapped as a single tool call.</div>
       </div>
     </div>
-    <div class="slide-num">07 / 08</div>
+    <div class="slide-num">10 / 11</div>
   </section>
 
-  <!-- 8 — RAG AGENT -->
-  <section class="slide" data-i="8">
+  <!-- 11 — RAG AGENT -->
+  <section class="slide" data-i="11">
     <div class="topline">Step 05 · ask_gems</div>
     <h2 class="h2 display">The RAG loop.</h2>
     <p class="deck-line muted">Function-calling agent. Up to 6 iterations. Hard requirement: ≥ 2 corroborating quotes per claim or confidence is downgraded.</p>
@@ -530,7 +666,7 @@
       <div class="rag-constraint"><span class="ck">MODEL</span><br>gpt-4o for synthesis · text-embedding-3-small for retrieval</div>
       <div class="rag-constraint"><span class="ck">LATENCY</span><br>2–4s typical · 8s p99</div>
     </div>
-    <div class="slide-num">08 / 08</div>
+    <div class="slide-num">11 / 11</div>
   </section>
 
 </div>

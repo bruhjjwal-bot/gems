@@ -155,7 +155,7 @@ const SCENES = [
     budget: "~45s",
     deck: "Before the how, the why. Don't show any slides yet — this one is straight to camera.",
     show: [
-      { type: "press", text: "Stay on /how-it-works slide 01 (the cover). The numbers behind you set the stage." },
+      { type: "open", label: "Open this tab in the browser:", href: "https://gems-poi-production.up.railway.app/how-it-works", text: "/how-it-works · slide 02 (Thesis)" },
     ],
     points: [
       "What we actually built isn't a single product — it's a <b>centralised intelligence repository</b> for travel POIs. Real human advice from Reddit, TripAdvisor, YouTube, Google, all in one queryable layer.",
@@ -171,7 +171,9 @@ const SCENES = [
     title: "Imagine the marketing team wants a tastemaker agent.",
     budget: "~45s",
     deck: "One concrete persona that makes the cost of not having a repository visible.",
-    show: [],
+    show: [
+      { type: "press", text: "Press → to jump to /how-it-works slide 03 (Why this matters) — the two-path diagram backs you up while you talk." },
+    ],
     points: [
       "Someone in marketing wants to build a tastemaker agent — recommendations that feel hand-curated, not generic AI slop.",
       "Without a repository, here's the path: go to the data team to stand up a scraping pipeline. That alone is not a one-prompt build — it's robust HTML parsing, anti-bot handling, multiple sources.",
@@ -188,7 +190,7 @@ const SCENES = [
     budget: "~30s",
     deck: "Tight third opener. Land the soft sell and move on.",
     show: [
-      { type: "press", text: "Press → and jump to /how-it-works slide 02 (the architecture flowchart) — it's the bridge into the technical walk-through." },
+      { type: "press", text: "Press → to jump to /how-it-works slide 04 (What it unlocks) — the 0/0/1/n stats land the moment." },
     ],
     points: [
       "Picture the room on Friday morning. Every team has the same starting line — but every team can hit our MCP and immediately query 4,600+ cited insights about real attractions.",
@@ -205,7 +207,7 @@ const SCENES = [
     budget: "~45s",
     deck: "What's in the repository today — five different platforms, one schema.",
     show: [
-      { type: "press", text: "Press → to jump to slide 03 (Scrape)" },
+      { type: "press", text: "Press → twice — slide 05 is the architecture flowchart (good context bridge), slide 06 is the sources table you actually talk through." },
     ],
     points: [
       "Each source has a different bias — that's the point. The repository sees the texture of real experience, not one platform's voice.",
@@ -224,7 +226,7 @@ const SCENES = [
     budget: "~45s",
     deck: "Raw text is unstructured. The enrichment turns each row into 29 queryable fields.",
     show: [
-      { type: "press", text: "Press → to jump to slide 04 (Raw row → enriched row)" },
+      { type: "press", text: "Press → to jump to slide 07 (Raw row → enriched row)" },
     ],
     points: [
       "Here's a real TripAdvisor row on the left — just text plus a rating.",
@@ -241,7 +243,7 @@ const SCENES = [
     budget: "~1m",
     deck: "Extract, Cluster, Score, Label. Each pass writes its own artifact.",
     show: [
-      { type: "press", text: "Press → to jump to slide 05 (the four passes)" },
+      { type: "press", text: "Press → to jump to slide 08 (the four passes)" },
     ],
     points: [
       "<b>Pass 1 — Extract.</b> Each source gets its own extractor because the shape differs. A review isn't a comment isn't a transcript chunk.",
@@ -258,7 +260,7 @@ const SCENES = [
     budget: "~45s",
     deck: "flat_insights_enriched.json — the load-bearing artifact.",
     show: [
-      { type: "press", text: "Press → to jump to slide 06 (master table)" },
+      { type: "press", text: "Press → to jump to slide 09 (master table)" },
       { type: "optional", label: "Optional — show the actual file in terminal:", cmd: "wc -l l2/data/flat_insights_enriched.json && du -h l2/data/flat_insights_enriched.json" },
     ],
     points: [
@@ -276,7 +278,7 @@ const SCENES = [
     budget: "~45s",
     deck: "Tools wrap the table's primary query shapes. JSON-RPC for agents, HTTP for browsers.",
     show: [
-      { type: "press", text: "Press → to jump to slide 07 (the 6 MCP tools)" },
+      { type: "press", text: "Press → to jump to slide 10 (the 6 MCP tools)" },
     ],
     points: [
       "<b>search_clusters</b> — semantic cluster search with filters. ~200ms.",
@@ -295,7 +297,7 @@ const SCENES = [
     budget: "~45s",
     deck: "ask_gems is a function-calling loop with one hard rule.",
     show: [
-      { type: "press", text: "Press → to jump to slide 08 (the RAG loop)" },
+      { type: "press", text: "Press → to jump to slide 11 (the RAG loop)" },
       { type: "optional", label: "Optional — fire a live query in the terminal:", cmd: "curl -s -X POST https://gems-poi-production.up.railway.app/api/ask -H 'Content-Type: application/json' -d '{\"poi\":\"Colosseum\",\"query\":\"is the Roma Pass worth it?\"}' | jq" },
     ],
     points: [
