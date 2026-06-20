@@ -72,6 +72,7 @@ def explain(cluster_id: int, max_quotes: int = 5) -> dict:
             "raw_text": _trim(raw_text),
             "rating": raw_row.get("rating"),
             "source_id": source_id,
+            "source_url": raw_row.get("source_url"),
             "anchor_entity": ins.get("anchor_entity"),
         }
 

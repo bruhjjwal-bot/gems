@@ -233,6 +233,7 @@ TOOL_SCHEMAS: list[dict] = [
                             "properties": {
                                 "source": {"type": "string"},
                                 "source_id": {"type": "string"},
+                                "source_url": {"type": ["string", "null"]},
                                 "quote": {"type": "string"},
                                 "cluster_id": {"type": "integer"},
                                 "cluster_name": {"type": "string"},

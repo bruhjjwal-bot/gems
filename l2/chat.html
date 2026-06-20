@@ -302,7 +302,10 @@ function appendAssistant(data) {
         ${citations.map(c => `
           <div class="cite-card">
             <div class="cite-top">
-              <span class="source-badge src-${c.source}">${formatSource(c.source)}</span>
+              ${c.source_url
+                ? `<a href="${c.source_url}" target="_blank" rel="noopener" class="source-badge src-${c.source}" style="text-decoration:none">${formatSource(c.source)} ↗</a>`
+                : `<span class="source-badge src-${c.source}">${formatSource(c.source)}</span>`
+              }
             </div>
             <div class="cite-quote">${esc(c.quote)}</div>
           </div>

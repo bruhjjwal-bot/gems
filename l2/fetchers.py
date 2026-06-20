@@ -19,7 +19,7 @@ def fetch_google_reviews(poi_id: str, poi_name: str, city: str, target: int) -> 
     db = get_client()
     rows = (
         db.table("google_reviews")
-        .select("id, review_id, rating, text, likes, original_language")
+        .select("id, review_id, rating, text, likes, original_language, review_url")
         .eq("poi_id", poi_id)
         .not_.is_("text", "null")
         .order("likes", desc=True)
@@ -42,6 +42,7 @@ def fetch_google_reviews(poi_id: str, poi_name: str, city: str, target: int) -> 
             "rating": r.get("rating"),
             "text": text[:3000],
             "meta": {"likes": r.get("likes"), "lang": r.get("original_language")},
+            "source_url": r.get("review_url"),
         })
         if len(out) >= target:
             break
@@ -52,7 +53,7 @@ def fetch_youtube_comments(poi_id: str, poi_name: str, city: str, target: int) -
     db = get_client()
     rows = (
         db.table("youtube_comments")
-        .select("id, comment_id, text, likes, youtube_videos!inner(poi_id)")
+        .select("id, comment_id, text, likes, youtube_videos!inner(poi_id, video_id)")
         .eq("youtube_videos.poi_id", poi_id)
         .not_.is_("text", "null")
         .order("likes", desc=True)
@@ -75,6 +76,7 @@ def fetch_youtube_comments(poi_id: str, poi_name: str, city: str, target: int) -
             "rating": None,
             "text": text[:1500],
             "meta": {"likes": r.get("likes")},
+            "source_url": f"https://youtube.com/watch?v={(r.get('youtube_videos') or {}).get('video_id', '')}" if (r.get("youtube_videos") or {}).get("video_id") else None,
         })
         if len(out) >= target:
             break
@@ -85,7 +87,7 @@ def fetch_youtube_transcript_chunks(poi_id: str, poi_name: str, city: str, targe
     db = get_client()
     rows = (
         db.table("youtube_transcripts")
-        .select("id, full_text, segments_json, youtube_videos!inner(id, title, poi_id)")
+        .select("id, full_text, segments_json, youtube_videos!inner(id, title, poi_id, video_id)")
         .eq("youtube_videos.poi_id", poi_id)
         .not_.is_("full_text", "null")
         .execute()
@@ -114,6 +116,7 @@ def fetch_youtube_transcript_chunks(poi_id: str, poi_name: str, city: str, targe
                     "chunk_start_ms": ch.get("start_ms"),
                     "chunk_end_ms": ch.get("end_ms"),
                 },
+                "source_url": f"https://youtube.com/watch?v={v['video_id']}&t={ch.get('start_ms', 0) // 1000}s" if v.get("video_id") else None,
             })
             if len(out) >= target:
                 return out
@@ -149,7 +152,7 @@ def fetch_reddit_posts(poi_id: str, poi_name: str, city: str, target: int) -> li
     item_ids = list({l["item_id"] for l in links})
     if not item_ids:
         return []
-    posts = _batch_in(db, "reddit_posts", "id, reddit_id, title, body, score", "id", item_ids)
+    posts = _batch_in(db, "reddit_posts", "id, reddit_id, title, body, score, post_url", "id", item_ids)
     posts.sort(key=lambda p: -(p.get("score") or 0))
     out: list[dict] = []
     for p in posts:
@@ -168,6 +171,7 @@ def fetch_reddit_posts(poi_id: str, poi_name: str, city: str, target: int) -> li
             "rating": None,
             "text": text[:3500],
             "meta": {"score": p.get("score")},
+            "source_url": p.get("post_url") or f"https://reddit.com/comments/{p['reddit_id']}/",
         })
         if len(out) >= target:
             break
@@ -188,7 +192,7 @@ def fetch_reddit_comments(poi_id: str, poi_name: str, city: str, target: int) ->
     item_ids = list({l["item_id"] for l in links})
     if not item_ids:
         return []
-    comments = _batch_in(db, "reddit_comments", "id, reddit_id, body, score, post_score", "id", item_ids)
+    comments = _batch_in(db, "reddit_comments", "id, reddit_id, body, score, post_score, comment_url", "id", item_ids)
     comments.sort(key=lambda c: -(c.get("score") or 0))
     out: list[dict] = []
     for c in comments:
@@ -205,6 +209,7 @@ def fetch_reddit_comments(poi_id: str, poi_name: str, city: str, target: int) ->
             "rating": None,
             "text": body[:2500],
             "meta": {"score": c.get("score"), "post_score": c.get("post_score")},
+            "source_url": c.get("comment_url"),
         })
         if len(out) >= target:
             break

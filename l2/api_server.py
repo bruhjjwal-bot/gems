@@ -21,9 +21,12 @@ CORS is wide-open for local dev (any origin, GET+POST).
 import json
 import logging
 import os
+import re
 import sys
 import traceback
+from collections import Counter
 from pathlib import Path
+from statistics import median
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -31,7 +34,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from flask import Flask, jsonify, request, send_from_directory
+from flask import Flask, abort, jsonify, request, send_from_directory
 from flask_cors import CORS
 
 from l2.ask_gems import ask as _ask
@@ -52,15 +55,68 @@ CORS(app, resources={r"/api/*": {"origins": "*", "methods": ["GET", "POST", "OPT
 
 
 _HERE = Path(__file__).resolve().parent
+PUBLIC_DIR = (_HERE.parent / "public").resolve()
 
 
 @app.route("/")
-def chat_ui():
+def home():
+    """Editorial landing page listing the demo apps."""
+    index_path = PUBLIC_DIR / "index.html"
+    if index_path.is_file():
+        return send_from_directory(PUBLIC_DIR, "index.html")
+    # Fall back to the original chat UI if the landing page isn't present.
     return send_from_directory(_HERE, "chat.html")
+
+
+@app.route("/chat")
+def chat_ui():
+    """Legacy chat UI kept reachable at /chat for backwards compatibility."""
+    return send_from_directory(_HERE, "chat.html")
+
+
+@app.route("/<path:filename>")
+def static_files(filename: str):
+    """Serve files from /public, with .html resolution. Never shadows /api/*."""
+    if filename.startswith("api/"):
+        abort(404)
+    # Try the exact path, then .html-resolved path.
+    for candidate in (filename, f"{filename}.html"):
+        full = (PUBLIC_DIR / candidate).resolve()
+        # Path-traversal guard: stay inside PUBLIC_DIR.
+        try:
+            full.relative_to(PUBLIC_DIR)
+        except ValueError:
+            continue
+        if full.is_file():
+            return send_from_directory(PUBLIC_DIR, candidate)
+    abort(404)
 
 
 def _bad(msg: str, code: int = 400):
     return jsonify({"error": msg}), code
+
+
+def _enrich_citation_urls(payload: dict) -> None:
+    """Back-fill source_url on any citations the LLM left blank.
+
+    The LLM picks citations from explain_cluster output which now carries
+    source_url. But if it omits the field, we resolve it here from the
+    in-memory raw store so every citation has a clickable link where possible.
+    """
+    cites = payload.get("citations") or []
+    if not cites:
+        return
+    s = load_all()
+    for c in cites:
+        if c.get("source_url"):
+            continue
+        source = c.get("source")
+        source_id = c.get("source_id")
+        if not source or not source_id:
+            continue
+        raw_row = (s.raw.get(source) or {}).get(source_id)
+        if raw_row:
+            c["source_url"] = raw_row.get("source_url")
 
 
 def _decycle(obj, seen=None):
@@ -161,6 +217,7 @@ def ask():
     if booking_context:
         query = f"[booking context: {booking_context}]\n{query}"
     payload = _ask(query, poi_hint=poi, verbose=False)
+    _enrich_citation_urls(payload)
     return _safe_json(payload)
 
 
@@ -207,6 +264,195 @@ def explain_cluster():
     if cid is None:
         return _bad("'cluster_id' is required")
     return jsonify(_explain(cluster_id=int(cid), max_quotes=int(body.get("max_quotes", 5))))
+
+
+# ---- Aggregate rollups ----------------------------------------------------
+
+_L1_BUCKETS = (
+    "Visit Intelligence",
+    "Attention Intelligence",
+    "Discovery Intelligence",
+    "Culinary Intelligence",
+    "Operational Intelligence",
+)
+_SOURCE_BUCKETS = (
+    "tripadvisor_review",
+    "google_review",
+    "reddit_post",
+    "reddit_comment",
+    "youtube_transcript_chunk",
+)
+_SENTIMENT_BUCKETS = ("positive", "negative", "neutral", "mixed")
+_INTENT_BUCKETS = (
+    "warning",
+    "recommendation",
+    "explanation",
+    "comparison",
+    "history",
+    "description",
+)
+_TIER_BUCKETS = ("A", "B", "C")
+
+_TIME_UNIT_RE = re.compile(r"\b(\d+(?:[.,]\d+)?)\s*(min(?:ute)?s?|hours?|hrs?)\b", re.I)
+
+
+def _zero_counts(keys):
+    return {k: 0 for k in keys}
+
+
+def _extract_minutes(anchor: str):
+    """Pull a minute count out of free-text anchors like '3 hours', '90 mins'.
+
+    Returns None if no time anchor present.
+    """
+    if not isinstance(anchor, str):
+        return None
+    m = _TIME_UNIT_RE.search(anchor)
+    if not m:
+        return None
+    try:
+        value = float(m.group(1).replace(",", "."))
+    except ValueError:
+        return None
+    unit = m.group(2).lower()
+    if unit.startswith("h"):
+        return value * 60.0
+    return value
+
+
+@app.route("/api/poi_stats", methods=["GET"])
+@_wrap
+def poi_stats():
+    """Per-POI aggregate rollup. Pure counting over the warm store, no LLM."""
+    poi = (request.args.get("poi") or "").strip()
+    if not poi:
+        return _bad("'poi' query param is required")
+    s = load_all()
+    if poi not in s.pois:
+        return _bad(f"unknown poi: {poi!r}. Supported: {s.pois}", 404)
+
+    clusters = [c for c in s.clusters if c.get("poi_name") == poi]
+    insights = [i for i in s.insights if i.get("poi_name") == poi]
+
+    tier_counts = _zero_counts(_TIER_BUCKETS)
+    for c in clusters:
+        t = c.get("quality_tier")
+        if t in tier_counts:
+            tier_counts[t] += 1
+
+    sentiment_counts = _zero_counts(_SENTIMENT_BUCKETS)
+    intent_counts = _zero_counts(_INTENT_BUCKETS)
+    l1_counts = _zero_counts(_L1_BUCKETS)
+    source_counts = _zero_counts(_SOURCE_BUCKETS)
+    for i in insights:
+        sent = i.get("insight_sentiment")
+        if sent in sentiment_counts:
+            sentiment_counts[sent] += 1
+        tag = i.get("intent_tag")
+        if tag in intent_counts:
+            intent_counts[tag] += 1
+        l1 = i.get("l1")
+        if l1 in l1_counts:
+            l1_counts[l1] += 1
+        src = i.get("source")
+        if src in source_counts:
+            source_counts[src] += 1
+
+    total_clusters = len(clusters)
+    total_insights = len(insights)
+    tier_a_ratio = (tier_counts["A"] / total_clusters) if total_clusters else 0.0
+    positive_share = (
+        sentiment_counts["positive"] / total_insights if total_insights else 0.0
+    )
+    warning_share = (
+        intent_counts["warning"] / total_insights if total_insights else 0.0
+    )
+    raw_score = 100 * (0.5 * tier_a_ratio + 0.3 * positive_share + 0.2 * (1 - warning_share))
+    verdict_score = max(0, min(100, round(raw_score)))
+
+    return jsonify({
+        "poi": poi,
+        "total_clusters": total_clusters,
+        "total_insights": total_insights,
+        "tier_counts": tier_counts,
+        "sentiment_counts": sentiment_counts,
+        "intent_tag_counts": intent_counts,
+        "l1_counts": l1_counts,
+        "source_counts": source_counts,
+        "verdict_score": verdict_score,
+    })
+
+
+@app.route("/api/sub_attractions", methods=["GET"])
+@_wrap
+def sub_attractions():
+    """Per-POI rollup of insights grouped by sub_attraction."""
+    poi = (request.args.get("poi") or "").strip()
+    if not poi:
+        return _bad("'poi' query param is required")
+    try:
+        min_mentions = int(request.args.get("min_mentions", "2"))
+    except ValueError:
+        return _bad("'min_mentions' must be an integer")
+
+    s = load_all()
+    if poi not in s.pois:
+        return _bad(f"unknown poi: {poi!r}. Supported: {s.pois}", 404)
+
+    groups: dict[str, dict] = {}
+    for row in s.insights:
+        if row.get("poi_name") != poi:
+            continue
+        sub = (row.get("sub_attraction") or "").strip()
+        if not sub:
+            continue
+        g = groups.setdefault(sub, {
+            "sub_attraction": sub,
+            "n_insights": 0,
+            "sources": set(),
+            "sentiment": Counter(),
+            "intent": Counter(),
+            "cluster_ids": Counter(),
+            "minutes": [],
+        })
+        g["n_insights"] += 1
+        if row.get("source"):
+            g["sources"].add(row["source"])
+        sent = row.get("insight_sentiment")
+        if sent:
+            g["sentiment"][sent] += 1
+        tag = row.get("intent_tag")
+        if tag:
+            g["intent"][tag] += 1
+        cid = row.get("cluster_id")
+        if cid is not None:
+            g["cluster_ids"][cid] += 1
+        for anchor in row.get("numeric_anchors") or []:
+            mins = _extract_minutes(anchor)
+            if mins is not None:
+                g["minutes"].append(mins)
+
+    out = []
+    for g in groups.values():
+        if g["n_insights"] < min_mentions:
+            continue
+        avg_minutes = median(g["minutes"]) if g["minutes"] else None
+        top_clusters = [cid for cid, _ in g["cluster_ids"].most_common(3)]
+        top_intents = dict(g["intent"].most_common(5))
+        out.append({
+            "sub_attraction": g["sub_attraction"],
+            "n_insights": g["n_insights"],
+            "n_sources": len(g["sources"]),
+            "positive_count": g["sentiment"].get("positive", 0),
+            "negative_count": g["sentiment"].get("negative", 0),
+            "warning_count": g["intent"].get("warning", 0),
+            "recommendation_count": g["intent"].get("recommendation", 0),
+            "avg_minutes": avg_minutes,
+            "sample_cluster_ids": top_clusters,
+            "top_intent_tags": top_intents,
+        })
+    out.sort(key=lambda r: r["n_insights"], reverse=True)
+    return jsonify(out)
 
 
 def main():
