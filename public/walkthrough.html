@@ -207,7 +207,7 @@ const SCENES = [
     budget: "~45s",
     deck: "What's in the repository today — five different platforms, one schema.",
     show: [
-      { type: "press", text: "Press → twice — slide 05 is the architecture flowchart (good context bridge), slide 06 is the sources table you actually talk through." },
+      { type: "press", text: "Press → through slides 05 (flowchart bridge), 06 (5 scraper cards — talk through each briefly), 07 (Supabase as the raw row store), 08 (Enrichment pipeline overview)." },
     ],
     points: [
       "Each source has a different bias — that's the point. The repository sees the texture of real experience, not one platform's voice.",
@@ -226,7 +226,7 @@ const SCENES = [
     budget: "~45s",
     deck: "Raw text is unstructured. The enrichment turns each row into 29 queryable fields.",
     show: [
-      { type: "press", text: "Press → to jump to slide 07 (Raw row → enriched row)" },
+      { type: "press", text: "Press → to jump to slide 09 (Raw row → enriched row)" },
     ],
     points: [
       "Here's a real TripAdvisor row on the left — just text plus a rating.",
@@ -243,7 +243,7 @@ const SCENES = [
     budget: "~1m",
     deck: "Extract, Cluster, Score, Label. Each pass writes its own artifact.",
     show: [
-      { type: "press", text: "Press → to jump to slide 08 (the four passes)" },
+      { type: "press", text: "Press → to jump to slide 10 (the four passes in detail)" },
     ],
     points: [
       "<b>Pass 1 — Extract.</b> Each source gets its own extractor because the shape differs. A review isn't a comment isn't a transcript chunk.",
@@ -260,7 +260,7 @@ const SCENES = [
     budget: "~45s",
     deck: "flat_insights_enriched.json — the load-bearing artifact.",
     show: [
-      { type: "press", text: "Press → to jump to slide 09 (master table)" },
+      { type: "press", text: "Press → to jump to slide 11 (master table)" },
       { type: "optional", label: "Optional — show the actual file in terminal:", cmd: "wc -l l2/data/flat_insights_enriched.json && du -h l2/data/flat_insights_enriched.json" },
     ],
     points: [
@@ -278,7 +278,7 @@ const SCENES = [
     budget: "~45s",
     deck: "Tools wrap the table's primary query shapes. JSON-RPC for agents, HTTP for browsers.",
     show: [
-      { type: "press", text: "Press → to jump to slide 10 (the 6 MCP tools)" },
+      { type: "press", text: "Press → to jump to slide 12 (the 6 MCP tools)" },
     ],
     points: [
       "<b>search_clusters</b> — semantic cluster search with filters. ~200ms.",
@@ -297,7 +297,7 @@ const SCENES = [
     budget: "~45s",
     deck: "ask_gems is a function-calling loop with one hard rule.",
     show: [
-      { type: "press", text: "Press → to jump to slide 11 (the RAG loop)" },
+      { type: "press", text: "Press → to jump to slide 13 (the RAG loop)" },
       { type: "optional", label: "Optional — fire a live query in the terminal:", cmd: "curl -s -X POST https://gems-poi-production.up.railway.app/api/ask -H 'Content-Type: application/json' -d '{\"poi\":\"Colosseum\",\"query\":\"is the Roma Pass worth it?\"}' | jq" },
     ],
     points: [

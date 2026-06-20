@@ -155,6 +155,41 @@
   .unlock-cell .uc-num .uc-unit { font-family: 'JetBrains Mono', monospace; font-weight: 400; font-size: 14px; color: var(--muted); letter-spacing: 0.06em; margin-left: 6px; }
   .unlock-cell .uc-caption { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
 
+  /* SCRAPER CARDS (slide 06) */
+  .scrapers-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin: 8px 0 0; }
+  .scraper-card { border: 1px solid var(--ink); padding: 14px; background: var(--paper); display: flex; flex-direction: column; gap: 8px; min-height: 290px; }
+  .scraper-card .sc-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase; }
+  .scraper-card .sc-name { font-family: 'Fraunces', serif; font-weight: 700; font-size: 22px; line-height: 1; letter-spacing: -0.01em; }
+  .scraper-card .sc-stack { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--ink); background: var(--bg); padding: 6px 8px; border: 1px solid var(--rule-soft); line-height: 1.45; }
+  .scraper-card .sc-notes { font-family: 'Inter', sans-serif; font-size: 12.5px; line-height: 1.5; color: var(--ink); }
+  .scraper-card .sc-notes b { font-weight: 500; color: var(--accent); }
+  .scraper-card .sc-volume { margin-top: auto; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--accent); padding-top: 8px; border-top: 1px solid var(--rule-soft); }
+
+  /* SUPABASE TABLES GRID */
+  .db-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin: 8px 0; }
+  .db-table { border: 1px solid var(--ink); padding: 14px; background: var(--paper); }
+  .db-table.central { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .db-table .db-h { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.1em; color: var(--accent); margin-bottom: 8px; }
+  .db-table.central .db-h { color: var(--accent-soft); }
+  .db-table .db-rows { font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 1.55; color: var(--muted); }
+  .db-table.central .db-rows { color: var(--bg); }
+  .db-table .db-foot { font-family: 'Inter', sans-serif; font-style: italic; font-size: 12px; color: var(--muted); margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--rule-soft); }
+  .db-table.central .db-foot { color: var(--accent-soft); border-color: var(--accent); }
+
+  /* ENRICHMENT FLOW */
+  .enrich-flow { display: flex; align-items: stretch; gap: 4px; margin: 8px 0; flex-wrap: wrap; }
+  .enrich-step { flex: 1; min-width: 120px; border: 1px solid var(--ink); padding: 10px 12px; background: var(--paper); display: flex; flex-direction: column; gap: 4px; }
+  .enrich-step.heavy { background: var(--ink); color: var(--bg); }
+  .enrich-step .enrich-num { font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: 0.14em; color: var(--accent); }
+  .enrich-step.heavy .enrich-num { color: var(--accent-soft); }
+  .enrich-step .enrich-name { font-family: 'Fraunces', serif; font-weight: 700; font-size: 16px; line-height: 1.05; }
+  .enrich-step .enrich-desc { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--muted); line-height: 1.4; }
+  .enrich-step.heavy .enrich-desc { color: rgba(244,239,230,0.7); }
+  .enrich-arrow { display: flex; align-items: center; color: var(--muted); font-family: 'JetBrains Mono', monospace; font-size: 14px; padding: 0 2px; }
+  .enrich-facts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 18px; max-width: 1000px; }
+  .enrich-fact { padding: 10px 14px; border-left: 2px solid var(--rule); background: var(--paper); font-family: 'Inter', sans-serif; font-size: 14px; color: var(--ink); }
+  .enrich-fact strong { color: var(--accent); font-weight: 500; }
+
   /* RAG AGENT */
   .rag-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 8px 0 18px; }
   .rag-box { border: 1px solid var(--ink); padding: 14px; min-height: 130px; display: flex; flex-direction: column; gap: 6px; background: var(--paper); }
@@ -191,6 +226,8 @@
     .unlock-grid { grid-template-columns: repeat(2, 1fr); }
     .unlock-cell:nth-child(4n) { border-right: 1px solid var(--rule); }
     .unlock-cell:nth-child(2n) { border-right: 0; }
+    .scrapers-grid { grid-template-columns: repeat(3, 1fr); }
+    .db-grid { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 760px) {
     .slide { padding: 32px 24px 60px; }
@@ -209,6 +246,12 @@
     .compare-row .lane-name { min-width: 80px; font-size: 10px; }
     .unlock-grid { grid-template-columns: 1fr; }
     .unlock-cell { border-right: 0; }
+    .scrapers-grid { grid-template-columns: 1fr; }
+    .scraper-card { min-height: auto; }
+    .db-grid { grid-template-columns: 1fr; }
+    .enrich-flow { flex-direction: column; }
+    .enrich-arrow { display: none; }
+    .enrich-facts { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -227,7 +270,7 @@
       <div>Clusters · <span>1,450</span></div>
       <div>Enriched insights · <span>4,622</span></div>
     </div>
-    <div class="slide-num">01 / 11</div>
+    <div class="slide-num">01 / 13</div>
   </section>
 
   <!-- 2 — THESIS -->
@@ -255,7 +298,7 @@
         <div class="row-foot">One scrape pipeline. One enrichment. One retrieval interface. N products on top — each one is a thin wrapper.</div>
       </div>
     </div>
-    <div class="slide-num">02 / 11</div>
+    <div class="slide-num">02 / 13</div>
   </section>
 
   <!-- 3 — THE COST OF NOT HAVING IT -->
@@ -289,7 +332,7 @@
         <div class="path-foot">Marketing starts from a cited, intent-tagged, ranked corpus. Data team and engineering bandwidth stay unblocked.</div>
       </div>
     </div>
-    <div class="slide-num">03 / 11</div>
+    <div class="slide-num">03 / 13</div>
   </section>
 
   <!-- 4 — WHAT IT UNLOCKS -->
@@ -316,7 +359,7 @@
       </div>
     </div>
     <p class="deck-line" style="margin-top: 32px; max-width: 880px;">The repository is the leverage. Everything in the rest of this deck is one team building one thing on top of it to prove the shape works.</p>
-    <div class="slide-num">04 / 11</div>
+    <div class="slide-num">04 / 13</div>
   </section>
 
   <!-- 5 — FLOWCHART -->
@@ -443,50 +486,143 @@
         </g>
       </svg>
     </div>
-    <div class="slide-num">05 / 11</div>
+    <div class="slide-num">05 / 13</div>
   </section>
 
   <!-- 6 — SCRAPERS -->
   <section class="slide" data-i="6">
     <div class="topline">Step 01 · Scrape</div>
-    <h2 class="h2 display">Five sources.</h2>
-    <p class="deck-line muted">Each source is fetched by an independent scraper. Rows are persisted with the source_id plus the minimal metadata required to reconstruct provenance later.</p>
-    <div class="sources-table">
-      <div class="th">Source</div>
-      <div class="th">Row shape</div>
-      <div class="th" style="text-align:right; padding-right:24px;">Rows</div>
-      <div class="th" style="text-align:right;">Metadata stored</div>
-
-      <div class="td source">tripadvisor_review</div>
-      <div class="td what">Long-form review with rating, helpful count, visit month</div>
-      <div class="td count">~3,800</div>
-      <div class="td field">source_id · rating · date</div>
-
-      <div class="td source">google_review</div>
-      <div class="td what">Short review, multilingual, rating-anchored</div>
-      <div class="td count">~2,300</div>
-      <div class="td field">likes · lang</div>
-
-      <div class="td source">reddit_post</div>
-      <div class="td what">Thread body from r/travel, r/Rome, r/Paris</div>
-      <div class="td count">362</div>
-      <div class="td field">score · post_url</div>
-
-      <div class="td source">reddit_comment</div>
-      <div class="td what">Single comment with parent context</div>
-      <div class="td count">434</div>
-      <div class="td field">score · parent_id</div>
-
-      <div class="td source">youtube_transcript_chunk</div>
-      <div class="td what">~45-second chunk of vlog transcript</div>
-      <div class="td count">~2,400</div>
-      <div class="td field">chunk_start_ms · video_id</div>
+    <h2 class="h2 display">Five scrapers, one row contract.</h2>
+    <p class="deck-line muted">Each source has different anti-bot characteristics, different pagination, different output shape. The contract every scraper meets is the same: a row that carries its source_id back to the human who wrote it.</p>
+    <div class="scrapers-grid">
+      <div class="scraper-card">
+        <div class="sc-eyebrow">01 · ~3,800 rows</div>
+        <div class="sc-name">TripAdvisor</div>
+        <div class="sc-stack">FireCrawl /scrape · stealth proxy · markdown regex parser · offset-cursor pagination · API-key rotation on 429</div>
+        <div class="sc-notes">3 page-variant layouts handled. <b>Table:</b> tripadvisor_reviews</div>
+        <div class="sc-volume">~3,800 rows · 2 POIs</div>
+      </div>
+      <div class="scraper-card">
+        <div class="sc-eyebrow">02 · ~2,300 rows</div>
+        <div class="sc-name">Google reviews</div>
+        <div class="sc-stack">SerpApi · engine=google_maps_reviews · 4 sort modes · next_page_token cursors · Apify fallback for re-fetches</div>
+        <div class="sc-notes">Cursor per (poi, sort_mode), resumes exactly where last run stopped. <b>Tables:</b> google_reviews + cursors</div>
+        <div class="sc-volume">~2,300 rows</div>
+      </div>
+      <div class="scraper-card">
+        <div class="sc-eyebrow">03 · 362 posts</div>
+        <div class="sc-name">Reddit posts</div>
+        <div class="sc-stack">Firecrawl /search (site:reddit.com) for discovery · Apify harshmaur/reddit-scraper URL-list mode for enrichment</div>
+        <div class="sc-notes">13 intent-category query templates (tips · scams · hidden gems · …). <b>Table:</b> reddit_posts</div>
+        <div class="sc-volume">362 posts</div>
+      </div>
+      <div class="scraper-card">
+        <div class="sc-eyebrow">04 · 434 comments</div>
+        <div class="sc-name">Reddit comments</div>
+        <div class="sc-stack">Same Apify run, comment-tree returned with each post · top-level comments persisted separately</div>
+        <div class="sc-notes">parent_post_id keeps the join back to the source thread. <b>Table:</b> reddit_comments</div>
+        <div class="sc-volume">434 comments</div>
+      </div>
+      <div class="scraper-card">
+        <div class="sc-eyebrow">05 · ~2,400 chunks</div>
+        <div class="sc-name">YouTube</div>
+        <div class="sc-stack">yt-dlp search · 14 query templates · views &ge; 10K filter · uploaded captions → auto-generated fallback · ~45 s chunking</div>
+        <div class="sc-notes">No API key required. chunk_start_ms preserved per segment. <b>Tables:</b> videos + transcripts + comments</div>
+        <div class="sc-volume">~2,400 chunks · 40 videos</div>
+      </div>
     </div>
-    <div class="slide-num">06 / 11</div>
+    <div class="slide-num">06 / 13</div>
   </section>
 
-  <!-- 7 — ROW SHAPE BEFORE/AFTER -->
+  <!-- 7 — SUPABASE -->
   <section class="slide" data-i="7">
+    <div class="topline">Where it all lands</div>
+    <h2 class="h2 display">Supabase · the raw-row store.</h2>
+    <p class="deck-line muted">All five scrapers write to the same managed Postgres via supabase-py. Migrations live in supabase/migrations/. The enrichment pipeline reads from here — it never re-scrapes.</p>
+    <div class="db-grid">
+      <div class="db-table central">
+        <div class="db-h">pois · root entity</div>
+        <div class="db-rows">id · uuid (PK)<br>name, city, country<br>aliases · text[]<br>place_id, ta_url</div>
+        <div class="db-foot">2 rows · Louvre + Colosseum. Every other table foreign-keys back here.</div>
+      </div>
+      <div class="db-table">
+        <div class="db-h">tripadvisor_reviews</div>
+        <div class="db-rows">poi_id → pois<br>review_id (unique)<br>rating, title, body<br>visit_date, trip_type</div>
+      </div>
+      <div class="db-table">
+        <div class="db-h">google_reviews + cursors</div>
+        <div class="db-rows">poi_id → pois<br>review_id (unique)<br>rating, text, iso_date<br>sort_mode (cursor stream)</div>
+      </div>
+      <div class="db-table">
+        <div class="db-h">reddit_posts + reddit_comments</div>
+        <div class="db-rows">poi_id → pois<br>post_id / comment_id<br>body, score<br>parent_post_id (comments)</div>
+      </div>
+      <div class="db-table">
+        <div class="db-h">youtube_videos + transcripts + comments</div>
+        <div class="db-rows">poi_id → pois<br>video_id (unique)<br>full_text, segments_json<br>views, score, duration</div>
+      </div>
+      <div class="db-table">
+        <div class="db-h">cursors (resume state)</div>
+        <div class="db-rows">google_reviews_cursors<br>(TA offsets in code)</div>
+        <div class="db-foot">Per (poi, sort_mode) — each script run resumes exactly where the last one stopped.</div>
+      </div>
+    </div>
+    <div class="slide-num">07 / 13</div>
+  </section>
+
+  <!-- 8 — ENRICHMENT PIPELINE -->
+  <section class="slide" data-i="8">
+    <div class="topline">Step 02 · Enrich</div>
+    <h2 class="h2 display">Supabase in. Master JSON out.</h2>
+    <p class="deck-line muted">Four chained passes, each a separate Python script. Each one reads the previous pass's artifact, runs its job, writes a new one. Idempotent and re-runnable in isolation.</p>
+    <div class="enrich-flow">
+      <div class="enrich-step">
+        <div class="enrich-num">IN</div>
+        <div class="enrich-name">Supabase</div>
+        <div class="enrich-desc">5 source tables · per POI</div>
+      </div>
+      <div class="enrich-arrow">→</div>
+      <div class="enrich-step">
+        <div class="enrich-num">PASS 01</div>
+        <div class="enrich-name">extract.py</div>
+        <div class="enrich-desc">flat_insights_*.json</div>
+      </div>
+      <div class="enrich-arrow">→</div>
+      <div class="enrich-step">
+        <div class="enrich-num">PASS 02</div>
+        <div class="enrich-name">cluster_all.py</div>
+        <div class="enrich-desc">embed + HDBSCAN + name</div>
+      </div>
+      <div class="enrich-arrow">→</div>
+      <div class="enrich-step">
+        <div class="enrich-num">PASS 03</div>
+        <div class="enrich-name">score_all.py</div>
+        <div class="enrich-desc">tier A/B/C</div>
+      </div>
+      <div class="enrich-arrow">→</div>
+      <div class="enrich-step">
+        <div class="enrich-num">PASS 04</div>
+        <div class="enrich-name">label + join</div>
+        <div class="enrich-desc">taxonomy + master row</div>
+      </div>
+      <div class="enrich-arrow">→</div>
+      <div class="enrich-step heavy">
+        <div class="enrich-num">OUT</div>
+        <div class="enrich-name">enriched.json</div>
+        <div class="enrich-desc">4,622 × 29 fields</div>
+      </div>
+    </div>
+    <div class="enrich-facts">
+      <div class="enrich-fact"><strong>~30 min</strong> wall-clock per POI on a laptop</div>
+      <div class="enrich-fact"><strong>OpenAI calls</strong> dominate cost — embeddings (small) + LLM naming + LLM labelling</div>
+      <div class="enrich-fact"><strong>Re-runnable</strong> per pass — idempotent over the JSON artifact it writes</div>
+      <div class="enrich-fact"><strong>50-worker</strong> parallelism on the labelling pass (LLM-bound)</div>
+    </div>
+    <div class="slide-num">08 / 13</div>
+  </section>
+
+  <!-- 9 — ROW SHAPE BEFORE/AFTER -->
+  <section class="slide" data-i="9">
     <div class="topline">Step 02 · Enrich · row shape</div>
     <h2 class="h2 display">Raw row to enriched row.</h2>
     <p class="deck-line muted">A single TripAdvisor row before and after the four enrichment passes.</p>
@@ -513,11 +649,11 @@
         </div>
       </div>
     </div>
-    <div class="slide-num">07 / 11</div>
+    <div class="slide-num">09 / 13</div>
   </section>
 
-  <!-- 8 — 4-STEP ENRICHMENT -->
-  <section class="slide" data-i="8">
+  <!-- 10 — 4-STEP ENRICHMENT DETAIL -->
+  <section class="slide" data-i="10">
     <div class="topline">Step 02 · Enrich · four passes</div>
     <h2 class="h2 display">Extract → Cluster → Score → Label.</h2>
     <p class="deck-line muted">Each pass runs once over the corpus and writes a new artifact. The next pass reads it.</p>
@@ -551,11 +687,11 @@
         <div class="step-out-box"><span class="label">OUT</span>flat_insights_enriched.json (22 fields)</div>
       </div>
     </div>
-    <div class="slide-num">08 / 11</div>
+    <div class="slide-num">10 / 13</div>
   </section>
 
-  <!-- 9 — MASTER TABLE -->
-  <section class="slide" data-i="9">
+  <!-- 11 — MASTER TABLE -->
+  <section class="slide" data-i="11">
     <div class="topline">Step 03 · The data layer</div>
     <h2 class="h2 display">flat_insights_enriched.json</h2>
     <p class="deck-line muted">One row per insight. 22 fields. Single source of truth for every downstream feature — joined across all five source feeds via cluster_id.</p>
@@ -596,11 +732,11 @@
         </div>
       </div>
     </div>
-    <div class="slide-num">09 / 11</div>
+    <div class="slide-num">11 / 13</div>
   </section>
 
-  <!-- 10 — MCP -->
-  <section class="slide" data-i="10">
+  <!-- 12 — MCP -->
+  <section class="slide" data-i="12">
     <div class="topline">Step 04 · MCP server</div>
     <h2 class="h2 display">Six tools.</h2>
     <p class="deck-line muted">JSON-RPC over stdio for local agents. Flask HTTP wrapper for browser clients. Both call the same retrieval functions over the same in-memory store.</p>
@@ -630,11 +766,11 @@
         <div class="tool-desc">Full RAG round-trip — agent loop wrapped as a single tool call.</div>
       </div>
     </div>
-    <div class="slide-num">10 / 11</div>
+    <div class="slide-num">12 / 13</div>
   </section>
 
-  <!-- 11 — RAG AGENT -->
-  <section class="slide" data-i="11">
+  <!-- 13 — RAG AGENT -->
+  <section class="slide" data-i="13">
     <div class="topline">Step 05 · ask_gems</div>
     <h2 class="h2 display">The RAG loop.</h2>
     <p class="deck-line muted">Function-calling agent. Up to 6 iterations. Hard requirement: ≥ 2 corroborating quotes per claim or confidence is downgraded.</p>
@@ -666,7 +802,7 @@
       <div class="rag-constraint"><span class="ck">MODEL</span><br>gpt-4o for synthesis · text-embedding-3-small for retrieval</div>
       <div class="rag-constraint"><span class="ck">LATENCY</span><br>2–4s typical · 8s p99</div>
     </div>
-    <div class="slide-num">11 / 11</div>
+    <div class="slide-num">13 / 13</div>
   </section>
 
 </div>
