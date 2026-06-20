@@ -163,6 +163,50 @@ def _wrap(fn):
     return inner
 
 
+# ---- Source URL enrichment ------------------------------------------------
+
+_URL_FIELD = {
+    "reddit_post": "post_url",
+    "reddit_comment": "comment_url",
+    "youtube_transcript_chunk": "url",
+}
+
+_PLATFORM_LABEL = {
+    "reddit_post": "Reddit Post",
+    "reddit_comment": "Reddit Comment",
+    "youtube_transcript_chunk": "YouTube",
+    "tripadvisor_review": "TripAdvisor",
+    "google_review": "Google Reviews",
+}
+
+
+def _attach_source_urls(citations: list) -> list:
+    """Enrich each citation with a source URL and human-readable platform label.
+
+    Looks up the raw row from the in-memory store (no extra DB round-trip).
+    TripAdvisor and Google Reviews have no per-review URLs, so url=None for those.
+    """
+    if not citations:
+        return citations
+    s = load_all()
+    result = []
+    for c in citations:
+        source = c.get("source", "")
+        source_id = str(c.get("source_id", ""))
+        raw_row = s.raw.get(source, {}).get(source_id)
+        url = None
+        if raw_row:
+            field = _URL_FIELD.get(source)
+            if field:
+                url = raw_row.get(field)
+        result.append({
+            **c,
+            "url": url,
+            "platform_label": _PLATFORM_LABEL.get(source, source),
+        })
+    return result
+
+
 # ---- Routes ---------------------------------------------------------------
 
 
