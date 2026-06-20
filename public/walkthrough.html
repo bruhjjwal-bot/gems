@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gems · Loom walkthrough</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4EFE6;
+    --paper: #FBF8F0;
+    --ink: #1A1614;
+    --muted: #6E665B;
+    --rule: #C9C0AF;
+    --rule-soft: #DCD3C0;
+    --accent: #7A1F1F;
+    --accent-soft: #C49191;
+    --warn: #B07A1E;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; min-height: 100vh; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .display { font-family: 'Fraunces', Georgia, serif; font-variation-settings: 'opsz' 144, 'SOFT' 50; letter-spacing: -0.022em; }
+
+  /* TOP BAR — sticky */
+  .topbar { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--ink); padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+  .topbar .brand { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.18em; color: var(--muted); text-transform: uppercase; }
+  .topbar .brand strong { color: var(--ink); font-weight: 500; }
+  .timer-wrap { display: flex; gap: 14px; align-items: center; }
+  .timer { font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 500; color: var(--ink); letter-spacing: 0.04em; }
+  .timer.running { color: var(--accent); }
+  .timer.over { color: var(--accent); animation: pulse 1.4s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.45; } }
+  .timer-target { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted); }
+  .timer-btn { font-family: 'JetBrains Mono', monospace; font-size: 11px; padding: 6px 12px; border: 1px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; letter-spacing: 0.1em; text-transform: uppercase; }
+  .timer-btn:hover { background: var(--ink); color: var(--bg); }
+  .scene-pos { font-family: 'JetBrains Mono', monospace; font-size: 13px; color: var(--muted); }
+  .scene-pos strong { color: var(--ink); font-weight: 500; }
+
+  /* MAIN */
+  main { max-width: 1080px; margin: 0 auto; padding: 36px 32px 140px; }
+
+  /* SCENE HEADER */
+  .scene-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase; margin-bottom: 12px; display: flex; gap: 18px; align-items: baseline; }
+  .scene-eyebrow .budget { color: var(--muted); }
+  .scene-eyebrow .opt { background: var(--warn); color: var(--bg); padding: 2px 8px; font-size: 10px; }
+  .scene-title { font-family: 'Fraunces', serif; font-weight: 700; font-variation-settings: 'opsz' 144, 'SOFT' 60; font-size: 56px; line-height: 1; letter-spacing: -0.022em; margin: 0 0 14px; }
+  .scene-deck { font-family: 'Inter', sans-serif; font-size: 19px; line-height: 1.5; color: var(--muted); max-width: 780px; margin: 0 0 32px; }
+
+  /* SHOW ON SCREEN */
+  .show-block { border: 1px solid var(--ink); padding: 18px 22px; margin-bottom: 22px; background: var(--paper); }
+  .show-block .block-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: var(--accent); text-transform: uppercase; margin-bottom: 8px; }
+  .show-block .show-line { font-family: 'Inter', sans-serif; font-size: 17px; color: var(--ink); line-height: 1.45; margin: 0; }
+  .show-block .show-line + .show-line { margin-top: 6px; }
+  .show-block a { color: var(--accent); text-decoration: underline; text-decoration-color: var(--accent-soft); text-underline-offset: 3px; }
+  .show-block a:hover { text-decoration-color: var(--accent); }
+  .show-block .cmd { font-family: 'JetBrains Mono', monospace; font-size: 13px; background: var(--bg); padding: 8px 10px; border: 1px solid var(--rule); display: inline-block; margin-top: 4px; }
+
+  /* TALKING POINTS */
+  .points-block { padding: 6px 0 22px; }
+  .points-block .block-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: var(--muted); text-transform: uppercase; margin-bottom: 14px; }
+  .points-block ul { margin: 0; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .points-block li { font-family: 'Inter', sans-serif; font-size: 22px; line-height: 1.45; color: var(--ink); padding-left: 26px; position: relative; }
+  .points-block li::before { content: '·'; position: absolute; left: 8px; top: -2px; font-size: 28px; color: var(--accent); }
+  .points-block li b { font-weight: 600; color: var(--ink); background: rgba(122,31,31,0.07); padding: 0 4px; }
+
+  /* KILLER LINE */
+  .killer { border-left: 3px solid var(--accent); padding: 16px 22px; margin: 0 0 22px; background: var(--paper); }
+  .killer .block-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: var(--accent); text-transform: uppercase; margin-bottom: 8px; }
+  .killer .killer-line { font-family: 'Fraunces', serif; font-style: normal; font-weight: 400; font-size: 28px; line-height: 1.3; color: var(--ink); margin: 0; }
+
+  /* NUMBERS */
+  .numbers { display: flex; gap: 18px; flex-wrap: wrap; padding: 14px 0; border-top: 1px solid var(--rule-soft); border-bottom: 1px solid var(--rule-soft); margin-bottom: 22px; }
+  .numbers .n-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; padding: 4px 0; }
+  .numbers .num-chip { font-family: 'JetBrains Mono', monospace; font-size: 13px; padding: 4px 10px; border: 1px solid var(--rule); background: var(--bg); }
+  .numbers .num-chip b { color: var(--accent); font-weight: 500; }
+
+  /* SKIP-IF-TIGHT */
+  .if-tight { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--warn); padding: 8px 12px; border: 1px dashed var(--warn); display: inline-block; margin-bottom: 22px; }
+
+  /* NAV BAR */
+  .navbar { position: fixed; bottom: 0; left: 0; right: 0; background: var(--bg); border-top: 1px solid var(--ink); padding: 14px 32px; display: flex; gap: 16px; align-items: center; justify-content: space-between; z-index: 9; }
+  .navbar .btn { font-family: 'JetBrains Mono', monospace; font-size: 12px; padding: 10px 18px; border: 1px solid var(--ink); background: var(--ink); color: var(--bg); cursor: pointer; letter-spacing: 0.1em; text-transform: uppercase; }
+  .navbar .btn.ghost { background: transparent; color: var(--ink); }
+  .navbar .btn:disabled { opacity: 0.3; cursor: not-allowed; }
+  .navbar .btn:not(:disabled):hover { background: var(--ink); color: var(--bg); }
+  .navbar .btn.ghost:not(:disabled):hover { background: var(--ink); color: var(--bg); }
+  .navbar .scene-jump { display: flex; gap: 6px; flex-wrap: wrap; }
+  .scene-jump button { font-family: 'JetBrains Mono', monospace; font-size: 11px; width: 30px; height: 30px; border: 1px solid var(--rule); background: var(--bg); color: var(--muted); cursor: pointer; }
+  .scene-jump button.active { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .scene-jump button:hover:not(.active) { border-color: var(--ink); color: var(--ink); }
+
+  /* SCENES */
+  .scene { display: none; }
+  .scene.active { display: block; }
+
+  /* PRE-RECORD CHECKLIST */
+  .checklist { padding: 28px 32px; border: 1px solid var(--ink); background: var(--paper); margin-bottom: 28px; }
+  .checklist h3 { font-family: 'Fraunces', serif; font-weight: 700; font-size: 28px; margin: 0 0 14px; }
+  .checklist .col-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--muted); text-transform: uppercase; margin: 18px 0 8px; }
+  .checklist ul { margin: 0; padding-left: 18px; }
+  .checklist li { font-family: 'Inter', sans-serif; font-size: 16px; line-height: 1.55; margin-bottom: 6px; }
+  .checklist a { color: var(--accent); }
+  .checklist .cmd { font-family: 'JetBrains Mono', monospace; font-size: 12px; background: var(--bg); padding: 4px 8px; border: 1px solid var(--rule); }
+
+  @media (max-width: 760px) {
+    .topbar { padding: 10px 16px; flex-wrap: wrap; }
+    .timer { font-size: 20px; }
+    main { padding: 24px 18px 200px; }
+    .scene-title { font-size: 38px; }
+    .scene-deck { font-size: 16px; }
+    .points-block li { font-size: 18px; }
+    .killer .killer-line { font-size: 22px; }
+    .navbar { padding: 10px 14px; flex-direction: column; gap: 8px; }
+    .navbar .scene-jump { order: -1; }
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand"><strong>Gems</strong> · Loom walkthrough helper</div>
+  <div class="timer-wrap">
+    <div class="timer-target">target · ~7:00</div>
+    <div class="timer" id="timer">0:00</div>
+    <button class="timer-btn" id="timer-btn" onclick="toggleTimer()">Start</button>
+    <button class="timer-btn" onclick="resetTimer()">Reset</button>
+  </div>
+  <div class="scene-pos"><strong id="scene-cur">1</strong> / <span id="scene-tot">11</span></div>
+</div>
+
+<main id="main">
+  <!-- All scenes injected by JS for one source of truth -->
+</main>
+
+<nav class="navbar">
+  <button class="btn ghost" id="btn-prev" onclick="prev()">← Prev</button>
+  <div class="scene-jump" id="scene-jump"></div>
+  <button class="btn" id="btn-next" onclick="next()">Next →</button>
+</nav>
+
+<script>
+const SCENES = [
+  {
+    title: "Pre-record checklist",
+    budget: "do this before hitting record",
+    deck: "Get tabs open, terminal ready, mic checked. Read the opener once out loud. Then start the timer when you hit record.",
+    isChecklist: true,
+  },
+
+  {
+    title: "Opener — what this is",
+    budget: "~30s",
+    deck: "Set the scene in two sentences. Don't oversell.",
+    show: [
+      { type: "open", label: "Open this tab in the browser:", href: "https://gems-poi-production.up.railway.app/how-it-works", text: "/how-it-works (slide 01 — cover)" },
+    ],
+    points: [
+      "I built <b>Gems</b> — a POI insight pipeline for two attractions, the Louvre and the Colosseum.",
+      "The premise is simple: take real reviews and posts from real humans, enrich them into a structured table, and make that table queryable.",
+      "Two POIs is a deliberate hackathon scope — the pipeline shape is the demo, not the coverage.",
+    ],
+    killer: "Everything you'll see is traced back to a real human who wrote the words.",
+    numbers: ["5 sources", "~10K raw rows", "1,450 clusters", "4,622 enriched insights", "2 POIs"],
+  },
+
+  {
+    title: "The 5 sources",
+    budget: "~45s",
+    deck: "What we scraped and why each source matters.",
+    show: [
+      { type: "press", text: "Press → on the deck to jump to slide 03 (Scrape)" },
+    ],
+    points: [
+      "Each source has a different bias — that's the point. We kept all five so the table sees the texture of real experience, not one platform's voice.",
+      "TripAdvisor — long reviews, complaint-shaped, ratings anchored.",
+      "Google reviews — short, multilingual, breadth.",
+      "Reddit (posts and comments separately) — insider voice that doesn't show up in reviews.",
+      "YouTube transcripts — what people <b>say</b>, not write. Chunked at ~45 seconds.",
+      "Every row carries the <b>source_id</b> back to the original human.",
+    ],
+    killer: "About 10,000 raw rows across five very different platforms.",
+    numbers: ["TA: 3,800", "Google: 2,300", "Reddit posts: 362", "Reddit comments: 434", "YT chunks: 2,400"],
+  },
+
+  {
+    title: "Why enrichment matters",
+    budget: "~45s",
+    deck: "Raw text is unstructured. The enrichment turns each row into 29 queryable fields.",
+    show: [
+      { type: "press", text: "Press → to jump to slide 04 (Raw row → enriched row)" },
+    ],
+    points: [
+      "Here's a real TripAdvisor row on the left — just text plus a rating.",
+      "After four enrichment passes, the same row has 29 structured fields: cluster_id, taxonomy, sentiment, intent_tag, the named sub-attraction, the numbers it mentions, the entities it references.",
+      "This is where most of the engineering time went — not the scraping, not the UI.",
+      "The payoff is that downstream we can write filters like \"recommendations about the Mona Lisa with a specific number in them\" instead of doing keyword search.",
+    ],
+    killer: "Raw text is just noise — enrichment is what makes it queryable.",
+    numbers: ["29 fields per row", "4 enrichment passes"],
+  },
+
+  {
+    title: "The 4-step enrichment",
+    budget: "~1m",
+    deck: "Extract, Cluster, Score, Label. Each pass writes its own artifact.",
+    show: [
+      { type: "press", text: "Press → to jump to slide 05 (the four passes)" },
+    ],
+    points: [
+      "<b>Pass 1 — Extract.</b> Each source gets its own extractor because the shape differs. A review isn't a comment isn't a transcript chunk.",
+      "<b>Pass 2 — Cluster.</b> Embed every insight with text-embedding-3-small, run HDBSCAN to group semantically similar rows. We end up with 1,450 clusters that an LLM names with a canonical observation.",
+      "<b>Pass 3 — Score.</b> Each cluster gets a quality tier — A, B, or C — based on size, source diversity, and sentiment coherence. A claim corroborated across Reddit and TripAdvisor weighs more than the same claim repeated twenty times on TA.",
+      "<b>Pass 4 — Label.</b> The taxonomy pass — L1/L2/L3, intent_tag, sub_attraction, numeric_anchors get extracted and tagged onto every row.",
+    ],
+    killer: "Four passes, each one dumb on its own — together they turn ten thousand opinion-rows into a queryable table.",
+    numbers: ["Pass 2: 1,450 clusters", "Pass 3: tier A/B/C", "Pass 4: 29 fields"],
+  },
+
+  {
+    title: "The master table",
+    budget: "~45s",
+    deck: "flat_insights_enriched.json — the load-bearing artifact.",
+    show: [
+      { type: "press", text: "Press → to jump to slide 06 (master table)" },
+      { type: "optional", label: "Optional — show the actual file in terminal:", cmd: "wc -l l2/data/flat_insights_enriched.json && du -h l2/data/flat_insights_enriched.json" },
+    ],
+    points: [
+      "<b>4,622 rows × 29 fields each.</b> Lives at <span class=\"mono\">l2/data/flat_insights_enriched.json</span>.",
+      "This is the single source of truth. Every demo app, every MCP tool, the Carousel Studio agents — all of them query this file.",
+      "The schema joins per-row metadata (rating, source_id, raw text) with cluster-level labels (l1, sentiment, quality_tier, named sub-attraction).",
+      "Build the table well, and everything downstream is short scripts.",
+    ],
+    killer: "Get this one file right and the rest of the system is just thin wrappers.",
+    numbers: ["4,622 rows", "29 fields", "4.5 MB", "joined from 5 sources via cluster_id"],
+  },
+
+  {
+    title: "MCP server — 6 tools",
+    budget: "~45s",
+    deck: "Tools wrap the table's primary query shapes. JSON-RPC for agents, HTTP for browsers.",
+    show: [
+      { type: "press", text: "Press → to jump to slide 07 (the 6 MCP tools)" },
+    ],
+    points: [
+      "<b>search_clusters</b> — semantic cluster search with filters. ~200ms.",
+      "<b>search_insights</b> — per-row search with structured filters like sub_attraction, intent_tag, has_numeric.",
+      "<b>explain_cluster</b> — pulls the raw reviewer quotes for a cluster. The citation trail.",
+      "<b>poi_stats</b> and <b>sub_attractions</b> — pure aggregation, no LLM. Fast.",
+      "<b>ask</b> — full RAG round-trip wrapped as one tool call.",
+      "Same six tools whether you're a browser app or another agent.",
+    ],
+    killer: "Six small tools — that's the whole interface to the data layer.",
+    numbers: ["6 tools", "stdio + HTTP", "~200ms hot retrieval"],
+  },
+
+  {
+    title: "The RAG agent",
+    budget: "~45s",
+    deck: "ask_gems is a function-calling loop with one hard rule.",
+    show: [
+      { type: "press", text: "Press → to jump to slide 08 (the RAG loop)" },
+      { type: "optional", label: "Optional — fire a live query in the terminal:", cmd: "curl -s -X POST https://gems-poi-production.up.railway.app/api/ask -H 'Content-Type: application/json' -d '{\"poi\":\"Colosseum\",\"query\":\"is the Roma Pass worth it?\"}' | jq" },
+    ],
+    points: [
+      "Query in → agent calls retrieval tools → pulls citations → synthesises an answer.",
+      "The constraint is hard-coded: <b>at least two corroborating quotes per claim</b>, or the agent downgrades its own confidence to \"low\".",
+      "This is the difference between a chatbot and a system you can trust — when retrieval is thin, the answer honestly admits it instead of fabricating.",
+      "We chose this over hedging or polite generation.",
+    ],
+    killer: "If we can't cite it, we don't say it.",
+    numbers: ["≥2 citations required", "structured output", "gpt-4o synthesis", "2–4s typical"],
+  },
+
+  {
+    title: "The 6 demo apps",
+    budget: "~1.5m · skip if tight",
+    optional: true,
+    deck: "Tour two or three — don't try to demo all six.",
+    show: [
+      { type: "open", label: "Open the landing page:", href: "https://gems-poi-production.up.railway.app/", text: "/ (the editorial masthead)" },
+      { type: "open", label: "Then jump straight into:", href: "https://gems-poi-production.up.railway.app/citation-mode", text: "/citation-mode" },
+      { type: "open", label: "Then:", href: "https://gems-poi-production.up.railway.app/the-verdict", text: "/the-verdict" },
+    ],
+    points: [
+      "Six apps, all running on the same master table. Each is a single HTML file.",
+      "<b>Citation Mode</b> — an editorial briefing where every claim has a footnote that opens a marginalia card with the raw reviewer quote. Click a numeral to show.",
+      "<b>The Verdict</b> — magazine-style yes/no with a monumental score on the cover.",
+      "<b>The Three-Hour Cut</b> — give it your visit window, get a route assembled from real regret data and median minutes spent.",
+      "Don't read out every app — the point is the <b>data layer is reusable</b>. Each app is a few hundred lines of HTML over the same API.",
+    ],
+    killer: "Six different surfaces, one data layer.",
+    numbers: ["6 demo apps", "1 master table", "0 LLM calls on most"],
+  },
+
+  {
+    title: "Carousel Studio",
+    budget: "~1.5m",
+    deck: "Five chained agents that turn the same data into Instagram carousels.",
+    show: [
+      { type: "open", label: "Open in a new tab:", href: "https://carousel-studio-production-6430.up.railway.app/", text: "carousel-studio-production-6430.up.railway.app" },
+      { type: "press", text: "Step 1: Pitch → generate topics. Wait for them to load. Show that they reference real entities (Mona Lisa, Porte des Lions) and real numbers (37 min, 10 min wait)." },
+      { type: "press", text: "Step 2: Outline → show one slide's TIP + WHY structure." },
+      { type: "press", text: "Step 3: Direction → show the curated palette + type vocabulary." },
+      { type: "press", text: "Step 4 (optional, 30s): Render → fire one slide at medium quality if time allows." },
+    ],
+    points: [
+      "Five agents in a chain: Topic Scout, Slide Architect, Design Director, Image Prompter, Renderer.",
+      "Topics are grounded in our master table — every tip references a real sub-attraction backed by a real recommendation count.",
+      "The Director can only choose from a curated palette + type + layout library. That's the anti-AI-slop wedge — the model can't freelance.",
+      "Image rendering uses <b>gpt-image-2</b> — the latest model that can correctly render typography inside images.",
+      "All editorial, all positive, all cited. No \"skip this\" or \"avoid that\" framings.",
+    ],
+    killer: "One pipeline, infinite output formats — including assets we can ship straight to Instagram.",
+    numbers: ["5 chained agents", "gpt-image-2", "~$0.30 per carousel", "10 layouts × 5 palettes"],
+  },
+
+  {
+    title: "Close — what it unlocks",
+    budget: "~30s",
+    deck: "Tight close. State what generalises and leave it.",
+    show: [],
+    points: [
+      "The shape generalises — add more POIs, the same pipeline runs, every product downstream gets them for free.",
+      "All deployed on Railway. All on GitHub at <span class=\"mono\">bruhjjwal-bot/gems</span> and <span class=\"mono\">bruhjjwal-bot/insta-gems</span>.",
+      "Built solo in a hackathon weekend — the work is in the table, not the apps on top.",
+    ],
+    killer: "Pipeline → master table → tools → products. The leverage is in the middle layer.",
+    numbers: [],
+  },
+];
+
+// ============================================================
+// RENDER
+// ============================================================
+const main = document.getElementById('main');
+const sceneJump = document.getElementById('scene-jump');
+document.getElementById('scene-tot').textContent = SCENES.length;
+
+function renderScenes() {
+  main.innerHTML = SCENES.map((s, i) => {
+    if (s.isChecklist) {
+      return `<section class="scene${i === 0 ? ' active' : ''}" data-i="${i}">
+        <div class="scene-eyebrow"><span>Scene ${String(i+1).padStart(2,'0')}</span><span class="budget">· ${s.budget}</span></div>
+        <h1 class="scene-title display">${s.title}</h1>
+        <p class="scene-deck">${s.deck}</p>
+        <div class="checklist">
+          <h3>Tabs to open before you hit record</h3>
+          <ul>
+            <li><a href="https://gems-poi-production.up.railway.app/how-it-works" target="_blank">How-it-works deck</a> — your spine for slides 02–07</li>
+            <li><a href="https://gems-poi-production.up.railway.app/" target="_blank">Gems landing page</a> — for the 6 demo apps</li>
+            <li><a href="https://carousel-studio-production-6430.up.railway.app/" target="_blank">Carousel Studio</a> — separate Railway service for the IG demo</li>
+            <li><a href="https://github.com/bruhjjwal-bot/gems" target="_blank">github.com/bruhjjwal-bot/gems</a> — in case you want to show code briefly</li>
+          </ul>
+
+          <div class="col-eyebrow">Terminal commands worth having ready</div>
+          <ul>
+            <li><span class="cmd">curl -s https://gems-poi-production.up.railway.app/api/health | jq</span> — confirm the API is up live</li>
+            <li><span class="cmd">wc -l l2/data/flat_insights_enriched.json</span> — show the master table row count live</li>
+            <li><span class="cmd">curl -s -X POST .../api/ask -d '{...}'</span> — fire a live RAG query (full command on scene 08)</li>
+          </ul>
+
+          <div class="col-eyebrow">Before you hit record</div>
+          <ul>
+            <li>Set screen recording to capture the browser, not the whole desktop.</li>
+            <li>Close Slack / Mail / anything that pings.</li>
+            <li>Read the opener (scene 02) once out loud to warm up.</li>
+            <li>Hit the timer's <b>Start</b> button when you hit record. Target ~7 minutes — the timer turns red if you go over.</li>
+            <li><b>→ key</b> advances scenes. <b>Space</b> also advances. <b>←</b> goes back.</li>
+          </ul>
+        </div>
+      </section>`;
+    }
+    return `<section class="scene${i === 0 ? ' active' : ''}" data-i="${i}">
+      <div class="scene-eyebrow"><span>Scene ${String(i+1).padStart(2,'0')}</span><span class="budget">· ${s.budget}</span>${s.optional ? '<span class="opt">SKIP IF TIGHT</span>' : ''}</div>
+      <h1 class="scene-title display">${s.title}</h1>
+      <p class="scene-deck">${s.deck}</p>
+      ${(s.show && s.show.length) ? `<div class="show-block">
+        <div class="block-eyebrow">Show on screen</div>
+        ${s.show.map(item => {
+          if (item.type === 'open') return `<p class="show-line">${item.label || 'Open:'} <a href="${item.href}" target="_blank">${item.text}</a></p>`;
+          if (item.type === 'press') return `<p class="show-line">${item.text}</p>`;
+          if (item.type === 'optional') return `<p class="show-line"><em style="color:var(--muted)">${item.label}</em><br><span class="cmd">${item.cmd}</span></p>`;
+          return '';
+        }).join('')}
+      </div>` : ''}
+      ${(s.points && s.points.length) ? `<div class="points-block">
+        <div class="block-eyebrow">Talking points · pick & paraphrase, don't read</div>
+        <ul>${s.points.map(p => `<li>${p}</li>`).join('')}</ul>
+      </div>` : ''}
+      ${s.killer ? `<div class="killer">
+        <div class="block-eyebrow">The line to land</div>
+        <p class="killer-line">"${s.killer}"</p>
+      </div>` : ''}
+      ${(s.numbers && s.numbers.length) ? `<div class="numbers">
+        <div class="n-eyebrow">Numbers to drop</div>
+        ${s.numbers.map(n => `<span class="num-chip">${n}</span>`).join('')}
+      </div>` : ''}
+    </section>`;
+  }).join('');
+}
+
+function renderJump() {
+  sceneJump.innerHTML = SCENES.map((s, i) =>
+    `<button class="${i === cur ? 'active' : ''}" onclick="goto(${i})" title="${s.title}">${String(i+1).padStart(2,'0')}</button>`
+  ).join('');
+}
+
+// ============================================================
+// NAV
+// ============================================================
+let cur = 0;
+function show(n) {
+  cur = Math.max(0, Math.min(SCENES.length - 1, n));
+  document.querySelectorAll('.scene').forEach((el, i) => el.classList.toggle('active', i === cur));
+  document.getElementById('scene-cur').textContent = cur + 1;
+  document.getElementById('btn-prev').disabled = cur === 0;
+  document.getElementById('btn-next').disabled = cur === SCENES.length - 1;
+  renderJump();
+  window.scrollTo({top: 0, behavior: 'instant'});
+  if (history.replaceState) history.replaceState(null, '', '#' + (cur + 1));
+}
+function next() { show(cur + 1); }
+function prev() { show(cur - 1); }
+function goto(n) { show(n); }
+
+document.addEventListener('keydown', (e) => {
+  // don't hijack typing inside form fields
+  if (['INPUT','TEXTAREA','SELECT'].includes(document.activeElement?.tagName)) return;
+  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown' || e.key.toLowerCase() === 'j') { next(); e.preventDefault(); }
+  else if (e.key === 'ArrowLeft' || e.key === 'PageUp' || e.key.toLowerCase() === 'k') { prev(); e.preventDefault(); }
+  else if (e.key === 'Home') { show(0); }
+  else if (e.key === 'End') { show(SCENES.length - 1); }
+  else if (e.key.toLowerCase() === 't') { toggleTimer(); }
+});
+
+// ============================================================
+// TIMER
+// ============================================================
+const TARGET_SEC = 7 * 60;
+let timerSec = 0;
+let timerInt = null;
+const timerEl = document.getElementById('timer');
+const timerBtn = document.getElementById('timer-btn');
+
+function fmt(s) {
+  const m = Math.floor(s / 60);
+  const ss = s % 60;
+  return `${m}:${String(ss).padStart(2,'0')}`;
+}
+function tickTimer() {
+  timerSec++;
+  timerEl.textContent = fmt(timerSec);
+  if (timerSec >= TARGET_SEC + 30) timerEl.classList.add('over');
+}
+function toggleTimer() {
+  if (timerInt) {
+    clearInterval(timerInt);
+    timerInt = null;
+    timerEl.classList.remove('running');
+    timerBtn.textContent = 'Resume';
+  } else {
+    timerInt = setInterval(tickTimer, 1000);
+    timerEl.classList.add('running');
+    timerBtn.textContent = 'Pause';
+  }
+}
+function resetTimer() {
+  if (timerInt) { clearInterval(timerInt); timerInt = null; }
+  timerSec = 0;
+  timerEl.textContent = '0:00';
+  timerEl.classList.remove('running', 'over');
+  timerBtn.textContent = 'Start';
+}
+
+// ============================================================
+// INIT
+// ============================================================
+renderScenes();
+renderJump();
+const hash = parseInt((location.hash || '').replace('#', ''), 10);
+if (!isNaN(hash) && hash >= 1 && hash <= SCENES.length) show(hash - 1);
+</script>
+
+</body>
+</html>
