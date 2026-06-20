@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gems · How it works</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4EFE6;
+    --paper: #FBF8F0;
+    --ink: #1A1614;
+    --muted: #6E665B;
+    --rule: #C9C0AF;
+    --rule-soft: #DCD3C0;
+    --accent: #7A1F1F;
+    --accent-soft: #C49191;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow: hidden; height: 100%; }
+  .display { font-family: 'Fraunces', Georgia, serif; font-variation-settings: 'opsz' 144, 'SOFT' 50; letter-spacing: -0.022em; }
+  .serif { font-family: 'Newsreader', Georgia, serif; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+
+  /* DECK SHELL */
+  .deck { position: relative; width: 100vw; height: 100vh; overflow: hidden; }
+  .slide { position: absolute; inset: 0; padding: 64px 88px 84px; display: none; opacity: 0; transition: opacity 240ms ease; overflow: auto; }
+  .slide.active { display: flex; opacity: 1; flex-direction: column; }
+
+  /* RUNNING HEADERS */
+  .slide::before {
+    content: 'GEMS · HOW IT WORKS';
+    position: absolute; bottom: 28px; left: 88px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    letter-spacing: 0.18em; color: var(--muted);
+  }
+  .slide-num {
+    position: absolute; bottom: 28px; right: 88px;
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    letter-spacing: 0.18em; color: var(--muted);
+  }
+  .topline {
+    font-family: 'JetBrains Mono', monospace; font-size: 11px;
+    letter-spacing: 0.18em; color: var(--accent); text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+
+  /* COMMON BLOCKS */
+  .h1 { font-family: 'Fraunces', serif; font-weight: 700; font-variation-settings: 'opsz' 144, 'SOFT' 60; font-size: 96px; line-height: 0.95; letter-spacing: -0.028em; margin: 0 0 16px; }
+  .h2 { font-family: 'Fraunces', serif; font-weight: 700; font-variation-settings: 'opsz' 144, 'SOFT' 60; font-size: 64px; line-height: 1; letter-spacing: -0.022em; margin: 0 0 12px; }
+  .deck-deck { font-family: 'Newsreader', serif; font-style: italic; font-size: 26px; line-height: 1.4; color: var(--ink); max-width: 820px; margin: 0 0 36px; }
+  .deck-deck.muted { color: var(--muted); }
+  .lede { font-family: 'Newsreader', serif; font-size: 22px; line-height: 1.5; max-width: 760px; margin: 0 0 24px; color: var(--ink); }
+  .body { font-family: 'Inter', sans-serif; font-size: 17px; line-height: 1.6; max-width: 720px; color: var(--ink); }
+  .rule { width: 80px; height: 2px; background: var(--accent); margin: 0 0 28px; }
+  .rule.thin { height: 1px; background: var(--ink); width: 100%; margin: 18px 0; }
+
+  /* COVER */
+  .slide.cover { justify-content: flex-end; }
+  .cover-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.22em; color: var(--accent); margin-bottom: 24px; text-transform: uppercase; }
+  .cover-title { font-family: 'Fraunces', serif; font-weight: 700; font-variation-settings: 'opsz' 144, 'SOFT' 80; font-size: 156px; line-height: 0.88; letter-spacing: -0.035em; margin: 0; }
+  .cover-deck { font-family: 'Newsreader', serif; font-style: italic; font-size: 30px; line-height: 1.35; max-width: 820px; margin: 28px 0 0; color: var(--ink); }
+  .cover-meta { display: flex; gap: 36px; margin-top: 36px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: var(--muted); }
+  .cover-meta div span { color: var(--ink); }
+
+  /* TWO-COL */
+  .two-col { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; margin-top: 12px; }
+  .col-eyebrow { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; margin-bottom: 10px; }
+
+  /* PIPELINE DIAGRAM (slide 2) */
+  .pipeline { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0; margin: 24px 0; align-items: stretch; }
+  .pipe-step { padding: 18px 18px; border: 1px solid var(--ink); background: var(--paper); display: flex; flex-direction: column; gap: 6px; position: relative; }
+  .pipe-step + .pipe-step { border-left: 0; }
+  .pipe-step .step-num { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.12em; color: var(--accent); }
+  .pipe-step .step-name { font-family: 'Fraunces', serif; font-weight: 700; font-size: 20px; line-height: 1.1; }
+  .pipe-step .step-out { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); }
+  .pipe-step .step-note { font-family: 'Newsreader', serif; font-style: italic; font-size: 14px; color: var(--muted); line-height: 1.4; margin-top: auto; }
+  .pipe-step.heavy { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .pipe-step.heavy .step-num { color: var(--accent-soft); }
+  .pipe-step.heavy .step-out, .pipe-step.heavy .step-note { color: rgba(244,239,230,0.7); }
+
+  /* SCRAPERS TABLE */
+  .sources-table { display: grid; grid-template-columns: 240px 1fr 120px 120px; gap: 0; margin: 14px 0 0; border-top: 1px solid var(--ink); }
+  .sources-table .th, .sources-table .td { padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  .sources-table .th { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--muted); text-transform: uppercase; border-bottom: 1px solid var(--ink); }
+  .sources-table .td.source { font-family: 'Fraunces', serif; font-weight: 700; font-size: 22px; line-height: 1.1; }
+  .sources-table .td.what { font-family: 'Newsreader', serif; font-size: 17px; color: var(--ink); padding-right: 24px; }
+  .sources-table .td.count { font-family: 'JetBrains Mono', monospace; font-size: 16px; text-align: right; padding-right: 24px; }
+  .sources-table .td.field { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--muted); text-align: right; }
+  .sources-foot { font-family: 'Newsreader', serif; font-style: italic; font-size: 17px; color: var(--muted); margin-top: 22px; max-width: 800px; }
+
+  /* 4-STEP ENRICHMENT */
+  .four-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin: 20px 0 0; }
+  .step-card { border: 1px solid var(--ink); padding: 22px; display: flex; flex-direction: column; gap: 12px; background: var(--paper); position: relative; min-height: 380px; }
+  .step-card .step-no { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.16em; color: var(--accent); }
+  .step-card .step-h { font-family: 'Fraunces', serif; font-weight: 700; font-size: 32px; line-height: 1; letter-spacing: -0.01em; }
+  .step-card .step-d { font-family: 'Newsreader', serif; font-style: italic; font-size: 16px; line-height: 1.45; color: var(--muted); }
+  .step-card .step-detail { font-family: 'Inter', sans-serif; font-size: 14px; line-height: 1.55; color: var(--ink); }
+  .step-card .step-out-box { margin-top: auto; padding: 10px 12px; border-top: 1px solid var(--rule); font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink); }
+  .step-card .step-out-box .out-label { color: var(--accent); letter-spacing: 0.12em; display: block; margin-bottom: 4px; }
+
+  /* MASTER TABLE SCHEMA */
+  .master-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; margin-top: 18px; }
+  .master-stats { display: flex; flex-direction: column; gap: 20px; }
+  .stat-block { display: flex; flex-direction: column; gap: 4px; padding-bottom: 16px; border-bottom: 1px solid var(--rule); }
+  .stat-block:last-child { border-bottom: 0; }
+  .stat-block .stat-num { font-family: 'Fraunces', serif; font-style: normal; font-weight: 700; font-variation-settings: 'opsz' 144, 'SOFT' 50; font-size: 72px; line-height: 0.95; letter-spacing: -0.025em; }
+  .stat-block .stat-num .unit { font-family: 'Newsreader', serif; font-style: italic; font-weight: 400; font-size: 22px; margin-left: 8px; color: var(--muted); letter-spacing: 0; }
+  .stat-block .stat-caption { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; }
+  .schema-box { border: 1px solid var(--ink); padding: 24px; font-family: 'JetBrains Mono', monospace; font-size: 12.5px; line-height: 1.7; background: var(--paper); }
+  .schema-box .schema-h { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--accent); text-transform: uppercase; margin-bottom: 12px; display: block; }
+  .schema-box .field-name { color: var(--ink); }
+  .schema-box .field-type { color: var(--muted); }
+
+  /* TOOLS LIST */
+  .tools-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid var(--ink); margin-top: 18px; }
+  .tool-row { padding: 18px 0; border-bottom: 1px solid var(--rule); padding-right: 32px; }
+  .tool-row:nth-child(odd) { padding-right: 32px; }
+  .tool-row:nth-child(even) { padding-left: 32px; border-left: 1px solid var(--rule-soft); }
+  .tool-row .tool-name { font-family: 'JetBrains Mono', monospace; font-size: 15px; color: var(--accent); margin-bottom: 6px; }
+  .tool-row .tool-desc { font-family: 'Newsreader', serif; font-size: 16.5px; line-height: 1.45; color: var(--ink); }
+
+  /* RAG AGENT */
+  .rag-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 16px 0; align-items: stretch; }
+  .rag-box { border: 1px solid var(--ink); padding: 16px; min-height: 140px; display: flex; flex-direction: column; gap: 6px; background: var(--paper); }
+  .rag-box .rag-eye { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.16em; color: var(--accent); }
+  .rag-box .rag-name { font-family: 'Fraunces', serif; font-weight: 700; font-size: 22px; line-height: 1.1; }
+  .rag-box .rag-d { font-family: 'Newsreader', serif; font-style: italic; font-size: 14px; color: var(--muted); line-height: 1.4; }
+  .rag-rule { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: var(--ink); padding: 14px 18px; border-left: 3px solid var(--accent); background: var(--paper); margin: 20px 0 0; max-width: 820px; }
+  .rag-rule strong { color: var(--accent); }
+
+  /* WHAT IT POWERS */
+  .powers-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0; border-top: 1px solid var(--ink); margin-top: 16px; }
+  .powers-cell { padding: 22px 24px; border-bottom: 1px solid var(--rule); border-right: 1px solid var(--rule); }
+  .powers-cell:nth-child(3n) { border-right: 0; }
+  .powers-cell .pc-eye { font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.14em; color: var(--muted); text-transform: uppercase; margin-bottom: 6px; }
+  .powers-cell .pc-name { font-family: 'Fraunces', serif; font-weight: 700; font-size: 26px; line-height: 1.05; margin-bottom: 8px; }
+  .powers-cell .pc-d { font-family: 'Newsreader', serif; font-style: italic; font-size: 15px; line-height: 1.4; color: var(--muted); }
+
+  /* NAV */
+  .nav-overlay { position: fixed; bottom: 28px; left: 50%; transform: translateX(-50%); display: flex; gap: 14px; align-items: center; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--muted); letter-spacing: 0.12em; pointer-events: none; }
+  .nav-overlay kbd { font-family: 'JetBrains Mono', monospace; font-size: 10px; padding: 2px 6px; border: 1px solid var(--rule); background: var(--bg); }
+  .click-zones { position: fixed; inset: 0; display: flex; pointer-events: none; z-index: 2; }
+  .click-zones .zone { flex: 1; pointer-events: auto; cursor: pointer; }
+  .click-zones .zone.right { cursor: e-resize; }
+  .click-zones .zone.left { cursor: w-resize; }
+
+  /* PRINT */
+  @media print {
+    html, body { overflow: visible !important; height: auto !important; background: white; }
+    .deck { height: auto; }
+    .slide { display: flex !important; opacity: 1 !important; position: relative; inset: auto; page-break-after: always; min-height: 100vh; }
+    .nav-overlay, .click-zones { display: none !important; }
+  }
+
+  /* RESPONSIVE (smaller screens) */
+  @media (max-width: 1280px) {
+    .slide { padding: 48px 64px 72px; }
+    .slide::before, .slide-num { left: 64px; right: 64px; }
+    .h1 { font-size: 76px; }
+    .h2 { font-size: 50px; }
+    .cover-title { font-size: 116px; }
+    .deck-deck { font-size: 22px; }
+    .four-steps { grid-template-columns: repeat(2, 1fr); }
+    .rag-flow { grid-template-columns: repeat(2, 1fr); }
+    .powers-grid { grid-template-columns: 1fr 1fr; }
+    .powers-cell:nth-child(3n) { border-right: 1px solid var(--rule); }
+    .powers-cell:nth-child(2n) { border-right: 0; }
+    .pipeline { grid-template-columns: repeat(3, 1fr); }
+    .pipe-step + .pipe-step { border-left: 1px solid var(--ink); }
+  }
+  @media (max-width: 760px) {
+    .slide { padding: 32px 24px 60px; }
+    .slide::before, .slide-num { left: 24px; right: 24px; font-size: 9px; }
+    .cover-title { font-size: 64px; }
+    .h1 { font-size: 44px; }
+    .h2 { font-size: 32px; }
+    .deck-deck { font-size: 18px; margin-bottom: 18px; }
+    .two-col, .master-grid { grid-template-columns: 1fr; gap: 28px; }
+    .four-steps { grid-template-columns: 1fr; }
+    .sources-table { grid-template-columns: 1fr 110px; }
+    .sources-table .td.what, .sources-table .td.field, .sources-table .th:nth-child(2), .sources-table .th:nth-child(4) { display: none; }
+    .tools-list { grid-template-columns: 1fr; }
+    .tool-row:nth-child(even) { padding-left: 0; border-left: 0; }
+    .rag-flow { grid-template-columns: 1fr; }
+    .powers-grid { grid-template-columns: 1fr; }
+    .powers-cell { border-right: 0; }
+    .pipeline { grid-template-columns: 1fr; }
+    .pipe-step + .pipe-step { border-left: 1px solid var(--ink); border-top: 0; }
+  }
+</style>
+</head>
+<body>
+
+<div class="deck" id="deck">
+
+  <!-- SLIDE 1 — COVER -->
+  <section class="slide cover active" data-i="1">
+    <div class="cover-eyebrow">Gems · Hackathon submission</div>
+    <h1 class="cover-title display">How it works.</h1>
+    <p class="cover-deck">An honest walk-through of the pipeline behind the demo — where the data comes from, what we do with it, and why each step matters.</p>
+    <div class="cover-meta">
+      <div>POIs covered · <span>Louvre · Colosseum</span></div>
+      <div>Sources · <span>5</span></div>
+      <div>Insights enriched · <span>4,622</span></div>
+      <div>Clusters · <span>1,450</span></div>
+    </div>
+    <div class="slide-num">01 / 08</div>
+  </section>
+
+  <!-- SLIDE 2 — END-TO-END SHAPE -->
+  <section class="slide" data-i="2">
+    <div class="topline">The pipeline at a glance</div>
+    <h2 class="h2 display">Five sources in. Cited tips out.</h2>
+    <p class="deck-deck">No piece is novel. The work is in how tightly they're stitched together so that an answer can always be traced back to a sentence a real human wrote.</p>
+    <div class="pipeline">
+      <div class="pipe-step">
+        <div class="step-num">01</div>
+        <div class="step-name">Scrape</div>
+        <div class="step-out">→ raw_*.json</div>
+        <div class="step-note">Five sources, one row per opinion, full provenance retained.</div>
+      </div>
+      <div class="pipe-step">
+        <div class="step-num">02</div>
+        <div class="step-name">Extract</div>
+        <div class="step-out">→ flat insight rows</div>
+        <div class="step-note">Each source has its own extractor — review, post, comment, transcript chunk.</div>
+      </div>
+      <div class="pipe-step">
+        <div class="step-num">03</div>
+        <div class="step-name">Cluster</div>
+        <div class="step-out">→ 1,450 clusters</div>
+        <div class="step-note">Embed, group by semantic similarity, distil to a canonical observation.</div>
+      </div>
+      <div class="pipe-step">
+        <div class="step-num">04</div>
+        <div class="step-name">Score &amp; Label</div>
+        <div class="step-out">→ quality + taxonomy</div>
+        <div class="step-note">Tier A/B/C, intent_tag, sub_attraction, numeric_anchors per row.</div>
+      </div>
+      <div class="pipe-step heavy">
+        <div class="step-num">05</div>
+        <div class="step-name">Master table</div>
+        <div class="step-out">→ 4,622 × 22 fields</div>
+        <div class="step-note">The piece that does the heavy lifting. Every product downstream queries here.</div>
+      </div>
+      <div class="pipe-step">
+        <div class="step-num">06</div>
+        <div class="step-name">MCP + RAG</div>
+        <div class="step-out">→ tools, agents, apps</div>
+        <div class="step-note">Six tools, one citation-disciplined agent, multiple consumer surfaces.</div>
+      </div>
+    </div>
+    <div class="slide-num">02 / 08</div>
+  </section>
+
+  <!-- SLIDE 3 — SCRAPERS -->
+  <section class="slide" data-i="3">
+    <div class="topline">Step 01 · Scrape</div>
+    <h2 class="h2 display">We picked sources humans actually trust.</h2>
+    <p class="lede">Each source has different bias — reviews skew complaint-shaped, Reddit skews insider, transcripts catch what people say out loud. We kept all five so the master table sees the texture of real visitor experience, not one platform's voice.</p>
+    <div class="sources-table">
+      <div class="th">Source</div>
+      <div class="th">What we get</div>
+      <div class="th" style="text-align:right; padding-right:24px;">Rows</div>
+      <div class="th" style="text-align:right;">Stored on</div>
+
+      <div class="td source">TripAdvisor</div>
+      <div class="td what">Long-form reviews with rating, helpful count, visit month</div>
+      <div class="td count">~3,800</div>
+      <div class="td field">source_id, rating, date</div>
+
+      <div class="td source">Google Reviews</div>
+      <div class="td what">Shorter reviews, multilingual, rating-anchored</div>
+      <div class="td count">~2,300</div>
+      <div class="td field">likes, lang</div>
+
+      <div class="td source">Reddit · posts</div>
+      <div class="td what">Threads from r/travel, r/Rome, r/Paris — long-form opinion</div>
+      <div class="td count">362</div>
+      <div class="td field">score, post_url</div>
+
+      <div class="td source">Reddit · comments</div>
+      <div class="td what">Conversational tips that don't appear anywhere else</div>
+      <div class="td count">434</div>
+      <div class="td field">score, parent</div>
+
+      <div class="td source">YouTube transcripts</div>
+      <div class="td what">Spoken advice from travel vloggers, chunked at ~45 s</div>
+      <div class="td count">~2,400 chunks</div>
+      <div class="td field">chunk_start_ms</div>
+    </div>
+    <p class="sources-foot">Every row carries its <span class="mono" style="color:var(--ink);">source_id</span> — the link back to the human who wrote it. That's the only way the rest of the pipeline can stay honest.</p>
+    <div class="slide-num">03 / 08</div>
+  </section>
+
+  <!-- SLIDE 4 — HOW WE ENRICH (intro to 4-step) -->
+  <section class="slide" data-i="4">
+    <div class="topline">Step 02 · Enrich</div>
+    <h2 class="h2 display">Raw text is just noise. Enrichment is most of the work.</h2>
+    <p class="deck-deck muted">A TripAdvisor review and a Reddit comment can be saying the same thing in different voices. The pipeline's job is to recognise that — and to know who said it, how strongly, and what about.</p>
+    <div class="two-col">
+      <div>
+        <div class="col-eyebrow">Before</div>
+        <p class="lede" style="font-style: italic; font-family: 'Newsreader',serif;">"Honestly the Mona Lisa was such a letdown, we waited 20 min just to take a blurry photo from 3 metres away. Skip it and head to the Winged Victory instead — way less crowded."</p>
+        <p class="body" style="color: var(--muted);">One TripAdvisor row. Useful, but unstructured. We can't query "show me wait-time complaints" or "show me Winged Victory recommendations" without parsing it.</p>
+      </div>
+      <div>
+        <div class="col-eyebrow">After enrichment</div>
+        <div class="schema-box" style="font-size:13px;">
+          <div><span class="field-name">cluster_id</span> <span class="field-type">: 687</span></div>
+          <div><span class="field-name">l1</span> <span class="field-type">: Attention Intelligence</span></div>
+          <div><span class="field-name">sub_attraction</span> <span class="field-type">: "Mona Lisa"</span></div>
+          <div><span class="field-name">sentiment</span> <span class="field-type">: negative</span></div>
+          <div><span class="field-name">intent_tag</span> <span class="field-type">: warning</span></div>
+          <div><span class="field-name">numeric_anchors</span> <span class="field-type">: ["20 min","3 m"]</span></div>
+          <div><span class="field-name">anchor_entities</span> <span class="field-type">: ["Winged Victory"]</span></div>
+          <div><span class="field-name">source</span> <span class="field-type">: tripadvisor_review</span></div>
+          <div><span class="field-name">source_id</span> <span class="field-type">: r1062880919</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">04 / 08</div>
+  </section>
+
+  <!-- SLIDE 5 — THE 4 STEPS OF ENRICHMENT -->
+  <section class="slide" data-i="5">
+    <div class="topline">Step 02 · Enrich, in four passes</div>
+    <h2 class="h2 display">Extract, cluster, score, label.</h2>
+    <p class="deck-deck muted">Each pass is dumb on its own; together they turn ten thousand opinion-rows into a table you can actually query.</p>
+    <div class="four-steps">
+      <div class="step-card">
+        <div class="step-no">PASS 01</div>
+        <div class="step-h">Extract</div>
+        <div class="step-d">Parse the raw row into an insight skeleton — text body, rating if present, source metadata.</div>
+        <div class="step-detail">Each source has its own extractor because the shape differs: review fields ≠ transcript chunk fields ≠ Reddit thread fields.</div>
+        <div class="step-out-box"><span class="out-label">OUT</span>flat_insights_*.json</div>
+      </div>
+      <div class="step-card">
+        <div class="step-no">PASS 02</div>
+        <div class="step-h">Cluster</div>
+        <div class="step-d">Embed every insight, group semantically similar ones, name the canonical observation.</div>
+        <div class="step-detail">A 50-line TripAdvisor rant and a one-line Reddit comment can land in the same cluster — that's the whole point.</div>
+        <div class="step-out-box"><span class="out-label">OUT</span>1,450 named clusters</div>
+      </div>
+      <div class="step-card">
+        <div class="step-no">PASS 03</div>
+        <div class="step-h">Score</div>
+        <div class="step-d">Each cluster gets a quality tier — A, B, or C — based on size, source diversity, and sentiment coherence.</div>
+        <div class="step-detail">A claim corroborated across Reddit and TripAdvisor weighs more than the same claim repeated by twenty TripAdvisor reviews.</div>
+        <div class="step-out-box"><span class="out-label">OUT</span>quality_tier + source_mix</div>
+      </div>
+      <div class="step-card">
+        <div class="step-no">PASS 04</div>
+        <div class="step-h">Label</div>
+        <div class="step-d">Tag taxonomy (L1/L2/L3), intent (recommendation, warning, history…), sub-attraction, numeric anchors.</div>
+        <div class="step-detail">This is the pass that lets a downstream filter say "show me positive recommendations about the Mona Lisa that mention a specific time".</div>
+        <div class="step-out-box"><span class="out-label">OUT</span>22 fields per row</div>
+      </div>
+    </div>
+    <div class="slide-num">05 / 08</div>
+  </section>
+
+  <!-- SLIDE 6 — MASTER TABLE (the heavy lifter) -->
+  <section class="slide" data-i="6">
+    <div class="topline">Where the work pays off</div>
+    <h2 class="h2 display">The master table is the heavy lifter.</h2>
+    <p class="deck-deck muted">Every downstream feature — the demo apps, the carousel studio, the RAG agent — runs on the same 4,622 rows. Build the table well and the rest of the system is short scripts.</p>
+    <div class="master-grid">
+      <div class="master-stats">
+        <div class="stat-block">
+          <div class="stat-num">4,622<span class="unit">enriched rows</span></div>
+          <div class="stat-caption">flat_insights_enriched.json</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num">22<span class="unit">fields each</span></div>
+          <div class="stat-caption">cluster_id · taxonomy · sentiment · intent · anchors · provenance</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num">5<span class="unit">platforms joined</span></div>
+          <div class="stat-caption">one schema, every voice</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-num">100%<span class="unit">traceable</span></div>
+          <div class="stat-caption">every row carries the source_id of the human who wrote it</div>
+        </div>
+      </div>
+      <div>
+        <div class="schema-box">
+          <span class="schema-h">flat_insights_enriched row schema</span>
+          <div><span class="field-name">cluster_id</span> <span class="field-type">: int</span></div>
+          <div><span class="field-name">l1, l2, l3</span> <span class="field-type">: string</span></div>
+          <div><span class="field-name">sentiment</span> <span class="field-type">: positive | negative | mixed | neutral</span></div>
+          <div><span class="field-name">intent_tag</span> <span class="field-type">: recommendation | warning | explanation | …</span></div>
+          <div><span class="field-name">sub_attraction</span> <span class="field-type">: string | null</span></div>
+          <div><span class="field-name">numeric_anchors</span> <span class="field-type">: list[string]</span></div>
+          <div><span class="field-name">anchor_entities</span> <span class="field-type">: list[string]</span></div>
+          <div><span class="field-name">quality_tier</span> <span class="field-type">: A | B | C</span></div>
+          <div><span class="field-name">raw_text</span> <span class="field-type">: string</span></div>
+          <div><span class="field-name">source</span> <span class="field-type">: tripadvisor_review | reddit_post | …</span></div>
+          <div><span class="field-name">source_id</span> <span class="field-type">: string</span></div>
+          <div><span class="field-name">rating, helpful_count, freshness…</span> <span class="field-type">: …</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-num">06 / 08</div>
+  </section>
+
+  <!-- SLIDE 7 — MCP -->
+  <section class="slide" data-i="7">
+    <div class="topline">The interface layer</div>
+    <h2 class="h2 display">MCP exposes the table as six small tools.</h2>
+    <p class="deck-deck muted">Any agent or app — ours or someone else's — can plug into the same surface without re-implementing retrieval. Filter by structure, search by meaning, ask for the receipts.</p>
+    <div class="tools-list">
+      <div class="tool-row">
+        <div class="tool-name">search_clusters</div>
+        <div class="tool-desc">Semantic cluster search with intent_l1 + quality_tier filters. ~200 ms.</div>
+      </div>
+      <div class="tool-row">
+        <div class="tool-name">search_insights</div>
+        <div class="tool-desc">Per-row search with structured filters — sub_attraction, intent_tag, sentiment, has_numeric.</div>
+      </div>
+      <div class="tool-row">
+        <div class="tool-name">explain_cluster</div>
+        <div class="tool-desc">Pulls real reviewer quotes for a cluster — the citation trail.</div>
+      </div>
+      <div class="tool-row">
+        <div class="tool-name">poi_stats</div>
+        <div class="tool-desc">Aggregate rollups — tier / sentiment / intent counts, verdict score.</div>
+      </div>
+      <div class="tool-row">
+        <div class="tool-name">sub_attractions</div>
+        <div class="tool-desc">Named sub-attractions with median time spent, top intent tags, source diversity.</div>
+      </div>
+      <div class="tool-row">
+        <div class="tool-name">ask</div>
+        <div class="tool-desc">Full RAG round-trip with cited answer — the agent loop, packaged.</div>
+      </div>
+    </div>
+    <div class="slide-num">07 / 08</div>
+  </section>
+
+  <!-- SLIDE 8 — RAG AGENT + close -->
+  <section class="slide" data-i="8">
+    <div class="topline">The agent · ask_gems</div>
+    <h2 class="h2 display">If we can't cite it, we don't say it.</h2>
+    <p class="deck-deck muted">The retrieval-augmented agent is small on purpose. It calls the MCP tools, reads the evidence, then synthesises — under a hard rule that every claim must trace to at least two source quotes.</p>
+    <div class="rag-flow">
+      <div class="rag-box">
+        <div class="rag-eye">01</div>
+        <div class="rag-name">Query</div>
+        <div class="rag-d">User asks a natural-language question about a POI.</div>
+      </div>
+      <div class="rag-box">
+        <div class="rag-eye">02</div>
+        <div class="rag-name">Retrieve</div>
+        <div class="rag-d">Agent calls search_clusters / search_insights — filtered, not just semantic.</div>
+      </div>
+      <div class="rag-box">
+        <div class="rag-eye">03</div>
+        <div class="rag-name">Cite</div>
+        <div class="rag-d">explain_cluster pulls the raw reviewer quotes for the candidate clusters.</div>
+      </div>
+      <div class="rag-box">
+        <div class="rag-eye">04</div>
+        <div class="rag-name">Answer</div>
+        <div class="rag-d">Structured output — answer + ≥2 citations + confidence — never free prose.</div>
+      </div>
+    </div>
+    <div class="rag-rule">
+      <strong>The discipline:</strong> if retrieval returns fewer than two corroborating quotes, the agent sets confidence to <span class="mono">"low"</span> and admits the thinness in the answer. We chose this over hedging or polite fabrication.
+    </div>
+    <div class="slide-num">08 / 08</div>
+  </section>
+
+</div>
+
+<div class="click-zones">
+  <div class="zone left" onclick="prev()"></div>
+  <div class="zone right" onclick="next()"></div>
+</div>
+
+<div class="nav-overlay">
+  <span><kbd>←</kbd> <kbd>→</kbd> navigate</span>
+  <span>·</span>
+  <span><kbd>P</kbd> print</span>
+</div>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  let i = 0;
+  function show(n) {
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides.forEach((s, idx) => s.classList.toggle('active', idx === i));
+    if (history.replaceState) history.replaceState(null, '', '#' + (i + 1));
+  }
+  function next() { show(i + 1); }
+  function prev() { show(i - 1); }
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown' || e.key.toLowerCase() === 'j') { next(); e.preventDefault(); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp' || e.key.toLowerCase() === 'k') { prev(); e.preventDefault(); }
+    else if (e.key === 'Home') { show(0); }
+    else if (e.key === 'End') { show(slides.length - 1); }
+    else if (e.key.toLowerCase() === 'p') { window.print(); }
+  });
+  // Deep-link
+  const hash = parseInt((location.hash || '').replace('#', ''), 10);
+  if (!isNaN(hash) && hash >= 1 && hash <= slides.length) show(hash - 1);
+</script>
+
+</body>
+</html>
